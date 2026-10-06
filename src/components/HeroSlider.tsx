@@ -10,7 +10,7 @@ import {
   ShieldCheck,
   Activity,
 } from 'lucide-react';
-import LightRays from '@/components/LightRays';
+import { AuroraBackground } from '@/components/ui/aurora-background';
 
 interface Slide {
   id: number;
@@ -65,53 +65,36 @@ export default function HeroSlider() {
   const slide = slides[currentSlide];
 
   return (
-    <section className="relative w-full overflow-hidden border-b border-gray-200/80 bg-gradient-to-b from-gray-50 via-white to-white h-[calc(100vh-72px)]">
-      {/* ===== LightRays Background Layer — FULL SECTION COVER ===== */}
-      <div className="absolute inset-0 z-0 h-full w-full">
-        <LightRays
-          raysOrigin="top-center"
-          raysColor="#f97316"
-          raysSpeed={1}
-          lightSpread={0.5}
-          rayLength={3}
-          followMouse={true}
-          mouseInfluence={0.1}
-          noiseAmount={0}
-          distortion={0}
-          pulsating={false}
-          fadeDistance={1}
-          saturation={0.75}
-          lightMode
-          className="h-full w-full"
-        />
-      </div>
-
+    <AuroraBackground
+      showRadialGradient={true}
+      className="relative h-[calc(100vh-72px)] w-full overflow-hidden border-b border-gray-200/80 !bg-white !text-gray-900"
+    >
       {/* ===== Content Layer ===== */}
       <div className="relative z-10 flex h-full w-full items-center justify-center px-5 py-8 sm:px-8 sm:py-12 md:px-12 md:py-16">
         <div className="relative mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
           {/* Badge */}
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
             <span className="h-2 w-2 animate-pulse rounded-full bg-orange-500" />
             <span>{slide.title}</span>
           </div>
 
           {/* ===== FIXED CONTENT WRAPPER ===== */}
           <div className="relative w-full min-h-[340px] sm:min-h-[400px] md:min-h-[440px] lg:min-h-[480px] xl:min-h-[520px]">
-            {/* Big Subtitle — Absolute Positioned */}
+            {/* Big Subtitle */}
             <div className="absolute top-0 left-0 right-0 flex min-h-[80px] items-center justify-center px-2 sm:min-h-[100px] md:min-h-[110px] lg:min-h-[150px] xl:min-h-[170px]">
               <h1 className="font-poppins text-[28px] font-bold leading-[1.2] tracking-tight text-gray-900 sm:text-[42px] md:text-[48px] lg:text-[68px] xl:text-[76px]">
                 {slide.subtitle}
               </h1>
             </div>
 
-            {/* Description — FIXED */}
+            {/* Description */}
             <div className="absolute left-0 right-0 flex min-h-[80px] items-center justify-center px-4 sm:min-h-[100px] md:min-h-[120px] lg:min-h-[140px] top-[90px] sm:top-[110px] md:top-[130px] lg:top-[170px] xl:top-[190px]">
               <p className="mx-auto max-w-[520px] font-red-hat text-[15px] font-normal leading-relaxed text-gray-600 sm:max-w-[580px] sm:text-[18px] md:max-w-[620px] md:text-[20px] lg:max-w-[680px] lg:text-[22px]">
                 {slide.description}
               </p>
             </div>
 
-            {/* Buttons — Absolute Positioned */}
+            {/* Buttons */}
             <div className="absolute left-0 right-0 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4 top-[200px] sm:top-[240px] md:top-[270px] lg:top-[330px] xl:top-[350px]">
               <Link
                 href={slide.buttonLink}
@@ -130,7 +113,7 @@ export default function HeroSlider() {
               </Link>
             </div>
 
-            {/* Features Row — Absolute Positioned */}
+            {/* Features Row */}
             <div className="absolute left-0 right-0 border-t border-gray-200 pt-6 top-[300px] sm:top-[360px] md:top-[400px] lg:top-[460px] xl:top-[490px]">
               <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[10px] font-medium uppercase tracking-wider text-gray-600 sm:gap-x-8 sm:text-[12px] md:text-[13px] lg:gap-x-10 lg:text-[15px]">
                 <div className="flex items-center gap-2 sm:gap-2.5">
@@ -164,7 +147,7 @@ export default function HeroSlider() {
       <button
         onClick={prevSlide}
         aria-label="Previous slide"
-        className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-white/70 hover:bg-orange-500 hover:text-white text-gray-800 flex items-center justify-center transition-colors duration-200 border border-gray-200 backdrop-blur-sm shadow-sm"
+        className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-white/80 hover:bg-orange-500 hover:text-white text-gray-800 flex items-center justify-center transition-colors duration-200 border border-gray-200 backdrop-blur-sm shadow-sm"
       >
         <ChevronLeft size={22} />
       </button>
@@ -172,7 +155,7 @@ export default function HeroSlider() {
       <button
         onClick={nextSlide}
         aria-label="Next slide"
-        className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-white/70 hover:bg-orange-500 hover:text-white text-gray-800 flex items-center justify-center transition-colors duration-200 border border-gray-200 backdrop-blur-sm shadow-sm"
+        className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-white/80 hover:bg-orange-500 hover:text-white text-gray-800 flex items-center justify-center transition-colors duration-200 border border-gray-200 backdrop-blur-sm shadow-sm"
       >
         <ChevronRight size={22} />
       </button>
@@ -192,6 +175,6 @@ export default function HeroSlider() {
           />
         ))}
       </div>
-    </section>
+    </AuroraBackground>
   );
 }

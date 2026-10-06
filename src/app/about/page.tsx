@@ -11,7 +11,7 @@ import {
   ChevronDown,
   ChevronUp,
 } from 'lucide-react';
-import { BackgroundLines } from '@/components/ui/background-lines';
+import { AuroraBackground } from '@/components/ui/aurora-background';
 
 export default function AboutPage() {
   const [showFounderBio, setShowFounderBio] = useState(false);
@@ -56,12 +56,15 @@ export default function AboutPage() {
 
   return (
     <main className="w-full bg-white text-gray-900 font-sans antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white">
-      {/* 1. HERO BANNER */}
-      <BackgroundLines className="relative w-full overflow-hidden border-b border-gray-200/80 bg-gradient-to-b from-gray-50 via-white to-white">
-        <section className="relative flex min-h-[520px] w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
+      {/* 1. HERO BANNER — Aurora Background (full screen) */}
+      <AuroraBackground
+        showRadialGradient={false}
+        className="relative w-full overflow-hidden border-b border-gray-200/80 !h-[calc(100vh-88px)] !bg-white !text-gray-900"
+      >
+        <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
           <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
             {/* Badge */}
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
               <span className="h-2 w-2 animate-pulse rounded-full bg-orange-500" />
               <span>Linkay Ventures</span>
             </div>
@@ -122,7 +125,7 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-      </BackgroundLines>
+      </AuroraBackground>
 
       {/* 2. OUR STORY */}
       <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
@@ -348,7 +351,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Credential box — always visible */}
+            {/* Credential box */}
             <div className="bg-orange-50/50 border border-orange-100 p-5 rounded-xl text-gray-800 text-[15px] sm:text-[16px] leading-[1.8] mb-5 text-left sm:text-justify font-red-hat">
               <p className="font-semibold text-gray-900">BSc. (Eng.) U.K., MSc. (Eng.), U.K.</p>
               <p className="text-gray-700">
@@ -360,7 +363,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Full bio — always visible (no hidden content) */}
+            {/* Full bio */}
             <div className="font-red-hat text-gray-600 text-[15px] sm:text-[16px] leading-[1.8] text-left sm:text-justify">
               <p>
                 As a seasoned advisor at Linkay Ventures, Lincoln brings a wealth of industry

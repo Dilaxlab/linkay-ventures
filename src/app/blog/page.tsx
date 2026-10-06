@@ -11,7 +11,7 @@ import {
   Calendar,
   Clock,
 } from 'lucide-react';
-import { BackgroundLines } from '@/components/ui/background-lines';
+import { AuroraBackground } from '@/components/ui/aurora-background';
 
 export const metadata: Metadata = {
   title: 'Blog – Linkay Ventures',
@@ -49,12 +49,17 @@ export default function BlogPage() {
 
   return (
     <main className="w-full bg-white text-gray-900 font-sans antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white">
-      {/* 1. HERO BANNER — Same as RWA / About / Services / Programs */}
-      <BackgroundLines className="relative w-full overflow-hidden border-b border-gray-200/80 bg-gradient-to-b from-gray-50 via-white to-white">
-        <section className="relative flex min-h-[520px] w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
+      {/* ============================================================
+          1. HERO BANNER — Aurora Background (Full Screen)
+      ============================================================ */}
+      <AuroraBackground
+        showRadialGradient={false}
+        className="relative w-full overflow-hidden border-b border-gray-200/80 !h-auto md:!h-[calc(100vh-88px)] !bg-white !text-gray-900"
+      >
+        <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
           <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
             {/* Badge */}
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
               <span className="h-2 w-2 animate-pulse rounded-full bg-orange-500" />
               <span>Linkay Ventures</span>
             </div>
@@ -103,7 +108,7 @@ export default function BlogPage() {
                     size={16}
                     className="shrink-0 text-orange-500 sm:h-5 sm:w-5 lg:h-6 lg:w-6"
                   />
-                  <span>Venture Trends & Analysis</span>
+                  <span>Venture Trends &amp; Analysis</span>
                 </div>
                 <div className="flex items-center gap-2 sm:gap-2.5">
                   <Activity
@@ -116,11 +121,11 @@ export default function BlogPage() {
             </div>
           </div>
         </section>
-      </BackgroundLines>
+      </AuroraBackground>
 
       {/* 2. BLOG GRID */}
       <section id="posts" className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
-        {/* Section header with pill badge */}
+        {/* Section header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
           <div>
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 border border-gray-200 text-gray-700 text-xs font-semibold uppercase tracking-wider mb-3">
@@ -133,7 +138,7 @@ export default function BlogPage() {
           </div>
         </div>
 
-        {/* Filter pills — RWA style */}
+        {/* Filter pills */}
         <div className="flex flex-wrap items-center gap-2 mb-10">
           {categories.map((cat, idx) => {
             const isActive = idx === 0;
@@ -169,7 +174,6 @@ export default function BlogPage() {
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-                {/* Category pill on image */}
                 <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm border border-gray-200/60 text-gray-800 text-[11px] font-semibold uppercase tracking-wider shadow-sm">
                   <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
                   {post.category}
@@ -179,7 +183,6 @@ export default function BlogPage() {
               {/* Content */}
               <div className="p-6 sm:p-7 flex flex-col flex-1 justify-between">
                 <div>
-                  {/* Meta row */}
                   <div className="flex items-center gap-3 mb-3 text-[11.5px] font-medium text-gray-500 uppercase tracking-wider">
                     <span className="inline-flex items-center gap-1.5">
                       <Calendar size={12} className="text-orange-500" />
@@ -221,11 +224,10 @@ export default function BlogPage() {
           ))}
         </div>
 
-        {/* Empty/placeholder card to fill 3rd slot — optional, feel free to remove */}
         {posts.length < 3 && <div className="hidden" aria-hidden="true" />}
       </section>
 
-      {/* 3. NEWSLETTER / DARK CTA — Same as RWA bottom CTA */}
+      {/* 3. NEWSLETTER / DARK CTA */}
       <section className="w-full px-6 sm:px-12 lg:px-16 pb-20 max-w-[1240px] mx-auto">
         <div className="p-8 sm:p-12 rounded-3xl bg-gray-950 text-white border border-gray-800 text-center relative max-w-[960px] mx-auto">
           <div className="relative z-10 max-w-2xl mx-auto">

@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   ArrowRight,
-  ArrowDown,
   ShieldCheck,
   TrendingUp,
   Cpu,
@@ -36,11 +35,8 @@ import {
   CheckCircle2,
   Activity,
 } from 'lucide-react';
-import { BackgroundLines } from '@/components/ui/background-lines';
+import { AuroraBackground } from '@/components/ui/aurora-background';
 import { motion, useReducedMotion } from 'framer-motion';
-
-
-
 
 export default function RwaTokenizationPage() {
   const [activeStep, setActiveStep] = useState<number>(1);
@@ -207,22 +203,76 @@ export default function RwaTokenizationPage() {
 
   const steps = [
     { num: 1, title: 'Identify', desc: 'Discover and register the asset.', icon: Search },
-    { num: 2, title: 'Verify', desc: 'Establish ownership, provenance and documentation.', icon: ShieldCheck },
-    { num: 3, title: 'Value', desc: 'Assess the asset using valuation and market intelligence.', icon: TrendingUp },
-    { num: 4, title: 'Structure', desc: 'Define the appropriate legal and economic framework.', icon: GitBranch },
+    {
+      num: 2,
+      title: 'Verify',
+      desc: 'Establish ownership, provenance and documentation.',
+      icon: ShieldCheck,
+    },
+    {
+      num: 3,
+      title: 'Value',
+      desc: 'Assess the asset using valuation and market intelligence.',
+      icon: TrendingUp,
+    },
+    {
+      num: 4,
+      title: 'Structure',
+      desc: 'Define the appropriate legal and economic framework.',
+      icon: GitBranch,
+    },
     { num: 5, title: 'Tokenize', desc: 'Create the digital representation.', icon: Coins },
-    { num: 6, title: 'Comply', desc: 'Apply applicable identity and regulatory controls.', icon: CheckCheck },
-    { num: 7, title: 'Connect', desc: 'Link eligible assets with appropriate market infrastructure.', icon: ArrowRightLeft },
-    { num: 8, title: 'Manage', desc: 'Monitor ownership, data, valuation and lifecycle events.', icon: Settings2 },
+    {
+      num: 6,
+      title: 'Comply',
+      desc: 'Apply applicable identity and regulatory controls.',
+      icon: CheckCheck,
+    },
+    {
+      num: 7,
+      title: 'Connect',
+      desc: 'Link eligible assets with appropriate market infrastructure.',
+      icon: ArrowRightLeft,
+    },
+    {
+      num: 8,
+      title: 'Manage',
+      desc: 'Monitor ownership, data, valuation and lifecycle events.',
+      icon: Settings2,
+    },
   ];
 
   const ecosystemParticipants = [
-    { title: 'Asset Owners', desc: 'Institutional & private owners unlocking capital liquidity.', tag: 'Originators' },
-    { title: 'Valuation Professionals', desc: 'Accredited appraisers & market intelligence analysts.', tag: 'Auditors' },
-    { title: 'Technology Providers', desc: 'Blockchain infrastructure, smart contracts & protocols.', tag: 'Infrastructure' },
-    { title: 'Legal & Compliance Specialists', desc: 'Securities lawyers, regulatory counsels & KYC/AML providers.', tag: 'Governance' },
-    { title: 'Financial & Market Participants', desc: 'Family offices, accredited investors & asset managers.', tag: 'Capital' },
-    { title: 'Marketplaces & Liquidity Providers', desc: 'Secondary exchanges, AMMs & order-book trading venues.', tag: 'Liquidity' },
+    {
+      title: 'Asset Owners',
+      desc: 'Institutional & private owners unlocking capital liquidity.',
+      tag: 'Originators',
+    },
+    {
+      title: 'Valuation Professionals',
+      desc: 'Accredited appraisers & market intelligence analysts.',
+      tag: 'Auditors',
+    },
+    {
+      title: 'Technology Providers',
+      desc: 'Blockchain infrastructure, smart contracts & protocols.',
+      tag: 'Infrastructure',
+    },
+    {
+      title: 'Legal & Compliance Specialists',
+      desc: 'Securities lawyers, regulatory counsels & KYC/AML providers.',
+      tag: 'Governance',
+    },
+    {
+      title: 'Financial & Market Participants',
+      desc: 'Family offices, accredited investors & asset managers.',
+      tag: 'Capital',
+    },
+    {
+      title: 'Marketplaces & Liquidity Providers',
+      desc: 'Secondary exchanges, AMMs & order-book trading venues.',
+      tag: 'Liquidity',
+    },
   ];
 
   const formulaItems = [
@@ -238,18 +288,22 @@ export default function RwaTokenizationPage() {
 
   return (
     <main className="w-full bg-white text-gray-900 font-sans antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white">
-      {/* 1. HERO BANNER - with BackgroundLines */}
-      {/* 1. HERO BANNER - Centered */}
-      <BackgroundLines className="relative w-full overflow-hidden border-b border-gray-200/80 bg-gradient-to-b from-gray-50 via-white to-white min-h-screen md:min-h-0">
-        <section className="relative flex min-h-screen w-full items-center justify-center px-5 py-12 sm:px-8 sm:py-16 md:min-h-0 md:px-12 md:py-24 lg:pt-40">
+      {/* ============================================================
+          1. HERO BANNER — Aurora Background (Full Screen)
+      ============================================================ */}
+      <AuroraBackground
+        showRadialGradient={false}
+        className="relative w-full overflow-hidden border-b border-gray-200/80 !h-auto md:!h-[calc(100vh-88px)] !bg-white !text-gray-900"
+      >
+        <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-12 sm:px-8 sm:py-16 md:px-12 md:py-24">
           <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
             {/* Badge */}
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
               <span className="h-2 w-2 animate-pulse rounded-full bg-orange-500" />
               <span>Linkay Ventures</span>
             </div>
 
-            {/* Heading - Mobile-ல் சிறியது, Desktop-ல் பெரியது */}
+            {/* Heading */}
             <h1 className="mb-4 font-poppins text-[28px] font-bold leading-[1.2] tracking-tight text-gray-900 sm:mb-6 sm:text-[42px] md:text-[48px] lg:text-[68px] xl:text-[76px]">
               Multi-RWA Tokenization &amp; Monetization Platform
             </h1>
@@ -278,7 +332,7 @@ export default function RwaTokenizationPage() {
               </Link>
             </div>
 
-            {/* Features */}
+            {/* Features strip */}
             <div className="mt-10 w-full max-w-[820px] border-t border-gray-200 pt-6 sm:mt-12 sm:max-w-[900px] sm:pt-8 lg:max-w-[1000px]">
               <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[10px] font-medium uppercase tracking-wider text-gray-600 sm:gap-x-8 sm:text-[12px] md:text-[13px] lg:gap-x-10 lg:text-[15px]">
                 <div className="flex items-center gap-2 sm:gap-2.5">
@@ -306,7 +360,8 @@ export default function RwaTokenizationPage() {
             </div>
           </div>
         </section>
-      </BackgroundLines>
+      </AuroraBackground>
+
       {/* 2. FEATURES - Finance with Expert Leaders */}
       <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -346,7 +401,6 @@ export default function RwaTokenizationPage() {
             </div>
           </div>
 
-          {/* Structured Image Box with object-contain & full display */}
           <div className="lg:col-span-5">
             <div className="relative w-full h-[360px] sm:h-[440px] overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
               <Image
@@ -357,8 +411,6 @@ export default function RwaTokenizationPage() {
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
-
-              {/* subtle overlay for premium look */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
@@ -500,27 +552,24 @@ export default function RwaTokenizationPage() {
             </div>
           </div>
 
-          {/* Image: full, uncropped, large */}
+          {/* Image */}
           <div className="lg:col-span-6">
-            {/* Image: full, uncropped, large - No border, no padding, no bg, no shadow */}
-            <div className="lg:col-span-6">
-              <Image
-                src="/images/uilivuerqgliuer-1024x1024.png"
-                alt="Why RWA Tokenization?"
-                width={1024}
-                height={1024}
-                priority
-                className="w-full h-auto object-contain"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
+            <Image
+              src="/images/uilivuerqgliuer-1024x1024.png"
+              alt="Why RWA Tokenization?"
+              width={1024}
+              height={1024}
+              priority
+              className="w-full h-auto object-contain"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
           </div>
         </div>
       </section>
 
       {/* 6. HOW IT WORKS */}
       <section
-        id="How It Works"
+        id="how-it-works"
         className="w-full py-20 px-6 sm:px-12 lg:px-16 bg-gray-50/70 border-t border-b border-gray-200/80"
       >
         <div className="max-w-[1240px] mx-auto">
@@ -648,9 +697,8 @@ export default function RwaTokenizationPage() {
         </div>
       </section>
 
-      {/* 8. AN ECOSYSTEM OF CONNECTED PARTICIPANTS - Process Flow (Vertical Stack with Connecting Arrows) */}
+      {/* 8. AN ECOSYSTEM OF CONNECTED PARTICIPANTS */}
       <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
-        {/* Header */}
         <div className="text-center max-w-[850px] mx-auto mb-14">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 border border-gray-200 text-gray-700 text-xs font-semibold uppercase tracking-wider mb-3">
             <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
@@ -665,7 +713,6 @@ export default function RwaTokenizationPage() {
           <div className="w-16 h-1 bg-orange-500 mx-auto mt-4 rounded-full" />
         </div>
 
-        {/* Single-column vertical flow with ArrowDown connectors between cards */}
         <div className="relative mx-auto max-w-[760px]">
           <span
             aria-hidden="true"
@@ -686,7 +733,6 @@ export default function RwaTokenizationPage() {
                   ease: 'easeOut',
                 }}
               >
-                {/* Number sits over the connecting line */}
                 <span
                   aria-hidden="true"
                   className="absolute -left-14 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-white bg-white font-mono text-xs font-medium text-orange-500 shadow-sm sm:-left-16 sm:h-11 sm:w-11"
@@ -704,8 +750,6 @@ export default function RwaTokenizationPage() {
                     <h3 className="font-poppins text-[16px] font-semibold leading-tight text-gray-900 sm:text-[18px]">
                       {part.title}
                     </h3>
-
-
                   </div>
 
                   <p className="mt-2 text-[13px] leading-relaxed text-gray-500 sm:text-[14px]">
@@ -738,7 +782,7 @@ export default function RwaTokenizationPage() {
                 Discuss an Asset
               </Link>
               <Link
-                href="#How It Works"
+                href="#how-it-works"
                 className="bg-white/10 hover:bg-white/15 text-white border border-white/20 font-poppins text-sm font-semibold px-7 py-3.5 rounded-xl transition-all"
               >
                 Explore How It Works

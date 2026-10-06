@@ -7,7 +7,6 @@ import {
   CheckCircle2,
   ShieldCheck,
   Activity,
-  Sparkles,
   Rocket,
   Building2,
   Layers,
@@ -16,7 +15,7 @@ import {
   Settings2,
   Globe,
 } from 'lucide-react';
-import { BackgroundLines } from '@/components/ui/background-lines';
+import { AuroraBackground } from '@/components/ui/aurora-background';
 
 export const metadata: Metadata = {
   title: 'Programs – Linkay Ventures',
@@ -96,12 +95,17 @@ export default function ProgramsPage() {
 
   return (
     <main className="w-full bg-white text-gray-900 font-sans antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white">
-      {/* 1. HERO BANNER — Same as RWA / About / Services */}
-      <BackgroundLines className="relative w-full overflow-hidden border-b border-gray-200/80 bg-gradient-to-b from-gray-50 via-white to-white">
-        <section className="relative flex min-h-[520px] w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
+      {/* ============================================================
+          1. HERO BANNER — Aurora Background (Full Screen)
+      ============================================================ */}
+      <AuroraBackground
+        showRadialGradient={false}
+        className="relative w-full overflow-hidden border-b border-gray-200/80 !h-auto md:!h-[calc(100vh-88px)] !bg-white !text-gray-900"
+      >
+        <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
           <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
             {/* Badge */}
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
               <span className="h-2 w-2 animate-pulse rounded-full bg-orange-500" />
               <span>Linkay Ventures</span>
             </div>
@@ -165,9 +169,9 @@ export default function ProgramsPage() {
             </div>
           </div>
         </section>
-      </BackgroundLines>
+      </AuroraBackground>
 
-      {/* 2. EMPOWERING INNOVATORS — Split section (RWA "Finance with expert leaders" style) */}
+      {/* 2. EMPOWERING INNOVATORS — Split section */}
       <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left: Content (7 cols) */}
@@ -181,9 +185,9 @@ export default function ProgramsPage() {
             </h2>
             <div className="w-12 h-1 bg-orange-500 mb-6 rounded-full" />
             <p className="font-red-hat text-gray-600 text-[16px] sm:text-[18px] leading-relaxed mb-6">
-              At Linkay Ventures, we don't just invest in startups — we partner with pioneers. Our
-              programs provide ambitious founders with the resources, network, and strategic support
-              needed to turn bold ideas into industry-defining companies.
+              At Linkay Ventures, we don&apos;t just invest in startups — we partner with pioneers.
+              Our programs provide ambitious founders with the resources, network, and strategic
+              support needed to turn bold ideas into industry-defining companies.
             </p>
             <p className="font-red-hat text-gray-600 text-[16px] sm:text-[18px] leading-relaxed">
               Join a thriving community of visionaries, gain access to cutting-edge opportunities,
@@ -208,7 +212,7 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* 3. VENTURE ACCELERATOR — Dark section (RWA "Technology Stack" style) */}
+      {/* 3. VENTURE ACCELERATOR — Dark section */}
       <section
         id="programs"
         className="w-full bg-gray-950 py-20 px-6 sm:px-12 lg:px-16 text-white relative"
@@ -227,12 +231,12 @@ export default function ProgramsPage() {
           </div>
 
           <p className="font-red-hat text-gray-400 text-[16px] sm:text-[17px] leading-relaxed max-w-[800px] mb-10">
-            Our accelerator isn't just about growth — it's about building the future. We provide
-            world-class mentorship, funding access, go-to-market support, and enterprise pilot
-            opportunities.
+            Our accelerator isn&apos;t just about growth — it&apos;s about building the future. We
+            provide world-class mentorship, funding access, go-to-market support, and enterprise
+            pilot opportunities.
           </p>
 
-          {/* 4 cards grid — RWA tech-stack card style */}
+          {/* 4 cards grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
             {acceleratorPoints.map((item, idx) => {
               const IconComp = item.icon;
@@ -278,7 +282,7 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* 4. CORPORATE INNOVATION PARTNERSHIPS — Light section with card grid */}
+      {/* 4. CORPORATE INNOVATION PARTNERSHIPS — Light section */}
       <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
         <div className="text-center max-w-[850px] mx-auto mb-14">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 border border-gray-200 text-gray-700 text-xs font-semibold uppercase tracking-wider mb-3">
@@ -339,7 +343,7 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* 5. ADAPTIVE GROWTH PROGRAMS — Dark section (RWA "Beyond Tokenization" style) */}
+      {/* 5. ADAPTIVE GROWTH PROGRAMS — Dark section */}
       <section className="w-full bg-gray-950 py-20 px-6 sm:px-12 lg:px-16 text-white relative">
         <div className="max-w-[1240px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
           {/* Image (5 cols) */}
@@ -398,15 +402,15 @@ export default function ProgramsPage() {
 
             <p className="font-red-hat text-gray-300 text-[15.5px] leading-relaxed pt-4 border-t border-gray-800">
               Our mission is to{' '}
-              <span className="text-white font-semibold">redefine what's possible</span>, forging a
-              path where the most ambitious ideas take flight. Apply today to join Linkay Ventures
-              and be part of a movement reshaping industries.
+              <span className="text-white font-semibold">redefine what&apos;s possible</span>,
+              forging a path where the most ambitious ideas take flight. Apply today to join Linkay
+              Ventures and be part of a movement reshaping industries.
             </p>
           </div>
         </div>
       </section>
 
-      {/* 6. BOTTOM CTA — Dark banner (Same as RWA / About / Services) */}
+      {/* 6. BOTTOM CTA — Dark banner */}
       <section className="w-full px-6 sm:px-12 lg:px-16 py-20 max-w-[1240px] mx-auto">
         <div className="p-8 sm:p-12 rounded-3xl bg-gray-950 text-white border border-gray-800 text-center relative max-w-[960px] mx-auto">
           <div className="relative z-10 max-w-2xl mx-auto">

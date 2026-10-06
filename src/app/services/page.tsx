@@ -12,7 +12,7 @@ import {
   GitBranch,
   Settings2,
 } from 'lucide-react';
-import { BackgroundLines } from '@/components/ui/background-lines';
+import { AuroraBackground } from '@/components/ui/aurora-background';
 
 export const metadata: Metadata = {
   title: 'Services – Linkay Ventures',
@@ -124,13 +124,16 @@ export default function ServicesPage() {
   return (
     <main className="w-full bg-white text-gray-900 font-sans antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white">
       {/* ============================================================
-          1. HERO BANNER — BackgroundLines
+          1. HERO BANNER — Aurora Background (Full Screen)
       ============================================================ */}
-      <BackgroundLines className="relative w-full overflow-hidden border-b border-gray-200/80 bg-gradient-to-b from-gray-50 via-white to-white">
-        <section className="relative flex min-h-[520px] w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
+      <AuroraBackground
+        showRadialGradient={false}
+        className="relative w-full overflow-hidden border-b border-gray-200/80 !h-auto md:!h-[calc(100vh-88px)] !bg-white !text-gray-900"
+      >
+        <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
           <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
             {/* Badge */}
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
               <span className="h-2 w-2 animate-pulse rounded-full bg-orange-500" />
               <span>Linkay Ventures</span>
             </div>
@@ -194,7 +197,7 @@ export default function ServicesPage() {
             </div>
           </div>
         </section>
-      </BackgroundLines>
+      </AuroraBackground>
 
       {/* ============================================================
           2. INVESTMENT SOLUTIONS — Light section

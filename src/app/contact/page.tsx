@@ -14,7 +14,7 @@ import {
   Sparkles,
   Zap,
 } from 'lucide-react';
-import { BackgroundLines } from '@/components/ui/background-lines';
+import { AuroraBackground } from '@/components/ui/aurora-background';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -58,23 +58,32 @@ export default function ContactPage() {
 
   return (
     <main className="w-full bg-white text-gray-900 font-sans antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white">
-      {/* 1. HERO BANNER */}
-      <BackgroundLines className="relative w-full overflow-hidden border-b border-gray-200/80 bg-gradient-to-b from-gray-50 via-white to-white">
-        <section className="relative flex min-h-[520px] w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
+      {/* ============================================================
+          1. HERO BANNER — Aurora Background (Full Screen)
+      ============================================================ */}
+      <AuroraBackground
+        showRadialGradient={false}
+        className="relative w-full overflow-hidden border-b border-gray-200/80 !h-auto md:!h-[calc(100vh-88px)] !bg-white !text-gray-900"
+      >
+        <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
           <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
+            {/* Badge */}
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
               <span className="h-2 w-2 animate-pulse rounded-full bg-orange-500" />
               <span>Linkay Ventures</span>
             </div>
 
+            {/* Heading */}
             <h1 className="mb-4 font-poppins text-[32px] font-bold leading-[1.15] tracking-tight text-gray-900 sm:mb-6 sm:text-[46px] md:text-[54px] lg:text-[68px]">
               Contact Us
             </h1>
 
+            {/* Subtitle */}
             <p className="mx-auto mb-8 max-w-[620px] font-red-hat text-[15px] font-normal leading-relaxed text-gray-600 sm:mb-10 sm:max-w-[700px] sm:text-[18px] md:text-[20px] lg:max-w-[780px] lg:text-[22px]">
               Have a question, an idea, or a partnership in mind? Let&apos;s start the conversation.
             </p>
 
+            {/* Buttons */}
             <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-4">
               <Link
                 href="#contact-form"
@@ -92,6 +101,7 @@ export default function ContactPage() {
               </Link>
             </div>
 
+            {/* Feature strip */}
             <div className="mt-10 w-full max-w-[820px] border-t border-gray-200 pt-6 sm:mt-12 sm:max-w-[900px] sm:pt-8 lg:max-w-[1000px]">
               <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[10px] font-medium uppercase tracking-wider text-gray-600 sm:gap-x-8 sm:text-[12px] md:text-[13px] lg:gap-x-10 lg:text-[15px]">
                 <div className="flex items-center gap-2 sm:gap-2.5">
@@ -119,7 +129,7 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
-      </BackgroundLines>
+      </AuroraBackground>
 
       {/* 2. ULTRA PREMIUM FORM SECTION */}
       <section
@@ -143,27 +153,23 @@ export default function ContactPage() {
           </p>
         </div>
 
-        {/* Premium card — form + info panel side-by-side inside ONE glass card */}
+        {/* Premium card */}
         <div className="relative max-w-[1180px] mx-auto">
-          {/* Glow behind card */}
           <div className="pointer-events-none absolute -inset-6 rounded-[36px] bg-gradient-to-r from-orange-500/20 via-orange-400/10 to-orange-500/20 blur-3xl" />
 
           <div className="relative grid grid-cols-1 lg:grid-cols-5 overflow-hidden rounded-[28px] border border-gray-200/80 bg-white shadow-[0_20px_70px_-20px_rgba(0,0,0,0.15)]">
             {/* LEFT PANEL — Dark premium info (2 cols) */}
             <div className="relative lg:col-span-2 bg-gray-950 p-8 sm:p-10 lg:p-11 overflow-hidden">
-              {/* Decorative gradient mesh */}
               <div className="pointer-events-none absolute -top-20 -left-20 h-64 w-64 rounded-full bg-orange-500/40 blur-3xl" />
               <div className="pointer-events-none absolute bottom-0 right-0 h-72 w-72 rounded-full bg-orange-600/20 blur-3xl" />
               <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:32px_32px]" />
 
               <div className="relative z-10 flex h-full flex-col">
-                {/* Top badge */}
                 <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-orange-500/30 bg-orange-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-orange-400">
                   <Zap size={12} />
                   <span>Direct Line</span>
                 </span>
 
-                {/* Heading */}
                 <h3 className="mt-6 font-poppins text-[26px] sm:text-[28px] lg:text-[30px] font-bold leading-tight text-white">
                   Talk to a partner,
                   <br />
@@ -175,7 +181,6 @@ export default function ContactPage() {
                   runaround.
                 </p>
 
-                {/* Info list */}
                 <div className="mt-8 space-y-4">
                   <div className="flex items-start gap-3.5">
                     <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-orange-400">
@@ -247,7 +252,6 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
-                  {/* Heading inside form */}
                   <div className="mb-2">
                     <h4 className="font-poppins text-gray-900 text-[18px] font-bold mb-1">
                       Send us a message

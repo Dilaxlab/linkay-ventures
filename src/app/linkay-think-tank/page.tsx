@@ -19,7 +19,7 @@ import {
   Network,
   Target,
 } from 'lucide-react';
-import { BackgroundLines } from '@/components/ui/background-lines';
+import { AuroraBackground } from '@/components/ui/aurora-background';
 
 export const metadata: Metadata = {
   title: 'Linkay Think-Tank – Linkay Ventures',
@@ -75,7 +75,7 @@ export default function LinkayThinkTankPage() {
     },
     {
       title: 'Future-Focused',
-      desc: 'Designing resilient, sustainable, scalable solutions for tomorrow’s challenges.',
+      desc: 'Designing resilient, sustainable, scalable solutions for tomorrow&apos;s challenges.',
       icon: Lightbulb,
       tag: 'Vision',
     },
@@ -120,25 +120,30 @@ export default function LinkayThinkTankPage() {
 
   return (
     <main className="w-full bg-white text-gray-900 font-sans antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white">
-      {/* 1. HERO BANNER — Same design DNA as all Linkay pages */}
-      <BackgroundLines className="relative w-full overflow-hidden border-b border-gray-200/80 bg-gradient-to-b from-gray-50 via-white to-white">
-        <section className="relative flex min-h-[560px] w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
+      {/* ============================================================
+          1. HERO BANNER — Aurora Background (Full Screen)
+      ============================================================ */}
+      <AuroraBackground
+        showRadialGradient={false}
+        className="relative w-full overflow-hidden border-b border-gray-200/80 !h-auto md:!h-[calc(100vh-88px)] !bg-white !text-gray-900"
+      >
+        <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-16 sm:px-8 sm:py-20 md:px-12 md:py-24">
           <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
             {/* Badge */}
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
               <span className="h-2 w-2 animate-pulse rounded-full bg-orange-500" />
               <span>Linkay Ventures Group</span>
             </div>
 
             {/* Logo */}
-            <div className="relative w-[240px] h-[120px] sm:w-[320px] sm:h-[160px] mb-6">
+            <div className="relative w-[180px] h-[90px] sm:w-[240px] sm:h-[120px] md:w-[260px] md:h-[130px] mb-4">
               <Image
-                src="/images/think-tank-logo.png"
+                src="/images/logothink.png"
                 alt="Linkay Think-Tank"
                 fill
                 priority
                 className="object-contain"
-                sizes="(max-width: 768px) 240px, 320px"
+                sizes="(max-width: 768px) 180px, 260px"
               />
             </div>
 
@@ -201,9 +206,9 @@ export default function LinkayThinkTankPage() {
             </div>
           </div>
         </section>
-      </BackgroundLines>
+      </AuroraBackground>
 
-      {/* 2. INTRO SPLIT — RWA "Finance with expert leaders" style */}
+      {/* 2. INTRO SPLIT */}
       <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left: Content (7 cols) */}
@@ -245,13 +250,12 @@ export default function LinkayThinkTankPage() {
           {/* Right: Logo panel (5 cols) */}
           <div className="lg:col-span-5">
             <div className="relative w-full h-[320px] sm:h-[380px] rounded-2xl bg-gradient-to-br from-gray-50 to-white border border-gray-200/90 shadow-lg overflow-hidden flex items-center justify-center">
-              {/* Background accents */}
               <div className="absolute top-0 right-0 w-40 h-40 rounded-full bg-orange-500/5 blur-3xl" />
               <div className="absolute bottom-0 left-0 w-40 h-40 rounded-full bg-orange-500/5 blur-3xl" />
 
               <div className="relative w-full max-w-[340px] h-[180px] sm:h-[220px]">
                 <Image
-                  src="/images/think-tank-logo.png"
+                  src="/images/logothink.png"
                   alt="Linkay Think-Tank Logo"
                   fill
                   className="object-contain p-6"
@@ -263,13 +267,12 @@ export default function LinkayThinkTankPage() {
         </div>
       </section>
 
-      {/* 3. WHAT WE DO — Light card grid (5 cards, last spans 2 cols on lg) */}
+      {/* 3. WHAT WE DO */}
       <section
         id="domains"
         className="w-full py-20 px-6 sm:px-12 lg:px-16 bg-gray-50/70 border-t border-b border-gray-200/80"
       >
         <div className="max-w-[1240px] mx-auto">
-          {/* Header */}
           <div className="text-center max-w-[850px] mx-auto mb-16">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-[11px] font-semibold uppercase tracking-[0.08em] mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
@@ -288,11 +291,10 @@ export default function LinkayThinkTankPage() {
             <div className="w-14 h-1 bg-orange-500 mx-auto mt-6 rounded-full" />
           </div>
 
-          {/* Cards — 3-2 balanced split */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-5">
             {domains.map((item, idx) => {
               const IconComp = item.icon;
-              const isLastTwo = idx >= domains.length - 2; // last 2 cards
+              const isLastTwo = idx >= domains.length - 2;
 
               return (
                 <div
@@ -330,7 +332,8 @@ export default function LinkayThinkTankPage() {
           </div>
         </div>
       </section>
-      {/* 4. OUR APPROACH — Dark section (RWA "Technology Stack" style) */}
+
+      {/* 4. OUR APPROACH — Dark section */}
       <section className="w-full bg-gray-950 py-20 px-6 sm:px-12 lg:px-16 text-white relative">
         <div className="max-w-[1240px] mx-auto relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
@@ -377,7 +380,7 @@ export default function LinkayThinkTankPage() {
         </div>
       </section>
 
-      {/* 5. HOW IT WORKS — 4-step process (light) */}
+      {/* 5. HOW IT WORKS */}
       <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
         <div className="text-center max-w-[850px] mx-auto mb-14">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 border border-gray-200 text-gray-700 text-xs font-semibold uppercase tracking-wider mb-3">
@@ -430,7 +433,6 @@ export default function LinkayThinkTankPage() {
       {/* 6. BOTTOM CTA — Dark banner → external site */}
       <section className="w-full px-6 sm:px-12 lg:px-16 pb-20 max-w-[1240px] mx-auto">
         <div className="p-8 sm:p-12 rounded-3xl bg-gray-950 text-white border border-gray-800 text-center relative max-w-[960px] mx-auto overflow-hidden">
-          {/* Subtle orange glow */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full bg-orange-500/10 blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
