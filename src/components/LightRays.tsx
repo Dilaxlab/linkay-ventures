@@ -6,14 +6,35 @@ import './LightRays.css';
 
 const DEFAULT_COLOR = '#ffffff';
 
-const hexToRgb = (hex) => {
+type RGB = [number, number, number];
+
+const hexToRgb = (hex: string): RGB => {
   const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return m
     ? [parseInt(m[1], 16) / 255, parseInt(m[2], 16) / 255, parseInt(m[3], 16) / 255]
     : [1, 1, 1];
 };
 
-const getAnchorAndDir = (origin, w, h) => {
+type RaysOrigin =
+  | 'top-left'
+  | 'top-center'
+  | 'top-right'
+  | 'left'
+  | 'right'
+  | 'bottom-left'
+  | 'bottom-center'
+  | 'bottom-right';
+
+interface AnchorAndDir {
+  anchor: [number, number];
+  dir: [number, number];
+}
+
+const getAnchorAndDir = (
+  origin: RaysOrigin,
+  w: number,
+  h: number
+): AnchorAndDir => {
   const outside = 0.2;
   switch (origin) {
     case 'top-left':
@@ -35,6 +56,23 @@ const getAnchorAndDir = (origin, w, h) => {
   }
 };
 
+interface LightRaysProps {
+  raysOrigin?: RaysOrigin;
+  raysColor?: string;
+  raysSpeed?: number;
+  lightSpread?: number;
+  rayLength?: number;
+  pulsating?: boolean;
+  fadeDistance?: number;
+  saturation?: number;
+  followMouse?: boolean;
+  mouseInfluence?: number;
+  noiseAmount?: number;
+  distortion?: number;
+  lightMode?: boolean;
+  className?: string;
+}
+
 const LightRays = ({
   raysOrigin = 'top-center',
   raysColor = DEFAULT_COLOR,
@@ -50,17 +88,17 @@ const LightRays = ({
   distortion = 0.0,
   lightMode = false,
   className = '',
-}) => {
-  const containerRef = useRef(null);
-  const uniformsRef = useRef(null);
-  const rendererRef = useRef(null);
+}: LightRaysProps) => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const uniformsRef = useRef<any>(null);
+  const rendererRef = useRef<any>(null);
   const mouseRef = useRef({ x: 0.5, y: 0.5 });
   const smoothMouseRef = useRef({ x: 0.5, y: 0.5 });
-  const animationIdRef = useRef(null);
-  const meshRef = useRef(null);
-  const cleanupFunctionRef = useRef(null);
+  const animationIdRef = useRef<number | null>(null);
+  const meshRef = useRef<any>(null);
+  const cleanupFunctionRef = useRef<(() => void) | null>(null);
   const [isVisible, setIsVisible] = useState(true);
-  const observerRef = useRef(null);
+  const observerRef = useRef<IntersectionObserver | null>(null);
   const initializedRef = useRef(false);
 
   // IntersectionObserver — 200px munnadi trigger
@@ -274,7 +312,7 @@ void main() {
         uniforms.rayDir.value = dir;
       };
 
-      const loop = (t) => {
+      const loop = (t: number) => {
         if (!rendererRef.current || !uniformsRef.current || !meshRef.current) {
           return;
         }
@@ -401,7 +439,7 @@ void main() {
   ]);
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       if (!containerRef.current || !rendererRef.current) return;
       const rect = containerRef.current.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width;
