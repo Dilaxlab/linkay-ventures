@@ -35,7 +35,7 @@ export default function LeadershipSection() {
         {/* Heading */}
         <h2 className="font-poppins text-3xl sm:text-5xl lg:text-[52px] font-bold text-white tracking-tight leading-tight mb-12">
           Experience meets{' '}
-          <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.3)]">
+          <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.3)]">
             ambition.
           </span>
         </h2>
@@ -45,12 +45,12 @@ export default function LeadershipSection() {
           {leaders.map((leader, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-9 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group shadow-xl hover:-translate-y-1"
+              className="p-6 sm:p-9 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group shadow-xl hover:-translate-y-1"
             >
               <div>
                 <div className="flex items-center gap-4 sm:gap-5 mb-6">
                   {/* Real Photo */}
-                  <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-[#1f293d] bg-[#030712] shrink-0 group-hover:border-[#00e5ff]/50 transition-colors">
+                  <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-[#1f293d] bg-[#030712] shrink-0 group-hover:border-[#8c1627]/50 transition-colors">
                     <Image
                       src={leader.avatar}
                       alt={leader.name}
@@ -61,10 +61,10 @@ export default function LeadershipSection() {
                   </div>
 
                   <div>
-                    <h3 className="font-poppins text-xl font-bold text-white group-hover:text-[#00e5ff] transition-colors">
+                    <h3 className="font-poppins text-xl font-bold text-white group-hover:text-[#8c1627] transition-colors">
                       {leader.name}
                     </h3>
-                    <p className="font-mono text-xs text-[#00e5ff] mt-1 uppercase tracking-wider">
+                    <p className="font-mono text-xs text-[#8c1627] mt-1 uppercase tracking-wider">
                       {leader.title}
                     </p>
                   </div>
@@ -82,7 +82,7 @@ export default function LeadershipSection() {
                   href={leader.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-[#cad8e9] hover:text-[#00e5ff] transition-colors group/link"
+                  className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-[#cad8e9] hover:text-[#8c1627] transition-colors group/link"
                 >
                   <span>View LinkedIn Profile</span>
                   <ArrowUpRight size={13} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />

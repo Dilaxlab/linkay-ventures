@@ -62,7 +62,7 @@ export default function DigitalAssetSection() {
           <div className="shrink-0 w-full sm:w-auto">
             <Link
               href="/rwa-tokenization"
-              className="inline-flex items-center justify-center gap-2 bg-[#0b1220] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-xs sm:text-sm font-semibold px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 bg-[#0b1220] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-xs sm:text-sm font-semibold px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
             >
               <span>Explore RWA Platform</span>
               <ArrowRight size={14} />
@@ -77,15 +77,15 @@ export default function DigitalAssetSection() {
             return (
               <div
                 key={idx}
-                className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/5 group"
+                className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-[#8c1627]/5 group"
               >
                 <div>
                   {/* Cyan Icon Box */}
-                  <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 flex items-center justify-center text-[#00e5ff] mb-5 group-hover:scale-110 transition-transform">
+                  <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 flex items-center justify-center text-[#8c1627] mb-5 group-hover:scale-110 transition-transform">
                     <Icon size={20} />
                   </div>
 
-                  <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#00e5ff] transition-colors leading-snug">
+                  <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#8c1627] transition-colors leading-snug">
                     {item.title}
                   </h3>
 

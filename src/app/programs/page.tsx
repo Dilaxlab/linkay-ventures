@@ -108,7 +108,7 @@ export default function ProgramsPage() {
       {/* ============================================================== */}
       <section className="relative w-full pt-28 pb-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
         {/* Glow */}
-        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#00e5ff]/10 blur-[140px] pointer-events-none" />
+        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#8c1627]/10 blur-[140px] pointer-events-none" />
         <div className="absolute top-1/2 left-10 w-[450px] h-[300px] bg-[#9F1D2C]/15 blur-[130px] pointer-events-none" />
 
         <div className="max-w-[1240px] mx-auto relative z-10 text-center">
@@ -123,7 +123,7 @@ export default function ProgramsPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[68px] font-bold text-white tracking-tight leading-[1.1] mb-6">
               Programs for founders{' '}
-              <span className="text-[#00e5ff] drop-shadow-[0_0_25px_rgba(0,229,255,0.35)]">
+              <span className="text-[#8c1627] drop-shadow-[0_0_25px_rgba(140,22,39,0.35)]">
                 building what&apos;s next.
               </span>
             </h1>
@@ -144,7 +144,7 @@ export default function ProgramsPage() {
               </Link>
               <Link
                 href="#programs"
-                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Explore Programs</span>
               </Link>
@@ -153,15 +153,15 @@ export default function ProgramsPage() {
             {/* Chips */}
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-mono font-medium tracking-wider text-[#9aacc6]">
               <div className="flex items-center gap-2">
-                <span className="text-[#00e5ff]">•</span>
+                <span className="text-[#8c1627]">•</span>
                 <span>Venture Accelerator</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-[#00e5ff]">•</span>
+                <span className="text-[#8c1627]">•</span>
                 <span>Corporate Partnerships</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-[#00e5ff]">•</span>
+                <span className="text-[#8c1627]">•</span>
                 <span>Adaptive Growth</span>
               </div>
             </div>
@@ -194,7 +194,7 @@ export default function ProgramsPage() {
               </p>
 
               <div className="flex items-center gap-3 text-xs font-mono text-[#cad5e8] pt-2">
-                <span className="w-2 h-2 rounded-full bg-[#00e5ff] animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-[#8c1627] animate-pulse" />
                 <span>Operator-Led Cohorts · High-Touch Mentorship</span>
               </div>
             </div>
@@ -263,11 +263,11 @@ export default function ProgramsPage() {
               return (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg"
+                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-5">
-                      <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
                       <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#101a2a] border border-[#233049] text-[#71829e]">
@@ -275,7 +275,7 @@ export default function ProgramsPage() {
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#00e5ff] transition-colors leading-snug">
+                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#8c1627] transition-colors leading-snug">
                       {item.title}
                     </h3>
 
@@ -285,7 +285,7 @@ export default function ProgramsPage() {
                   </div>
 
                   <div className="pt-4 mt-6 border-t border-[#1f293d] flex items-center gap-1.5 text-xs text-[#cad5e8]">
-                    <CheckCircle2 size={12} className="text-[#00e5ff]" />
+                    <CheckCircle2 size={12} className="text-[#8c1627]" />
                     <span>Cohort Benefit</span>
                   </div>
                 </div>
@@ -325,11 +325,11 @@ export default function ProgramsPage() {
               return (
                 <div
                   key={idx}
-                  className="p-8 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg"
+                  className="p-8 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-5">
-                      <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
                       <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#101a2a] border border-[#233049] text-[#71829e]">
@@ -337,7 +337,7 @@ export default function ProgramsPage() {
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-xl font-bold text-white mb-3 group-hover:text-[#00e5ff] transition-colors">
+                    <h3 className="font-poppins text-xl font-bold text-white mb-3 group-hover:text-[#8c1627] transition-colors">
                       {item.title}
                     </h3>
 
@@ -347,7 +347,7 @@ export default function ProgramsPage() {
                   </div>
 
                   <div className="pt-4 mt-6 border-t border-[#1f293d] flex items-center gap-1.5 text-xs text-[#cad5e8]">
-                    <CheckCircle2 size={12} className="text-[#00e5ff]" />
+                    <CheckCircle2 size={12} className="text-[#8c1627]" />
                     <span>Commercial Alignment</span>
                   </div>
                 </div>
@@ -360,10 +360,10 @@ export default function ProgramsPage() {
               href="https://hub.linkayventures.com/index.php"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-xs sm:text-sm font-semibold px-7 py-3 rounded-full transition-all shadow-md"
+              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-xs sm:text-sm font-semibold px-7 py-3 rounded-full transition-all shadow-md"
             >
               <span>Access Venture HUB</span>
-              <ArrowUpRight size={15} className="text-[#00e5ff]" />
+              <ArrowUpRight size={15} className="text-[#8c1627]" />
             </Link>
           </div>
 
@@ -418,10 +418,10 @@ export default function ProgramsPage() {
                   return (
                     <div
                       key={idx}
-                      className="p-5 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group"
+                      className="p-5 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group"
                     >
                       <div>
-                        <div className="w-10 h-10 rounded-lg bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                        <div className="w-10 h-10 rounded-lg bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                           <Icon size={18} />
                         </div>
                         <h3 className="font-poppins text-sm font-bold text-white mb-1.5 leading-snug">
@@ -474,7 +474,7 @@ export default function ProgramsPage() {
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5"
             >
               <span>Talk to an Expert</span>
             </Link>

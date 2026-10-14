@@ -71,7 +71,7 @@ export default function AboutLeadershipSection() {
         {/* Heading */}
         <h2 className="font-poppins text-3xl sm:text-5xl lg:text-[52px] font-bold text-white tracking-tight leading-tight mb-12">
           Experience meets{' '}
-          <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.3)]">
+          <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.3)]">
             ambition.
           </span>
         </h2>
@@ -85,7 +85,7 @@ export default function AboutLeadershipSection() {
               <div
                 key={leader.id}
                 className={`p-7 sm:p-9 rounded-2xl bg-[#080d1a] border transition-all duration-300 flex flex-col justify-between shadow-xl ${
-                  isExpanded ? 'border-[#00e5ff]/50 bg-[#0a1122]' : 'border-[#1f293d] hover:border-[#1f293d]/80'
+                  isExpanded ? 'border-[#8c1627]/50 bg-[#0a1122]' : 'border-[#1f293d] hover:border-[#1f293d]/80'
                 }`}
               >
                 <div>
@@ -102,7 +102,7 @@ export default function AboutLeadershipSection() {
                     </div>
 
                     <div>
-                      <span className="text-xs font-mono font-semibold tracking-widest text-[#00e5ff] uppercase block mb-1">
+                      <span className="text-xs font-mono font-semibold tracking-widest text-[#8c1627] uppercase block mb-1">
                         {leader.role}
                       </span>
                       <h3 className="font-poppins text-2xl sm:text-3xl font-bold text-white">
@@ -122,7 +122,7 @@ export default function AboutLeadershipSection() {
                       {/* Credentials & Distinctions (Lincoln) */}
                       {leader.credentials && leader.credentials.length > 0 && (
                         <div className="p-4 rounded-xl bg-[#030712] border border-[#1f293d] space-y-2">
-                          <div className="flex items-center gap-1.5 text-xs font-mono font-semibold text-[#00e5ff] mb-1">
+                          <div className="flex items-center gap-1.5 text-xs font-mono font-semibold text-[#8c1627] mb-1">
                             <Award size={13} />
                             <span>Credentials &amp; Distinctions</span>
                           </div>
@@ -150,13 +150,13 @@ export default function AboutLeadershipSection() {
                   <button
                     type="button"
                     onClick={() => toggleExpand(leader.id)}
-                    className="inline-flex items-center gap-2 bg-[#101a2a] hover:bg-[#18263e] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-xs font-semibold px-4 py-2 rounded-full transition-all shadow-sm group"
+                    className="inline-flex items-center gap-2 bg-[#101a2a] hover:bg-[#18263e] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-xs font-semibold px-4 py-2 rounded-full transition-all shadow-sm group"
                   >
                     <span>{isExpanded ? 'Show Less' : 'Read More'}</span>
                     {isExpanded ? (
-                      <ChevronUp size={14} className="text-[#00e5ff] transition-transform group-hover:-translate-y-0.5" />
+                      <ChevronUp size={14} className="text-[#8c1627] transition-transform group-hover:-translate-y-0.5" />
                     ) : (
-                      <ChevronDown size={14} className="text-[#00e5ff] transition-transform group-hover:translate-y-0.5" />
+                      <ChevronDown size={14} className="text-[#8c1627] transition-transform group-hover:translate-y-0.5" />
                     )}
                   </button>
 

@@ -75,8 +75,8 @@ export default function Navbar() {
       <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8 h-[76px] sm:h-[84px] lg:h-[88px] flex items-center justify-between">
         {/* Brand Logo */}
         <div className="flex items-center gap-4">
-          <Link href="/" className="flex items-center group py-2">
-            <div className="relative w-[140px] sm:w-[180px] lg:w-[205px] h-[56px] sm:h-[76px] lg:h-[84px] transition-transform duration-200 group-hover:scale-105">
+          <Link href="/" className="flex items-center group py-1">
+            <div className="relative w-[180px] sm:w-[220px] lg:w-[250px] xl:w-[260px] h-[58px] sm:h-[70px] lg:h-[78px] xl:h-[82px] transition-transform duration-200 group-hover:scale-105">
               <Image
                 src="/images/logo.png"
                 alt="Linkay Ventures"
@@ -106,15 +106,15 @@ export default function Navbar() {
                   <button
                     className={`flex items-center gap-1 font-poppins text-[13.5px] font-medium tracking-[0.2px] px-3.5 py-2 rounded-lg transition-colors ${
                       isChildActive || moreDropdownOpen
-                        ? 'text-white bg-[#080d1a] font-semibold text-[#00e5ff]'
-                        : 'text-[#cad8e9] hover:text-[#00e5ff] hover:bg-[#080d1a]/60'
+                        ? 'text-white bg-[#080d1a] font-semibold text-[#8c1627]'
+                        : 'text-[#cad8e9] hover:text-[#8c1627] hover:bg-[#080d1a]/60'
                     }`}
                   >
                     <span>{item.name}</span>
                     <ChevronDown
                       size={14}
                       className={`transition-transform duration-200 ${
-                        moreDropdownOpen ? 'rotate-180 text-[#00e5ff]' : 'text-[#9aacc6]'
+                        moreDropdownOpen ? 'rotate-180 text-[#8c1627]' : 'text-[#9aacc6]'
                       }`}
                     />
                   </button>
@@ -136,12 +136,12 @@ export default function Navbar() {
                         className="group flex flex-col px-3.5 py-2.5 rounded-xl transition-colors hover:bg-[#101a2a]"
                       >
                         <div className="flex items-center justify-between">
-                          <span className="font-poppins text-[13px] font-medium text-white group-hover:text-[#00e5ff] transition-colors">
+                          <span className="font-poppins text-[13px] font-medium text-white group-hover:text-[#8c1627] transition-colors">
                             {subItem.name}
                           </span>
                           <ArrowRight
                             size={12}
-                            className="text-[#9aacc6] group-hover:text-[#00e5ff] transition-colors opacity-0 group-hover:opacity-100"
+                            className="text-[#9aacc6] group-hover:text-[#8c1627] transition-colors opacity-0 group-hover:opacity-100"
                           />
                         </div>
                         {subItem.desc && (
@@ -164,8 +164,8 @@ export default function Navbar() {
                 href={item.href}
                 className={`relative flex items-center gap-1.5 font-poppins text-[13.5px] tracking-[0.2px] px-3.5 py-2 rounded-lg transition-colors ${
                   active
-                    ? 'text-white font-semibold bg-[#080d1a] text-[#00e5ff]'
-                    : 'text-[#cad8e9] hover:text-[#00e5ff] hover:bg-[#080d1a]/60 font-medium'
+                    ? 'text-white font-semibold bg-[#080d1a] text-[#8c1627]'
+                    : 'text-[#cad8e9] hover:text-[#8c1627] hover:bg-[#080d1a]/60 font-medium'
                 }`}
               >
                 <span>{item.name}</span>
@@ -175,7 +175,7 @@ export default function Navbar() {
                   </span>
                 )}
                 {active && (
-                  <span className="absolute bottom-0 left-3.5 right-3.5 h-[2px] bg-[#00e5ff] rounded-full" />
+                  <span className="absolute bottom-0 left-3.5 right-3.5 h-[2px] bg-[#8c1627] rounded-full" />
                 )}
               </Link>
             );
@@ -188,10 +188,10 @@ export default function Navbar() {
             href="https://hub.linkayventures.com/index.php"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-[13px] font-semibold px-5 py-2.5 rounded-full transition-all hover:-translate-y-0.5 shadow-sm"
+            className="inline-flex items-center gap-1.5 bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-[13px] font-semibold px-5 py-2.5 rounded-full transition-all hover:-translate-y-0.5 shadow-sm"
           >
             <span>Venture HUB</span>
-            <ArrowUpRight size={14} className="text-[#00e5ff]" />
+            <ArrowUpRight size={14} className="text-[#8c1627]" />
           </Link>
 
           <Link
@@ -207,7 +207,7 @@ export default function Navbar() {
         <div className="flex xl:hidden items-center">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-[#f4f7ff] p-2 rounded-lg hover:bg-[#080d1a] hover:text-[#00e5ff] transition-colors focus:outline-none"
+            className="text-[#f4f7ff] p-2 rounded-lg hover:bg-[#080d1a] hover:text-[#8c1627] transition-colors focus:outline-none"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -234,7 +234,7 @@ export default function Navbar() {
                           target={subItem.external ? '_blank' : undefined}
                           rel={subItem.external ? 'noopener noreferrer' : undefined}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block px-3 py-2 text-[14px] font-poppins font-medium text-[#cad8e9] hover:text-[#00e5ff] hover:bg-[#080d1a] rounded-lg transition-colors"
+                          className="block px-3 py-2 text-[14px] font-poppins font-medium text-[#cad8e9] hover:text-[#8c1627] hover:bg-[#080d1a] rounded-lg transition-colors"
                         >
                           {subItem.name}
                         </Link>
@@ -253,8 +253,8 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`flex items-center justify-between px-3 py-2.5 rounded-xl font-poppins text-[14px] font-medium transition-colors ${
                     active
-                      ? 'text-white bg-[#080d1a] font-semibold text-[#00e5ff]'
-                      : 'text-[#cad8e9] hover:text-[#00e5ff] hover:bg-[#080d1a]'
+                      ? 'text-white bg-[#080d1a] font-semibold text-[#8c1627]'
+                      : 'text-[#cad8e9] hover:text-[#8c1627] hover:bg-[#080d1a]'
                   }`}
                 >
                   <span>{item.name}</span>
@@ -273,10 +273,10 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full flex items-center justify-center gap-2 border border-[#233049] bg-[#080d1a] text-[#f4f7ff] font-poppins text-sm font-semibold py-3 px-4 rounded-full shadow transition-all hover:border-[#00e5ff]/50"
+                className="w-full flex items-center justify-center gap-2 border border-[#233049] bg-[#080d1a] text-[#f4f7ff] font-poppins text-sm font-semibold py-3 px-4 rounded-full shadow transition-all hover:border-[#8c1627]/50"
               >
                 <span>Venture HUB</span>
-                <ArrowUpRight size={16} className="text-[#00e5ff]" />
+                <ArrowUpRight size={16} className="text-[#8c1627]" />
               </Link>
               <Link
                 href="/contact"

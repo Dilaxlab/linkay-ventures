@@ -143,7 +143,7 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       <section className="relative w-full pt-28 pb-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
         {/* Ambient glow effects */}
-        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#00e5ff]/10 blur-[140px] pointer-events-none" />
+        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#8c1627]/10 blur-[140px] pointer-events-none" />
         <div className="absolute top-1/2 left-10 w-[450px] h-[300px] bg-[#9F1D2C]/15 blur-[130px] pointer-events-none" />
 
         <div className="max-w-[1240px] mx-auto relative z-10 text-center">
@@ -158,7 +158,7 @@ export default function ServicesPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[68px] font-bold text-white tracking-tight leading-[1.1] mb-6">
               Capital, guidance and connections{' '}
-              <span className="text-[#00e5ff] drop-shadow-[0_0_25px_rgba(0,229,255,0.35)]">
+              <span className="text-[#8c1627] drop-shadow-[0_0_25px_rgba(140,22,39,0.35)]">
                 built for what&apos;s next.
               </span>
             </h1>
@@ -181,25 +181,25 @@ export default function ServicesPage() {
                 href="https://hub.linkayventures.com/index.php"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Explore Venture HUB</span>
-                <ArrowUpRight size={16} className="text-[#00e5ff]" />
+                <ArrowUpRight size={16} className="text-[#8c1627]" />
               </Link>
             </div>
 
             {/* Chips */}
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-mono font-medium tracking-wider text-[#9aacc6]">
               <div className="flex items-center gap-2">
-                <span className="text-[#00e5ff]">•</span>
+                <span className="text-[#8c1627]">•</span>
                 <span>Venture &amp; Growth Capital</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-[#00e5ff]">•</span>
+                <span className="text-[#8c1627]">•</span>
                 <span>Strategic Advisory</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-[#00e5ff]">•</span>
+                <span className="text-[#8c1627]">•</span>
                 <span>Innovation Ecosystem</span>
               </div>
             </div>
@@ -234,10 +234,10 @@ export default function ServicesPage() {
               <div>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-xs font-semibold px-6 py-2.5 rounded-full transition-all"
+                  className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-xs font-semibold px-6 py-2.5 rounded-full transition-all"
                 >
                   <span>Discuss Capital Options</span>
-                  <ArrowRight size={14} className="text-[#00e5ff]" />
+                  <ArrowRight size={14} className="text-[#8c1627]" />
                 </Link>
               </div>
             </div>
@@ -266,11 +266,11 @@ export default function ServicesPage() {
               return (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg"
+                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-5">
-                      <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
                       <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#101a2a] border border-[#233049] text-[#71829e]">
@@ -278,7 +278,7 @@ export default function ServicesPage() {
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#00e5ff] transition-colors leading-snug">
+                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#8c1627] transition-colors leading-snug">
                       {item.title}
                     </h3>
 
@@ -288,7 +288,7 @@ export default function ServicesPage() {
                   </div>
 
                   <div className="pt-4 mt-6 border-t border-[#1f293d] flex items-center gap-1.5 text-xs text-[#cad5e8]">
-                    <CheckCircle2 size={12} className="text-[#00e5ff]" />
+                    <CheckCircle2 size={12} className="text-[#8c1627]" />
                     <span>Eligible Structures</span>
                   </div>
                 </div>
@@ -325,10 +325,10 @@ export default function ServicesPage() {
 
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-xs font-semibold px-6 py-2.5 rounded-full transition-all shrink-0"
+              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-xs font-semibold px-6 py-2.5 rounded-full transition-all shrink-0"
             >
               <span>Talk to an Advisor</span>
-              <ArrowRight size={14} className="text-[#00e5ff]" />
+              <ArrowRight size={14} className="text-[#8c1627]" />
             </Link>
           </div>
 
@@ -338,11 +338,11 @@ export default function ServicesPage() {
               return (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg"
+                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-5">
-                      <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
                       <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#101a2a] border border-[#233049] text-[#71829e]">
@@ -350,7 +350,7 @@ export default function ServicesPage() {
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#00e5ff] transition-colors leading-snug">
+                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#8c1627] transition-colors leading-snug">
                       {item.title}
                     </h3>
 
@@ -360,7 +360,7 @@ export default function ServicesPage() {
                   </div>
 
                   <div className="pt-4 mt-6 border-t border-[#1f293d] flex items-center gap-1.5 text-xs text-[#cad5e8]">
-                    <CheckCircle2 size={12} className="text-[#00e5ff]" />
+                    <CheckCircle2 size={12} className="text-[#8c1627]" />
                     <span>Domain Guidance</span>
                   </div>
                 </div>
@@ -431,13 +431,13 @@ export default function ServicesPage() {
               return (
                 <div
                   key={idx}
-                  className={`p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg ${
+                  className={`p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg ${
                     isLastTwo ? 'lg:col-span-3' : 'lg:col-span-2'
                   }`}
                 >
                   <div>
                     <div className="flex items-center justify-between mb-5">
-                      <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
                       <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#101a2a] border border-[#233049] text-[#71829e]">
@@ -445,7 +445,7 @@ export default function ServicesPage() {
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#00e5ff] transition-colors leading-snug">
+                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#8c1627] transition-colors leading-snug">
                       {item.title}
                     </h3>
 
@@ -455,7 +455,7 @@ export default function ServicesPage() {
                   </div>
 
                   <div className="pt-4 mt-6 border-t border-[#1f293d] flex items-center gap-1.5 text-xs text-[#cad5e8]">
-                    <CheckCircle2 size={12} className="text-[#00e5ff]" />
+                    <CheckCircle2 size={12} className="text-[#8c1627]" />
                     <span>Ecosystem Access</span>
                   </div>
                 </div>
@@ -490,7 +490,7 @@ export default function ServicesPage() {
                 className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] flex flex-col justify-between"
               >
                 <div>
-                  <span className="text-xs font-mono font-bold text-[#00e5ff] block mb-2">
+                  <span className="text-xs font-mono font-bold text-[#8c1627] block mb-2">
                     PHASE {step.num}
                   </span>
                   <h3 className="font-poppins text-lg font-bold text-white mb-2">
@@ -545,7 +545,7 @@ export default function ServicesPage() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 rounded-full transition-all"
+                  className="bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 rounded-full transition-all"
                 >
                   Request Access
                 </Link>
@@ -582,7 +582,7 @@ export default function ServicesPage() {
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5"
             >
               <span>Talk to an Expert</span>
             </Link>

@@ -19,15 +19,15 @@ export default function Footer() {
                 <Image
                   src="/images/logo.png"
                   alt="Linkay Ventures"
-                  width={210}
-                  height={80}
-                  className="w-[170px] sm:w-[195px] h-auto"
+                  width={245}
+                  height={95}
+                  className="w-[215px] sm:w-[245px] h-auto"
                   priority
                 />
               </Link>
 
               {/* Required Approved Tagline */}
-              <p className="font-mono text-xs font-bold text-[#00e5ff] tracking-wider uppercase mb-2">
+              <p className="font-mono text-xs font-bold text-[#8c1627] tracking-wider uppercase mb-2">
                 INVEST · INNOVATE · TRANSFORM
               </p>
 
@@ -43,7 +43,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#00e5ff] hover:border-[#00e5ff]/50 transition-colors"
+                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#8c1627] hover:border-[#8c1627]/50 transition-colors"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                   <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Z" />
@@ -54,7 +54,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
-                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#00e5ff] hover:border-[#00e5ff]/50 transition-colors"
+                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#8c1627] hover:border-[#8c1627]/50 transition-colors"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -65,7 +65,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
-                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#00e5ff] hover:border-[#00e5ff]/50 transition-colors"
+                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#8c1627] hover:border-[#8c1627]/50 transition-colors"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
@@ -76,7 +76,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Website"
-                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#00e5ff] hover:border-[#00e5ff]/50 transition-colors"
+                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#8c1627] hover:border-[#8c1627]/50 transition-colors"
               >
                 <Globe size={14} />
               </a>
@@ -101,7 +101,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://hub.linkayventures.com/index.php" className="text-[#9aacc6] hover:text-[#00e5ff] transition-colors"
+                  href="https://hub.linkayventures.com/index.php" className="text-[#9aacc6] hover:text-[#8c1627] transition-colors"
                 >
                   Venture HUB
                 </Link>
@@ -152,7 +152,7 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <div className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] shadow-xl flex flex-col justify-between h-full">
               <div>
-                <span className="text-[11px] font-mono uppercase tracking-wider text-[#00e5ff] font-semibold block mb-2">
+                <span className="text-[11px] font-mono uppercase tracking-wider text-[#8c1627] font-semibold block mb-2">
                   Advisory Desk
                 </span>
                 <p className="font-red-hat text-xs text-[#9aacc6] leading-relaxed mb-4 font-normal">

@@ -293,7 +293,7 @@ export default function RwaTokenizationPage() {
       ============================================================ */}
       <div className="relative w-full overflow-hidden border-b border-[#1f293d] bg-[#030712] text-[#f4f7ff]">
         {/* Ambient Glows */}
-        <div className="absolute top-0 right-1/4 w-[600px] h-[350px] bg-[#00e5ff]/10 blur-[140px] pointer-events-none" />
+        <div className="absolute top-0 right-1/4 w-[600px] h-[350px] bg-[#8c1627]/10 blur-[140px] pointer-events-none" />
         <div className="absolute top-1/2 left-10 w-[500px] h-[300px] bg-[#9F1D2C]/15 blur-[130px] pointer-events-none" />
 
         <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-16 sm:px-8 sm:py-20 md:px-12 md:py-28">
@@ -308,7 +308,7 @@ export default function RwaTokenizationPage() {
             {/* Heading */}
             <h1 className="mb-6 font-poppins text-[32px] sm:text-[46px] md:text-[56px] lg:text-[72px] font-bold leading-[1.1] tracking-tight text-white">
               Multi-RWA Tokenization &amp;{' '}
-              <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
+              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
                 Monetization Platform
               </span>
             </h1>
@@ -330,7 +330,7 @@ export default function RwaTokenizationPage() {
 
               <Link
                 href="#how-it-works"
-                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5"
               >
                 <span>Explore How It Works</span>
                 <ArrowRight size={16} />
@@ -386,13 +386,13 @@ export default function RwaTokenizationPage() {
                 return (
                   <div
                     key={idx}
-                    className="group bg-[#080d1a] hover:bg-[#0d1627] border border-[#1f293d] hover:border-[#00e5ff]/50 rounded-2xl p-4 text-center transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/5 hover:-translate-y-0.5"
+                    className="group bg-[#080d1a] hover:bg-[#0d1627] border border-[#1f293d] hover:border-[#8c1627]/50 rounded-2xl p-4 text-center transition-all duration-300 hover:shadow-lg hover:shadow-[#8c1627]/5 hover:-translate-y-0.5"
                   >
-                    <div className="w-10 h-10 mx-auto mb-3 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] group-hover:scale-110 flex items-center justify-center transition-transform">
+                    <div className="w-10 h-10 mx-auto mb-3 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] group-hover:scale-110 flex items-center justify-center transition-transform">
                       <IconComponent size={18} />
                     </div>
 
-                    <h4 className="font-poppins text-white text-[13.5px] font-semibold leading-tight group-hover:text-[#00e5ff] transition-colors">
+                    <h4 className="font-poppins text-white text-[13.5px] font-semibold leading-tight group-hover:text-[#8c1627] transition-colors">
                       {item.title}
                     </h4>
                   </div>
@@ -426,7 +426,7 @@ export default function RwaTokenizationPage() {
             </span>
             <h2 className="font-poppins text-white text-[32px] sm:text-[44px] font-bold leading-tight mb-4">
               One Platform.{' '}
-              <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
+              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
                 Diverse Real-World Assets.
               </span>
             </h2>
@@ -438,19 +438,19 @@ export default function RwaTokenizationPage() {
               return (
                 <div
                   key={idx}
-                  className="group relative bg-[#080d1a] p-6 sm:p-7 rounded-2xl border border-[#1f293d] hover:border-[#00e5ff]/50 shadow-lg hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
+                  className="group relative bg-[#080d1a] p-6 sm:p-7 rounded-2xl border border-[#1f293d] hover:border-[#8c1627]/50 shadow-lg hover:shadow-[#8c1627]/5 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-5">
-                      <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 flex items-center justify-center text-[#00e5ff] group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 flex items-center justify-center text-[#8c1627] group-hover:scale-110 transition-transform">
                         <IconComp size={22} />
                       </div>
-                      <span className="text-[11px] font-mono font-semibold text-[#00e5ff] uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#030712] border border-[#1f293d]">
+                      <span className="text-[11px] font-mono font-semibold text-[#8c1627] uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#030712] border border-[#1f293d]">
                         {item.badge}
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#00e5ff] transition-colors">
+                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#8c1627] transition-colors">
                       {item.title}
                     </h3>
 
@@ -475,7 +475,7 @@ export default function RwaTokenizationPage() {
               </span>
               <h2 className="font-poppins text-white text-[32px] sm:text-[44px] font-bold leading-tight max-w-[700px]">
                 From Asset Intelligence to{' '}
-                <span className="text-[#00e5ff]">Market Infrastructure</span>
+                <span className="text-[#8c1627]">Market Infrastructure</span>
               </h2>
             </div>
           </div>
@@ -486,11 +486,11 @@ export default function RwaTokenizationPage() {
               return (
                 <div
                   key={item.id}
-                  className="group bg-[#080d1a] p-6 rounded-2xl border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg hover:shadow-cyan-500/5"
+                  className="group bg-[#080d1a] p-6 rounded-2xl border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg hover:shadow-[#8c1627]/5"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-10 h-10 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 flex items-center justify-center text-[#00e5ff] group-hover:scale-110 transition-transform">
+                      <div className="w-10 h-10 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 flex items-center justify-center text-[#8c1627] group-hover:scale-110 transition-transform">
                         <IconComp size={19} />
                       </div>
                       <span className="text-[11px] font-mono text-[#9aacc6] bg-[#030712] px-2.5 py-0.5 rounded-full border border-[#1f293d]">
@@ -498,7 +498,7 @@ export default function RwaTokenizationPage() {
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#00e5ff] transition-colors">
+                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#8c1627] transition-colors">
                       {item.title}
                     </h3>
                     <p className="font-red-hat text-[#9aacc6] text-[14px] leading-relaxed">
@@ -521,7 +521,7 @@ export default function RwaTokenizationPage() {
             </span>
             <h2 className="font-poppins text-white text-[32px] sm:text-[42px] font-bold leading-tight mb-6">
               Greater Possibilities for{' '}
-              <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
+              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
                 Digital Opportunity
               </span>
             </h2>
@@ -532,17 +532,17 @@ export default function RwaTokenizationPage() {
                 return (
                   <div
                     key={idx}
-                    className="p-5 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 shadow-lg hover:shadow-cyan-500/5 transition-all duration-300 group hover:-translate-y-0.5"
+                    className="p-5 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 shadow-lg hover:shadow-[#8c1627]/5 transition-all duration-300 group hover:-translate-y-0.5"
                   >
                     <div className="flex items-center justify-between mb-3">
-                      <div className="w-9 h-9 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] group-hover:scale-110 transition-transform flex items-center justify-center">
+                      <div className="w-9 h-9 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] group-hover:scale-110 transition-transform flex items-center justify-center">
                         <IconComp size={17} />
                       </div>
-                      <span className="text-[11px] font-mono font-semibold text-[#00e5ff] bg-[#030712] border border-[#1f293d] px-2.5 py-0.5 rounded-full">
+                      <span className="text-[11px] font-mono font-semibold text-[#8c1627] bg-[#030712] border border-[#1f293d] px-2.5 py-0.5 rounded-full">
                         {b.stat}
                       </span>
                     </div>
-                    <h3 className="font-poppins text-white text-[16.5px] font-bold mb-1.5 group-hover:text-[#00e5ff] transition-colors">
+                    <h3 className="font-poppins text-white text-[16.5px] font-bold mb-1.5 group-hover:text-[#8c1627] transition-colors">
                       {b.title}
                     </h3>
                     <p className="font-red-hat text-[#9aacc6] text-[13.5px] leading-relaxed">
@@ -583,7 +583,7 @@ export default function RwaTokenizationPage() {
             </span>
             <h2 className="font-poppins text-white text-[32px] sm:text-[44px] font-bold leading-tight mb-4">
               From Physical Asset to{' '}
-              <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
+              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
                 Digital Opportunity
               </span>
             </h2>
@@ -599,15 +599,15 @@ export default function RwaTokenizationPage() {
                   onClick={() => setActiveStep(st.num)}
                   className={`cursor-pointer p-6 rounded-2xl border transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 ${
                     isSelected
-                      ? 'border-[#00e5ff] ring-1 ring-[#00e5ff]/30 shadow-xl shadow-cyan-500/10 bg-[#0d1627]'
-                      : 'bg-[#080d1a] border-[#1f293d] hover:border-[#00e5ff]/50 shadow-lg'
+                      ? 'border-[#8c1627] ring-1 ring-[#8c1627]/30 shadow-xl shadow-[#8c1627]/10 bg-[#0d1627]'
+                      : 'bg-[#080d1a] border-[#1f293d] hover:border-[#8c1627]/50 shadow-lg'
                   }`}
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <span
                         className={`font-poppins text-[28px] font-extrabold leading-none ${
-                          isSelected ? 'text-[#00e5ff]' : 'text-[#9aacc6]/60 group-hover:text-[#00e5ff]'
+                          isSelected ? 'text-[#8c1627]' : 'text-[#9aacc6]/60 group-hover:text-[#8c1627]'
                         }`}
                       >
                         {st.num.toString().padStart(2, '0')}
@@ -616,14 +616,14 @@ export default function RwaTokenizationPage() {
                         className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all ${
                           isSelected
                             ? 'bg-[#9F1D2C] text-white shadow-md shadow-[#9F1D2C]/40'
-                            : 'bg-[#030712] border border-[#1f293d] text-[#00e5ff] group-hover:bg-[#9F1D2C] group-hover:text-white group-hover:border-[#9F1D2C]'
+                            : 'bg-[#030712] border border-[#1f293d] text-[#8c1627] group-hover:bg-[#9F1D2C] group-hover:text-white group-hover:border-[#9F1D2C]'
                         }`}
                       >
                         <IconComp size={18} />
                       </div>
                     </div>
 
-                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#00e5ff] transition-colors">
+                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#8c1627] transition-colors">
                       {st.title}
                     </h3>
                   </div>
@@ -672,7 +672,7 @@ export default function RwaTokenizationPage() {
                   >
                     <span>{item}</span>
                     {idx < formulaItems.length - 1 && (
-                      <span className="text-[#00e5ff] font-bold">+</span>
+                      <span className="text-[#8c1627] font-bold">+</span>
                     )}
                   </span>
                 ))}
@@ -689,7 +689,7 @@ export default function RwaTokenizationPage() {
               </span>
               <h2 className="font-poppins text-white text-[28px] sm:text-[36px] font-bold leading-tight mb-4">
                 From Real-World Value to{' '}
-                <span className="text-[#00e5ff]">Digital Market Opportunity</span>
+                <span className="text-[#8c1627]">Digital Market Opportunity</span>
               </h2>
               <p className="font-red-hat text-[#9aacc6] text-[15.5px] leading-relaxed">
                 Linkay Ventures is exploring the convergence of finance, technology, AI, blockchain
@@ -709,7 +709,7 @@ export default function RwaTokenizationPage() {
           </span>
           <h2 className="font-poppins text-white text-[32px] sm:text-[44px] font-bold leading-tight mb-3">
             Connecting the{' '}
-            <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
+            <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
               RWA Value Chain
             </span>
           </h2>
@@ -721,7 +721,7 @@ export default function RwaTokenizationPage() {
         <div className="relative mx-auto max-w-[760px]">
           <span
             aria-hidden="true"
-            className="absolute bottom-10 left-[19px] top-10 w-px bg-gradient-to-b from-[#00e5ff]/80 via-[#9F1D2C] to-transparent sm:left-[21px]"
+            className="absolute bottom-10 left-[19px] top-10 w-px bg-gradient-to-b from-[#8c1627]/80 via-[#9F1D2C] to-transparent sm:left-[21px]"
           />
 
           <div className="flex flex-col gap-9 pl-14 sm:pl-16">
@@ -740,19 +740,19 @@ export default function RwaTokenizationPage() {
               >
                 <span
                   aria-hidden="true"
-                  className="absolute -left-14 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#1f293d] bg-[#080d1a] font-mono text-xs font-bold text-[#00e5ff] shadow-md sm:-left-16 sm:h-11 sm:w-11"
+                  className="absolute -left-14 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#1f293d] bg-[#080d1a] font-mono text-xs font-bold text-[#8c1627] shadow-md sm:-left-16 sm:h-11 sm:w-11"
                 >
                   {String(idx + 1).padStart(2, '0')}
                 </span>
 
-                <div className="group relative overflow-hidden rounded-2xl border border-[#1f293d] bg-[#080d1a] p-5 shadow-lg backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-[#00e5ff]/50 hover:shadow-cyan-500/5 sm:p-6">
+                <div className="group relative overflow-hidden rounded-2xl border border-[#1f293d] bg-[#080d1a] p-5 shadow-lg backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8c1627]/50 hover:shadow-[#8c1627]/5 sm:p-6">
                   <span
                     aria-hidden="true"
-                    className="absolute inset-y-0 left-0 w-[3px] origin-top scale-y-0 bg-[#00e5ff] transition-transform duration-300 group-hover:scale-y-100"
+                    className="absolute inset-y-0 left-0 w-[3px] origin-top scale-y-0 bg-[#8c1627] transition-transform duration-300 group-hover:scale-y-100"
                   />
 
                   <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
-                    <h3 className="font-poppins text-[17px] font-semibold leading-tight text-white group-hover:text-[#00e5ff] transition-colors sm:text-[18px]">
+                    <h3 className="font-poppins text-[17px] font-semibold leading-tight text-white group-hover:text-[#8c1627] transition-colors sm:text-[18px]">
                       {part.title}
                     </h3>
                   </div>
@@ -768,7 +768,7 @@ export default function RwaTokenizationPage() {
 
         {/* Bottom CTA Banner (Obsidian Card with Capsule Buttons) */}
         <div className="mt-20 p-8 sm:p-12 rounded-3xl bg-[#080d1a] text-white border border-[#1f293d] text-center relative max-w-[960px] mx-auto shadow-2xl overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[420px] h-[420px] rounded-full bg-[#00e5ff]/10 blur-3xl pointer-events-none" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[420px] h-[420px] rounded-full bg-[#8c1627]/10 blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full bg-[#9F1D2C]/15 blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
@@ -791,7 +791,7 @@ export default function RwaTokenizationPage() {
               </Link>
               <Link
                 href="#how-it-works"
-                className="inline-flex items-center justify-center bg-[#030712] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center bg-[#030712] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 Explore How It Works
               </Link>

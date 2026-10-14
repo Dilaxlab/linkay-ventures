@@ -9,7 +9,7 @@ export default function VentureHubSection() {
       <div className="max-w-[1240px] mx-auto">
         <div className="p-8 sm:p-12 rounded-3xl bg-[#080d1a] text-[#f4f7ff] border border-[#1f293d] text-center relative max-w-[960px] mx-auto overflow-hidden shadow-2xl">
           {/* Subtle maroon & cyan glow */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full bg-[#00e5ff]/10 blur-3xl pointer-events-none" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full bg-[#8c1627]/10 blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full bg-[#9F1D2C]/15 blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
@@ -44,7 +44,7 @@ export default function VentureHubSection() {
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#030712] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center bg-[#030712] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 Request Access
               </Link>

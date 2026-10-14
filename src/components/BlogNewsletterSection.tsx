@@ -31,7 +31,7 @@ export default function BlogNewsletterSection() {
         {/* Heading */}
         <h2 className="font-poppins text-2xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight mb-4">
           Get our latest insights <br />
-          <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.25)]">in your inbox.</span>
+          <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.25)]">in your inbox.</span>
         </h2>
 
         {/* Body */}
@@ -41,8 +41,8 @@ export default function BlogNewsletterSection() {
 
         {/* Interactive Subscription Form */}
         {subscribed ? (
-          <div className="p-5 rounded-2xl bg-[#080d1a] border border-[#00e5ff]/40 max-w-md mx-auto flex items-center justify-center gap-3 text-sm font-poppins text-white animate-in fade-in duration-300">
-            <CheckCircle2 size={18} className="text-[#00e5ff]" />
+          <div className="p-5 rounded-2xl bg-[#080d1a] border border-[#8c1627]/40 max-w-md mx-auto flex items-center justify-center gap-3 text-sm font-poppins text-white animate-in fade-in duration-300">
+            <CheckCircle2 size={18} className="text-[#8c1627]" />
             <span>Thank you for subscribing to Linkay Perspectives.</span>
           </div>
         ) : (
@@ -55,7 +55,7 @@ export default function BlogNewsletterSection() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email address"
-                className="w-full bg-[#080d1a] border border-[#1f293d] focus:border-[#00e5ff] rounded-full py-3.5 pl-11 pr-5 text-sm font-red-hat text-white placeholder-[#71829e] outline-none transition-colors"
+                className="w-full bg-[#080d1a] border border-[#1f293d] focus:border-[#8c1627] rounded-full py-3.5 pl-11 pr-5 text-sm font-red-hat text-white placeholder-[#71829e] outline-none transition-colors"
               />
             </div>
             <button
@@ -72,7 +72,7 @@ export default function BlogNewsletterSection() {
         <div className="pt-2">
           <Link
             href="/contact"
-            className="text-xs font-mono text-[#71829e] hover:text-[#00e5ff] transition-colors inline-flex items-center gap-1.5"
+            className="text-xs font-mono text-[#71829e] hover:text-[#8c1627] transition-colors inline-flex items-center gap-1.5"
           >
             <span>Questions? Contact our team</span>
             <span>→</span>

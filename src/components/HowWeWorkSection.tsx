@@ -54,7 +54,7 @@ export default function HowWeWorkSection() {
           <div className="shrink-0 w-full sm:w-auto">
             <Link
               href="/services"
-              className="inline-flex items-center justify-center gap-2 bg-[#0b1220] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-xs sm:text-sm font-semibold px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 bg-[#0b1220] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-xs sm:text-sm font-semibold px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
             >
               <span>View Our Process</span>
               <ArrowRight size={14} />
@@ -79,7 +79,7 @@ export default function HowWeWorkSection() {
                 )}
               </div>
 
-              <h3 className="font-poppins text-lg font-bold text-white mb-2 group-hover:text-[#00e5ff] transition-colors">
+              <h3 className="font-poppins text-lg font-bold text-white mb-2 group-hover:text-[#8c1627] transition-colors">
                 {step.title}
               </h3>
 

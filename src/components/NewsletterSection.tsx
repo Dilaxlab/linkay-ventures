@@ -29,11 +29,11 @@ export default function NewsletterSection() {
           
           {/* Left: Copy without chips */}
           <div className="flex items-center gap-5 max-w-xl text-center lg:text-left">
-            <div className="hidden sm:flex w-12 h-12 rounded-2xl bg-[#030712] border border-[#1f293d] items-center justify-center text-[#00e5ff] shrink-0">
+            <div className="hidden sm:flex w-12 h-12 rounded-2xl bg-[#030712] border border-[#1f293d] items-center justify-center text-[#8c1627] shrink-0">
               <Mail size={22} />
             </div>
             <div>
-              <span className="text-[11px] font-mono uppercase tracking-wider text-[#00e5ff] font-semibold block mb-1">
+              <span className="text-[11px] font-mono uppercase tracking-wider text-[#8c1627] font-semibold block mb-1">
                 Newsletter
               </span>
               <h3 className="font-poppins text-lg sm:text-xl lg:text-2xl font-bold text-white leading-snug">
@@ -58,7 +58,7 @@ export default function NewsletterSection() {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your corporate email"
                     required
-                    className="w-full bg-[#030712] border border-[#1f293d] rounded-full px-5 py-3 text-sm text-white placeholder-[#71829e] focus:outline-none focus:border-[#00e5ff] transition-all"
+                    className="w-full bg-[#030712] border border-[#1f293d] rounded-full px-5 py-3 text-sm text-white placeholder-[#71829e] focus:outline-none focus:border-[#8c1627] transition-all"
                   />
                 </div>
                 <button

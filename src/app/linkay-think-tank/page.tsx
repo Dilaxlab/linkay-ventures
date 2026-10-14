@@ -124,7 +124,7 @@ export default function LinkayThinkTankPage() {
       ============================================================ */}
       <div className="relative w-full overflow-hidden border-b border-[#1f293d] bg-[#030712] text-[#f4f7ff]">
         {/* Ambient Glows */}
-        <div className="absolute top-0 right-1/4 w-[600px] h-[350px] bg-[#00e5ff]/10 blur-[140px] pointer-events-none" />
+        <div className="absolute top-0 right-1/4 w-[600px] h-[350px] bg-[#8c1627]/10 blur-[140px] pointer-events-none" />
         <div className="absolute top-1/2 left-10 w-[500px] h-[300px] bg-[#9F1D2C]/15 blur-[130px] pointer-events-none" />
 
         <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-16 sm:px-8 sm:py-20 md:px-12 md:py-28">
@@ -151,7 +151,7 @@ export default function LinkayThinkTankPage() {
             {/* Heading */}
             <h1 className="mb-5 font-poppins text-[32px] sm:text-[46px] md:text-[54px] lg:text-[68px] font-bold leading-[1.12] tracking-tight text-white">
               Linkay{' '}
-              <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
+              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
                 Think-Tank
               </span>
             </h1>
@@ -175,7 +175,7 @@ export default function LinkayThinkTankPage() {
               </Link>
               <Link
                 href="#domains"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-[#233049] bg-[#080d1a] hover:bg-[#101a2a] px-8 py-4 font-poppins text-sm font-semibold text-[#f4f7ff] shadow-sm transition-all hover:border-[#00e5ff]/50 sm:w-auto hover:-translate-y-0.5"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-[#233049] bg-[#080d1a] hover:bg-[#101a2a] px-8 py-4 font-poppins text-sm font-semibold text-[#f4f7ff] shadow-sm transition-all hover:border-[#8c1627]/50 sm:w-auto hover:-translate-y-0.5"
               >
                 <span>Advisory Domains</span>
                 <ArrowRight size={16} />
@@ -239,7 +239,7 @@ export default function LinkayThinkTankPage() {
                 (chip, i) => (
                   <span
                     key={i}
-                    className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d] text-[12.5px] font-mono text-[#00e5ff]"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d] text-[12.5px] font-mono text-[#8c1627]"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#9F1D2C]" />
                     {chip}
@@ -251,8 +251,8 @@ export default function LinkayThinkTankPage() {
 
           {/* Right: Logo panel (5 cols) */}
           <div className="lg:col-span-5">
-            <div className="relative w-full h-[340px] sm:h-[400px] rounded-2xl bg-[#080d1a] border border-[#1f293d] shadow-2xl overflow-hidden flex items-center justify-center group hover:border-[#00e5ff]/50 transition-all duration-300">
-              <div className="absolute top-0 right-0 w-48 h-48 rounded-full bg-[#00e5ff]/10 blur-3xl pointer-events-none" />
+            <div className="relative w-full h-[340px] sm:h-[400px] rounded-2xl bg-[#080d1a] border border-[#1f293d] shadow-2xl overflow-hidden flex items-center justify-center group hover:border-[#8c1627]/50 transition-all duration-300">
+              <div className="absolute top-0 right-0 w-48 h-48 rounded-full bg-[#8c1627]/10 blur-3xl pointer-events-none" />
               <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-[#9F1D2C]/15 blur-3xl pointer-events-none" />
 
               <div className="relative w-full max-w-[320px] h-[160px] sm:h-[200px]">
@@ -306,21 +306,21 @@ export default function LinkayThinkTankPage() {
               return (
                 <div
                   key={idx}
-                  className={`group bg-[#080d1a] p-6 rounded-2xl border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between shadow-lg hover:shadow-cyan-500/5 hover:-translate-y-1 ${
+                  className={`group bg-[#080d1a] p-6 rounded-2xl border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between shadow-lg hover:shadow-[#8c1627]/5 hover:-translate-y-1 ${
                     isLastTwo ? 'lg:col-span-3' : 'lg:col-span-2'
                   }`}
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 flex items-center justify-center text-[#00e5ff] group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 flex items-center justify-center text-[#8c1627] group-hover:scale-110 transition-transform">
                         <IconComp size={20} />
                       </div>
-                      <span className="text-[11px] font-mono text-[#00e5ff] bg-[#030712] px-2.5 py-0.5 rounded-full border border-[#1f293d]">
+                      <span className="text-[11px] font-mono text-[#8c1627] bg-[#030712] px-2.5 py-0.5 rounded-full border border-[#1f293d]">
                         {item.tag}
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#00e5ff] transition-colors leading-tight">
+                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#8c1627] transition-colors leading-tight">
                       {item.title}
                     </h3>
                     <p className="font-red-hat text-[#9aacc6] text-[14px] leading-relaxed">
@@ -332,7 +332,7 @@ export default function LinkayThinkTankPage() {
                     <span className="text-[11px] font-mono uppercase tracking-wider text-[#9aacc6]">
                       Domain 0{idx + 1}
                     </span>
-                    <span className="text-xs text-[#00e5ff] font-mono opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="text-xs text-[#8c1627] font-mono opacity-0 group-hover:opacity-100 transition-opacity">
                       Read Strategy →
                     </span>
                   </div>
@@ -368,11 +368,11 @@ export default function LinkayThinkTankPage() {
               return (
                 <div
                   key={idx}
-                  className="group bg-[#080d1a] hover:bg-[#0d1627] p-6 rounded-2xl border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg hover:shadow-cyan-500/5"
+                  className="group bg-[#080d1a] hover:bg-[#0d1627] p-6 rounded-2xl border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg hover:shadow-[#8c1627]/5"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 flex items-center justify-center text-[#00e5ff] group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 flex items-center justify-center text-[#8c1627] group-hover:scale-110 transition-transform">
                         <IconComp size={19} />
                       </div>
                       <span className="text-[11px] font-mono text-[#9aacc6] bg-[#030712] px-2.5 py-0.5 rounded-full border border-[#1f293d]">
@@ -380,7 +380,7 @@ export default function LinkayThinkTankPage() {
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-white text-[18px] font-bold mb-2 group-hover:text-[#00e5ff] transition-colors">
+                    <h3 className="font-poppins text-white text-[18px] font-bold mb-2 group-hover:text-[#8c1627] transition-colors">
                       {item.title}
                     </h3>
                     <p className="font-red-hat text-[#9aacc6] text-[14px] leading-relaxed">
@@ -413,19 +413,19 @@ export default function LinkayThinkTankPage() {
             return (
               <div
                 key={idx}
-                className="group bg-[#080d1a] p-6 rounded-2xl border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg hover:shadow-cyan-500/5"
+                className="group bg-[#080d1a] p-6 rounded-2xl border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg hover:shadow-[#8c1627]/5"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 flex items-center justify-center text-[#00e5ff] group-hover:scale-110 transition-transform">
+                    <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 flex items-center justify-center text-[#8c1627] group-hover:scale-110 transition-transform">
                       <IconComp size={19} />
                     </div>
-                    <span className="font-poppins text-[24px] font-extrabold leading-none text-[#00e5ff]">
+                    <span className="font-poppins text-[24px] font-extrabold leading-none text-[#8c1627]">
                       {step.num}
                     </span>
                   </div>
 
-                  <h3 className="font-poppins text-white text-[18px] font-bold mb-2 group-hover:text-[#00e5ff] transition-colors leading-tight">
+                  <h3 className="font-poppins text-white text-[18px] font-bold mb-2 group-hover:text-[#8c1627] transition-colors leading-tight">
                     {step.title}
                   </h3>
                   <p className="font-red-hat text-[#9aacc6] text-[14px] leading-relaxed">
@@ -434,7 +434,7 @@ export default function LinkayThinkTankPage() {
                 </div>
 
                 <div className="mt-5 pt-3 border-t border-[#1f293d]">
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#00e5ff]">
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#8c1627]">
                     {step.tag}
                   </span>
                 </div>
@@ -449,7 +449,7 @@ export default function LinkayThinkTankPage() {
       ============================================================ */}
       <section className="w-full px-6 sm:px-12 lg:px-16 pb-24 max-w-[1240px] mx-auto">
         <div className="p-8 sm:p-12 rounded-3xl bg-[#080d1a] text-white border border-[#1f293d] text-center relative max-w-[960px] mx-auto overflow-hidden shadow-2xl">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[420px] h-[420px] rounded-full bg-[#00e5ff]/10 blur-3xl pointer-events-none" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[420px] h-[420px] rounded-full bg-[#8c1627]/10 blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full bg-[#9F1D2C]/15 blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
@@ -475,7 +475,7 @@ export default function LinkayThinkTankPage() {
               </Link>
               <Link
                 href="/contact"
-                className="bg-[#030712] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 rounded-full transition-all hover:-translate-y-0.5"
+                className="bg-[#030712] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 rounded-full transition-all hover:-translate-y-0.5"
               >
                 Schedule Strategic Consultation
               </Link>

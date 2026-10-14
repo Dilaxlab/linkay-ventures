@@ -65,7 +65,7 @@ export default function ContactPage() {
       {/* ============================================================== */}
       <section className="relative w-full pt-20 sm:pt-28 pb-14 sm:pb-20 px-5 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
         {/* Glow */}
-        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#00e5ff]/10 blur-[140px] pointer-events-none" />
+        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#8c1627]/10 blur-[140px] pointer-events-none" />
         <div className="absolute top-1/2 left-10 w-[450px] h-[300px] bg-[#9F1D2C]/15 blur-[130px] pointer-events-none" />
 
         <div className="max-w-[1240px] mx-auto relative z-10 text-center">
@@ -80,7 +80,7 @@ export default function ContactPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.08] mb-6">
               Start the{' '}
-              <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
+              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
                 conversation.
               </span>
             </h1>
@@ -121,13 +121,13 @@ export default function ContactPage() {
       <section id="contact-form" className="relative w-full py-14 sm:py-24 px-4 sm:px-12 lg:px-16 max-w-[1240px] mx-auto border-b border-[#1f293d]">
         <div className="relative max-w-[1180px] mx-auto">
           {/* Subtle outer glow */}
-          <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-r from-[#9F1D2C]/15 via-[#00e5ff]/10 to-[#9F1D2C]/15 blur-2xl" />
+          <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-r from-[#9F1D2C]/15 via-[#8c1627]/10 to-[#9F1D2C]/15 blur-2xl" />
 
           <div className="relative grid grid-cols-1 lg:grid-cols-12 overflow-hidden rounded-[28px] border border-[#1f293d] bg-[#080d1a] shadow-2xl">
             {/* LEFT PANEL — Dark Direct Line (5 cols) */}
             <div className="lg:col-span-5 bg-[#050814] p-6 sm:p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-[#1f293d] flex flex-col justify-between relative overflow-hidden">
               <div className="pointer-events-none absolute -top-20 -left-20 h-64 w-64 rounded-full bg-[#9F1D2C]/15 blur-3xl" />
-              <div className="pointer-events-none absolute bottom-0 right-0 h-64 w-64 rounded-full bg-[#00e5ff]/10 blur-3xl" />
+              <div className="pointer-events-none absolute bottom-0 right-0 h-64 w-64 rounded-full bg-[#8c1627]/10 blur-3xl" />
 
               <div className="relative z-10">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2 mb-6">
@@ -136,7 +136,7 @@ export default function ContactPage() {
 
                 <h3 className="font-poppins text-2xl sm:text-3xl font-bold text-white mb-4 leading-tight">
                   Talk to a partner,{' '}
-                  <span className="text-[#00e5ff]">not a bot.</span>
+                  <span className="text-[#8c1627]">not a bot.</span>
                 </h3>
 
                 <p className="font-red-hat text-[#9aacc6] text-sm sm:text-base leading-relaxed mb-8">
@@ -145,7 +145,7 @@ export default function ContactPage() {
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center shrink-0">
+                    <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center shrink-0">
                       <MapPin size={19} />
                     </div>
                     <div>
@@ -158,14 +158,14 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center shrink-0">
+                    <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center shrink-0">
                       <Mail size={19} />
                     </div>
                     <div>
                       <span className="font-mono text-xs text-[#71829e] uppercase tracking-wider block">Email</span>
                       <a
                         href="mailto:info@linkayventures.com"
-                        className="text-white hover:text-[#00e5ff] text-sm font-poppins font-medium mt-0.5 block transition-colors"
+                        className="text-white hover:text-[#8c1627] text-sm font-poppins font-medium mt-0.5 block transition-colors"
                       >
                         info@linkayventures.com
                       </a>
@@ -173,14 +173,14 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center shrink-0">
+                    <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center shrink-0">
                       <Phone size={19} />
                     </div>
                     <div>
                       <span className="font-mono text-xs text-[#71829e] uppercase tracking-wider block">Phone &amp; WhatsApp</span>
                       <a
                         href="tel:+19178168128"
-                        className="text-white hover:text-[#00e5ff] text-sm font-poppins font-medium mt-0.5 block transition-colors"
+                        className="text-white hover:text-[#8c1627] text-sm font-poppins font-medium mt-0.5 block transition-colors"
                       >
                         +1 917 816 8128 (Phone)
                       </a>
@@ -193,7 +193,7 @@ export default function ContactPage() {
               </div>
 
               <div className="pt-8 mt-8 border-t border-[#1f293d] relative z-10 flex items-center gap-2 text-xs font-mono text-[#71829e]">
-                <Clock size={13} className="text-[#00e5ff]" />
+                <Clock size={13} className="text-[#8c1627]" />
                 <span>Hours: 9:00 AM – 6:00 PM ET</span>
               </div>
             </div>
@@ -202,7 +202,7 @@ export default function ContactPage() {
             <div className="lg:col-span-7 p-6 sm:p-10 lg:p-12 bg-[#080d1a]">
               {submitted ? (
                 <div className="flex h-full min-h-[440px] flex-col items-center justify-center text-center p-6">
-                  <div className="w-16 h-16 rounded-2xl bg-[#00e5ff]/10 border border-[#00e5ff]/40 text-[#00e5ff] flex items-center justify-center mb-6 shadow-xl shadow-cyan-500/10">
+                  <div className="w-16 h-16 rounded-2xl bg-[#8c1627]/10 border border-[#8c1627]/40 text-[#8c1627] flex items-center justify-center mb-6 shadow-xl shadow-[#8c1627]/10">
                     <CheckCircle2 size={32} />
                   </div>
                   <h3 className="font-poppins text-white text-2xl font-bold mb-3">
@@ -213,7 +213,7 @@ export default function ContactPage() {
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="px-7 py-3 rounded-full bg-[#030712] border border-[#1f293d] hover:border-[#00e5ff]/50 text-white text-xs font-mono uppercase tracking-wider transition-all"
+                    className="px-7 py-3 rounded-full bg-[#030712] border border-[#1f293d] hover:border-[#8c1627]/50 text-white text-xs font-mono uppercase tracking-wider transition-all"
                   >
                     Send Another Message
                   </button>
@@ -240,7 +240,7 @@ export default function ContactPage() {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="e.g. John Doe"
-                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#00e5ff] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#8c1627] focus:outline-none transition-colors"
                       />
                     </div>
                     <div>
@@ -253,7 +253,7 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="john@company.com"
-                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#00e5ff] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#8c1627] focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -268,7 +268,7 @@ export default function ContactPage() {
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="+1 (555) 000-0000"
-                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#00e5ff] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#8c1627] focus:outline-none transition-colors"
                       />
                     </div>
                     <div>
@@ -278,7 +278,7 @@ export default function ContactPage() {
                       <select
                         value={formData.category}
                         onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm focus:border-[#00e5ff] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm focus:border-[#8c1627] focus:outline-none transition-colors"
                       >
                         <option value="Venture & Growth Capital">Venture & Growth Capital</option>
                         <option value="Strategic Advisory & M&A">Strategic Advisory & M&A</option>
@@ -300,7 +300,7 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Tell us about your venture, asset, or collaboration goals..."
-                      className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#00e5ff] focus:outline-none transition-colors resize-none"
+                      className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#8c1627] focus:outline-none transition-colors resize-none"
                     />
                   </div>
 
@@ -328,14 +328,14 @@ export default function ContactPage() {
             return (
               <div
                 key={idx}
-                className="p-6 sm:p-8 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group shadow-lg hover:shadow-cyan-500/5 hover:-translate-y-1"
+                className="p-6 sm:p-8 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group shadow-lg hover:shadow-[#8c1627]/5 hover:-translate-y-1"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <span className="text-[11px] font-mono uppercase tracking-widest text-[#00e5ff] font-semibold">
+                    <span className="text-[11px] font-mono uppercase tracking-widest text-[#8c1627] font-semibold">
                       {card.tag}
                     </span>
-                    <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center group-hover:bg-[#9F1D2C] group-hover:text-white group-hover:border-[#9F1D2C] transition-all">
+                    <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center group-hover:bg-[#9F1D2C] group-hover:text-white group-hover:border-[#9F1D2C] transition-all">
                       <Icon size={19} />
                     </div>
                   </div>
@@ -355,7 +355,7 @@ export default function ContactPage() {
                   <div className="pt-6 mt-6 border-t border-[#1f293d]">
                     <a
                       href={card.href}
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#00e5ff] hover:underline"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#8c1627] hover:underline"
                     >
                       <span>Connect Directly</span>
                       <ArrowRight size={13} />

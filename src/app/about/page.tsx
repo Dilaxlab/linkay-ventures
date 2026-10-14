@@ -87,7 +87,7 @@ export default function AboutPage() {
       {/* ============================================================== */}
       <section className="relative w-full pt-28 pb-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
         {/* Subtle background glow */}
-        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#00e5ff]/10 blur-[140px] pointer-events-none" />
+        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#8c1627]/10 blur-[140px] pointer-events-none" />
         <div className="absolute top-1/2 left-10 w-[450px] h-[300px] bg-[#9F1D2C]/15 blur-[130px] pointer-events-none" />
 
         <div className="max-w-[1240px] mx-auto relative z-10 text-center">
@@ -102,7 +102,7 @@ export default function AboutPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[70px] font-bold text-white tracking-tight leading-[1.1] mb-6">
               Built by founders,{' '}
-              <span className="text-[#00e5ff] drop-shadow-[0_0_25px_rgba(0,229,255,0.35)]">
+              <span className="text-[#8c1627] drop-shadow-[0_0_25px_rgba(140,22,39,0.35)]">
                 for founders.
               </span>
             </h1>
@@ -144,7 +144,7 @@ export default function AboutPage() {
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Founded to back <br />
-                <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.25)]">bold ideas.</span>
+                <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.25)]">bold ideas.</span>
               </h2>
             </div>
 
@@ -167,7 +167,7 @@ export default function AboutPage() {
                   <span className="text-xs text-[#8a9bb5] font-red-hat">Support</span>
                 </div>
                 <div className="p-3.5 rounded-xl bg-[#080d1a] border border-[#1f293d] flex flex-col">
-                  <span className="text-sm font-poppins font-bold text-[#00e5ff]">Strategic Insight</span>
+                  <span className="text-sm font-poppins font-bold text-[#8c1627]">Strategic Insight</span>
                   <span className="text-xs text-[#8a9bb5] font-red-hat">With capital</span>
                 </div>
               </div>
@@ -203,19 +203,19 @@ export default function AboutPage() {
               return (
                 <div
                   key={idx}
-                  className="p-8 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg shadow-black/40"
+                  className="p-8 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg shadow-black/40"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-6">
-                      <span className="text-[11px] font-mono uppercase tracking-widest text-[#00e5ff] font-semibold">
+                      <span className="text-[11px] font-mono uppercase tracking-widest text-[#8c1627] font-semibold">
                         {val.tag}
                       </span>
-                      <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={20} />
                       </div>
                     </div>
 
-                    <h3 className="font-poppins text-2xl font-bold text-white mb-3 group-hover:text-[#00e5ff] transition-colors">
+                    <h3 className="font-poppins text-2xl font-bold text-white mb-3 group-hover:text-[#8c1627] transition-colors">
                       {val.title}
                     </h3>
 
@@ -229,7 +229,7 @@ export default function AboutPage() {
                   </div>
 
                   <div className="pt-6 mt-6 border-t border-[#1f293d] flex items-center gap-2 text-xs font-mono text-[#71829e]">
-                    <CheckCircle2 size={13} className="text-[#00e5ff]" />
+                    <CheckCircle2 size={13} className="text-[#8c1627]" />
                     <span>Non-Negotiable Commitment</span>
                   </div>
                 </div>
@@ -277,16 +277,16 @@ export default function AboutPage() {
                 <Link
                   key={idx}
                   href={item.href}
-                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-md"
+                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-md"
                 >
                   <div>
-                    <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                    <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                       <Icon size={19} />
                     </div>
                     <span className="text-[10px] font-mono uppercase tracking-wider text-[#71829e] block mb-1">
                       {item.category}
                     </span>
-                    <h3 className="font-poppins text-xl font-bold text-white mb-2 group-hover:text-[#00e5ff] transition-colors">
+                    <h3 className="font-poppins text-xl font-bold text-white mb-2 group-hover:text-[#8c1627] transition-colors">
                       {item.title}
                     </h3>
                     <p className="font-red-hat text-[#9aacc6] text-xs sm:text-[13px] leading-relaxed mb-6 font-normal">
@@ -294,7 +294,7 @@ export default function AboutPage() {
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-1.5 text-xs font-semibold text-[#00e5ff] group-hover:underline">
+                  <div className="flex items-center gap-1.5 text-xs font-semibold text-[#8c1627] group-hover:underline">
                     <span>Learn More</span>
                     <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -342,7 +342,7 @@ export default function AboutPage() {
             </Link>
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5"
             >
               <span>Explore Our Services</span>
             </Link>

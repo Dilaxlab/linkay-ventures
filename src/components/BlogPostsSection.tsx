@@ -123,7 +123,7 @@ export default function BlogPostsSection() {
               className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs font-mono font-semibold uppercase tracking-wider transition-all duration-200 shrink-0 ${
                 isActive
                   ? 'bg-[#9F1D2C] text-white shadow-lg shadow-[#9F1D2C]/30 scale-[1.02]'
-                  : 'bg-[#080d1a] border border-[#1f293d] text-[#9aacc6] hover:text-[#00e5ff] hover:border-[#00e5ff]/50'
+                  : 'bg-[#080d1a] border border-[#1f293d] text-[#9aacc6] hover:text-[#8c1627] hover:border-[#8c1627]/50'
               }`}
             >
               {isActive && <span className="w-1.5 h-1.5 rounded-full bg-white" />}
@@ -138,7 +138,7 @@ export default function BlogPostsSection() {
         {filteredPosts.map((post) => (
           <article
             key={post.id}
-            className="group bg-[#080d1a] rounded-2xl overflow-hidden border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between shadow-xl hover:-translate-y-1"
+            className="group bg-[#080d1a] rounded-2xl overflow-hidden border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between shadow-xl hover:-translate-y-1"
           >
             <div>
               {/* Cover Image */}
@@ -152,7 +152,7 @@ export default function BlogPostsSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#080d1a] via-transparent to-transparent pointer-events-none" />
 
-                <div className="absolute top-3.5 left-3.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#030712]/90 backdrop-blur-md border border-[#1f293d] text-[#00e5ff] text-[11px] font-mono font-semibold uppercase tracking-wider">
+                <div className="absolute top-3.5 left-3.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#030712]/90 backdrop-blur-md border border-[#1f293d] text-[#8c1627] text-[11px] font-mono font-semibold uppercase tracking-wider">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#9F1D2C]" />
                   {post.category}
                 </div>
@@ -162,17 +162,17 @@ export default function BlogPostsSection() {
               <div className="p-6 sm:p-7">
                 <div className="flex items-center gap-3 mb-3 text-xs font-mono text-[#71829e] uppercase tracking-wider">
                   <span className="inline-flex items-center gap-1.5">
-                    <Calendar size={12} className="text-[#00e5ff]" />
+                    <Calendar size={12} className="text-[#8c1627]" />
                     {post.date}
                   </span>
                   <span className="w-1 h-1 rounded-full bg-[#1f293d]" />
                   <span className="inline-flex items-center gap-1.5">
-                    <Clock size={12} className="text-[#00e5ff]" />
+                    <Clock size={12} className="text-[#8c1627]" />
                     {post.readTime}
                   </span>
                 </div>
 
-                <h3 className="font-poppins text-white text-lg sm:text-xl font-bold leading-snug mb-3 group-hover:text-[#00e5ff] transition-colors">
+                <h3 className="font-poppins text-white text-lg sm:text-xl font-bold leading-snug mb-3 group-hover:text-[#8c1627] transition-colors">
                   {post.title}
                 </h3>
 
@@ -186,7 +186,7 @@ export default function BlogPostsSection() {
             <div className="px-6 sm:px-7 pb-6 pt-4 border-t border-[#1f293d] flex items-center justify-between">
               <Link
                 href={post.href}
-                className="inline-flex items-center gap-1.5 font-poppins text-xs sm:text-sm font-semibold text-[#00e5ff] group-hover:underline"
+                className="inline-flex items-center gap-1.5 font-poppins text-xs sm:text-sm font-semibold text-[#8c1627] group-hover:underline"
               >
                 <span>Discuss with Team</span>
                 <ArrowUpRight size={14} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -203,7 +203,7 @@ export default function BlogPostsSection() {
 
       {/* Editorial Disclaimer Footer */}
       <div className="mt-14 p-4 rounded-xl bg-[#050814] border border-[#1f293d] flex items-center gap-3 text-xs font-mono text-[#71829e]">
-        <ShieldCheck size={16} className="text-[#00e5ff] shrink-0" />
+        <ShieldCheck size={16} className="text-[#8c1627] shrink-0" />
         <span>
           Editorial Note: Perspectives are provided for informational and educational purposes. Past performance is no guarantee of future results.
         </span>

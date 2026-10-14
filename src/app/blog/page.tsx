@@ -17,7 +17,7 @@ export default function BlogPage() {
       {/* ============================================================== */}
       <section className="relative w-full pt-28 pb-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
         {/* Glow */}
-        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#00e5ff]/10 blur-[140px] pointer-events-none" />
+        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#8c1627]/10 blur-[140px] pointer-events-none" />
         <div className="absolute top-1/2 left-10 w-[450px] h-[300px] bg-[#9F1D2C]/15 blur-[130px] pointer-events-none" />
 
         <div className="max-w-[1240px] mx-auto relative z-10 text-center">
@@ -32,7 +32,7 @@ export default function BlogPage() {
             {/* Heading */}
             <h1 className="font-poppins text-4xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.08] mb-6">
               Insights for{' '}
-              <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
+              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
                 what&apos;s next.
               </span>
             </h1>

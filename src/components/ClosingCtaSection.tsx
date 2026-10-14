@@ -10,7 +10,7 @@ export default function ClosingCtaSection() {
       {/* Background ambient glow */}
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[500px] h-[500px] bg-[#9F1D2C]/10 blur-[140px] rounded-full" />
-        <div className="absolute top-1/2 right-10 -translate-y-1/2 w-[500px] h-[500px] bg-[#00e5ff]/10 blur-[140px] rounded-full" />
+        <div className="absolute top-1/2 right-10 -translate-y-1/2 w-[500px] h-[500px] bg-[#8c1627]/10 blur-[140px] rounded-full" />
       </div>
 
       <div className="relative z-10 max-w-[1340px] mx-auto">
@@ -28,7 +28,7 @@ export default function ClosingCtaSection() {
             {/* Heading */}
             <h2 className="font-poppins text-white text-3xl sm:text-5xl lg:text-[54px] font-bold leading-[1.12] mb-6 tracking-tight">
               Let&apos;s build{' '}
-              <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
+              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
                 what&apos;s next.
               </span>
             </h2>
@@ -51,7 +51,7 @@ export default function ClosingCtaSection() {
 
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm sm:text-[15px] font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full shadow-sm backdrop-blur-sm transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm sm:text-[15px] font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full shadow-sm backdrop-blur-sm transition-all hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Explore Our Platform</span>
               </Link>
@@ -62,7 +62,7 @@ export default function ClosingCtaSection() {
           <div className="lg:col-span-5 relative flex items-center justify-center">
             <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[460px] lg:h-[460px] rounded-full flex items-center justify-center">
               {/* Radial Cyan & Red Glows */}
-              <div className="absolute inset-0 bg-radial from-[#00e5ff]/20 via-[#9F1D2C]/10 to-transparent rounded-full blur-2xl pointer-events-none" />
+              <div className="absolute inset-0 bg-radial from-[#8c1627]/20 via-[#9F1D2C]/10 to-transparent rounded-full blur-2xl pointer-events-none" />
 
               {/* Glowing Wireframe Globe / Digital Sphere */}
               <div className="relative w-full h-full rounded-full overflow-hidden flex items-center justify-center opacity-90">
@@ -70,7 +70,7 @@ export default function ClosingCtaSection() {
                   src="/images/uilivuerqgliuer-1024x1024.png"
                   alt="Connected Digital Sphere"
                   fill
-                  className="object-contain scale-110 drop-shadow-[0_0_35px_rgba(0,229,255,0.4)]"
+                  className="object-contain scale-110 drop-shadow-[0_0_35px_rgba(140,22,39,0.4)]"
                   sizes="(max-width: 768px) 300px, 460px"
                 />
               </div>
