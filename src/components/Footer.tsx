@@ -1,215 +1,218 @@
 'use client';
 
-import React from 'react';
-import Link from 'next/link';
+import { ArrowRight, Globe, Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
-import { Phone, Mail, MapPin, Clock, ArrowRight, ShieldCheck } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="relative w-full bg-white text-gray-900 border-t border-gray-200/80 font-sans">
-      <div className="max-w-[1300px] mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-14 border-b border-gray-200">
-          {/* Column 1: Brand & Bio (4 cols) */}
-          <div className="lg:col-span-4">
-            {/* ✅ Logo — இன்னும் மேல நகர்த்தப்பட்டது (-mt-4) */}
-            <Link href="/" className="inline-flex items-center group mb-2 -mt-4">
-              <Image
-                src="/images/logo.png"
-                alt="Linkay Ventures"
-                width={420}
-                height={120}
-                className="w-[170px] sm:w-[190px] lg:w-[210px] h-auto transition-transform duration-200 group-hover:scale-105"
-                priority
-              />
-            </Link>
+    <footer className="relative w-full bg-[#030712] text-[#f4f7ff] border-t border-[#1f293d] font-sans">
+      <div className="max-w-[1340px] mx-auto px-6 sm:px-12 lg:px-16 pt-16 pb-12">
 
-            <p className="font-red-hat text-gray-600 text-[14px] leading-relaxed max-w-[340px]">
-              Transforming real-world assets into structured digital opportunities through
-              regulatory-compliant tokenization and institutional market infrastructure.
-            </p>
+        {/* Top 5-Column Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-[#1f293d]">
 
-            {/* Quick Contact Items */}
-            <div className="space-y-2.5 pt-4 font-red-hat text-[14px]">
+          {/* Column 1: Brand Info & Tagline (3.5 cols) */}
+          <div className="lg:col-span-4 flex flex-col justify-between">
+            <div>
+              <Link href="/" className="inline-flex items-center mb-5">
+                <Image
+                  src="/images/logo.png"
+                  alt="Linkay Ventures"
+                  width={210}
+                  height={80}
+                  className="w-[170px] sm:w-[195px] h-auto"
+                  priority
+                />
+              </Link>
+
+              {/* Required Approved Tagline */}
+              <p className="font-mono text-xs font-bold text-[#00e5ff] tracking-wider uppercase mb-2">
+                INVEST · INNOVATE · TRANSFORM
+              </p>
+
+              <p className="font-red-hat text-[#9aacc6] text-[13.5px] leading-relaxed max-w-[320px] mb-6 font-normal">
+                Investment, advisory and emerging financial infrastructure for a more connected economy.
+              </p>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-2.5">
               <a
-                href="tel:+19178168128"
-                className="group flex items-center gap-3 text-gray-700 hover:text-gray-900 transition-colors"
+                href="https://www.linkedin.com/company/linkay-ventures"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#00e5ff] hover:border-[#00e5ff]/50 transition-colors"
               >
-                <div className="w-8 h-8 rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-700 group-hover:text-orange-500 group-hover:border-orange-200 transition-colors shadow-2xs">
-                  <Phone size={14} />
-                </div>
-                <span className="font-medium">+1 917 816 8128</span>
+                <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Z" />
+                </svg>
               </a>
-
               <a
-                href="mailto:info@linkayventures.com"
-                className="group flex items-center gap-3 text-gray-700 hover:text-gray-900 transition-colors"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#00e5ff] hover:border-[#00e5ff]/50 transition-colors"
               >
-                <div className="w-8 h-8 rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-700 group-hover:text-orange-500 group-hover:border-orange-200 transition-colors shadow-2xs">
-                  <Mail size={14} />
-                </div>
-                <span className="font-medium">info@linkayventures.com</span>
+                <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
               </a>
-
-              <div className="flex items-center gap-3 text-gray-700">
-                <div className="w-8 h-8 rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-700 shadow-2xs">
-                  <MapPin size={14} />
-                </div>
-                <span className="font-medium">New York, USA</span>
-              </div>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#00e5ff] hover:border-[#00e5ff]/50 transition-colors"
+              >
+                <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+              </a>
+              <a
+                href="https://linkayventures.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Website"
+                className="w-8 h-8 rounded-full bg-[#080d1a] border border-[#233049] flex items-center justify-center text-[#9aacc6] hover:text-[#00e5ff] hover:border-[#00e5ff]/50 transition-colors"
+              >
+                <Globe size={14} />
+              </a>
             </div>
           </div>
 
-          {/* Column 2: Platform & Ecosystem (3 cols) */}
-          <div className="lg:col-span-3">
-            <h4 className="font-poppins text-gray-900 text-[14.5px] font-bold uppercase tracking-wider mb-5 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
-              Platform
+          {/* Column 2: COMPANY (2 cols) */}
+          <div className="lg:col-span-2">
+            <h4 className="font-poppins text-white text-xs font-bold uppercase tracking-wider mb-4">
+              Company
             </h4>
-            <ul className="space-y-2.5 font-red-hat text-[14px]">
+            <ul className="space-y-2.5 font-red-hat text-[13.5px]">
               <li>
-                <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <Link href="/about" className="text-[#9aacc6] hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/services"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/programs"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
-                >
+                <Link href="/programs" className="text-[#9aacc6] hover:text-white transition-colors">
                   Programs
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/rwa-tokenization"
-                  className="text-gray-900 hover:text-gray-900 transition-colors"
+                  href="https://hub.linkayventures.com/index.php"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#9aacc6] hover:text-[#00e5ff] transition-colors"
                 >
-                  <span>RWA Tokenization</span>
+                  Venture HUB ↗
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/linkay-commodities"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
-                >
+                <Link href="/about#team" className="text-[#9aacc6] hover:text-white transition-colors">
+                  Our Team
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-[#9aacc6] hover:text-white transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3: PLATFORM (2.5 cols) */}
+          <div className="lg:col-span-3">
+            <h4 className="font-poppins text-white text-xs font-bold uppercase tracking-wider mb-4">
+              Platform
+            </h4>
+            <ul className="space-y-2.5 font-red-hat text-[13.5px]">
+              <li>
+                <Link href="/services" className="text-[#9aacc6] hover:text-white transition-colors">
+                  Services &amp; Investment
+                </Link>
+              </li>
+              <li>
+                <Link href="/rwa-tokenization" className="text-[#9aacc6] hover:text-white transition-colors">
+                  RWA Tokenization
+                </Link>
+              </li>
+              <li>
+                <Link href="/linkay-commodities" className="text-[#9aacc6] hover:text-white transition-colors">
                   Linkay Commodities
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/linkay-think-tank"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
-                >
+                <Link href="/linkay-think-tank" className="text-[#9aacc6] hover:text-white transition-colors">
                   Linkay Think-Tank
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Legal & Resources (2 cols) */}
-          <div className="lg:col-span-2">
-            <h4 className="font-poppins text-gray-900 text-[14.5px] font-bold uppercase tracking-wider mb-5 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
-              Resources
-            </h4>
-            <ul className="space-y-2.5 font-red-hat text-[14px]">
-              <li>
-                <Link href="/blog" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Market Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/faq" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Frequently Asked Questions
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy-policy"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
-                >
-                  Support &amp; Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: Institutional Advisory Card (3 cols) */}
+          {/* Column 4: ADVISORY DESK & CONTACT (3 cols) */}
           <div className="lg:col-span-3">
-            <div className="p-5 sm:p-6 rounded-2xl bg-gray-50 border border-gray-200 shadow-2xs space-y-4">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold uppercase tracking-wider text-gray-700">
+            <div className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] shadow-xl flex flex-col justify-between h-full">
+              <div>
+                <span className="text-[11px] font-mono uppercase tracking-wider text-[#00e5ff] font-semibold block mb-2">
                   Advisory Desk
                 </span>
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              </div>
-
-              <div>
-                <h5 className="font-poppins text-gray-900 font-bold text-sm">Working Hours</h5>
-                <div className="flex items-center gap-2 text-xs text-gray-600 mt-1">
-                  <Clock size={13} className="text-orange-500" />
-                  <span>Mon – Fri &nbsp;09:00 – 17:00 EST</span>
+                <p className="font-red-hat text-xs text-[#9aacc6] leading-relaxed mb-4 font-normal">
+                  Talk to our team about your venture or asset.
+                </p>
+                <div className="space-y-1.5 text-xs font-mono text-[#cad8e9] mb-4">
+                  <p>Phone: +1 917 816 8128</p>
+                  <p>WhatsApp: +1 646 945 7720</p>
+                  <p className="text-[#71829e]">Hours: 9:00 AM – 6:00 PM ET</p>
                 </div>
               </div>
 
-              <p className="text-xs text-gray-600 leading-relaxed">
-                Connect with our asset tokenization specialists for tailored institutional
-                onboarding and structuring.
-              </p>
-
               <div>
                 <Link
                   href="/contact"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-poppins text-xs font-semibold py-3 px-4 rounded-xl transition-all shadow-sm hover:shadow-md"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-xs font-semibold py-3 px-4 rounded-full transition-all shadow-md shadow-[#9F1D2C]/30 hover:-translate-y-0.5"
                 >
-                  <span>Discuss with an Expert</span>
-                  <ArrowRight size={14} />
+                  <span>Contact Us</span>
+                  <ArrowRight size={13} />
                 </Link>
               </div>
             </div>
           </div>
+
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium text-gray-500">
-          <div className="flex items-center gap-2">
-            <ShieldCheck size={16} className="text-orange-500" />
-            <span>© 2026 Linkay Ventures. All rights reserved.</span>
+        {/* Legal Disclaimer Paragraph as requested */}
+        <div className="py-8 border-b border-[#1f293d]">
+          <p className="text-xs font-red-hat text-[#71829e] leading-relaxed">
+            <strong className="text-[#9aacc6]">Disclaimer: </strong>
+            The information provided on this website is for informational purposes only and does not
+            constitute an offer to sell, a solicitation of an offer to buy, or a recommendation of any
+            security, fund, or tokenization service. Past performance is no guarantee of future
+            results. Any investment or tokenization involves substantial risk, including the loss of
+            principal.
+          </p>
+        </div>
+
+        {/* Bottom Sub-Footer Bar */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#71829e]">
+          <div>
+            <span>© 2026 Linkay Ventures Inc. All rights reserved.</span>
           </div>
 
           <div className="flex items-center gap-6">
-            <span className="text-gray-500 text-center sm:text-right">
-              Institutional Multi-RWA Tokenization &amp; Venture Infrastructure
-            </span>
+            <Link href="/terms" className="hover:text-white transition-colors">
+              Terms of Use
+            </Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/contact" className="hover:text-white transition-colors">
+              Support
+            </Link>
           </div>
         </div>
+
       </div>
     </footer>
   );

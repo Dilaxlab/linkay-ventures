@@ -1,180 +1,120 @@
 'use client';
 
-import React, { useState, useCallback } from 'react';
+import { ArrowRight, Play } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
-import {
-  ChevronLeft,
-  ChevronRight,
-  ArrowRight,
-  CheckCircle2,
-  ShieldCheck,
-  Activity,
-} from 'lucide-react';
-import { AuroraBackground } from '@/components/ui/aurora-background';
-
-interface Slide {
-  id: number;
-  title: string;
-  subtitle: string;
-  description: string;
-  buttonText: string;
-  buttonLink: string;
-}
-
-const slides: Slide[] = [
-  {
-    id: 1,
-    title: 'Linkay Ventures',
-    subtitle: 'Empowering Visionaries.',
-    description:
-      'Linkay Ventures partners with visionary founders to drive innovation and create meaningful impact.',
-    buttonText: 'Explore Services',
-    buttonLink: '/services',
-  },
-  {
-    id: 2,
-    title: 'Linkay Ventures',
-    subtitle: 'Shaping the Future.',
-    description:
-      'A brainchild of serial entrepreneurs — seasoned professionals in AI, cutting-edge technologies, and Finance — shaping the future with global impact.',
-    buttonText: 'View Programs',
-    buttonLink: '/programs',
-  },
-  {
-    id: 3,
-    title: 'Linkay Ventures',
-    subtitle: 'Partner in Innovation',
-    description:
-      'At our core, we believe in the power of collaboration to drive progress and lasting impact.',
-    buttonText: 'View Programs',
-    buttonLink: '/programs',
-  },
-];
 
 export default function HeroSlider() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const nextSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  }, []);
-
-  const prevSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  }, []);
-
-  const slide = slides[currentSlide];
+  const tickerItems = [
+    'VENTURE & ASSET CAPITAL',
+    'RWA & DEFI',
+    'STRATEGIC PARTNERSHIPS',
+    'RESEARCH & INNOVATION',
+    'SUSTAINABLE PROSPERITY',
+  ];
 
   return (
-    <AuroraBackground
-      showRadialGradient={true}
-      className="relative h-[calc(100vh-72px)] w-full overflow-hidden border-b border-gray-200/80 !bg-white !text-gray-900"
-    >
-      {/* ===== Content Layer ===== */}
-      <div className="relative z-10 flex h-full w-full items-center justify-center px-5 py-8 sm:px-8 sm:py-12 md:px-12 md:py-16">
-        <div className="relative mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
-          {/* Badge */}
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-orange-500" />
-            <span>{slide.title}</span>
+    <section className="relative w-full min-h-[calc(100vh-88px)] flex flex-col justify-between bg-[#030712] text-[#f4f7ff] border-b border-[#1f293d] overflow-hidden">
+      {/* ============================================================
+          FULL-BLEED BACKGROUND IMAGE
+      ============================================================ */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <Image
+          src="/images/token-orbit-blue.jpg"
+          alt="Real Assets Token Orbit"
+          fill
+          priority
+          quality={95}
+          className="object-cover object-right md:object-center lg:object-right"
+          sizes="100vw"
+        />
+
+        {/* Ambient Dark Gradients for Maximum Legibility */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#030712] via-[#030712]/85 to-transparent md:w-[75%] lg:w-[65%] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#030712]/60 via-transparent to-[#030712] pointer-events-none" />
+        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-[#00e5ff]/10 blur-[150px] rounded-full pointer-events-none" />
+      </div>
+
+      {/* ============================================================
+          MAIN HERO CONTENT OVERLAY
+      ============================================================ */}
+      <div className="relative z-10 max-w-[1340px] w-full mx-auto px-6 sm:px-12 lg:px-16 pt-20 pb-16 flex-1 flex items-center">
+        <div className="max-w-[720px] xl:max-w-[800px] flex flex-col items-start text-left">
+          {/* Eyebrow */}
+          <div className="mb-6 inline-flex items-center gap-2">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
+              <span>—</span> NEW YORK · UNITED STATES · GLOBAL OPPORTUNITIES
+            </span>
           </div>
 
-          {/* ===== FIXED CONTENT WRAPPER ===== */}
-          <div className="relative w-full min-h-[340px] sm:min-h-[400px] md:min-h-[440px] lg:min-h-[480px] xl:min-h-[520px]">
-            {/* Big Subtitle */}
-            <div className="absolute top-0 left-0 right-0 flex min-h-[80px] items-center justify-center px-2 sm:min-h-[100px] md:min-h-[110px] lg:min-h-[150px] xl:min-h-[170px]">
-              <h1 className="font-poppins text-[28px] font-bold leading-[1.2] tracking-tight text-gray-900 sm:text-[42px] md:text-[48px] lg:text-[68px] xl:text-[76px]">
-                {slide.subtitle}
-              </h1>
+          {/* Heading */}
+          <h1 className="font-poppins text-4xl sm:text-6xl lg:text-[68px] xl:text-[76px] font-bold leading-[1.08] tracking-tight text-white mb-6">
+            Capital for{' '}
+            <span className="text-[#00e5ff] drop-shadow-[0_0_25px_rgba(0,229,255,0.45)]">
+              what&apos;s next.
+            </span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="font-red-hat text-[#cad5e8] text-base sm:text-lg lg:text-[19px] leading-relaxed max-w-[650px] mb-9 font-normal">
+            At the intersection of investment, artificial intelligence and digital financial
+            infrastructure, Linkay Ventures supports ambitious companies and asset owners with
+            venture capital, strategic advisory and real-world asset tokenization.
+          </p>
+
+          {/* Action Buttons */}
+          <div className="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto">
+            <Link
+              href="/services"
+              className="inline-flex items-center justify-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm sm:text-[15px] font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#9F1D2C]/30 transition-all hover:-translate-y-0.5 active:translate-y-0 w-full sm:w-auto"
+            >
+              <span>Explore Our Platform</span>
+              <ArrowRight size={17} />
+            </Link>
+
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-[#080d1a]/85 hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm sm:text-[15px] font-semibold px-7 py-4 rounded-full shadow-sm backdrop-blur-md transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+            >
+              <span>Start a Conversation</span>
+            </Link>
+          </div>
+
+          {/* Trust Chips Line */}
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-mono font-medium tracking-wider text-[#9aacc6]">
+            <div className="flex items-center gap-2">
+              <span className="text-[#00e5ff] text-[10px]">•</span>
+              <span>Venture Capital</span>
             </div>
-
-            {/* Description */}
-            <div className="absolute left-0 right-0 flex min-h-[80px] items-center justify-center px-4 sm:min-h-[100px] md:min-h-[120px] lg:min-h-[140px] top-[90px] sm:top-[110px] md:top-[130px] lg:top-[170px] xl:top-[190px]">
-              <p className="mx-auto max-w-[520px] font-red-hat text-[15px] font-normal leading-relaxed text-gray-600 sm:max-w-[580px] sm:text-[18px] md:max-w-[620px] md:text-[20px] lg:max-w-[680px] lg:text-[22px]">
-                {slide.description}
-              </p>
+            <div className="flex items-center gap-2">
+              <span className="text-[#00e5ff] text-[10px]">•</span>
+              <span>Strategic Advisory</span>
             </div>
-
-            {/* Buttons */}
-            <div className="absolute left-0 right-0 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4 top-[200px] sm:top-[240px] md:top-[270px] lg:top-[330px] xl:top-[350px]">
-              <Link
-                href={slide.buttonLink}
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-orange-500 px-7 py-3.5 font-poppins text-[15px] font-semibold text-white shadow-md shadow-orange-500/20 transition-all hover:bg-orange-600 active:translate-y-0 sm:w-auto sm:px-8 sm:py-4 sm:text-[16px] lg:px-10 lg:py-5 lg:text-[18px]"
-              >
-                <span>{slide.buttonText}</span>
-                <ArrowRight size={18} className="sm:h-5 sm:w-5" />
-              </Link>
-
-              <Link
-                href="/contact"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-gray-300 bg-white/80 px-6 py-3.5 font-poppins text-[15px] font-semibold text-gray-800 shadow-sm backdrop-blur-sm transition-all hover:border-gray-400 hover:text-orange-600 sm:w-auto sm:px-7 sm:py-4 sm:text-[16px] lg:px-9 lg:py-5 lg:text-[18px]"
-              >
-                <span>Contact Us</span>
-                <ArrowRight size={16} className="sm:h-5 sm:w-5" />
-              </Link>
-            </div>
-
-            {/* Features Row */}
-            <div className="absolute left-0 right-0 border-t border-gray-200 pt-6 top-[300px] sm:top-[360px] md:top-[400px] lg:top-[460px] xl:top-[490px]">
-              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[10px] font-medium uppercase tracking-wider text-gray-600 sm:gap-x-8 sm:text-[12px] md:text-[13px] lg:gap-x-10 lg:text-[15px]">
-                <div className="flex items-center gap-2 sm:gap-2.5">
-                  <CheckCircle2
-                    size={16}
-                    className="shrink-0 text-orange-500 sm:h-5 sm:w-5 lg:h-6 lg:w-6"
-                  />
-                  <span>Institutional Grade Protocol</span>
-                </div>
-                <div className="flex items-center gap-2 sm:gap-2.5">
-                  <ShieldCheck
-                    size={16}
-                    className="shrink-0 text-orange-500 sm:h-5 sm:w-5 lg:h-6 lg:w-6"
-                  />
-                  <span>Regulatory-Compliant Framework</span>
-                </div>
-                <div className="flex items-center gap-2 sm:gap-2.5">
-                  <Activity
-                    size={16}
-                    className="shrink-0 text-orange-500 sm:h-5 sm:w-5 lg:h-6 lg:w-6"
-                  />
-                  <span>Real-Time On-Chain Settlement</span>
-                </div>
-              </div>
+            <div className="flex items-center gap-2">
+              <span className="text-[#00e5ff] text-[10px]">•</span>
+              <span>Digital Assets</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        aria-label="Previous slide"
-        className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-white/80 hover:bg-orange-500 hover:text-white text-gray-800 flex items-center justify-center transition-colors duration-200 border border-gray-200 backdrop-blur-sm shadow-sm"
-      >
-        <ChevronLeft size={22} />
-      </button>
-
-      <button
-        onClick={nextSlide}
-        aria-label="Next slide"
-        className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-white/80 hover:bg-orange-500 hover:text-white text-gray-800 flex items-center justify-center transition-colors duration-200 border border-gray-200 backdrop-blur-sm shadow-sm"
-      >
-        <ChevronRight size={22} />
-      </button>
-
-      {/* Pagination Dots */}
-      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center space-x-2.5">
-        {slides.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setCurrentSlide(idx)}
-            aria-label={`Go to slide ${idx + 1}`}
-            className={`transition-all duration-300 rounded-full ${
-              idx === currentSlide
-                ? 'w-8 h-2.5 bg-orange-500'
-                : 'w-2.5 h-2.5 bg-gray-400/60 hover:bg-gray-500'
-            }`}
-          />
-        ))}
+      {/* ============================================================
+          BOTTOM CAPABILITIES TICKER STRIP
+      ============================================================ */}
+      <div className="relative z-10 w-full border-t border-[#1f293d] bg-[#050914]/90 backdrop-blur-md py-3.5 px-6 sm:px-12 lg:px-16">
+        <div className="max-w-[1340px] mx-auto flex flex-wrap items-center justify-center sm:justify-between gap-y-3 gap-x-6 text-center">
+          {tickerItems.map((item, idx) => (
+            <div key={idx} className="flex items-center gap-4">
+              <span className="text-[11px] sm:text-[12px] font-mono font-medium tracking-wider text-[#9aacc6] hover:text-[#00e5ff] transition-colors cursor-default uppercase">
+                {item}
+              </span>
+              {idx < tickerItems.length - 1 && (
+                <span className="hidden sm:inline-block text-[#233049] text-xs">|</span>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
-    </AuroraBackground>
+    </section>
   );
 }

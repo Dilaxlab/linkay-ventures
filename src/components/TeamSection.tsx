@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
-import { CheckCircle2, ShieldCheck, ChevronDown, ChevronUp } from 'lucide-react';
+import { CheckCircle2, ChevronDown, ChevronUp, ShieldCheck } from 'lucide-react';
+import { useState } from 'react';
 
 export default function TeamSection() {
   const [showFounderBio, setShowFounderBio] = useState(false);
@@ -11,11 +11,11 @@ export default function TeamSection() {
     <section className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1340px] mx-auto">
       {/* Header */}
       <div className="text-center max-w-[850px] mx-auto mb-16">
-        <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-[11px] font-semibold uppercase tracking-[0.08em] mb-4">
-          <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
+        <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-burgundy-50 border border-burgundy-100 text-burgundy-600 text-[11px] font-semibold uppercase tracking-[0.08em] mb-4">
+          <span className="w-1.5 h-1.5 rounded-full bg-burgundy-500 animate-pulse" />
           Our Team
         </span>
-        <h2 className="font-poppins text-gray-900 text-[32px] sm:text-[42px] font-bold leading-[1.15] tracking-tight mb-5">
+        <h2 className="font-poppins text-navy-800 text-[32px] sm:text-[42px] font-bold leading-[1.15] tracking-tight mb-5">
           The Experts Behind Linkay Ventures
         </h2>
         <p className="font-red-hat text-gray-600 text-[16px] sm:text-[17px] leading-relaxed max-w-[700px] mx-auto">
@@ -23,7 +23,7 @@ export default function TeamSection() {
           industry veterans, and technology innovators, each dedicated to fueling the growth of
           high-impact startups.
         </p>
-        <div className="w-14 h-1 bg-orange-500 mx-auto mt-6 rounded-full" />
+        <div className="w-14 h-1 bg-burgundy-500 mx-auto mt-6 rounded-full" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
@@ -31,10 +31,10 @@ export default function TeamSection() {
         <div className="bg-white p-8 sm:p-10 rounded-2xl border border-gray-200/90 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-md hover:border-gray-300 transition-all duration-200 flex flex-col">
           <div className="flex items-center justify-between mb-6 pb-4 border-b border-gray-100">
             <div>
-              <span className="text-[11px] font-semibold uppercase tracking-wider text-orange-500">
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-burgundy-500">
                 Founder
               </span>
-              <h3 className="font-poppins text-gray-900 text-[24px] sm:text-[26px] font-bold">
+              <h3 className="font-poppins text-navy-800 text-[24px] sm:text-[26px] font-bold">
                 Kay Satha
               </h3>
             </div>
@@ -87,7 +87,7 @@ export default function TeamSection() {
           <div className="mt-6 pt-4 border-t border-gray-100">
             <button
               onClick={() => setShowFounderBio((prev) => !prev)}
-              className="inline-flex items-center gap-2 font-poppins text-[14px] font-semibold text-orange-500 hover:text-orange-600 transition-colors"
+              className="inline-flex items-center gap-2 font-poppins text-[14px] font-semibold text-burgundy-500 hover:text-burgundy-600 transition-colors"
             >
               {showFounderBio ? (
                 <>
@@ -108,10 +108,10 @@ export default function TeamSection() {
         <div className="bg-white p-8 sm:p-10 rounded-2xl border border-gray-200/90 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-md hover:border-gray-300 transition-all duration-200 flex flex-col">
           <div className="flex items-center justify-between mb-6 pb-4 border-b border-gray-100">
             <div>
-              <span className="text-[11px] font-semibold uppercase tracking-wider text-orange-500">
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-burgundy-500">
                 Advisor
               </span>
-              <h3 className="font-poppins text-gray-900 text-[24px] sm:text-[26px] font-bold">
+              <h3 className="font-poppins text-navy-800 text-[24px] sm:text-[26px] font-bold">
                 Lincoln T. Satkunarajah
               </h3>
             </div>
@@ -121,12 +121,12 @@ export default function TeamSection() {
           </div>
 
           {/* Credential box — always visible */}
-          <div className="bg-orange-50/50 border border-orange-100 p-5 rounded-xl text-gray-800 text-[15px] sm:text-[16px] leading-[1.8] mb-5 text-left sm:text-justify font-red-hat">
+          <div className="bg-burgundy-50/50 border border-burgundy-100 p-5 rounded-xl text-gray-800 text-[15px] sm:text-[16px] leading-[1.8] mb-5 text-left sm:text-justify font-red-hat">
             <p className="font-semibold text-gray-900">BSc. (Eng.) U.K., MSc. (Eng.), U.K.</p>
             <p className="text-gray-700">
               P.E, P.T.O.E (USA), PEng. IntPE. (Canada), MITE (USA), MIHT (UK).
             </p>
-            <p className="text-orange-600 font-semibold mt-3 leading-[1.6]">
+            <p className="text-burgundy-600 font-semibold mt-3 leading-[1.6]">
               President and CEO, Chair Advisory Board, International Professional Engineer,
               Entrepreneur, Inventor &amp; Investor.
             </p>
@@ -164,7 +164,7 @@ export default function TeamSection() {
           <div className="mt-6 pt-4 border-t border-gray-100">
             <button
               onClick={() => setShowAdvisorBio((prev) => !prev)}
-              className="inline-flex items-center gap-2 font-poppins text-[14px] font-semibold text-orange-500 hover:text-orange-600 transition-colors"
+              className="inline-flex items-center gap-2 font-poppins text-[14px] font-semibold text-burgundy-500 hover:text-burgundy-600 transition-colors"
             >
               {showAdvisorBio ? (
                 <>

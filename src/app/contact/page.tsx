@@ -1,27 +1,29 @@
 'use client';
 
-import React, { useState } from 'react';
-import Link from 'next/link';
 import {
+  Activity,
   ArrowRight,
   CheckCircle2,
-  ShieldCheck,
-  Activity,
+  Clock,
+  Globe2,
+  Mail,
   MapPin,
   Phone,
-  Mail,
   Send,
+  ShieldCheck,
   Sparkles,
   Zap,
+  Check,
 } from 'lucide-react';
-import { AuroraBackground } from '@/components/ui/aurora-background';
+import Link from 'next/link';
+import React, { useState } from 'react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    category: 'Accelerator Programs',
+    category: 'Venture & Growth Capital',
     message: '',
   });
 
@@ -35,319 +37,280 @@ export default function ContactPage() {
   const contactCards = [
     {
       icon: MapPin,
-      title: 'Office Location',
-      tag: 'New York',
-      lines: ['Linkay Ventures Inc.', '295 Madison Avenue,', '12th Flr', 'New York, NY 10017'],
+      title: 'Global Headquarters',
+      tag: 'New York, NY',
+      lines: ['Linkay Ventures Inc.', '295 Madison Avenue, 12th Flr', 'New York, NY 10017'],
       href: null,
     },
     {
       icon: Phone,
-      title: 'Office Contact',
-      tag: 'Direct Line',
-      lines: ['+1 917 816 8128'],
+      title: 'Direct Phone & Desk',
+      tag: 'Advisory Desk (ET)',
+      lines: ['+1 917 816 8128', 'Mon – Fri, 9:00 AM – 6:00 PM ET'],
       href: 'tel:+19178168128',
     },
     {
       icon: Mail,
-      title: 'Office E-Mail',
-      tag: '24/7',
-      lines: ['info@linkayventures.com'],
+      title: 'Official Inquiries',
+      tag: 'Encrypted & Monitored',
+      lines: ['info@linkayventures.com', 'partnerships@linkayventures.com'],
       href: 'mailto:info@linkayventures.com',
     },
   ];
 
   return (
-    <main className="w-full bg-white text-gray-900 font-sans antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white">
-      {/* ============================================================
-          1. HERO BANNER — Aurora Background (Full Screen)
-      ============================================================ */}
-      <AuroraBackground
-        showRadialGradient={false}
-        className="relative w-full overflow-hidden border-b border-gray-200/80 !h-auto md:!h-[calc(100vh-88px)] !bg-white !text-gray-900"
-      >
-        <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:py-32">
-          <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
-            {/* Badge */}
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-800 shadow-sm backdrop-blur-sm sm:mb-6 sm:px-4 sm:py-1.5 sm:text-[12px] lg:text-[13px]">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-orange-500" />
-              <span>Linkay Ventures</span>
+    <main className="w-full bg-[#030712] text-[#f4f7ff] font-sans antialiased overflow-x-hidden selection:bg-[#9F1D2C] selection:text-white">
+      {/* ============================================================== */}
+      {/* 1. HERO BANNER                                                 */}
+      {/* ============================================================== */}
+      <section className="relative w-full pt-28 pb-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
+        {/* Glow */}
+        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#00e5ff]/10 blur-[140px] pointer-events-none" />
+        <div className="absolute top-1/2 left-10 w-[450px] h-[300px] bg-[#9F1D2C]/15 blur-[130px] pointer-events-none" />
+
+        <div className="max-w-[1240px] mx-auto relative z-10 text-center">
+          <div className="max-w-3xl mx-auto">
+            {/* Eyebrow */}
+            <div className="mb-6 inline-flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
+                <span>—</span> CONNECT WITH LINKAY VENTURES
+              </span>
             </div>
 
             {/* Heading */}
-            <h1 className="mb-4 font-poppins text-[32px] font-bold leading-[1.15] tracking-tight text-gray-900 sm:mb-6 sm:text-[46px] md:text-[54px] lg:text-[68px]">
-              Contact Us
+            <h1 className="font-poppins text-4xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.08] mb-6">
+              Start the{' '}
+              <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
+                conversation.
+              </span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="mx-auto mb-8 max-w-[620px] font-red-hat text-[15px] font-normal leading-relaxed text-gray-600 sm:mb-10 sm:max-w-[700px] sm:text-[18px] md:text-[20px] lg:max-w-[780px] lg:text-[22px]">
-              Have a question, an idea, or a partnership in mind? Let&apos;s start the conversation.
+            {/* Body */}
+            <p className="font-red-hat text-[#9aacc6] text-lg sm:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
+              Have an asset to tokenize, a venture ready to scale, or an institutional partnership in mind? Our senior leadership is ready to connect.
             </p>
 
-            {/* Buttons */}
-            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-4">
-              <Link
-                href="#contact-form"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-orange-500 px-7 py-3.5 font-poppins text-[15px] font-semibold text-white shadow-md shadow-orange-500/20 transition-all hover:bg-orange-600 active:translate-y-0 sm:w-auto sm:px-8 sm:py-4 sm:text-[16px] lg:px-10 lg:py-5 lg:text-[18px]"
-              >
-                <span>Send a Message</span>
-                <ArrowRight size={18} className="sm:h-5 sm:w-5" />
-              </Link>
-              <Link
-                href="#office-info"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-gray-300 bg-white/80 px-6 py-3.5 font-poppins text-[15px] font-semibold text-gray-800 shadow-sm backdrop-blur-sm transition-all hover:border-gray-400 hover:text-orange-600 sm:w-auto sm:px-7 sm:py-4 sm:text-[16px] lg:px-9 lg:py-5 lg:text-[18px]"
-              >
-                <span>View Office Info</span>
-                <ArrowRight size={16} className="sm:h-5 sm:w-5" />
-              </Link>
-            </div>
-
-            {/* Feature strip */}
-            <div className="mt-10 w-full max-w-[820px] border-t border-gray-200 pt-6 sm:mt-12 sm:max-w-[900px] sm:pt-8 lg:max-w-[1000px]">
-              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[10px] font-medium uppercase tracking-wider text-gray-600 sm:gap-x-8 sm:text-[12px] md:text-[13px] lg:gap-x-10 lg:text-[15px]">
-                <div className="flex items-center gap-2 sm:gap-2.5">
-                  <CheckCircle2
-                    size={16}
-                    className="shrink-0 text-orange-500 sm:h-5 sm:w-5 lg:h-6 lg:w-6"
-                  />
-                  <span>Response Within 24 Hours</span>
-                </div>
-                <div className="flex items-center gap-2 sm:gap-2.5">
-                  <ShieldCheck
-                    size={16}
-                    className="shrink-0 text-orange-500 sm:h-5 sm:w-5 lg:h-6 lg:w-6"
-                  />
-                  <span>Confidential &amp; Secure</span>
-                </div>
-                <div className="flex items-center gap-2 sm:gap-2.5">
-                  <Activity
-                    size={16}
-                    className="shrink-0 text-orange-500 sm:h-5 sm:w-5 lg:h-6 lg:w-6"
-                  />
-                  <span>Global Advisory Reach</span>
-                </div>
+            {/* Micro chips */}
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs sm:text-[13px] font-mono font-semibold uppercase tracking-wider text-[#9aacc6]">
+              <div className="flex items-center gap-2.5">
+                <span className="w-3.5 h-3.5 rounded-full bg-[#9F1D2C]/20 text-[#9F1D2C] flex items-center justify-center shrink-0">
+                  <Check size={10} className="stroke-[3]" />
+                </span>
+                <span>Response Within 24h</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <span className="w-3.5 h-3.5 rounded-full bg-[#9F1D2C]/20 text-[#9F1D2C] flex items-center justify-center shrink-0">
+                  <Check size={10} className="stroke-[3]" />
+                </span>
+                <span>Confidential Under NDA</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <span className="w-3.5 h-3.5 rounded-full bg-[#9F1D2C]/20 text-[#9F1D2C] flex items-center justify-center shrink-0">
+                  <Check size={10} className="stroke-[3]" />
+                </span>
+                <span>Global Advisory Reach</span>
               </div>
             </div>
           </div>
-        </section>
-      </AuroraBackground>
-
-      {/* 2. ULTRA PREMIUM FORM SECTION */}
-      <section
-        id="contact-form"
-        className="relative w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto"
-      >
-        {/* Big centered heading */}
-        <div className="text-center max-w-[720px] mx-auto mb-14">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-orange-600 text-[11px] font-semibold uppercase tracking-wider mb-5">
-            <Sparkles size={12} />
-            <span>Start the Conversation</span>
-          </span>
-          <h2 className="font-poppins text-gray-900 text-[32px] sm:text-[44px] lg:text-[52px] font-bold leading-[1.15] tracking-tight mb-5">
-            Let&apos;s build something{' '}
-            <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-              extraordinary
-            </span>
-          </h2>
-          <p className="font-red-hat text-gray-600 text-[16px] sm:text-[18px] leading-relaxed">
-            Fill out the form and a senior partner will personally reach out within 24 hours.
-          </p>
         </div>
+      </section>
 
-        {/* Premium card */}
+      {/* ============================================================== */}
+      {/* 2. CONTACT FORM & DIRECT LINE SPLIT                            */}
+      {/* ============================================================== */}
+      <section id="contact-form" className="relative w-full py-24 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto border-b border-[#1f293d]">
         <div className="relative max-w-[1180px] mx-auto">
-          <div className="pointer-events-none absolute -inset-6 rounded-[36px] bg-gradient-to-r from-orange-500/20 via-orange-400/10 to-orange-500/20 blur-3xl" />
+          {/* Subtle outer glow */}
+          <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-r from-[#9F1D2C]/15 via-[#00e5ff]/10 to-[#9F1D2C]/15 blur-2xl" />
 
-          <div className="relative grid grid-cols-1 lg:grid-cols-5 overflow-hidden rounded-[28px] border border-gray-200/80 bg-white shadow-[0_20px_70px_-20px_rgba(0,0,0,0.15)]">
-            {/* LEFT PANEL — Dark premium info (2 cols) */}
-            <div className="relative lg:col-span-2 bg-gray-950 p-8 sm:p-10 lg:p-11 overflow-hidden">
-              <div className="pointer-events-none absolute -top-20 -left-20 h-64 w-64 rounded-full bg-orange-500/40 blur-3xl" />
-              <div className="pointer-events-none absolute bottom-0 right-0 h-72 w-72 rounded-full bg-orange-600/20 blur-3xl" />
-              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:32px_32px]" />
+          <div className="relative grid grid-cols-1 lg:grid-cols-12 overflow-hidden rounded-[28px] border border-[#1f293d] bg-[#080d1a] shadow-2xl">
+            {/* LEFT PANEL — Dark Direct Line (5 cols) */}
+            <div className="lg:col-span-5 bg-[#050814] p-8 sm:p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-[#1f293d] flex flex-col justify-between relative overflow-hidden">
+              <div className="pointer-events-none absolute -top-20 -left-20 h-64 w-64 rounded-full bg-[#9F1D2C]/15 blur-3xl" />
+              <div className="pointer-events-none absolute bottom-0 right-0 h-64 w-64 rounded-full bg-[#00e5ff]/10 blur-3xl" />
 
-              <div className="relative z-10 flex h-full flex-col">
-                <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-orange-500/30 bg-orange-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-orange-400">
-                  <Zap size={12} />
-                  <span>Direct Line</span>
+              <div className="relative z-10">
+                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2 mb-6">
+                  <span>—</span> DIRECT ADVISORY LINE
                 </span>
 
-                <h3 className="mt-6 font-poppins text-[26px] sm:text-[28px] lg:text-[30px] font-bold leading-tight text-white">
-                  Talk to a partner,
-                  <br />
-                  <span className="text-orange-400">not a bot.</span>
+                <h3 className="font-poppins text-2xl sm:text-3xl font-bold text-white mb-4 leading-tight">
+                  Talk to a partner,{' '}
+                  <span className="text-[#00e5ff]">not a bot.</span>
                 </h3>
 
-                <p className="mt-4 font-red-hat text-[14.5px] leading-relaxed text-gray-400">
-                  Every inquiry lands on the desk of a senior partner — no gatekeepers, no
-                  runaround.
+                <p className="font-red-hat text-[#9aacc6] text-sm sm:text-base leading-relaxed mb-8">
+                  Every inquiry reaches a senior team member directly. We assess structural feasibility, venture alignment, and capital requirements under strict confidentiality.
                 </p>
 
-                <div className="mt-8 space-y-4">
-                  <div className="flex items-start gap-3.5">
-                    <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-orange-400">
-                      <MapPin size={16} />
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center shrink-0">
+                      <MapPin size={19} />
                     </div>
                     <div>
-                      <p className="font-poppins text-[11px] font-semibold uppercase tracking-wider text-gray-500">
-                        Office
-                      </p>
-                      <p className="mt-0.5 font-red-hat text-[13.5px] leading-snug text-white">
-                        295 Madison Ave, 12th Flr
-                        <br />
+                      <span className="font-mono text-xs text-[#71829e] uppercase tracking-wider block">Office</span>
+                      <p className="text-white text-sm font-poppins font-medium mt-0.5 leading-snug">
+                        295 Madison Avenue, 12th Flr<br />
                         New York, NY 10017
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3.5">
-                    <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-orange-400">
-                      <Mail size={16} />
+                  <div className="flex items-start gap-4">
+                    <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center shrink-0">
+                      <Mail size={19} />
                     </div>
                     <div>
-                      <p className="font-poppins text-[11px] font-semibold uppercase tracking-wider text-gray-500">
-                        Email
-                      </p>
+                      <span className="font-mono text-xs text-[#71829e] uppercase tracking-wider block">Email</span>
                       <a
                         href="mailto:info@linkayventures.com"
-                        className="mt-0.5 block font-red-hat text-[13.5px] text-white transition-colors hover:text-orange-400"
+                        className="text-white hover:text-[#00e5ff] text-sm font-poppins font-medium mt-0.5 block transition-colors"
                       >
                         info@linkayventures.com
                       </a>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3.5">
-                    <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-orange-400">
-                      <Phone size={16} />
+                  <div className="flex items-start gap-4">
+                    <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center shrink-0">
+                      <Phone size={19} />
                     </div>
                     <div>
-                      <p className="font-poppins text-[11px] font-semibold uppercase tracking-wider text-gray-500">
-                        Phone
-                      </p>
+                      <span className="font-mono text-xs text-[#71829e] uppercase tracking-wider block">Phone &amp; WhatsApp</span>
                       <a
                         href="tel:+19178168128"
-                        className="mt-0.5 block font-red-hat text-[13.5px] text-white transition-colors hover:text-orange-400"
+                        className="text-white hover:text-[#00e5ff] text-sm font-poppins font-medium mt-0.5 block transition-colors"
                       >
-                        +1 917 816 8128
+                        +1 917 816 8128 (Phone)
                       </a>
+                      <span className="text-[#9aacc6] text-xs font-mono block mt-0.5">
+                        WhatsApp: +1 646 945 7720
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <div className="pt-8 mt-8 border-t border-[#1f293d] relative z-10 flex items-center gap-2 text-xs font-mono text-[#71829e]">
+                <Clock size={13} className="text-[#00e5ff]" />
+                <span>Hours: 9:00 AM – 6:00 PM ET</span>
+              </div>
             </div>
 
-            {/* RIGHT PANEL — Form (3 cols) */}
-            <div className="lg:col-span-3 p-8 sm:p-10 lg:p-11 bg-white">
+            {/* RIGHT PANEL — Form (7 cols) */}
+            <div className="lg:col-span-7 p-8 sm:p-10 lg:p-12 bg-[#080d1a]">
               {submitted ? (
-                <div className="flex h-full min-h-[420px] flex-col items-center justify-center text-center">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-600 mb-5">
-                    <CheckCircle2 size={28} />
+                <div className="flex h-full min-h-[440px] flex-col items-center justify-center text-center p-6">
+                  <div className="w-16 h-16 rounded-2xl bg-[#00e5ff]/10 border border-[#00e5ff]/40 text-[#00e5ff] flex items-center justify-center mb-6 shadow-xl shadow-cyan-500/10">
+                    <CheckCircle2 size={32} />
                   </div>
-                  <h3 className="font-poppins text-gray-900 text-[22px] font-bold mb-2">
+                  <h3 className="font-poppins text-white text-2xl font-bold mb-3">
                     Message Received
                   </h3>
-                  <p className="font-red-hat text-gray-600 text-[15px] leading-relaxed max-w-[380px]">
-                    Thank you! Your message has been received. A senior partner will reach out
-                    shortly.
+                  <p className="font-red-hat text-[#9aacc6] text-base leading-relaxed max-w-md mb-8">
+                    Thank you for reaching out. A partner from our New York desk will review your inquiry and follow up within 24 hours.
                   </p>
+                  <button
+                    onClick={() => setSubmitted(false)}
+                    className="px-7 py-3 rounded-full bg-[#030712] border border-[#1f293d] hover:border-[#00e5ff]/50 text-white text-xs font-mono uppercase tracking-wider transition-all"
+                  >
+                    Send Another Message
+                  </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="mb-2">
-                    <h4 className="font-poppins text-gray-900 text-[18px] font-bold mb-1">
-                      Send us a message
-                    </h4>
-                    <p className="font-red-hat text-[13.5px] text-gray-500">
-                      All fields marked are required.
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div>
+                    <h3 className="font-poppins text-xl sm:text-2xl font-bold text-white mb-2">
+                      Send a Message
+                    </h3>
+                    <p className="font-red-hat text-xs sm:text-sm text-[#9aacc6]">
+                      Provide a brief overview of your enterprise or asset structure.
                     </p>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block font-poppins text-[11px] font-semibold uppercase tracking-wider text-gray-500 mb-2">
-                        Full Name
+                      <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-[#cad5e8] mb-2">
+                        Full Name *
                       </label>
                       <input
                         type="text"
                         required
-                        placeholder="Jane Doe"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3.5 bg-gray-50/80 border border-gray-200 rounded-xl text-[14.5px] text-gray-800 placeholder-gray-400 focus:outline-none focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10 transition-all"
+                        placeholder="e.g. John Doe"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#00e5ff] focus:outline-none transition-colors"
                       />
                     </div>
                     <div>
-                      <label className="block font-poppins text-[11px] font-semibold uppercase tracking-wider text-gray-500 mb-2">
-                        Email Address
+                      <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-[#cad5e8] mb-2">
+                        Work Email *
                       </label>
                       <input
                         type="email"
                         required
-                        placeholder="jane@company.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3.5 bg-gray-50/80 border border-gray-200 rounded-xl text-[14.5px] text-gray-800 placeholder-gray-400 focus:outline-none focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10 transition-all"
+                        placeholder="john@company.com"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#00e5ff] focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block font-poppins text-[11px] font-semibold uppercase tracking-wider text-gray-500 mb-2">
-                        Phone
+                      <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-[#cad5e8] mb-2">
+                        Phone Number
                       </label>
                       <input
                         type="tel"
-                        placeholder="+1 (555) 000-0000"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3.5 bg-gray-50/80 border border-gray-200 rounded-xl text-[14.5px] text-gray-800 placeholder-gray-400 focus:outline-none focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10 transition-all"
+                        placeholder="+1 (555) 000-0000"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#00e5ff] focus:outline-none transition-colors"
                       />
                     </div>
                     <div>
-                      <label className="block font-poppins text-[11px] font-semibold uppercase tracking-wider text-gray-500 mb-2">
-                        Inquiry Type
+                      <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-[#cad5e8] mb-2">
+                        Practice Area
                       </label>
                       <select
                         value={formData.category}
                         onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                        className="w-full px-4 py-3.5 bg-gray-50/80 border border-gray-200 rounded-xl text-[14.5px] text-gray-800 focus:outline-none focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10 transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm focus:border-[#00e5ff] focus:outline-none transition-colors"
                       >
-                        <option value="Accelerator Programs">Accelerator Programs</option>
+                        <option value="Venture & Growth Capital">Venture & Growth Capital</option>
+                        <option value="Strategic Advisory & M&A">Strategic Advisory & M&A</option>
+                        <option value="RWA Tokenization">RWA Tokenization</option>
+                        <option value="Venture Accelerator Programs">Venture Accelerator Programs</option>
                         <option value="Corporate Partnerships">Corporate Partnerships</option>
-                        <option value="Raise capital">Raise capital</option>
+                        <option value="General Inquiry">General Inquiry</option>
                       </select>
                     </div>
                   </div>
 
                   <div>
-                    <label className="block font-poppins text-[11px] font-semibold uppercase tracking-wider text-gray-500 mb-2">
-                      Message
+                    <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-[#cad5e8] mb-2">
+                      Message / Project Details *
                     </label>
                     <textarea
-                      rows={5}
                       required
-                      placeholder="Tell us about your idea, project, or inquiry..."
+                      rows={5}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3.5 bg-gray-50/80 border border-gray-200 rounded-xl text-[14.5px] text-gray-800 placeholder-gray-400 focus:outline-none focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10 transition-all resize-none"
+                      placeholder="Tell us about your venture, asset, or collaboration goals..."
+                      className="w-full px-4 py-3 rounded-xl bg-[#030712] border border-[#1f293d] text-white text-sm placeholder-[#71829e] focus:border-[#00e5ff] focus:outline-none transition-colors resize-none"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="group inline-flex w-full items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-poppins text-[15px] font-semibold py-4 rounded-xl transition-all shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/35"
+                    className="w-full flex items-center justify-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold uppercase tracking-wider py-4 px-8 rounded-full transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5"
                   >
-                    <span>Send Message</span>
-                    <Send
-                      size={17}
-                      className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                    />
+                    <span>Submit Inquiry</span>
+                    <Send size={16} />
                   </button>
-
-                  <p className="font-red-hat text-[12px] text-gray-500 text-center">
-                    By submitting, you agree to our privacy policy. We&apos;ll never share your
-                    data.
-                  </p>
                 </form>
               )}
             </div>
@@ -355,123 +318,53 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* 3. OFFICE INFO — 3 card grid */}
-      <section
-        id="office-info"
-        className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto border-t border-gray-100"
-      >
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
-          <div>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 border border-gray-200 text-gray-700 text-xs font-semibold uppercase tracking-wider mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
-              Get in Touch
-            </span>
-            <h2 className="font-poppins text-gray-900 text-[30px] sm:text-[42px] font-bold leading-tight max-w-[700px]">
-              Here&apos;s Where We&apos;re Located
-            </h2>
-          </div>
-        </div>
-
-        <p className="font-red-hat text-gray-600 text-[16px] sm:text-[17px] leading-relaxed max-w-[800px] mb-10">
-          Interested in working with us? Reach out to explore investment opportunities, partnership
-          inquiries, or learn more about our programs.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      {/* ============================================================== */}
+      {/* 3. 3 CONTACT CARDS                                             */}
+      {/* ============================================================== */}
+      <section className="w-full py-24 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto" id="office-info">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {contactCards.map((card, idx) => {
-            const IconComp = card.icon;
+            const Icon = card.icon;
             return (
               <div
                 key={idx}
-                className="group bg-white p-6 rounded-2xl border border-gray-200/90 shadow-2xs hover:shadow-md transition-all duration-200 flex flex-col justify-between"
+                className="p-8 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group shadow-lg hover:shadow-cyan-500/5 hover:-translate-y-1"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-5">
-                    <div className="w-11 h-11 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-700 group-hover:text-orange-500 group-hover:border-orange-200 transition-colors">
-                      <IconComp size={20} />
-                    </div>
-                    <span className="text-[11px] font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded border border-gray-200/60">
+                  <div className="flex items-center justify-between mb-6">
+                    <span className="text-[11px] font-mono uppercase tracking-widest text-[#00e5ff] font-semibold">
                       {card.tag}
                     </span>
+                    <div className="w-11 h-11 rounded-xl bg-[#00e5ff]/10 border border-[#00e5ff]/25 text-[#00e5ff] flex items-center justify-center group-hover:bg-[#9F1D2C] group-hover:text-white group-hover:border-[#9F1D2C] transition-all">
+                      <Icon size={19} />
+                    </div>
                   </div>
 
-                  <h3 className="font-poppins text-gray-900 text-[18px] font-bold mb-3 group-hover:text-orange-600 transition-colors">
+                  <h3 className="font-poppins text-xl font-bold text-white mb-3">
                     {card.title}
                   </h3>
 
-                  {card.href ? (
-                    <a
-                      href={card.href}
-                      className="font-red-hat text-gray-600 hover:text-orange-500 text-[15px] leading-relaxed transition-colors"
-                    >
-                      {card.lines.map((line, i) => (
-                        <span key={i} className="block">
-                          {line}
-                        </span>
-                      ))}
-                    </a>
-                  ) : (
-                    <p className="font-red-hat text-gray-600 text-[15px] leading-relaxed">
-                      {card.lines.map((line, i) => (
-                        <span key={i} className="block">
-                          {line}
-                        </span>
-                      ))}
-                    </p>
-                  )}
+                  <div className="space-y-1 text-sm font-red-hat text-[#9aacc6] leading-relaxed">
+                    {card.lines.map((line, lIdx) => (
+                      <p key={lIdx}>{line}</p>
+                    ))}
+                  </div>
                 </div>
 
                 {card.href && (
-                  <div className="mt-6 pt-4 border-t border-gray-100">
+                  <div className="pt-6 mt-6 border-t border-[#1f293d]">
                     <a
                       href={card.href}
-                      className="inline-flex items-center gap-1.5 font-poppins text-[13px] font-semibold text-orange-500 hover:text-orange-600 transition-colors group/link"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#00e5ff] hover:underline"
                     >
-                      <span>Reach Out</span>
-                      <ArrowRight
-                        size={14}
-                        className="transition-transform duration-200 group-hover/link:translate-x-0.5"
-                      />
+                      <span>Connect Directly</span>
+                      <ArrowRight size={13} />
                     </a>
                   </div>
                 )}
               </div>
             );
           })}
-        </div>
-      </section>
-
-      {/* 4. BOTTOM CTA */}
-      <section className="w-full px-6 sm:px-12 lg:px-16 pb-20 max-w-[1240px] mx-auto">
-        <div className="p-8 sm:p-12 rounded-3xl bg-gray-950 text-white border border-gray-800 text-center relative max-w-[960px] mx-auto">
-          <div className="relative z-10 max-w-2xl mx-auto">
-            <span className="text-xs uppercase tracking-widest text-orange-400 font-semibold mb-2 block">
-              Let&apos;s Build Together
-            </span>
-            <h3 className="font-poppins text-2xl sm:text-3xl font-bold mb-4">
-              Ready to Start Your Venture Journey?
-            </h3>
-            <p className="font-red-hat text-gray-400 text-sm sm:text-base mb-8">
-              Connect with our team to explore investment opportunities, accelerator programs, or
-              strategic partnerships.
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="#contact-form"
-                className="bg-orange-500 hover:bg-orange-600 text-white font-poppins text-sm font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md shadow-orange-500/20"
-              >
-                Send a Message
-              </Link>
-              <Link
-                href="https://hub.linkayventures.com/index.php"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/15 text-white border border-white/20 font-poppins text-sm font-semibold px-7 py-3.5 rounded-xl transition-all"
-              >
-                Access Venture HUB
-              </Link>
-            </div>
-          </div>
         </div>
       </section>
     </main>

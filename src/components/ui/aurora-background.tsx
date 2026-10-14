@@ -17,8 +17,8 @@ export const AuroraBackground = ({
     <main>
       <div
         className={cn(
-          'transition-bg relative flex h-[100vh] flex-col items-center justify-center bg-white text-slate-950',
-          className
+          'transition-bg relative flex h-[100vh] flex-col items-center justify-center bg-white text-navy-800',
+          className,
         )}
         {...props}
       >
@@ -26,14 +26,15 @@ export const AuroraBackground = ({
           className="absolute inset-0 overflow-hidden"
           style={
             {
+              // Futuristic Theme Aurora with Cyan, Blue, Violet and Logo Maroon
               '--aurora':
-                'repeating-linear-gradient(100deg,#f97316_10%,#fb923c_15%,#fdba74_20%,#fed7aa_25%,#f97316_30%)',
+                'repeating-linear-gradient(100deg,#4ee7ee_10%,#4c8dff_15%,#9F1D2C_20%,#9c78ff_25%,#4ee7ee_30%)',
               '--white-gradient':
                 'repeating-linear-gradient(100deg,#fff_0%,#fff_7%,transparent_10%,transparent_12%,#fff_16%)',
-              '--orange-300': '#fdba74',
-              '--orange-400': '#fb923c',
-              '--orange-500': '#f97316',
-              '--orange-200': '#fed7aa',
+              '--brand-300': '#9c78ff',
+              '--brand-400': '#4c8dff',
+              '--brand-500': '#4ee7ee',
+              '--brand-200': '#9F1D2C',
               '--black': '#000',
               '--white': '#fff',
               '--transparent': 'transparent',
@@ -42,9 +43,9 @@ export const AuroraBackground = ({
         >
           <div
             className={cn(
-              `after:animate-aurora pointer-events-none absolute -inset-[10px] [background-image:var(--white-gradient),var(--aurora)] [background-size:300%,_200%] [background-position:50%_50%,50%_50%] opacity-40 blur-[10px] invert filter will-change-transform [--aurora:repeating-linear-gradient(100deg,var(--orange-500)_10%,var(--orange-400)_15%,var(--orange-300)_20%,var(--orange-200)_25%,var(--orange-400)_30%)] [--white-gradient:repeating-linear-gradient(100deg,var(--white)_0%,var(--white)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--white)_16%)] after:absolute after:inset-0 after:[background-image:var(--white-gradient),var(--aurora)] after:[background-size:200%,_100%] after:[background-attachment:fixed] after:mix-blend-difference after:content-[""]`,
+              `after:animate-aurora pointer-events-none absolute -inset-[10px] [background-image:var(--white-gradient),var(--aurora)] [background-size:300%,_200%] [background-position:50%_50%,50%_50%] opacity-40 blur-[10px] invert filter will-change-transform [--aurora:repeating-linear-gradient(100deg,var(--brand-500)_10%,var(--brand-400)_15%,var(--brand-300)_20%,var(--brand-200)_25%,var(--brand-400)_30%)] [--white-gradient:repeating-linear-gradient(100deg,var(--white)_0%,var(--white)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--white)_16%)] after:absolute after:inset-0 after:[background-image:var(--white-gradient),var(--aurora)] after:[background-size:200%,_100%] after:[background-attachment:fixed] after:mix-blend-difference after:content-[""]`,
               showRadialGradient &&
-                `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]`
+                `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]`,
             )}
           ></div>
         </div>
