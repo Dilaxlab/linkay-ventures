@@ -40,16 +40,16 @@ const platformCards: PlatformCard[] = [
 
 export default function WhatWeDoSection() {
   return (
-    <section className="w-full bg-[#030712] py-20 px-6 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]" id="platform">
+    <section className="w-full bg-[#030712] py-14 sm:py-20 px-5 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]" id="platform">
       <div className="max-w-[1340px] mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
 
           {/* Left Column: Heading & Vision statement (4.5 cols) */}
-          <div className="lg:col-span-4 flex flex-col items-start">
+          <div className="lg:col-span-4 flex flex-col items-start w-full">
             {/* Eyebrow */}
             <div className="mb-4 inline-flex items-center gap-2">
               <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                <span>—</span> 01 / OUR PLATFORM
+                <span>—</span>OUR PLATFORM
               </span>
             </div>
 
@@ -64,7 +64,7 @@ export default function WhatWeDoSection() {
 
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-7 py-3 rounded-full transition-all shadow-md shadow-[#9F1D2C]/25 hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-7 py-3 rounded-full transition-all shadow-md shadow-[#9F1D2C]/25 hover:-translate-y-0.5 w-full sm:w-auto"
             >
               <span>Explore Platform Services</span>
               <ArrowRight size={15} />

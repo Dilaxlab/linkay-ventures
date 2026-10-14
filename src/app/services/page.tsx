@@ -137,7 +137,7 @@ export default function ServicesPage() {
 
   return (
     <main className="w-full bg-[#030712] text-[#f4f7ff] font-sans antialiased overflow-x-hidden selection:bg-[#9F1D2C] selection:text-white">
-      
+
       {/* ============================================================== */}
       {/* 1. HERO                                                        */}
       {/* ============================================================== */}
@@ -156,7 +156,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Heading */}
-            <h1 className="font-poppins text-4xl sm:text-6xl lg:text-[68px] font-bold text-white tracking-tight leading-[1.08] mb-6">
+            <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[68px] font-bold text-white tracking-tight leading-[1.1] mb-6">
               Capital, guidance and connections{' '}
               <span className="text-[#00e5ff] drop-shadow-[0_0_25px_rgba(0,229,255,0.35)]">
                 built for what&apos;s next.
@@ -164,15 +164,15 @@ export default function ServicesPage() {
             </h1>
 
             {/* Body */}
-            <p className="font-red-hat text-[#9aacc6] text-lg sm:text-xl leading-relaxed mb-10 font-normal max-w-2xl mx-auto">
+            <p className="font-red-hat text-[#9aacc6] text-base sm:text-lg sm:text-xl leading-relaxed mb-8 sm:mb-10 font-normal max-w-2xl mx-auto">
               From investment structures to strategic advisory and a connected innovation ecosystem, Linkay Ventures supports ambitious ventures at every stage of growth.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-4 mb-10 max-w-md sm:max-w-none mx-auto">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Discuss Your Needs</span>
                 <ArrowRight size={16} />
@@ -181,7 +181,7 @@ export default function ServicesPage() {
                 href="https://hub.linkayventures.com/index.php"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Explore Venture HUB</span>
                 <ArrowUpRight size={16} className="text-[#00e5ff]" />
@@ -213,12 +213,12 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       <section className="w-full bg-[#050814] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="capital">
         <div className="max-w-[1340px] mx-auto">
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-16">
             <div className="lg:col-span-7">
               <div className="mb-4 inline-flex items-center gap-2">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                  <span>—</span> 01 / CAPITAL
+                  <span>—</span>CAPITAL
                 </span>
               </div>
 
@@ -304,12 +304,12 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       <section className="w-full bg-[#030712] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="strategy">
         <div className="max-w-[1340px] mx-auto">
-          
+
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
             <div className="max-w-3xl">
               <div className="mb-4 inline-flex items-center gap-2">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                  <span>—</span> 02 / STRATEGY
+                  <span>—</span>STRATEGY
                 </span>
               </div>
 
@@ -376,12 +376,12 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       <section className="w-full bg-[#050814] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="ecosystem">
         <div className="max-w-[1340px] mx-auto">
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-16">
             <div className="lg:col-span-7">
               <div className="mb-4 inline-flex items-center gap-2">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                  <span>—</span> 03 / ECOSYSTEM
+                  <span>—</span>ECOSYSTEM
                 </span>
               </div>
 
@@ -471,11 +471,11 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       <section className="w-full bg-[#030712] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]">
         <div className="max-w-[1340px] mx-auto">
-          
+
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="mb-3 inline-flex items-center gap-2">
               <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                <span>—</span> 04 / HOW WE WORK
+                <span>—</span>HOW WE WORK
               </span>
             </div>
             <h2 className="font-poppins text-2xl sm:text-3xl font-bold text-white">

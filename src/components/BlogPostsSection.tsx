@@ -110,9 +110,9 @@ export default function BlogPostsSection() {
       : allPosts.filter((post) => post.category.toLowerCase() === activeCategory.toLowerCase());
 
   return (
-    <section id="posts" className="w-full py-20 px-6 sm:px-12 lg:px-16 max-w-[1340px] mx-auto border-b border-[#1f293d]">
-      {/* Category Filter Pills */}
-      <div className="flex flex-wrap items-center gap-2.5 mb-14">
+    <section id="posts" className="w-full py-14 sm:py-20 px-4 sm:px-12 lg:px-16 max-w-[1340px] mx-auto border-b border-[#1f293d]">
+      {/* Category Filter Pills (swipeable on mobile, wrapping on sm+) */}
+      <div className="flex items-center gap-2 sm:gap-2.5 mb-10 sm:mb-14 overflow-x-auto no-scrollbar pb-2 sm:pb-0 sm:flex-wrap -mx-4 px-4 sm:mx-0 sm:px-0">
         {categories.map((cat) => {
           const isActive = activeCategory === cat;
           return (
@@ -120,7 +120,7 @@ export default function BlogPostsSection() {
               key={cat}
               type="button"
               onClick={() => setActiveCategory(cat)}
-              className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-mono font-semibold uppercase tracking-wider transition-all duration-200 ${
+              className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs font-mono font-semibold uppercase tracking-wider transition-all duration-200 shrink-0 ${
                 isActive
                   ? 'bg-[#9F1D2C] text-white shadow-lg shadow-[#9F1D2C]/30 scale-[1.02]'
                   : 'bg-[#080d1a] border border-[#1f293d] text-[#9aacc6] hover:text-[#00e5ff] hover:border-[#00e5ff]/50'

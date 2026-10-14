@@ -72,11 +72,11 @@ export default function Navbar() {
           : 'bg-[#030712] border-b border-[#1f293d]/60'
       }`}
     >
-      <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8 h-[88px] flex items-center justify-between">
+      <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8 h-[76px] sm:h-[84px] lg:h-[88px] flex items-center justify-between">
         {/* Brand Logo */}
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center group py-2">
-            <div className="relative w-[160px] sm:w-[180px] lg:w-[205px] h-[70px] sm:h-[78px] lg:h-[84px] transition-transform duration-200 group-hover:scale-105">
+            <div className="relative w-[140px] sm:w-[180px] lg:w-[205px] h-[56px] sm:h-[76px] lg:h-[84px] transition-transform duration-200 group-hover:scale-105">
               <Image
                 src="/images/logo.png"
                 alt="Linkay Ventures"
@@ -89,7 +89,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center space-x-1 xl:space-x-1.5">
+        <nav className="hidden xl:flex items-center space-x-1 xl:space-x-1.5">
           {navItems.map((item) => {
             if (item.submenu) {
               const isChildActive = item.submenu.some(
@@ -183,7 +183,7 @@ export default function Navbar() {
         </nav>
 
         {/* Right CTA Actions: Venture HUB + Get In Touch */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden xl:flex items-center gap-3">
           <Link
             href="https://hub.linkayventures.com/index.php"
             target="_blank"
@@ -204,7 +204,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Toggle Button */}
-        <div className="flex lg:hidden items-center">
+        <div className="flex xl:hidden items-center">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="text-[#f4f7ff] p-2 rounded-lg hover:bg-[#080d1a] hover:text-[#00e5ff] transition-colors focus:outline-none"
@@ -217,7 +217,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#030712] border-t border-[#1f293d] px-5 pt-3 pb-8 shadow-2xl animate-fade-in">
+        <div className="xl:hidden bg-[#030712] border-t border-[#1f293d] px-5 pt-3 pb-8 shadow-2xl animate-fade-in max-h-[calc(100vh-80px)] overflow-y-auto">
           <div className="flex flex-col space-y-1">
             {navItems.map((item) => {
               if (item.submenu) {

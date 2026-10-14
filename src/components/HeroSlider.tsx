@@ -38,17 +38,20 @@ export default function HeroSlider() {
       {/* ============================================================
           MAIN HERO CONTENT OVERLAY
       ============================================================ */}
-      <div className="relative z-10 max-w-[1340px] w-full mx-auto px-6 sm:px-12 lg:px-16 pt-20 pb-16 flex-1 flex items-center">
+      <div className="relative z-10 max-w-[1340px] w-full mx-auto px-5 sm:px-12 lg:px-16 pt-14 sm:pt-20 pb-12 sm:pb-16 flex-1 flex items-center">
         <div className="max-w-[720px] xl:max-w-[800px] flex flex-col items-start text-left">
           {/* Eyebrow */}
-          <div className="mb-6 inline-flex items-center gap-2">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-              <span>—</span> NEW YORK · UNITED STATES · GLOBAL OPPORTUNITIES
+          <div className="mb-4 sm:mb-6 flex items-start gap-2">
+            <span className="text-xs sm:text-[13px] font-mono font-bold text-[#9F1D2C] leading-5 shrink-0">
+              —
+            </span>
+            <span className="text-[11px] sm:text-[13px] font-mono font-bold tracking-[0.12em] sm:tracking-[0.2em] text-[#9F1D2C] uppercase leading-5">
+              NEW YORK · UNITED STATES · GLOBAL OPPORTUNITIES
             </span>
           </div>
 
           {/* Heading */}
-          <h1 className="font-poppins text-4xl sm:text-6xl lg:text-[68px] xl:text-[76px] font-bold leading-[1.08] tracking-tight text-white mb-6">
+          <h1 className="font-poppins text-[32px] sm:text-5xl lg:text-[68px] xl:text-[76px] font-bold leading-[1.15] tracking-tight text-white mb-5 sm:mb-6">
             Capital for{' '}
             <span className="text-[#00e5ff] drop-shadow-[0_0_25px_rgba(0,229,255,0.45)]">
               what&apos;s next.
@@ -56,17 +59,17 @@ export default function HeroSlider() {
           </h1>
 
           {/* Subtitle */}
-          <p className="font-red-hat text-[#cad5e8] text-base sm:text-lg lg:text-[19px] leading-relaxed max-w-[650px] mb-9 font-normal">
+          <p className="font-red-hat text-[#cad5e8] text-sm sm:text-lg lg:text-[19px] leading-relaxed max-w-[650px] mb-7 sm:mb-9 font-normal">
             At the intersection of investment, artificial intelligence and digital financial
             infrastructure, Linkay Ventures supports ambitious companies and asset owners with
             venture capital, strategic advisory and real-world asset tokenization.
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-8 sm:mb-10 w-full sm:w-auto">
             <Link
               href="/services"
-              className="inline-flex items-center justify-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm sm:text-[15px] font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#9F1D2C]/30 transition-all hover:-translate-y-0.5 active:translate-y-0 w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm sm:text-[15px] font-semibold px-8 py-3.5 sm:py-4 rounded-full shadow-lg shadow-[#9F1D2C]/30 transition-all hover:-translate-y-0.5 active:translate-y-0 w-full sm:w-auto"
             >
               <span>Explore Our Platform</span>
               <ArrowRight size={17} />
@@ -74,24 +77,24 @@ export default function HeroSlider() {
 
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-[#080d1a]/85 hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm sm:text-[15px] font-semibold px-7 py-4 rounded-full shadow-sm backdrop-blur-md transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 bg-[#080d1a]/85 hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm sm:text-[15px] font-semibold px-7 py-3.5 sm:py-4 rounded-full shadow-sm backdrop-blur-md transition-all hover:-translate-y-0.5 w-full sm:w-auto"
             >
               <span>Start a Conversation</span>
             </Link>
           </div>
 
           {/* Trust Chips Line */}
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-mono font-medium tracking-wider text-[#9aacc6]">
-            <div className="flex items-center gap-2">
-              <span className="text-[#00e5ff] text-[10px]">•</span>
+          <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 text-xs font-mono font-medium text-[#cad5e8]">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#080d1a]/85 border border-[#1f293d] shadow-sm backdrop-blur-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#00e5ff] shadow-[0_0_8px_rgba(0,229,255,0.8)]" />
               <span>Venture Capital</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-[#00e5ff] text-[10px]">•</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#080d1a]/85 border border-[#1f293d] shadow-sm backdrop-blur-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#00e5ff] shadow-[0_0_8px_rgba(0,229,255,0.8)]" />
               <span>Strategic Advisory</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-[#00e5ff] text-[10px]">•</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#080d1a]/85 border border-[#1f293d] shadow-sm backdrop-blur-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#00e5ff] shadow-[0_0_8px_rgba(0,229,255,0.8)]" />
               <span>Digital Assets</span>
             </div>
           </div>
@@ -101,15 +104,15 @@ export default function HeroSlider() {
       {/* ============================================================
           BOTTOM CAPABILITIES TICKER STRIP
       ============================================================ */}
-      <div className="relative z-10 w-full border-t border-[#1f293d] bg-[#050914]/90 backdrop-blur-md py-3.5 px-6 sm:px-12 lg:px-16">
-        <div className="max-w-[1340px] mx-auto flex flex-wrap items-center justify-center sm:justify-between gap-y-3 gap-x-6 text-center">
+      <div className="relative z-10 w-full border-t border-[#1f293d] bg-[#050914]/90 backdrop-blur-md py-3 sm:py-3.5 px-4 sm:px-12 lg:px-16 overflow-x-auto no-scrollbar">
+        <div className="max-w-[1340px] mx-auto flex items-center justify-center sm:justify-between gap-y-2 gap-x-4 sm:gap-x-6 text-center min-w-max sm:min-w-0">
           {tickerItems.map((item, idx) => (
-            <div key={idx} className="flex items-center gap-4">
+            <div key={idx} className="flex items-center gap-3 sm:gap-4 shrink-0">
               <span className="text-[11px] sm:text-[12px] font-mono font-medium tracking-wider text-[#9aacc6] hover:text-[#00e5ff] transition-colors cursor-default uppercase">
                 {item}
               </span>
               {idx < tickerItems.length - 1 && (
-                <span className="hidden sm:inline-block text-[#233049] text-xs">|</span>
+                <span className="text-[#233049] text-xs">|</span>
               )}
             </div>
           ))}

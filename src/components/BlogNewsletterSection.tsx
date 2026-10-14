@@ -17,7 +17,7 @@ export default function BlogNewsletterSection() {
   };
 
   return (
-    <section className="w-full bg-[#050814] py-24 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] relative overflow-hidden">
+    <section className="w-full bg-[#050814] py-16 sm:py-24 px-5 sm:px-12 lg:px-16 border-b border-[#1f293d] relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#9F1D2C]/10 blur-[130px] pointer-events-none" />
 
       <div className="max-w-[820px] mx-auto text-center relative z-10">
@@ -29,7 +29,7 @@ export default function BlogNewsletterSection() {
         </div>
 
         {/* Heading */}
-        <h2 className="font-poppins text-3xl sm:text-5xl font-bold text-white tracking-tight leading-tight mb-4">
+        <h2 className="font-poppins text-2xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight mb-4">
           Get our latest insights <br />
           <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.25)]">in your inbox.</span>
         </h2>

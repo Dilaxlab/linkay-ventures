@@ -100,7 +100,7 @@ export default function AboutPage() {
             </div>
 
             {/* Heading */}
-            <h1 className="font-poppins text-4xl sm:text-6xl lg:text-[70px] font-bold text-white tracking-tight leading-[1.08] mb-6">
+            <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[70px] font-bold text-white tracking-tight leading-[1.1] mb-6">
               Built by founders,{' '}
               <span className="text-[#00e5ff] drop-shadow-[0_0_25px_rgba(0,229,255,0.35)]">
                 for founders.
@@ -108,19 +108,19 @@ export default function AboutPage() {
             </h1>
 
             {/* Body */}
-            <p className="font-red-hat text-[#9aacc6] text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-10 font-normal max-w-2xl mx-auto">
+            <p className="font-red-hat text-[#9aacc6] text-base sm:text-lg lg:text-[22px] leading-relaxed mb-8 sm:mb-10 font-normal max-w-2xl mx-auto">
               Linkay Ventures is a New York-based firm combining venture funding, financial advisory, and real-world asset tokenization to help ambitious companies grow.
             </p>
 
             {/* Micro badges */}
-            <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-mono text-[#cad5e8]">
-              <span className="px-3.5 py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d]">
+            <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono text-[#cad5e8]">
+              <span className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d]">
                 New York Headquarters
               </span>
-              <span className="px-3.5 py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d]">
+              <span className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d]">
                 Operator-Led Firm
               </span>
-              <span className="px-3.5 py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d]">
+              <span className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d]">
                 Multi-Asset Platform
               </span>
             </div>
@@ -131,14 +131,14 @@ export default function AboutPage() {
       {/* ============================================================== */}
       {/* 2. OUR STORY (01 / OUR STORY)                                  */}
       {/* ============================================================== */}
-      <section className="w-full bg-[#050814] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] relative">
+      <section className="w-full bg-[#050814] py-14 sm:py-20 px-5 sm:px-12 lg:px-16 border-b border-[#1f293d] relative">
         <div className="max-w-[1340px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
             <div className="lg:col-span-5">
               <div className="mb-4 inline-flex items-center gap-2">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                  <span>—</span> 01 / OUR STORY
+                  <span>—</span>OUR STORY
                 </span>
               </div>
 

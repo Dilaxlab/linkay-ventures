@@ -56,7 +56,7 @@ export default function InvestmentThemesSection() {
   ];
 
   return (
-    <section className="w-full bg-[#030712] py-20 px-6 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]" id="focus-areas">
+    <section className="w-full bg-[#030712] py-14 sm:py-20 px-5 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]" id="focus-areas">
       <div className="max-w-[1340px] mx-auto relative z-10">
 
         {/* Section Header */}
@@ -64,7 +64,7 @@ export default function InvestmentThemesSection() {
           <div className="max-w-2xl">
             <div className="mb-4 inline-flex items-center gap-2">
               <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                <span>—</span> 03 / INVESTMENT THEMES
+                <span>—</span>INVESTMENT THEMES
               </span>
             </div>
 
@@ -80,7 +80,7 @@ export default function InvestmentThemesSection() {
           </div>
 
           {/* Right Tabs / Indicator Pills */}
-          <div className="flex items-center gap-5 text-xs font-mono tracking-wider text-[#9aacc6]">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-5 text-xs font-mono tracking-wider text-[#9aacc6]">
             <span className="text-[#00e5ff] font-semibold flex items-center gap-1.5">
               <span>—</span> Technology
             </span>

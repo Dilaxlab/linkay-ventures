@@ -263,7 +263,7 @@ export default function TokenizationPlatformPage() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-[38px] sm:text-[54px] md:text-[68px] font-extrabold font-poppins text-white tracking-tight leading-[1.08] mb-6">
+          <h1 className="text-[32px] sm:text-[54px] md:text-[68px] font-extrabold font-poppins text-white tracking-tight leading-[1.08] mb-6">
             Institutional Tokenization{' '}
             <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
               Platform
@@ -271,16 +271,16 @@ export default function TokenizationPlatformPage() {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-[17px] sm:text-[20px] font-red-hat text-[#9aacc6] leading-relaxed max-w-[760px] mx-auto mb-10 font-normal">
+          <p className="text-[16px] sm:text-[20px] font-red-hat text-[#9aacc6] leading-relaxed max-w-[760px] mx-auto mb-10 font-normal">
             End-to-end tokenization architecture for real-world assets (RWA) — covering primary
             issuance, secondary trading, qualified custody, and automated lifecycle servicing.
           </p>
 
           {/* CTA Buttons (Capsule Pills) */}
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-5 mb-16">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-5 mb-16 w-full sm:w-auto">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-sm font-semibold text-white bg-[#9F1D2C] hover:bg-[#851823] transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-semibold text-white bg-[#9F1D2C] hover:bg-[#851823] transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5 w-full sm:w-auto"
             >
               <span>Discuss Your Asset</span>
               <ArrowRight size={17} />
@@ -288,7 +288,7 @@ export default function TokenizationPlatformPage() {
 
             <button
               onClick={() => setDemoModalOpen(true)}
-              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full text-sm font-semibold text-[#f4f7ff] bg-[#080d1a] hover:bg-[#101a2a] transition-all border border-[#233049] hover:border-[#00e5ff]/50 hover:text-[#00e5ff] shadow-sm hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm font-semibold text-[#f4f7ff] bg-[#080d1a] hover:bg-[#101a2a] transition-all border border-[#233049] hover:border-[#00e5ff]/50 hover:text-[#00e5ff] shadow-sm hover:-translate-y-0.5 w-full sm:w-auto"
             >
               <div className="w-5 h-5 rounded-full bg-[#9F1D2C] text-white flex items-center justify-center">
                 <Play size={10} className="ml-0.5" />
@@ -301,22 +301,22 @@ export default function TokenizationPlatformPage() {
         {/* Hero Interactive Interface Preview Card */}
         <div className="relative mx-auto max-w-[1080px] rounded-3xl bg-[#080d1a] p-4 sm:p-7 border border-[#1f293d] shadow-2xl overflow-hidden">
           {/* Top Bar simulating platform */}
-          <div className="flex items-center justify-between pb-4 border-b border-[#1f293d] mb-6">
-            <div className="flex items-center gap-2">
-              <span className="w-3 h-3 rounded-full bg-red-500/80" />
-              <span className="w-3 h-3 rounded-full bg-amber-500/80" />
-              <span className="w-3 h-3 rounded-full bg-emerald-500/80" />
-              <span className="ml-3 text-[12px] font-mono text-[#9aacc6]">
+          <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-[#1f293d] mb-6">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="w-3 h-3 rounded-full bg-red-500/80 shrink-0" />
+              <span className="w-3 h-3 rounded-full bg-amber-500/80 shrink-0" />
+              <span className="w-3 h-3 rounded-full bg-emerald-500/80 shrink-0" />
+              <span className="ml-2 text-[11px] sm:text-[12px] font-mono text-[#9aacc6] truncate max-w-[200px] sm:max-w-none">
                 https://portal.linkayventures.com/rwa-marketplace
               </span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
               <span className="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                 Live Node Verified
               </span>
               <span className="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-[#030712] text-[#00e5ff] border border-[#1f293d]">
-                Institutional Sandbox
+                Sandbox
               </span>
             </div>
           </div>

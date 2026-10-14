@@ -102,7 +102,7 @@ export default function ProgramsPage() {
 
   return (
     <main className="w-full bg-[#030712] text-[#f4f7ff] font-sans antialiased overflow-x-hidden selection:bg-[#9F1D2C] selection:text-white">
-      
+
       {/* ============================================================== */}
       {/* 1. HERO                                                        */}
       {/* ============================================================== */}
@@ -121,7 +121,7 @@ export default function ProgramsPage() {
             </div>
 
             {/* Heading */}
-            <h1 className="font-poppins text-4xl sm:text-6xl lg:text-[68px] font-bold text-white tracking-tight leading-[1.08] mb-6">
+            <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[68px] font-bold text-white tracking-tight leading-[1.1] mb-6">
               Programs for founders{' '}
               <span className="text-[#00e5ff] drop-shadow-[0_0_25px_rgba(0,229,255,0.35)]">
                 building what&apos;s next.
@@ -129,22 +129,22 @@ export default function ProgramsPage() {
             </h1>
 
             {/* Body */}
-            <p className="font-red-hat text-[#9aacc6] text-lg sm:text-xl leading-relaxed mb-10 font-normal max-w-2xl mx-auto">
+            <p className="font-red-hat text-[#9aacc6] text-base sm:text-lg sm:text-xl leading-relaxed mb-8 sm:mb-10 font-normal max-w-2xl mx-auto">
               Linkay Ventures supports the next generation of innovators through a venture accelerator, corporate innovation partnerships and adaptive growth programs.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-4 mb-10 max-w-md sm:max-w-none mx-auto">
               <Link
                 href="/contact?subject=Program%20Application"
-                className="inline-flex items-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Apply to a Program</span>
                 <ArrowRight size={16} />
               </Link>
               <Link
                 href="#programs"
-                className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Explore Programs</span>
               </Link>
@@ -176,11 +176,11 @@ export default function ProgramsPage() {
       <section className="w-full bg-[#050814] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]">
         <div className="max-w-[1340px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            
+
             <div className="lg:col-span-7">
               <div className="mb-4 inline-flex items-center gap-2">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                  <span>—</span> 01 / OUR PROGRAMS
+                  <span>—</span>OUR PROGRAMS
                 </span>
               </div>
 
@@ -225,12 +225,12 @@ export default function ProgramsPage() {
       {/* ============================================================== */}
       <section className="w-full bg-[#030712] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="programs">
         <div className="max-w-[1340px] mx-auto">
-          
+
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
             <div className="max-w-3xl">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                  <span>—</span> PROGRAM 01 / VENTURE ACCELERATOR
+                  <span>—</span>VENTURE ACCELERATOR
                 </span>
                 <span className="px-3 py-1 rounded-full bg-[#101a2a] border border-[#233049] text-xs font-mono text-[#cad5e8]">
                   Applications Open
@@ -301,11 +301,11 @@ export default function ProgramsPage() {
       {/* ============================================================== */}
       <section className="w-full bg-[#050814] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]">
         <div className="max-w-[1340px] mx-auto">
-          
+
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="mb-4 inline-flex items-center gap-2">
               <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                <span>—</span> PROGRAM 02 / CORPORATE INNOVATION PARTNERSHIPS
+                <span>—</span>CORPORATE INNOVATION PARTNERSHIPS
               </span>
             </div>
 
@@ -376,7 +376,7 @@ export default function ProgramsPage() {
       <section className="w-full bg-[#030712] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]">
         <div className="max-w-[1340px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-14">
-            
+
             {/* Preserving existing image /images/program3.jpeg with dark frame */}
             <div className="lg:col-span-5 order-2 lg:order-1">
               <div className="relative w-full h-[320px] sm:h-[400px] overflow-hidden rounded-2xl bg-[#080d1a] border border-[#1f293d] shadow-2xl p-2 group">
@@ -398,7 +398,7 @@ export default function ProgramsPage() {
             <div className="lg:col-span-7 order-1 lg:order-2">
               <div className="mb-4 inline-flex items-center gap-2">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                  <span>—</span> PROGRAM 03 / ADAPTIVE GROWTH PROGRAMS
+                  <span>—</span>ADAPTIVE GROWTH PROGRAMS
                 </span>
               </div>
 
@@ -439,13 +439,7 @@ export default function ProgramsPage() {
 
           </div>
 
-          {/* Mission Line (below cards) */}
-          <div className="p-6 rounded-2xl bg-[#080d1a]/80 border border-[#1f293d] text-center max-w-3xl mx-auto">
-            <p className="font-red-hat text-sm sm:text-base text-[#cad5e8] italic">
-              &ldquo;Our mission is to help the most ambitious ideas take flight. Apply to join Linkay Ventures and build with us.&rdquo;
-            </p>
-          </div>
-
+          
         </div>
       </section>
 

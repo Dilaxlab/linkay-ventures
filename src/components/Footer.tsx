@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className="relative w-full bg-[#030712] text-[#f4f7ff] border-t border-[#1f293d] font-sans">
-      <div className="max-w-[1340px] mx-auto px-6 sm:px-12 lg:px-16 pt-16 pb-12">
+      <div className="max-w-[1340px] mx-auto px-5 sm:px-12 lg:px-16 pt-16 pb-12">
 
         {/* Top 5-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-[#1f293d]">
@@ -101,12 +101,9 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://hub.linkayventures.com/index.php"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#9aacc6] hover:text-[#00e5ff] transition-colors"
+                  href="https://hub.linkayventures.com/index.php" className="text-[#9aacc6] hover:text-[#00e5ff] transition-colors"
                 >
-                  Venture HUB ↗
+                  Venture HUB
                 </Link>
               </li>
               <li>
@@ -195,12 +192,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Sub-Footer Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#71829e]">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#71829e] text-center sm:text-left">
           <div>
             <span>© 2026 Linkay Ventures Inc. All rights reserved.</span>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6">
             <Link href="/terms" className="hover:text-white transition-colors">
               Terms of Use
             </Link>

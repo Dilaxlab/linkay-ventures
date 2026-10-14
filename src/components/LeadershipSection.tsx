@@ -22,7 +22,7 @@ export default function LeadershipSection() {
   ];
 
   return (
-    <section className="w-full bg-[#050814] py-20 px-6 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]" id="leadership">
+    <section className="w-full bg-[#050814] py-14 sm:py-20 px-5 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]" id="leadership">
       <div className="max-w-[1340px] mx-auto relative z-10">
 
         {/* Eyebrow */}
@@ -45,7 +45,7 @@ export default function LeadershipSection() {
           {leaders.map((leader, idx) => (
             <div
               key={idx}
-              className="p-8 sm:p-9 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group shadow-xl hover:-translate-y-1"
+              className="p-6 sm:p-9 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group shadow-xl hover:-translate-y-1"
             >
               <div>
                 <div className="flex items-center gap-4 sm:gap-5 mb-6">

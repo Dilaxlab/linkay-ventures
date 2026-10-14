@@ -63,7 +63,7 @@ export default function ContactPage() {
       {/* ============================================================== */}
       {/* 1. HERO BANNER                                                 */}
       {/* ============================================================== */}
-      <section className="relative w-full pt-28 pb-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
+      <section className="relative w-full pt-20 sm:pt-28 pb-14 sm:pb-20 px-5 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
         {/* Glow */}
         <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#00e5ff]/10 blur-[140px] pointer-events-none" />
         <div className="absolute top-1/2 left-10 w-[450px] h-[300px] bg-[#9F1D2C]/15 blur-[130px] pointer-events-none" />
@@ -78,7 +78,7 @@ export default function ContactPage() {
             </div>
 
             {/* Heading */}
-            <h1 className="font-poppins text-4xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.08] mb-6">
+            <h1 className="font-poppins text-3xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.08] mb-6">
               Start the{' '}
               <span className="text-[#00e5ff] drop-shadow-[0_0_20px_rgba(0,229,255,0.35)]">
                 conversation.
@@ -118,14 +118,14 @@ export default function ContactPage() {
       {/* ============================================================== */}
       {/* 2. CONTACT FORM & DIRECT LINE SPLIT                            */}
       {/* ============================================================== */}
-      <section id="contact-form" className="relative w-full py-24 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto border-b border-[#1f293d]">
+      <section id="contact-form" className="relative w-full py-14 sm:py-24 px-4 sm:px-12 lg:px-16 max-w-[1240px] mx-auto border-b border-[#1f293d]">
         <div className="relative max-w-[1180px] mx-auto">
           {/* Subtle outer glow */}
           <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-r from-[#9F1D2C]/15 via-[#00e5ff]/10 to-[#9F1D2C]/15 blur-2xl" />
 
           <div className="relative grid grid-cols-1 lg:grid-cols-12 overflow-hidden rounded-[28px] border border-[#1f293d] bg-[#080d1a] shadow-2xl">
             {/* LEFT PANEL — Dark Direct Line (5 cols) */}
-            <div className="lg:col-span-5 bg-[#050814] p-8 sm:p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-[#1f293d] flex flex-col justify-between relative overflow-hidden">
+            <div className="lg:col-span-5 bg-[#050814] p-6 sm:p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-[#1f293d] flex flex-col justify-between relative overflow-hidden">
               <div className="pointer-events-none absolute -top-20 -left-20 h-64 w-64 rounded-full bg-[#9F1D2C]/15 blur-3xl" />
               <div className="pointer-events-none absolute bottom-0 right-0 h-64 w-64 rounded-full bg-[#00e5ff]/10 blur-3xl" />
 
@@ -199,7 +199,7 @@ export default function ContactPage() {
             </div>
 
             {/* RIGHT PANEL — Form (7 cols) */}
-            <div className="lg:col-span-7 p-8 sm:p-10 lg:p-12 bg-[#080d1a]">
+            <div className="lg:col-span-7 p-6 sm:p-10 lg:p-12 bg-[#080d1a]">
               {submitted ? (
                 <div className="flex h-full min-h-[440px] flex-col items-center justify-center text-center p-6">
                   <div className="w-16 h-16 rounded-2xl bg-[#00e5ff]/10 border border-[#00e5ff]/40 text-[#00e5ff] flex items-center justify-center mb-6 shadow-xl shadow-cyan-500/10">
@@ -321,14 +321,14 @@ export default function ContactPage() {
       {/* ============================================================== */}
       {/* 3. 3 CONTACT CARDS                                             */}
       {/* ============================================================== */}
-      <section className="w-full py-24 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto" id="office-info">
+      <section className="w-full py-14 sm:py-24 px-5 sm:px-12 lg:px-16 max-w-[1240px] mx-auto" id="office-info">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {contactCards.map((card, idx) => {
             const Icon = card.icon;
             return (
               <div
                 key={idx}
-                className="p-8 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group shadow-lg hover:shadow-cyan-500/5 hover:-translate-y-1"
+                className="p-6 sm:p-8 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#00e5ff]/50 transition-all duration-300 flex flex-col justify-between group shadow-lg hover:shadow-cyan-500/5 hover:-translate-y-1"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">

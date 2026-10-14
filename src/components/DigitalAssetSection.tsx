@@ -36,7 +36,7 @@ export default function DigitalAssetSection() {
   ];
 
   return (
-    <section className="w-full bg-[#050814] py-20 px-6 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]" id="digital-assets">
+    <section className="w-full bg-[#050814] py-14 sm:py-20 px-5 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]" id="digital-assets">
       <div className="max-w-[1340px] mx-auto relative z-10">
 
         {/* Header Block with Right Button */}
@@ -44,7 +44,7 @@ export default function DigitalAssetSection() {
           <div className="max-w-2xl">
             <div className="mb-4 inline-flex items-center gap-2">
               <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                <span>—</span> 02 / DIGITAL ASSET INFRASTRUCTURE
+                <span>—</span>DIGITAL ASSET INFRASTRUCTURE
               </span>
             </div>
 
@@ -59,10 +59,10 @@ export default function DigitalAssetSection() {
             </p>
           </div>
 
-          <div className="shrink-0">
+          <div className="shrink-0 w-full sm:w-auto">
             <Link
               href="/rwa-tokenization"
-              className="inline-flex items-center gap-2 bg-[#0b1220] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-xs sm:text-sm font-semibold px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 bg-[#0b1220] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#00e5ff]/50 font-poppins text-xs sm:text-sm font-semibold px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
             >
               <span>Explore RWA Platform</span>
               <ArrowRight size={14} />

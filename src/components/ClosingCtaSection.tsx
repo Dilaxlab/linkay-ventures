@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function ClosingCtaSection() {
   return (
-    <section className="relative w-full bg-[#030712] py-24 px-6 sm:px-12 lg:px-16 text-[#f4f7ff] border-b border-[#1f293d] overflow-hidden" id="cta">
+    <section className="relative w-full bg-[#030712] py-16 sm:py-24 px-5 sm:px-12 lg:px-16 text-[#f4f7ff] border-b border-[#1f293d] overflow-hidden" id="cta">
       {/* Background ambient glow */}
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[500px] h-[500px] bg-[#9F1D2C]/10 blur-[140px] rounded-full" />
@@ -40,7 +40,7 @@ export default function ClosingCtaSection() {
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 w-full sm:w-auto">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm sm:text-[15px] font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full shadow-lg shadow-[#9F1D2C]/30 transition-all hover:-translate-y-0.5 active:translate-y-0 w-full sm:w-auto"
