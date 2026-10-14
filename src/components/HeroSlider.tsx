@@ -102,20 +102,38 @@ export default function HeroSlider() {
       </div>
 
       {/* ============================================================
-          BOTTOM CAPABILITIES TICKER STRIP
+          BOTTOM CAPABILITIES TICKER STRIP (RUNNING MARQUEE)
       ============================================================ */}
-      <div className="relative z-10 w-full border-t border-[#1f293d] bg-[#050914]/90 backdrop-blur-md py-3 sm:py-3.5 px-4 sm:px-12 lg:px-16 overflow-x-auto no-scrollbar">
-        <div className="max-w-[1340px] mx-auto flex items-center justify-center sm:justify-between gap-y-2 gap-x-4 sm:gap-x-6 text-center min-w-max sm:min-w-0">
-          {tickerItems.map((item, idx) => (
-            <div key={idx} className="flex items-center gap-3 sm:gap-4 shrink-0">
-              <span className="text-[11px] sm:text-[12px] font-mono font-medium tracking-wider text-[#9aacc6] hover:text-[#00e5ff] transition-colors cursor-default uppercase">
-                {item}
-              </span>
-              {idx < tickerItems.length - 1 && (
-                <span className="text-[#233049] text-xs">|</span>
-              )}
-            </div>
-          ))}
+      <div className="relative z-10 w-full border-t border-[#1f293d] bg-[#050914]/95 backdrop-blur-md py-3 sm:py-3.5 overflow-hidden select-none">
+        {/* Left & Right Soft Fade Gradients */}
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-28 bg-gradient-to-r from-[#030712] to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-28 bg-gradient-to-l from-[#030712] to-transparent z-10" />
+
+        {/* Marquee Track */}
+        <div className="flex animate-marquee">
+          {/* Track 1 */}
+          <div className="flex items-center gap-6 sm:gap-10 shrink-0 pr-6 sm:pr-10">
+            {tickerItems.concat(tickerItems).map((item, idx) => (
+              <div key={`track1-${idx}`} className="flex items-center gap-6 sm:gap-10 shrink-0">
+                <span className="text-[11px] sm:text-[12.5px] font-mono font-semibold tracking-[0.16em] sm:tracking-[0.2em] text-[#9aacc6] hover:text-[#00e5ff] transition-colors cursor-default uppercase">
+                  {item}
+                </span>
+                <span className="text-[#9F1D2C]/70 text-xs sm:text-sm font-bold">|</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Track 2 (Exact duplicate for seamless infinite loop) */}
+          <div className="flex items-center gap-6 sm:gap-10 shrink-0 pr-6 sm:pr-10" aria-hidden="true">
+            {tickerItems.concat(tickerItems).map((item, idx) => (
+              <div key={`track2-${idx}`} className="flex items-center gap-6 sm:gap-10 shrink-0">
+                <span className="text-[11px] sm:text-[12.5px] font-mono font-semibold tracking-[0.16em] sm:tracking-[0.2em] text-[#9aacc6] hover:text-[#00e5ff] transition-colors cursor-default uppercase">
+                  {item}
+                </span>
+                <span className="text-[#9F1D2C]/70 text-xs sm:text-sm font-bold">|</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
