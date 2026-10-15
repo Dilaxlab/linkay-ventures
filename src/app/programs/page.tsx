@@ -225,9 +225,7 @@ export default function ProgramsPage() {
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
                   <span>—</span>VENTURE ACCELERATOR
                 </span>
-                <span className="px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-xs font-mono font-bold text-[#A12B3C] shadow-sm">
-                  Applications Open
-                </span>
+               
               </div>
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-4">
@@ -429,7 +427,7 @@ export default function ProgramsPage() {
 
           </div>
 
-          
+
         </div>
       </section>
 
