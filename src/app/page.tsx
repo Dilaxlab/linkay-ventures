@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col w-full min-h-screen bg-[#030712]">
+    <div className="flex flex-col w-full min-h-screen bg-page-gradient">
       {/* 1. Hero: Capital for what's next + Full-bleed image background + 2 CTAs + 3 Chips */}
       <HeroSlider />
 

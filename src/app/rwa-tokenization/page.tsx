@@ -39,7 +39,7 @@ import {
 import { motion, useReducedMotion } from 'framer-motion';
 
 export default function RwaTokenizationPage() {
-  const [activeStep, setActiveStep] = useState<number>(1);
+  const [activeStep, setActiveStep] = useState<number | null>(null);
 
   const assetClasses = [
     {
@@ -287,20 +287,16 @@ export default function RwaTokenizationPage() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <main className="w-full bg-[#030712] text-[#f4f7ff] font-sans antialiased overflow-x-hidden selection:bg-[#9F1D2C] selection:text-white">
+    <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#A12B3C] selection:text-white">
       {/* ============================================================
           1. HERO BANNER
       ============================================================ */}
-      <div className="relative w-full overflow-hidden border-b border-[#1f293d] bg-[#030712] text-[#f4f7ff]">
-        {/* Ambient Glows */}
-        <div className="absolute top-0 right-1/4 w-[600px] h-[350px] bg-[#8c1627]/10 blur-[140px] pointer-events-none" />
-        <div className="absolute top-1/2 left-10 w-[500px] h-[300px] bg-[#9F1D2C]/15 blur-[130px] pointer-events-none" />
-
+      <div className="relative w-full overflow-hidden border-b border-[#1f293d] bg-page-gradient text-[#f4f7ff]">
         <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-16 sm:px-8 sm:py-20 md:px-12 md:py-28">
           <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
                 <span>—</span> LINKAY VENTURES · RWA PROTOCOL
               </span>
             </div>
@@ -308,13 +304,13 @@ export default function RwaTokenizationPage() {
             {/* Heading */}
             <h1 className="mb-6 font-poppins text-[32px] sm:text-[46px] md:text-[56px] lg:text-[72px] font-bold leading-[1.1] tracking-tight text-white">
               Multi-RWA Tokenization &amp;{' '}
-              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
+              <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.35)]">
                 Monetization Platform
               </span>
             </h1>
 
             {/* Paragraph */}
-            <p className="mx-auto mb-10 max-w-[620px] font-red-hat text-[16px] sm:text-[19px] md:text-[22px] lg:max-w-[780px] font-normal leading-relaxed text-[#9aacc6]">
+            <p className="mx-auto mb-10 max-w-[620px] font-red-hat text-[16px] sm:text-[19px] md:text-[22px] lg:max-w-[780px] font-normal leading-relaxed text-[#004a80]">
               Transforming real-world assets into structured digital opportunities.
             </p>
 
@@ -322,7 +318,7 @@ export default function RwaTokenizationPage() {
             <div className="flex w-full flex-col gap-3.5 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#9F1D2C]/30 transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#A12B3C]/30 transition-all hover:-translate-y-0.5"
               >
                 <span>Discuss an Asset</span>
                 <ArrowRight size={17} />
@@ -330,7 +326,7 @@ export default function RwaTokenizationPage() {
 
               <Link
                 href="#how-it-works"
-                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
               >
                 <span>Explore How It Works</span>
                 <ArrowRight size={16} />
@@ -339,21 +335,21 @@ export default function RwaTokenizationPage() {
 
             {/* Features strip */}
             <div className="mt-12 w-full max-w-[860px] border-t border-[#1f293d] pt-8">
-              <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs sm:text-[13px] font-mono font-semibold uppercase tracking-wider text-[#9aacc6]">
+              <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs sm:text-[13px] font-mono font-semibold uppercase tracking-wider text-[#004a80]">
                 <div className="flex items-center gap-2.5">
-                  <span className="w-3.5 h-3.5 rounded-full bg-[#9F1D2C]/20 text-[#9F1D2C] flex items-center justify-center shrink-0">
+                  <span className="w-3.5 h-3.5 rounded-full bg-[#A12B3C]/20 text-[#A12B3C] flex items-center justify-center shrink-0">
                     <Check size={10} className="stroke-[3]" />
                   </span>
                   <span>Institutional Grade Protocol</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <span className="w-3.5 h-3.5 rounded-full bg-[#9F1D2C]/20 text-[#9F1D2C] flex items-center justify-center shrink-0">
+                  <span className="w-3.5 h-3.5 rounded-full bg-[#A12B3C]/20 text-[#A12B3C] flex items-center justify-center shrink-0">
                     <Check size={10} className="stroke-[3]" />
                   </span>
                   <span>Regulatory-Compliant Framework</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <span className="w-3.5 h-3.5 rounded-full bg-[#9F1D2C]/20 text-[#9F1D2C] flex items-center justify-center shrink-0">
+                  <span className="w-3.5 h-3.5 rounded-full bg-[#A12B3C]/20 text-[#A12B3C] flex items-center justify-center shrink-0">
                     <Check size={10} className="stroke-[3]" />
                   </span>
                   <span>Real-Time On-Chain Settlement</span>
@@ -368,13 +364,13 @@ export default function RwaTokenizationPage() {
       <section className="w-full py-24 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2 mb-3">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2 mb-3">
               <span>—</span> FEATURES
             </span>
             <h2 className="font-poppins text-white text-[32px] sm:text-[42px] font-bold leading-tight mb-5">
               Finance with expert leaders
             </h2>
-            <p className="font-red-hat text-[#9aacc6] text-[16px] sm:text-[18px] leading-relaxed mb-8 font-normal">
+            <p className="font-red-hat text-[#004a80] text-[16px] sm:text-[18px] leading-relaxed mb-8 font-normal">
               Many valuable assets remain difficult to access, structure, finance and transfer. Our
               RWA infrastructure is designed to create structured pathways for qualifying assets
               through
@@ -386,13 +382,13 @@ export default function RwaTokenizationPage() {
                 return (
                   <div
                     key={idx}
-                    className="group bg-[#080d1a] hover:bg-[#0d1627] border border-[#1f293d] hover:border-[#8c1627]/50 rounded-2xl p-4 text-center transition-all duration-300 hover:shadow-lg hover:shadow-[#8c1627]/5 hover:-translate-y-0.5"
+                    className="group bg-[#004a80] hover:bg-[#003860] border-2 border-[#003860] hover:border-white/30 rounded-2xl p-4 text-center transition-all duration-300 shadow-xl text-white hover:-translate-y-0.5"
                   >
-                    <div className="w-10 h-10 mx-auto mb-3 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] group-hover:scale-110 flex items-center justify-center transition-transform">
+                    <div className="w-10 h-10 mx-auto mb-3 rounded-xl bg-white/15 border border-white/25 text-white group-hover:scale-110 flex items-center justify-center transition-transform">
                       <IconComponent size={18} />
                     </div>
 
-                    <h4 className="font-poppins text-white text-[13.5px] font-semibold leading-tight group-hover:text-[#8c1627] transition-colors">
+                    <h4 className="font-poppins text-white text-[13.5px] font-semibold leading-tight group-hover:text-[#ffccd3] transition-colors">
                       {item.title}
                     </h4>
                   </div>
@@ -402,31 +398,30 @@ export default function RwaTokenizationPage() {
           </div>
 
           <div className="lg:col-span-5">
-            <div className="relative w-full h-[360px] sm:h-[440px] overflow-hidden rounded-2xl bg-[#080d1a] border border-[#1f293d] shadow-2xl">
+            <div className="relative w-full h-[360px] sm:h-[440px] overflow-hidden rounded-2xl shadow-xl">
               <Image
                 src="/images/dwojhzdwojhzdwoj.jpeg"
                 alt="Finance with Expert Leaders"
                 fill
                 priority
-                className="object-cover"
+                className="object-cover rounded-2xl"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
         </div>
       </section>
 
       {/* 3. MULTIPLE ASSET CLASSES */}
-      <section className="w-full py-24 px-6 sm:px-12 lg:px-16 bg-[#050814] border-t border-b border-[#1f293d]">
+      <section className="w-full py-24 px-6 sm:px-12 lg:px-16 bg-transparent border-t border-b border-[#C5CDD7]">
         <div className="max-w-[1240px] mx-auto">
           <div className="text-center max-w-[850px] mx-auto mb-16">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center justify-center gap-2 mb-3">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center justify-center gap-2 mb-3">
               <span>—</span> MULTIPLE ASSET CLASSES
             </span>
-            <h2 className="font-poppins text-white text-[32px] sm:text-[44px] font-bold leading-tight mb-4">
+            <h2 className="font-poppins text-[#004a80] text-[32px] sm:text-[44px] font-bold leading-tight mb-4">
               One Platform.{' '}
-              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
+              <span className="text-[#A12B3C]">
                 Diverse Real-World Assets.
               </span>
             </h2>
@@ -438,23 +433,23 @@ export default function RwaTokenizationPage() {
               return (
                 <div
                   key={idx}
-                  className="group relative bg-[#080d1a] p-6 sm:p-7 rounded-2xl border border-[#1f293d] hover:border-[#8c1627]/50 shadow-lg hover:shadow-[#8c1627]/5 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
+                  className="group relative bg-[#004a80] p-6 sm:p-7 rounded-2xl border-2 border-[#003860] hover:border-white/30 shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 text-white"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-5">
-                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 flex items-center justify-center text-[#8c1627] group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                         <IconComp size={22} />
                       </div>
-                      <span className="text-[11px] font-mono font-semibold text-[#8c1627] uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#030712] border border-[#1f293d]">
+                      <span className="text-[11px] font-mono font-bold text-[#01497f] uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7]" style={{ color: '#01497f' }}>
                         {item.badge}
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#8c1627] transition-colors">
+                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#ffccd3] transition-colors">
                       {item.title}
                     </h3>
 
-                    <p className="font-red-hat text-[#9aacc6] text-[14px] leading-relaxed">
+                    <p className="font-red-hat text-[#cad8e9] text-[14px] leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -466,16 +461,16 @@ export default function RwaTokenizationPage() {
       </section>
 
       {/* 4. THE RWA TECHNOLOGY STACK */}
-      <section className="w-full bg-[#030712] py-24 px-6 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]">
+      <section className="w-full bg-transparent py-24 px-6 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#C5CDD7]">
         <div className="max-w-[1240px] mx-auto relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2 mb-3">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2 mb-3">
                 <span>—</span> THE RWA TECHNOLOGY STACK
               </span>
-              <h2 className="font-poppins text-white text-[32px] sm:text-[44px] font-bold leading-tight max-w-[700px]">
+              <h2 className="font-poppins text-[#004a80] text-[32px] sm:text-[44px] font-bold leading-tight max-w-[700px]">
                 From Asset Intelligence to{' '}
-                <span className="text-[#8c1627]">Market Infrastructure</span>
+                <span className="text-[#A12B3C]">Market Infrastructure</span>
               </h2>
             </div>
           </div>
@@ -486,22 +481,22 @@ export default function RwaTokenizationPage() {
               return (
                 <div
                   key={item.id}
-                  className="group bg-[#080d1a] p-6 rounded-2xl border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg hover:shadow-[#8c1627]/5"
+                  className="group bg-[#004a80] p-6 rounded-2xl border-2 border-[#003860] hover:border-white/30 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-xl text-white"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-10 h-10 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 flex items-center justify-center text-[#8c1627] group-hover:scale-110 transition-transform">
+                      <div className="w-10 h-10 rounded-xl bg-white/15 border border-white/25 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                         <IconComp size={19} />
                       </div>
-                      <span className="text-[11px] font-mono text-[#9aacc6] bg-[#030712] px-2.5 py-0.5 rounded-full border border-[#1f293d]">
+                      <span className="text-[11px] font-mono text-[#01497f] font-bold bg-[#DDE2E8] px-2.5 py-0.5 rounded-full border border-[#C5CDD7]" style={{ color: '#01497f' }}>
                         {item.layer}
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#8c1627] transition-colors">
+                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#ffccd3] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="font-red-hat text-[#9aacc6] text-[14px] leading-relaxed">
+                    <p className="font-red-hat text-[#cad8e9] text-[14px] leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -514,58 +509,83 @@ export default function RwaTokenizationPage() {
 
       {/* 5. WHY RWA TOKENIZATION? */}
       <section className="w-full py-24 px-6 sm:px-12 lg:px-16 max-w-[1340px] mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          <div className="lg:col-span-6">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2 mb-3">
+        {/* Section Header (Centered on Top for Perfect Balance) */}
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="mb-4 inline-flex items-center gap-2">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center justify-center gap-2">
               <span>—</span> WHY RWA TOKENIZATION?
             </span>
-            <h2 className="font-poppins text-white text-[32px] sm:text-[42px] font-bold leading-tight mb-6">
-              Greater Possibilities for{' '}
-              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
-                Digital Opportunity
-              </span>
-            </h2>
+          </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {benefits.map((b, idx) => {
-                const IconComp = b.icon;
-                return (
-                  <div
-                    key={idx}
-                    className="p-5 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 shadow-lg hover:shadow-[#8c1627]/5 transition-all duration-300 group hover:-translate-y-0.5"
-                  >
+          <h2 className="font-poppins text-[#004a80] text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight mb-4 tracking-tight">
+            Greater Possibilities for{' '}
+            <span className="text-[#A12B3C] font-bold">
+              Digital Opportunity
+            </span>
+          </h2>
+
+          <p className="font-red-hat text-[#004a80] text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
+            Structuring real-world assets into institutional-grade, liquid digital instruments through a secure, auditable and transparent protocol stack.
+          </p>
+        </div>
+
+        {/* 2-Column Balanced Layout: 6 Feature Cards (Left) & Ecosystem Blueprint Showcase (Right) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+          {/* Left: 6 Feature Cards (2 columns x 3 rows) */}
+          <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {benefits.map((b, idx) => {
+              const IconComp = b.icon;
+              return (
+                <div
+                  key={idx}
+                  className="p-5 rounded-2xl bg-[#004a80] border-2 border-[#003860] hover:border-white/30 shadow-xl transition-all duration-300 group hover:-translate-y-0.5 text-white flex flex-col justify-between"
+                >
+                  <div>
                     <div className="flex items-center justify-between mb-3">
-                      <div className="w-9 h-9 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] group-hover:scale-110 transition-transform flex items-center justify-center">
+                      <div className="w-9 h-9 rounded-xl bg-white/15 border border-white/25 text-white group-hover:scale-110 transition-transform flex items-center justify-center">
                         <IconComp size={17} />
                       </div>
-                      <span className="text-[11px] font-mono font-semibold text-[#8c1627] bg-[#030712] border border-[#1f293d] px-2.5 py-0.5 rounded-full">
+                      <span className="text-[11px] font-mono font-bold text-[#01497f] bg-[#DDE2E8] border border-[#C5CDD7] px-2.5 py-0.5 rounded-full" style={{ color: '#01497f' }}>
                         {b.stat}
                       </span>
                     </div>
-                    <h3 className="font-poppins text-white text-[16.5px] font-bold mb-1.5 group-hover:text-[#8c1627] transition-colors">
+                    <h3 className="font-poppins text-white text-[16px] font-bold mb-1.5 group-hover:text-[#ffccd3] transition-colors">
                       {b.title}
                     </h3>
-                    <p className="font-red-hat text-[#9aacc6] text-[13.5px] leading-relaxed">
-                      {b.desc}
-                    </p>
                   </div>
-                );
-              })}
-            </div>
+                  <p className="font-red-hat text-[#cad8e9] text-[13px] leading-relaxed">
+                    {b.desc}
+                  </p>
+                </div>
+              );
+            })}
           </div>
 
-          {/* Image with sleek dark container */}
-          <div className="lg:col-span-6">
-            <div className="relative p-2.5 rounded-2xl bg-[#080d1a] border border-[#1f293d] shadow-2xl">
-              <Image
-                src="/images/uilivuerqgliuer-1024x1024.png"
-                alt="Why RWA Tokenization?"
-                width={1024}
-                height={1024}
-                priority
-                className="w-full h-auto object-contain rounded-xl"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+          {/* Right: Ecosystem Architecture Showcase Card */}
+          <div className="lg:col-span-6 relative flex flex-col justify-center">
+            {/* Ambient Lighting Orbs */}
+            <div className="absolute -top-10 -right-10 w-72 h-72 rounded-full bg-[#A12B3C]/25 blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-10 -left-10 w-72 h-72 rounded-full bg-[#004a80]/20 blur-3xl pointer-events-none" />
+
+            {/* Showcase Card Mockup */}
+            <div className="relative w-full h-full rounded-[28px] sm:rounded-[32px] border-2 border-[#C5CDD7] bg-white p-3.5 sm:p-5 shadow-2xl shadow-[#004a80]/15 transition-all duration-500 hover:border-[#A12B3C]/40 hover:shadow-2xl group flex flex-col justify-between">
+              {/* Window Header */}
+
+
+              {/* Framed Graphic */}
+              <div className="relative w-full flex-1 flex items-center justify-center overflow-hidden rounded-2xl border border-[#C5CDD7]/30 bg-white p-1">
+                <Image
+                  src="/images/uilivuerqgliuer-1024x1024.png"
+                  alt="Why RWA Tokenization? Ecosystem Blueprint"
+                  width={1024}
+                  height={1024}
+                  priority
+                  className="w-full h-auto max-h-[480px] object-contain transition-transform duration-700 group-hover:scale-[1.02]"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+
+
             </div>
           </div>
         </div>
@@ -574,16 +594,16 @@ export default function RwaTokenizationPage() {
       {/* 6. HOW IT WORKS */}
       <section
         id="how-it-works"
-        className="w-full py-24 px-6 sm:px-12 lg:px-16 bg-[#050814] border-t border-b border-[#1f293d]"
+        className="w-full py-24 px-6 sm:px-12 lg:px-16 bg-transparent border-t border-b border-[#C5CDD7]"
       >
         <div className="max-w-[1240px] mx-auto">
           <div className="text-center max-w-[850px] mx-auto mb-16">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center justify-center gap-2 mb-3">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center justify-center gap-2 mb-3">
               <span>—</span> HOW IT WORKS
             </span>
-            <h2 className="font-poppins text-white text-[32px] sm:text-[44px] font-bold leading-tight mb-4">
+            <h2 className="font-poppins text-[#004a80] text-[32px] sm:text-[44px] font-bold leading-tight mb-4">
               From Physical Asset to{' '}
-              <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
+              <span className="text-[#A12B3C]">
                 Digital Opportunity
               </span>
             </h2>
@@ -596,18 +616,19 @@ export default function RwaTokenizationPage() {
               return (
                 <div
                   key={st.num}
-                  onClick={() => setActiveStep(st.num)}
-                  className={`cursor-pointer p-6 rounded-2xl border transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 ${
+                  onClick={() => setActiveStep(activeStep === st.num ? null : st.num)}
+                  className={`cursor-pointer p-6 rounded-2xl border-2 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-xl text-white ${
                     isSelected
-                      ? 'border-[#8c1627] ring-1 ring-[#8c1627]/30 shadow-xl shadow-[#8c1627]/10 bg-[#0d1627]'
-                      : 'bg-[#080d1a] border-[#1f293d] hover:border-[#8c1627]/50 shadow-lg'
+                      ? 'border-[#ffccd3] bg-[#004a80] shadow-2xl ring-2 ring-[#A12B3C]'
+                      : 'bg-[#004a80] border-[#003860] hover:border-white/40'
                   }`}
+                  style={{ backgroundColor: '#004a80', color: '#ffffff' }}
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <span
                         className={`font-poppins text-[28px] font-extrabold leading-none ${
-                          isSelected ? 'text-[#8c1627]' : 'text-[#9aacc6]/60 group-hover:text-[#8c1627]'
+                          isSelected ? 'text-[#ffccd3]' : 'text-white/60 group-hover:text-[#ffccd3]'
                         }`}
                       >
                         {st.num.toString().padStart(2, '0')}
@@ -615,20 +636,26 @@ export default function RwaTokenizationPage() {
                       <div
                         className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all ${
                           isSelected
-                            ? 'bg-[#9F1D2C] text-white shadow-md shadow-[#9F1D2C]/40'
-                            : 'bg-[#030712] border border-[#1f293d] text-[#8c1627] group-hover:bg-[#9F1D2C] group-hover:text-white group-hover:border-[#9F1D2C]'
+                            ? 'bg-[#A12B3C] text-white shadow-md shadow-[#A12B3C]/40'
+                            : 'bg-white/15 border border-white/25 text-white group-hover:bg-[#A12B3C]'
                         }`}
                       >
                         <IconComp size={18} />
                       </div>
                     </div>
 
-                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#8c1627] transition-colors">
+                    <h3
+                      className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#ffccd3] transition-colors"
+                      style={{ color: '#ffffff' }}
+                    >
                       {st.title}
                     </h3>
                   </div>
 
-                  <p className="font-red-hat text-[#9aacc6] text-[13.5px] leading-relaxed mt-2 pt-3 border-t border-[#1f293d]">
+                  <p
+                    className="font-red-hat text-[#cad8e9] text-[13.5px] leading-relaxed mt-2 pt-3 border-t border-white/15 font-normal"
+                    style={{ color: '#cad8e9' }}
+                  >
                     {st.desc}
                   </p>
                 </div>
@@ -639,59 +666,59 @@ export default function RwaTokenizationPage() {
       </section>
 
       {/* 7. BEYOND TOKENIZATION & THE LINKAY RWA VISION */}
-      <section className="w-full bg-[#030712] py-24 px-6 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]">
+      <section className="w-full bg-transparent py-24 px-6 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]">
         <div className="max-w-[1240px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
           <div className="lg:col-span-5">
-            <div className="relative w-full h-[360px] sm:h-[440px] overflow-hidden rounded-2xl bg-[#080d1a] border border-[#1f293d] shadow-2xl">
+            <div className="relative w-full h-[360px] sm:h-[440px] overflow-hidden rounded-2xl shadow-xl">
               <Image
                 src="/images/42miq342miq342m.jpeg"
                 alt="Beyond Tokenization"
                 fill
                 priority
-                className="object-cover"
+                className="object-cover rounded-2xl"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
 
           <div className="lg:col-span-7 space-y-9">
             <div>
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2 mb-3">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2 mb-3">
                 <span>—</span> BEYOND TOKENIZATION
               </span>
-              <h2 className="font-poppins text-white text-[30px] sm:text-[40px] font-bold leading-tight mb-4">
+              <h2 className="font-poppins text-[#004a80] text-[30px] sm:text-[40px] font-bold leading-tight mb-4">
                 Building the Infrastructure Around the Asset
               </h2>
 
-              <div className="flex flex-wrap gap-2 my-5">
+              <div className="flex flex-wrap gap-2.5 my-5">
                 {formulaItems.map((item, idx) => (
                   <span
                     key={idx}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d] text-xs font-mono text-[#f4f7ff]"
+                    className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border-2 border-[#004a80] text-xs font-mono font-bold text-[#01497f] shadow-sm"
+                    style={{ color: '#01497f' }}
                   >
                     <span>{item}</span>
                     {idx < formulaItems.length - 1 && (
-                      <span className="text-[#8c1627] font-bold">+</span>
+                      <span className="text-[#A12B3C] font-extrabold text-sm"></span>
                     )}
                   </span>
                 ))}
               </div>
 
-              <p className="font-red-hat text-[#9aacc6] text-[16px] leading-relaxed">
+              <p className="font-red-hat text-[#004a80] text-[16px] leading-relaxed">
                 Make real-world value more structured, intelligent and digitally connected.
               </p>
             </div>
 
-            <div className="pt-8 border-t border-[#1f293d]">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2 mb-3">
+            <div className="pt-8 border-t border-[#004a80]/20">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2 mb-3">
                 <span>—</span> THE LINKAY RWA VISION
               </span>
-              <h2 className="font-poppins text-white text-[28px] sm:text-[36px] font-bold leading-tight mb-4">
+              <h2 className="font-poppins text-[#004a80] text-[28px] sm:text-[36px] font-bold leading-tight mb-4">
                 From Real-World Value to{' '}
-                <span className="text-[#8c1627]">Digital Market Opportunity</span>
+                <span className="text-[#A12B3C] font-bold">Digital Market Opportunity</span>
               </h2>
-              <p className="font-red-hat text-[#9aacc6] text-[15.5px] leading-relaxed">
+              <p className="font-red-hat text-[#004a80] text-[15.5px] leading-relaxed">
                 Linkay Ventures is exploring the convergence of finance, technology, AI, blockchain
                 and real-world assets to create new digital infrastructure for the evolving global
                 economy.
@@ -704,16 +731,16 @@ export default function RwaTokenizationPage() {
       {/* 8. AN ECOSYSTEM OF CONNECTED PARTICIPANTS */}
       <section className="w-full py-24 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
         <div className="text-center max-w-[850px] mx-auto mb-16">
-          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center justify-center gap-2 mb-3">
+          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center justify-center gap-2 mb-3">
             <span>—</span> VALUE CHAIN
           </span>
           <h2 className="font-poppins text-white text-[32px] sm:text-[44px] font-bold leading-tight mb-3">
             Connecting the{' '}
-            <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.35)]">
+            <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.35)]">
               RWA Value Chain
             </span>
           </h2>
-          <p className="font-red-hat text-[#9aacc6] text-[17px]">
+          <p className="font-red-hat text-[#004a80] text-[17px]">
             The platform is designed to bring together
           </p>
         </div>
@@ -721,7 +748,7 @@ export default function RwaTokenizationPage() {
         <div className="relative mx-auto max-w-[760px]">
           <span
             aria-hidden="true"
-            className="absolute bottom-10 left-[19px] top-10 w-px bg-gradient-to-b from-[#8c1627]/80 via-[#9F1D2C] to-transparent sm:left-[21px]"
+            className="absolute bottom-10 left-[19px] top-10 w-px bg-gradient-to-b from-[#A12B3C]/80 via-[#A12B3C] to-transparent sm:left-[21px]"
           />
 
           <div className="flex flex-col gap-9 pl-14 sm:pl-16">
@@ -740,24 +767,25 @@ export default function RwaTokenizationPage() {
               >
                 <span
                   aria-hidden="true"
-                  className="absolute -left-14 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#1f293d] bg-[#080d1a] font-mono text-xs font-bold text-[#8c1627] shadow-md sm:-left-16 sm:h-11 sm:w-11"
+                  className="absolute -left-14 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#C5CDD7] bg-[#DDE2E8] font-mono text-xs font-bold text-[#01497f] shadow-md sm:-left-16 sm:h-11 sm:w-11"
+                  style={{ color: '#01497f' }}
                 >
                   {String(idx + 1).padStart(2, '0')}
                 </span>
 
-                <div className="group relative overflow-hidden rounded-2xl border border-[#1f293d] bg-[#080d1a] p-5 shadow-lg backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8c1627]/50 hover:shadow-[#8c1627]/5 sm:p-6">
+                <div className="group relative overflow-hidden rounded-2xl border-2 border-[#003860] bg-[#004a80] p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 sm:p-6 text-white">
                   <span
                     aria-hidden="true"
-                    className="absolute inset-y-0 left-0 w-[3px] origin-top scale-y-0 bg-[#8c1627] transition-transform duration-300 group-hover:scale-y-100"
+                    className="absolute inset-y-0 left-0 w-[3px] origin-top scale-y-0 bg-[#A12B3C] transition-transform duration-300 group-hover:scale-y-100"
                   />
 
                   <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
-                    <h3 className="font-poppins text-[17px] font-semibold leading-tight text-white group-hover:text-[#8c1627] transition-colors sm:text-[18px]">
+                    <h3 className="font-poppins text-[17px] font-semibold leading-tight text-white group-hover:text-[#ffccd3] transition-colors sm:text-[18px]">
                       {part.title}
                     </h3>
                   </div>
 
-                  <p className="mt-2 text-[13px] leading-relaxed text-[#9aacc6] sm:text-[14px]">
+                  <p className="mt-2 text-[13px] leading-relaxed text-[#cad8e9] sm:text-[14px]">
                     {part.desc}
                   </p>
                 </div>
@@ -766,32 +794,36 @@ export default function RwaTokenizationPage() {
           </div>
         </div>
 
-        {/* Bottom CTA Banner (Obsidian Card with Capsule Buttons) */}
-        <div className="mt-20 p-8 sm:p-12 rounded-3xl bg-[#080d1a] text-white border border-[#1f293d] text-center relative max-w-[960px] mx-auto shadow-2xl overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[420px] h-[420px] rounded-full bg-[#8c1627]/10 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full bg-[#9F1D2C]/15 blur-3xl pointer-events-none" />
+        {/* Bottom CTA Banner (Venture HUB styled Card) */}
+        <div className="mt-20 p-8 sm:p-12 rounded-3xl bg-[#004a80] text-white border-2 border-[#003860] text-center relative max-w-[960px] mx-auto shadow-2xl overflow-hidden">
+          <div className="absolute top-0 right-0 w-60 h-60 rounded-full bg-[#A12B3C]/30 blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-52 h-52 rounded-full bg-[#A12B3C]/20 blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase block mb-3">
-              — START YOUR TOKENIZATION JOURNEY
-            </span>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C]" />
+              <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#A12B3C]">
+                Start Your Tokenization Journey
+              </span>
+            </div>
             <h3 className="font-poppins text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-white">
               Ready to Tokenize Real-World Assets?
             </h3>
-            <p className="font-red-hat text-[#9aacc6] text-sm sm:text-base mb-8 leading-relaxed">
+            <p className="font-red-hat text-[#cad8e9] text-sm sm:text-base mb-8 leading-relaxed">
               Discuss with our experts to structure, digitize, and issue your assets on a compliant
               institutional platform.
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-4 w-full sm:w-auto">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-md shadow-[#A12B3C]/25 hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 Discuss an Asset
               </Link>
               <Link
                 href="#how-it-works"
-                className="inline-flex items-center justify-center bg-[#030712] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center bg-[#DDE2E8] hover:bg-[#cad2dc] text-[#01497f] border-2 border-[#DDE2E8] font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-md hover:-translate-y-0.5 w-full sm:w-auto"
+                style={{ color: '#01497f' }}
               >
                 Explore How It Works
               </Link>

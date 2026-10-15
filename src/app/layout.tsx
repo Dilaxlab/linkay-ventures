@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-[#060a16] text-[#f4f7ff] font-redhat antialiased selection:bg-[#9F1D2C] selection:text-white">
+      <body className="bg-page-gradient text-[#004a80] font-redhat antialiased selection:bg-[#A12B3C] selection:text-white min-h-screen">
         <AppShell>{children}</AppShell>
       </body>
     </html>

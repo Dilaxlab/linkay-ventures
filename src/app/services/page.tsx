@@ -136,21 +136,17 @@ export default function ServicesPage() {
   ];
 
   return (
-    <main className="w-full bg-[#030712] text-[#f4f7ff] font-sans antialiased overflow-x-hidden selection:bg-[#9F1D2C] selection:text-white">
+    <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#A12B3C] selection:text-white">
 
       {/* ============================================================== */}
       {/* 1. HERO                                                        */}
       {/* ============================================================== */}
       <section className="relative w-full pt-28 pb-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
-        {/* Ambient glow effects */}
-        <div className="absolute top-0 right-1/4 w-[550px] h-[350px] bg-[#8c1627]/10 blur-[140px] pointer-events-none" />
-        <div className="absolute top-1/2 left-10 w-[450px] h-[300px] bg-[#9F1D2C]/15 blur-[130px] pointer-events-none" />
-
         <div className="max-w-[1240px] mx-auto relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
                 <span>—</span> OUR SERVICES
               </span>
             </div>
@@ -158,13 +154,13 @@ export default function ServicesPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[68px] font-bold text-white tracking-tight leading-[1.1] mb-6">
               Capital, guidance and connections{' '}
-              <span className="text-[#8c1627] drop-shadow-[0_0_25px_rgba(140,22,39,0.35)]">
+              <span className="text-[#A12B3C] drop-shadow-[0_0_25px_rgba(161, 43, 60,0.35)]">
                 built for what&apos;s next.
               </span>
             </h1>
 
             {/* Body */}
-            <p className="font-red-hat text-[#9aacc6] text-base sm:text-lg sm:text-xl leading-relaxed mb-8 sm:mb-10 font-normal max-w-2xl mx-auto">
+            <p className="font-red-hat text-[#004a80] text-base sm:text-lg sm:text-xl leading-relaxed mb-8 sm:mb-10 font-normal max-w-2xl mx-auto">
               From investment structures to strategic advisory and a connected innovation ecosystem, Linkay Ventures supports ambitious ventures at every stage of growth.
             </p>
 
@@ -172,7 +168,7 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-4 mb-10 max-w-md sm:max-w-none mx-auto">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#A12B3C]/30 hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Discuss Your Needs</span>
                 <ArrowRight size={16} />
@@ -181,25 +177,25 @@ export default function ServicesPage() {
                 href="https://hub.linkayventures.com/index.php"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all shadow-md hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Explore Venture HUB</span>
-                <ArrowUpRight size={16} className="text-[#8c1627]" />
+                <ArrowUpRight size={16} className="text-[#A12B3C] group-hover:text-white" />
               </Link>
             </div>
 
             {/* Chips */}
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-mono font-medium tracking-wider text-[#9aacc6]">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-mono font-bold tracking-wider text-[#004a80]">
               <div className="flex items-center gap-2">
-                <span className="text-[#8c1627]">•</span>
+                <span className="text-[#A12B3C]">•</span>
                 <span>Venture &amp; Growth Capital</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-[#8c1627]">•</span>
+                <span className="text-[#A12B3C]">•</span>
                 <span>Strategic Advisory</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-[#8c1627]">•</span>
+                <span className="text-[#A12B3C]">•</span>
                 <span>Innovation Ecosystem</span>
               </div>
             </div>
@@ -211,50 +207,47 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       {/* 2. 01 / CAPITAL                                                */}
       {/* ============================================================== */}
-      <section className="w-full bg-[#050814] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="capital">
+      <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="capital">
         <div className="max-w-[1340px] mx-auto">
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-16">
             <div className="lg:col-span-7">
               <div className="mb-4 inline-flex items-center gap-2">
-                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
+                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
                   <span>—</span>CAPITAL
                 </span>
               </div>
 
-              <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
+              <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-5">
                 Investment solutions.{' '}
-                <span className="text-[#9aacc6] block sm:inline">Structured with intent.</span>
+                <span className="text-[#A12B3C] block sm:inline font-bold">Structured with intent.</span>
               </h2>
 
-              <p className="font-red-hat text-[#9aacc6] text-base sm:text-lg leading-relaxed mb-6 font-normal">
+              <p className="font-red-hat text-[#004a80] text-base sm:text-lg leading-relaxed mb-6 font-normal">
                 A range of funding and capital strategies for qualified startups, growth-stage companies and strategic partners.
               </p>
 
               <div>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-xs font-semibold px-6 py-2.5 rounded-full transition-all"
+                  className="inline-flex items-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-xs font-bold px-6 py-2.5 rounded-full transition-all shadow-md hover:-translate-y-0.5 group"
                 >
                   <span>Discuss Capital Options</span>
-                  <ArrowRight size={14} className="text-[#8c1627]" />
+                  <ArrowRight size={14} className="text-[#A12B3C] group-hover:text-white" />
                 </Link>
               </div>
             </div>
 
-            {/* Preserving existing image /images/service.jpeg with dark frame */}
+            {/* Clean image without background or border */}
             <div className="lg:col-span-5">
-              <div className="relative w-full h-[320px] sm:h-[380px] overflow-hidden rounded-2xl bg-[#080d1a] border border-[#1f293d] shadow-2xl p-2 group">
-                <div className="relative w-full h-full rounded-xl overflow-hidden">
-                  <Image
-                    src="/images/service.jpeg"
-                    alt="Investment Solutions"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#030712]/80 via-transparent to-transparent pointer-events-none" />
-                </div>
+              <div className="relative w-full h-[320px] sm:h-[380px] overflow-hidden rounded-2xl shadow-xl group">
+                <Image
+                  src="/images/service.jpeg"
+                  alt="Investment Solutions"
+                  fill
+                  className="object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
               </div>
             </div>
           </div>
@@ -266,29 +259,29 @@ export default function ServicesPage() {
               return (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg"
+                  className="p-6 rounded-2xl bg-[#004a80] border-2 border-[#003860] hover:border-white/30 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-xl text-white"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-5">
-                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
-                      <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#101a2a] border border-[#233049] text-[#71829e]">
+                      <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold" style={{ color: '#01497f' }}>
                         {item.tag}
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#8c1627] transition-colors leading-snug">
+                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#ffccd3] transition-colors leading-snug">
                       {item.title}
                     </h3>
 
-                    <p className="font-red-hat text-[#9aacc6] text-xs sm:text-[13px] leading-relaxed font-normal">
+                    <p className="font-red-hat text-[#cad8e9] text-xs sm:text-[13px] leading-relaxed font-normal">
                       {item.description}
                     </p>
                   </div>
 
-                  <div className="pt-4 mt-6 border-t border-[#1f293d] flex items-center gap-1.5 text-xs text-[#cad5e8]">
-                    <CheckCircle2 size={12} className="text-[#8c1627]" />
+                  <div className="pt-4 mt-6 border-t border-white/15 flex items-center gap-1.5 text-xs text-[#cad8e9]">
+                    <CheckCircle2 size={12} className="text-[#ffccd3]" />
                     <span>Eligible Structures</span>
                   </div>
                 </div>
@@ -302,33 +295,33 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       {/* 3. 02 / STRATEGY                                               */}
       {/* ============================================================== */}
-      <section className="w-full bg-[#030712] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="strategy">
+      <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="strategy">
         <div className="max-w-[1340px] mx-auto">
 
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
             <div className="max-w-3xl">
               <div className="mb-4 inline-flex items-center gap-2">
-                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
+                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
                   <span>—</span>STRATEGY
                 </span>
               </div>
 
-              <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
+              <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-4">
                 Advisory and mentorship{' '}
-                <span className="text-[#9aacc6] block sm:inline">from people who&apos;ve built.</span>
+                <span className="text-[#A12B3C] block sm:inline font-bold">from people who&apos;ve built.</span>
               </h2>
 
-              <p className="font-red-hat text-[#9aacc6] text-base sm:text-lg font-normal">
+              <p className="font-red-hat text-[#004a80] text-base sm:text-lg font-normal">
                 Practical guidance for founders navigating growth, markets and regulation.
               </p>
             </div>
 
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-xs font-semibold px-6 py-2.5 rounded-full transition-all shrink-0"
+              className="inline-flex items-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-xs font-bold px-6 py-2.5 rounded-full transition-all shadow-md hover:-translate-y-0.5 shrink-0 group"
             >
               <span>Talk to an Advisor</span>
-              <ArrowRight size={14} className="text-[#8c1627]" />
+              <ArrowRight size={14} className="text-[#A12B3C] group-hover:text-white" />
             </Link>
           </div>
 
@@ -338,29 +331,29 @@ export default function ServicesPage() {
               return (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg"
+                  className="p-6 rounded-2xl bg-[#004a80] border border-[#003860] hover:border-white/30 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg text-white"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-5">
-                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
-                      <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#101a2a] border border-[#233049] text-[#71829e]">
+                      <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold" style={{ color: '#01497f' }}>
                         {item.tag}
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#8c1627] transition-colors leading-snug">
+                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#ffccd3] transition-colors leading-snug">
                       {item.title}
                     </h3>
 
-                    <p className="font-red-hat text-[#9aacc6] text-xs sm:text-[13px] leading-relaxed font-normal">
+                    <p className="font-red-hat text-[#cad8e9] text-xs sm:text-[13px] leading-relaxed font-normal">
                       {item.description}
                     </p>
                   </div>
 
-                  <div className="pt-4 mt-6 border-t border-[#1f293d] flex items-center gap-1.5 text-xs text-[#cad5e8]">
-                    <CheckCircle2 size={12} className="text-[#8c1627]" />
+                  <div className="pt-4 mt-6 border-t border-white/15 flex items-center gap-1.5 text-xs text-[#cad8e9]">
+                    <CheckCircle2 size={12} className="text-[#ffccd3]" />
                     <span>Domain Guidance</span>
                   </div>
                 </div>
@@ -374,30 +367,30 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       {/* 4. 03 / ECOSYSTEM                                              */}
       {/* ============================================================== */}
-      <section className="w-full bg-[#050814] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="ecosystem">
+      <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="ecosystem">
         <div className="max-w-[1340px] mx-auto">
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-16">
             <div className="lg:col-span-7">
               <div className="mb-4 inline-flex items-center gap-2">
-                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
+                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
                   <span>—</span>ECOSYSTEM
                 </span>
               </div>
 
-              <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
+              <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-5">
                 Beyond funding.{' '}
-                <span className="text-[#9aacc6] block sm:inline">A connected ecosystem.</span>
+                <span className="text-[#A12B3C] block sm:inline font-bold">A connected ecosystem.</span>
               </h2>
 
-              <p className="font-red-hat text-[#9aacc6] text-base sm:text-lg leading-relaxed mb-6 font-normal">
+              <p className="font-red-hat text-[#004a80] text-base sm:text-lg leading-relaxed mb-6 font-normal">
                 We connect startups, corporations, researchers and capital partners to accelerate collaboration and growth.
               </p>
 
               <div>
                 <Link
                   href="/programs"
-                  className="inline-flex items-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-xs font-semibold px-7 py-3 rounded-full transition-all shadow-md shadow-[#9F1D2C]/30 hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-xs font-bold px-7 py-3 rounded-full transition-all shadow-md shadow-[#A12B3C]/30 hover:-translate-y-0.5"
                 >
                   <span>Explore Our Programs</span>
                   <ArrowRight size={14} />
@@ -405,19 +398,16 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* Preserving existing image /images/service1.jpeg with dark frame */}
+            {/* Clean image without background or border */}
             <div className="lg:col-span-5">
-              <div className="relative w-full h-[320px] sm:h-[380px] overflow-hidden rounded-2xl bg-[#080d1a] border border-[#1f293d] shadow-2xl p-2 group">
-                <div className="relative w-full h-full rounded-xl overflow-hidden">
-                  <Image
-                    src="/images/service1.jpeg"
-                    alt="Innovation Ecosystem"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#030712]/80 via-transparent to-transparent pointer-events-none" />
-                </div>
+              <div className="relative w-full h-[320px] sm:h-[380px] overflow-hidden rounded-2xl shadow-xl group">
+                <Image
+                  src="/images/service1.jpeg"
+                  alt="Innovation Ecosystem"
+                  fill
+                  className="object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
               </div>
             </div>
           </div>
@@ -431,31 +421,31 @@ export default function ServicesPage() {
               return (
                 <div
                   key={idx}
-                  className={`p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg ${
+                  className={`p-6 rounded-2xl bg-[#004a80] border-2 border-[#003860] hover:border-white/30 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-xl text-white ${
                     isLastTwo ? 'lg:col-span-3' : 'lg:col-span-2'
                   }`}
                 >
                   <div>
                     <div className="flex items-center justify-between mb-5">
-                      <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 text-[#8c1627] flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
-                      <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#101a2a] border border-[#233049] text-[#71829e]">
+                      <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold" style={{ color: '#01497f' }}>
                         {item.tag}
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#8c1627] transition-colors leading-snug">
+                    <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#ffccd3] transition-colors leading-snug">
                       {item.title}
                     </h3>
 
-                    <p className="font-red-hat text-[#9aacc6] text-xs sm:text-[13px] leading-relaxed font-normal">
+                    <p className="font-red-hat text-[#cad8e9] text-xs sm:text-[13px] leading-relaxed font-normal">
                       {item.description}
                     </p>
                   </div>
 
-                  <div className="pt-4 mt-6 border-t border-[#1f293d] flex items-center gap-1.5 text-xs text-[#cad5e8]">
-                    <CheckCircle2 size={12} className="text-[#8c1627]" />
+                  <div className="pt-4 mt-6 border-t border-white/15 flex items-center gap-1.5 text-xs text-[#cad8e9]">
+                    <CheckCircle2 size={12} className="text-[#ffccd3]" />
                     <span>Ecosystem Access</span>
                   </div>
                 </div>
@@ -469,16 +459,16 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       {/* 5. 04 / HOW WE WORK                                            */}
       {/* ============================================================== */}
-      <section className="w-full bg-[#030712] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]">
+      <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#C5CDD7]">
         <div className="max-w-[1340px] mx-auto">
 
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="mb-3 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
                 <span>—</span>HOW WE WORK
               </span>
             </div>
-            <h2 className="font-poppins text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="font-poppins text-2xl sm:text-3xl font-bold text-[#004a80]">
               Understand → Assess → Design → Advance
             </h2>
           </div>
@@ -487,16 +477,16 @@ export default function ServicesPage() {
             {howWeWorkSteps.map((step, idx) => (
               <div
                 key={idx}
-                className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] flex flex-col justify-between"
+                className="p-6 rounded-2xl bg-[#004a80] border-2 border-[#003860] flex flex-col justify-between text-white shadow-xl"
               >
                 <div>
-                  <span className="text-xs font-mono font-bold text-[#8c1627] block mb-2">
+                  <span className="text-xs font-mono font-bold text-[#ffccd3] block mb-2">
                     PHASE {step.num}
                   </span>
                   <h3 className="font-poppins text-lg font-bold text-white mb-2">
                     {step.title}
                   </h3>
-                  <p className="font-red-hat text-xs sm:text-sm text-[#9aacc6] leading-relaxed font-normal">
+                  <p className="font-red-hat text-xs sm:text-sm text-[#cad8e9] leading-relaxed font-normal">
                     {step.desc}
                   </p>
                 </div>
@@ -510,26 +500,28 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       {/* 6. VENTURE HUB                                                 */}
       {/* ============================================================== */}
-      <section className="w-full bg-[#050814] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="venture-hub">
+      <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#C5CDD7]" id="venture-hub">
         <div className="max-w-[1340px] mx-auto">
-          <div className="p-8 sm:p-12 rounded-3xl bg-[#080d1a] border border-[#1f293d] text-center relative max-w-[960px] mx-auto overflow-hidden shadow-2xl">
+          <div className="p-8 sm:p-12 rounded-3xl bg-[#004a80] border-2 border-[#003860] text-center relative max-w-[960px] mx-auto overflow-hidden shadow-2xl text-white">
             {/* Ambient glow */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full bg-[#9F1D2C]/15 blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-60 h-60 rounded-full bg-[#A12B3C]/30 blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-52 h-52 rounded-full bg-[#A12B3C]/20 blur-3xl pointer-events-none" />
 
             <div className="relative z-10 max-w-2xl mx-auto">
-              <div className="mb-4 inline-flex items-center gap-2">
-                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
-                  <span>—</span> CONNECT VENTURE HUB
+              {/* Eyebrow Pill */}
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm mb-6">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C]" />
+                <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#A12B3C]">
+                  Secure Client Portal
                 </span>
               </div>
 
-              <h2 className="font-poppins text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-white">
-                Your resources.{' '}
-                <span className="text-[#9aacc6] block sm:inline">One secure portal.</span>
+              <h2 className="font-poppins text-white text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4">
+                Venture HUB
               </h2>
 
-              <p className="font-red-hat text-[#9aacc6] text-base sm:text-lg mb-8 leading-relaxed max-w-xl mx-auto font-normal">
-                Access financial and technical solutions, expert connections and strategic tools, whether you&apos;re just starting or scaling fast.
+              <p className="font-red-hat text-[#cad8e9] text-base sm:text-lg mb-8 leading-relaxed max-w-xl mx-auto font-normal">
+                Access financial and technical resources, expert connections and strategic tools in one secure portal.
               </p>
 
               <div className="flex flex-wrap items-center justify-center gap-4">
@@ -537,7 +529,7 @@ export default function ServicesPage() {
                   href="https://hub.linkayventures.com/index.php"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-lg shadow-[#A12B3C]/40 hover:-translate-y-0.5"
                 >
                   <Lock size={15} />
                   <span>Login to Venture HUB</span>
@@ -545,7 +537,8 @@ export default function ServicesPage() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="bg-[#080d1a] hover:bg-[#101a2a] text-[#f4f7ff] border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 rounded-full transition-all"
+                  className="inline-flex items-center justify-center bg-[#DDE2E8] hover:bg-[#cad2dc] text-[#01497f] font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-md hover:-translate-y-0.5 w-full sm:w-auto border-2 border-[#DDE2E8]"
+                  style={{ color: '#01497f' }}
                 >
                   Request Access
                 </Link>
@@ -558,31 +551,29 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       {/* 7. CLOSING CTA                                                 */}
       {/* ============================================================== */}
-      <section className="w-full bg-[#030712] py-24 px-6 sm:px-12 lg:px-16 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[#9F1D2C]/15 blur-[120px] pointer-events-none" />
-
+      <section className="w-full bg-transparent py-24 px-6 sm:px-12 lg:px-16 relative overflow-hidden">
         <div className="max-w-[960px] mx-auto text-center relative z-10">
           <div className="mb-5 inline-flex items-center gap-2">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
               <span>—</span> THE NEXT OPPORTUNITY STARTS HERE
             </span>
           </div>
 
-          <h2 className="font-poppins text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight mb-8">
+          <h2 className="font-poppins text-3xl sm:text-5xl lg:text-6xl font-bold text-[#004a80] tracking-tight leading-tight mb-8">
             Let&apos;s build what&apos;s next.
           </h2>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#A12B3C]/30 hover:-translate-y-0.5"
             >
               <span>Contact Our Team</span>
               <ArrowRight size={16} />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#080d1a] hover:bg-[#101a2a] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-sm font-semibold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all shadow-md hover:-translate-y-0.5"
             >
               <span>Talk to an Expert</span>
             </Link>

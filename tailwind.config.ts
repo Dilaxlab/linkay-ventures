@@ -59,6 +59,9 @@ const config: Config = {
           900: '#0A1A33',
         },
       },
+      backgroundImage: {
+        'page-gradient': 'radial-gradient(ellipse at center, #FFFFFF 0%, #F3F1E2 55%, #E6E4C4 100%)',
+      },
       fontFamily: {
         kanit: ['var(--font-kanit)', 'sans-serif'],
         poppins: ['var(--font-poppins)', 'sans-serif'],

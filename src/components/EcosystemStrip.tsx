@@ -11,12 +11,12 @@ export default function EcosystemStrip() {
   ];
 
   return (
-    <section className="w-full bg-[#050814] border-b border-[#1f293d] py-7 px-6 sm:px-12 lg:px-16">
+    <section className="w-full bg-transparent border-b border-[#D8D5B0] py-7 px-6 sm:px-12 lg:px-16">
       <div className="max-w-[1340px] mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5 shrink-0">
-            <span className="w-2 h-2 rounded-full bg-[#8c1627] animate-pulse" />
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#9aacc6]">
+            <span className="w-2 h-2 rounded-full bg-[#A12B3C] animate-pulse" />
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#A12B3C]">
               Global Reach
             </span>
           </div>
@@ -24,17 +24,17 @@ export default function EcosystemStrip() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 w-full md:w-auto">
             {hubs.map((hub, idx) => (
               <div key={idx} className="flex flex-col items-center md:items-start text-center md:text-left">
-                <span className="font-poppins text-sm font-bold text-white tracking-wide">
+                <span className="font-poppins text-sm font-bold text-[#004a80] tracking-wide">
                   {hub.city}
                 </span>
-                <span className="text-[11px] font-red-hat text-[#71829e] mt-0.5">
+                <span className="text-[11px] font-red-hat text-[#004a80] mt-0.5">
                   {hub.role}
                 </span>
               </div>
             ))}
           </div>
 
-          <div className="hidden xl:flex items-center gap-2 text-xs font-mono text-[#8c1627] px-3.5 py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d]">
+          <div className="hidden xl:flex items-center gap-2 text-xs font-mono text-[#A12B3C] px-4 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm font-bold">
             <Globe2 size={13} />
             <span>Cross-Border Connectivity</span>
           </div>

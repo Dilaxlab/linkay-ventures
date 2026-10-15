@@ -15,8 +15,11 @@
 html {
   scroll-behavior: smooth;
   font-family: var(--font-redhat), sans-serif;
-  color: #cad5e8;
-  background-color: #030712;
+  color: #004a80;
+  background: #DDE2E8 !important;
+  background-color: #DDE2E8 !important;
+  background-image: none !important;
+  background-attachment: fixed !important;
   overflow-x: hidden;
   width: 100%;
 }
@@ -26,7 +29,339 @@ body {
   padding: 0;
   overflow-x: hidden;
   width: 100%;
-  background-color: #030712;
+  color: #004a80;
+  background: #DDE2E8 !important;
+  background-color: #DDE2E8 !important;
+  background-image: none !important;
+  background-attachment: fixed !important;
+  min-height: 100vh;
+}
+
+.bg-page-gradient {
+  background: #DDE2E8 !important;
+  background-color: #DDE2E8 !important;
+  background-image: none !important;
+  background-attachment: fixed !important;
+}
+
+/* ============================================================== */
+/* GLOBAL THEME - #DDE2E8 Solid Cool Silver Mist (All Pages)      */
+/* ============================================================== */
+html.home-page-theme,
+body.home-page-theme,
+body.home-page-theme .bg-page-gradient {
+  background: #DDE2E8 !important;
+  background-color: #DDE2E8 !important;
+  background-image: none !important;
+}
+
+/* ============================================================== */
+/* VENTURE HUB COLOR SCHEME FOR ALL CARDS AND BOXES               */
+/* ============================================================== */
+.bg-\[\#080d1a\],
+.bg-\[\#050814\],
+.bg-\[\#030712\],
+.bg-\[\#060a14\],
+.bg-\[\#060a16\],
+.bg-\[\#101a2a\],
+.bg-\[\#0b1220\],
+.bg-\[\#0a1122\],
+.bg-\[\#0d1627\],
+.bg-\[\#15233a\],
+.bg-\[\#18263e\],
+.bg-\[\#233049\],
+.bg-\[\#324566\],
+.bg-\[\#050914\],
+.bg-\[\#080d1a\]\/50,
+.bg-\[\#080d1a\]\/60,
+.bg-\[\#080d1a\]\/80,
+.bg-\[\#080d1a\]\/90,
+.bg-\[\#030712\]\/90,
+.bg-\[\#030712\]\/95,
+.bg-\[\#101a2a\]\/90,
+.bg-\[\#101a2a\]\/95,
+.bg-\[\#004a80\] {
+  background: #004a80 !important;
+  color: #ffffff;
+  border-color: #003860 !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 74, 128, 0.25), 0 4px 12px -2px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Hover effect for cards */
+.bg-\[\#080d1a\]:hover,
+.bg-\[\#050814\]:hover,
+.bg-\[\#030712\]:hover,
+.bg-\[\#101a2a\]:hover,
+.bg-\[\#0b1220\]:hover,
+.bg-\[\#0a1122\]:hover {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 14px 35px -5px rgba(0, 74, 128, 0.35), 0 6px 16px -2px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Card Titles / Headings: Crisp Pure White */
+.bg-\[\#080d1a\] h1, .bg-\[\#080d1a\] h2, .bg-\[\#080d1a\] h3, .bg-\[\#080d1a\] h4, .bg-\[\#080d1a\] h5, .bg-\[\#080d1a\] h6,
+.bg-\[\#050814\] h1, .bg-\[\#050814\] h2, .bg-\[\#050814\] h3, .bg-\[\#050814\] h4,
+.bg-\[\#101a2a\] h1, .bg-\[\#101a2a\] h2, .bg-\[\#101a2a\] h3, .bg-\[\#101a2a\] h4,
+.bg-\[\#030712\] h1, .bg-\[\#030712\] h2, .bg-\[\#030712\] h3, .bg-\[\#030712\] h4,
+.bg-\[\#0b1220\] h1, .bg-\[\#0b1220\] h2, .bg-\[\#0b1220\] h3, .bg-\[\#0b1220\] h4,
+.bg-\[\#0a1122\] h1, .bg-\[\#0a1122\] h2, .bg-\[\#0a1122\] h3, .bg-\[\#0a1122\] h4,
+.bg-\[\#004a80\] h1, .bg-\[\#004a80\] h2, .bg-\[\#004a80\] h3, .bg-\[\#004a80\] h4, .bg-\[\#004a80\] h5, .bg-\[\#004a80\] h6,
+.bg-\[\#080d1a\] .text-white,
+.bg-\[\#050814\] .text-white,
+.bg-\[\#030712\] .text-white,
+.bg-\[\#101a2a\] .text-white,
+.bg-\[\#0b1220\] .text-white,
+.bg-\[\#004a80\] .text-white,
+.bg-\[\#080d1a\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *),
+.bg-\[\#050814\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *),
+.bg-\[\#030712\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *),
+.bg-\[\#101a2a\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *),
+.bg-\[\#0b1220\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *),
+.bg-\[\#004a80\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *) {
+  color: #ffffff !important;
+}
+
+/* ALL pill tags, chips, badges, and elements with #E6E4C4, #E3CD8F, #DDE2E8 background: text color #01497f */
+[class*="bg-\[\#E6E4C4\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover),
+[class*="bg-\[\#E6E4C4\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover) *,
+[class*="bg-\[\#e6e4c4\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover),
+[class*="bg-\[\#e6e4c4\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover) *,
+[class*="bg-\[\#E3CD8F\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover),
+[class*="bg-\[\#E3CD8F\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover) *,
+[class*="bg-\[\#e3cd8f\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover),
+[class*="bg-\[\#e3cd8f\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover) *,
+[class*="bg-\[\#DDE2E8\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover),
+[class*="bg-\[\#DDE2E8\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover) *,
+[class*="bg-\[\#dde2e8\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover),
+[class*="bg-\[\#dde2e8\]"]:not([class*="text-\[\#A12B3C\]"]):not([class*="text-\[\#9F1D2C\]"]):not(:hover) *,
+span[class*="bg-\[\#E6E4C4\]"],
+span[class*="bg-\[\#E6E4C4\]"] *,
+span[class*="bg-\[\#E3CD8F\]"],
+span[class*="bg-\[\#E3CD8F\]"] *,
+span[class*="bg-\[\#DDE2E8\]"],
+span[class*="bg-\[\#DDE2E8\]"] *,
+.text-\[\#01497f\],
+.text-\[\#01497f\] * {
+  color: #01497f !important;
+}
+
+/* White buttons inside or outside cards ALWAYS have deep navy #004a80 text */
+button[class*="bg-white"],
+a[class*="bg-white"],
+button.bg-white,
+a.bg-white {
+  color: #004a80 !important;
+}
+button[class*="bg-white"] span,
+a[class*="bg-white"] span,
+button.bg-white span,
+a.bg-white span {
+  color: #004a80 !important;
+}
+
+/* Card Descriptions / Subtitles / Paragraphs: Light Gray (#cad8e9) */
+.bg-\[\#080d1a\] p,
+.bg-\[\#050814\] p,
+.bg-\[\#101a2a\] p,
+.bg-\[\#030712\] p,
+.bg-\[\#0b1220\] p,
+.bg-\[\#0a1122\] p,
+.bg-\[\#004a80\] p,
+.bg-\[\#080d1a\] .text-\[\#cad8e9\],
+.bg-\[\#080d1a\] .text-\[\#cad5e8\],
+.bg-\[\#080d1a\] .text-\[\#9aacc6\],
+.bg-\[\#080d1a\] .text-\[\#71829e\],
+.bg-\[\#050814\] .text-\[\#cad8e9\],
+.bg-\[\#050814\] .text-\[\#cad5e8\],
+.bg-\[\#050814\] .text-\[\#9aacc6\],
+.bg-\[\#030712\] .text-\[\#9aacc6\],
+.bg-\[\#101a2a\] .text-\[\#cad8e9\],
+.bg-\[\#101a2a\] .text-\[\#cad5e8\],
+.bg-\[\#101a2a\] .text-\[\#9aacc6\],
+.bg-\[\#004a80\] .text-\[\#cad8e9\],
+.bg-\[\#004a80\] .text-\[\#cad5e8\],
+.bg-\[\#004a80\] .text-\[\#9aacc6\],
+.bg-\[\#004a80\] .text-\[\#71829e\],
+.bg-\[\#080d1a\] .text-slate-400 {
+  color: #cad8e9 !important;
+}
+
+/* Card Eyebrows & Accents: Rose Tint for high legibility on navy */
+.bg-\[\#080d1a\] .text-\[\#9F1D2C\],
+.bg-\[\#080d1a\] .text-\[\#A12B3C\],
+.bg-\[\#050814\] .text-\[\#A12B3C\],
+.bg-\[\#101a2a\] .text-\[\#A12B3C\],
+.bg-\[\#004a80\] .text-\[\#A12B3C\] {
+  color: #ffccd3 !important;
+}
+
+/* Card Tag / Pill badges inside cards */
+.bg-\[\#080d1a\] [class*="rounded-full"][class*="bg-\[\#101a2a\]"],
+.bg-\[\#080d1a\] [class*="rounded-full"][class*="bg-\[\#030712\]"],
+.bg-\[\#050814\] [class*="rounded-full"][class*="bg-\[\#101a2a\]"],
+.bg-\[\#004a80\] [class*="rounded-full"][class*="bg-\[\#101a2a\]"],
+.bg-\[\#004a80\] [class*="rounded-full"][class*="bg-\[\#030712\]"] {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #cad8e9 !important;
+}
+
+/* Card Checkmark circles & icons inside cards */
+.bg-\[\#080d1a\] [class*="rounded-full"][class*="bg-\[\#9F1D2C\]"],
+.bg-\[\#050814\] [class*="rounded-full"][class*="bg-\[\#9F1D2C\]"],
+.bg-\[\#004a80\] [class*="rounded-full"][class*="bg-\[\#9F1D2C\]"] {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+/* Card internal divider borders */
+.bg-\[\#080d1a\] .border-\[\#1f293d\],
+.bg-\[\#080d1a\] .border-t,
+.bg-\[\#080d1a\] .border-b,
+.bg-\[\#050814\] .border-\[\#1f293d\],
+.bg-\[\#101a2a\] .border-\[\#1f293d\],
+.bg-\[\#004a80\] .border-\[\#1f293d\],
+.bg-\[\#004a80\] .border-t,
+.bg-\[\#004a80\] .border-b {
+  border-color: rgba(255, 255, 255, 0.14) !important;
+}
+
+/* Card Icon badge / boxes */
+.bg-\[\#080d1a\] [class*="bg-\[\#A12B3C\]\/10"],
+.bg-\[\#080d1a\] [class*="bg-\[\#9F1D2C\]\/15"],
+.bg-\[\#050814\] [class*="bg-\[\#A12B3C\]\/10"],
+.bg-\[\#101a2a\] [class*="bg-\[\#A12B3C\]\/10"],
+.bg-\[\#004a80\] [class*="bg-\[\#A12B3C\]\/10"] {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+}
+
+/* Card CTA link text (e.g. "Explore Platform", "Learn More", Arrow icons) */
+.bg-\[\#080d1a\] a:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-white"]):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#DDE2E8\]"]),
+.bg-\[\#050814\] a:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-white"]):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#DDE2E8\]"]),
+.bg-\[\#101a2a\] a:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-white"]):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#DDE2E8\]"]),
+.bg-\[\#004a80\] a:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-white"]):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#DDE2E8\]"]) {
+  color: #ffffff !important;
+}
+
+.bg-\[\#080d1a\] a:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-white"]):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#DDE2E8\]"]):hover,
+.bg-\[\#050814\] a:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-white"]):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#DDE2E8\]"]):hover,
+.bg-\[\#101a2a\] a:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-white"]):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#DDE2E8\]"]):hover,
+.bg-\[\#004a80\] a:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-white"]):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#DDE2E8\]"]):hover {
+  color: #ffccd3 !important;
+}
+
+/* Form input / textarea inside cards */
+.bg-\[\#080d1a\] input,
+.bg-\[\#080d1a\] textarea,
+.bg-\[\#050814\] input,
+.bg-\[\#050814\] textarea,
+.bg-\[\#030712\] input,
+.bg-\[\#030712\] textarea,
+.bg-\[\#004a80\] input,
+.bg-\[\#004a80\] textarea,
+input.bg-\[\#030712\],
+input.bg-\[\#080d1a\],
+textarea.bg-\[\#030712\],
+textarea.bg-\[\#080d1a\] {
+  background-color: #003860 !important;
+  color: #ffffff !important;
+  border-color: #005fa3 !important;
+}
+
+input.bg-\[\#030712\]::placeholder,
+input.bg-\[\#080d1a\]::placeholder,
+textarea.bg-\[\#030712\]::placeholder,
+textarea.bg-\[\#080d1a\]::placeholder {
+  color: #8da5c4 !important;
+}
+
+/* ============================================================== */
+/* ALL WHITE TEXT ON PAGE BACKGROUND CHANGED TO #004a80            */
+/* ============================================================== */
+.text-white:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-\[\#851823\]"]):not([class*="bg-\[\#25D366\]"]):not([class*="bg-\[\#20ba5a\]"]):not([class*="bg-\[\#004a80\]"]):not([class*="bg-\[\#080d1a\]"]):not([class*="bg-\[\#050814\]"]):not([class*="bg-\[\#101a2a\]"]):not([class*="bg-\[\#0b1220\]"]):not([class*="bg-\[\#030712\]"]):not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#0a1122\] *):not(.bg-\[\#004a80\] *):not(#venture-hub *):not([style*="background"] *):not([style*="background"]):not(button.bg-\[\#A12B3C\]):not(button.bg-\[\#9F1D2C\]),
+.text-\[\#f4f7ff\]:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-\[\#851823\]"]):not([class*="bg-\[\#004a80\]"]):not([class*="bg-\[\#080d1a\]"]):not([class*="bg-\[\#050814\]"]):not([class*="bg-\[\#101a2a\]"]):not([class*="bg-\[\#0b1220\]"]):not([class*="bg-\[\#030712\]"]):not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#0a1122\] *):not(.bg-\[\#004a80\] *):not(#venture-hub *):not([style*="background"] *):not([style*="background"]) {
+  color: #004a80 !important;
+}
+
+h1.text-white:not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#004a80\] *):not(#venture-hub *):not([style*="background"] *),
+h2.text-white:not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#004a80\] *):not(#venture-hub *):not([style*="background"] *),
+h3.text-white:not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#004a80\] *):not(#venture-hub *):not([style*="background"] *),
+h4.text-white:not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#004a80\] *):not(#venture-hub *):not([style*="background"] *),
+h5.text-white:not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#004a80\] *):not(#venture-hub *):not([style*="background"] *),
+h6.text-white:not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#004a80\] *):not(#venture-hub *):not([style*="background"] *) {
+  color: #004a80 !important;
+}
+
+/* Inside all cards/boxes: ALL headings and titles are crisp pure white */
+.bg-\[\#080d1a\] h1, .bg-\[\#080d1a\] h2, .bg-\[\#080d1a\] h3, .bg-\[\#080d1a\] h4, .bg-\[\#080d1a\] h5, .bg-\[\#080d1a\] h6,
+.bg-\[\#050814\] h1, .bg-\[\#050814\] h2, .bg-\[\#050814\] h3, .bg-\[\#050814\] h4,
+.bg-\[\#101a2a\] h1, .bg-\[\#101a2a\] h2, .bg-\[\#101a2a\] h3, .bg-\[\#101a2a\] h4,
+.bg-\[\#030712\] h1, .bg-\[\#030712\] h2, .bg-\[\#030712\] h3, .bg-\[\#030712\] h4,
+.bg-\[\#0b1220\] h1, .bg-\[\#0b1220\] h2, .bg-\[\#0b1220\] h3, .bg-\[\#0b1220\] h4,
+.bg-\[\#0a1122\] h1, .bg-\[\#0a1122\] h2, .bg-\[\#0a1122\] h3, .bg-\[\#0a1122\] h4,
+.bg-\[\#004a80\] h1, .bg-\[\#004a80\] h2, .bg-\[\#004a80\] h3, .bg-\[\#004a80\] h4, .bg-\[\#004a80\] h5, .bg-\[\#004a80\] h6,
+.bg-\[\#080d1a\] .text-white,
+.bg-\[\#050814\] .text-white,
+.bg-\[\#030712\] .text-white,
+.bg-\[\#101a2a\] .text-white,
+.bg-\[\#0b1220\] .text-white,
+.bg-\[\#004a80\] .text-white,
+.bg-\[\#080d1a\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *):not([class*="bg-\[\#DDE2E8\]"]):not([class*="bg-\[\#DDE2E8\]"] *),
+.bg-\[\#050814\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *):not([class*="bg-\[\#DDE2E8\]"]):not([class*="bg-\[\#DDE2E8\]"] *),
+.bg-\[\#030712\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *):not([class*="bg-\[\#DDE2E8\]"]):not([class*="bg-\[\#DDE2E8\]"] *),
+.bg-\[\#101a2a\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *):not([class*="bg-\[\#DDE2E8\]"]):not([class*="bg-\[\#DDE2E8\]"] *),
+.bg-\[\#0b1220\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *):not([class*="bg-\[\#DDE2E8\]"]):not([class*="bg-\[\#DDE2E8\]"] *),
+.bg-\[\#004a80\] .text-\[\#004a80\]:not([class*="bg-white"]):not([class*="bg-white"] *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *):not([class*="bg-\[\#DDE2E8\]"]):not([class*="bg-\[\#DDE2E8\]"] *),
+#venture-hub h1, #venture-hub h2, #venture-hub h3, #venture-hub .text-white {
+  color: #ffffff !important;
+}
+
+/* Inside all cards/boxes: ALL descriptions & paragraphs are light gray */
+.bg-\[\#080d1a\] p,
+.bg-\[\#050814\] p,
+.bg-\[\#101a2a\] p,
+.bg-\[\#030712\] p,
+.bg-\[\#0b1220\] p,
+.bg-\[\#0a1122\] p,
+.bg-\[\#004a80\] p,
+#venture-hub p,
+.bg-\[\#080d1a\] .text-\[\#cad8e9\],
+.bg-\[\#080d1a\] .text-\[\#9aacc6\],
+.bg-\[\#080d1a\] .text-\[\#71829e\],
+.bg-\[\#050814\] .text-\[\#9aacc6\],
+.bg-\[\#030712\] .text-\[\#9aacc6\],
+.bg-\[\#101a2a\] .text-\[\#9aacc6\],
+.bg-\[\#004a80\] .text-\[\#9aacc6\],
+#venture-hub .text-\[\#cad8e9\] {
+  color: #cad8e9 !important;
+}
+
+#venture-hub .text-\[\#A12B3C\] {
+  color: #A12B3C !important;
+}
+
+/* All paragraphs on page background: #004a80 */
+p:not(.bg-\[\#004a80\] *):not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#0a1122\] *):not(#venture-hub *):not([class*="bg-\[\#004a80\]"] *):not([class*="bg-\[\#A12B3C\]"] *):not([class*="bg-\[\#9F1D2C\]"] *):not([class*="bg-\[\#851823\]"] *):not(button *):not([class*="bg-\[\#E6E4C4\]"]):not([class*="bg-\[\#E6E4C4\]"] *):not([class*="bg-\[\#DDE2E8\]"]):not([class*="bg-\[\#DDE2E8\]"] *),
+.text-\[\#556880\]:not(.bg-\[\#004a80\] *):not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#0a1122\] *):not(#venture-hub *) {
+  color: #004a80 !important;
+}
+
+/* Ensure solid red/burgundy buttons and badges retain crisp white text */
+button.bg-\[\#9F1D2C\],
+button.bg-\[\#A12B3C\],
+button.bg-\[\#851823\],
+a.bg-\[\#9F1D2C\],
+a.bg-\[\#A12B3C\],
+a.bg-\[\#851823\],
+button.bg-\[\#9F1D2C\] > *,
+button.bg-\[\#A12B3C\] > *,
+button.bg-\[\#851823\] > *,
+a.bg-\[\#9F1D2C\] > *,
+a.bg-\[\#A12B3C\] > *,
+a.bg-\[\#851823\] > * {
+  color: #ffffff !important;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -226,3 +561,30 @@ body {
 .after\:animate-aurora::after {
   animation: aurora 60s linear infinite;
 }
+
+/* Ensure images have no background colors or borders */
+img {
+  background-color: transparent !important;
+  border-style: none !important;
+}
+
+/* Back to top button styling */
+#back-to-top {
+  background-color: #ffffff !important;
+  border-color: #A12B3C !important;
+  color: #A12B3C !important;
+}
+#back-to-top svg {
+  color: #A12B3C !important;
+  stroke: #A12B3C !important;
+}
+#back-to-top:hover {
+  background-color: #A12B3C !important;
+  border-color: #A12B3C !important;
+  color: #ffffff !important;
+}
+#back-to-top:hover svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+

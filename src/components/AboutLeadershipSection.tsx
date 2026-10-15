@@ -2,16 +2,16 @@
 
 import { useState } from 'react';
 import { ArrowUpRight, ChevronDown, ChevronUp, Award } from 'lucide-react';
-import Image from 'next/image';
+import LeaderAvatar from '@/components/LeaderAvatar';
 
 interface Leader {
   id: string;
   role: string;
   name: string;
+  gender: 'female' | 'male';
   shortBio: string;
   credentials?: string[];
   fullBio: string[];
-  avatar: string;
   linkedin: string;
 }
 
@@ -20,6 +20,7 @@ const leadersData: Leader[] = [
     id: 'kay-satha',
     role: 'FOUNDER',
     name: 'Kay Satha',
+    gender: 'female',
     shortBio:
       'Entrepreneurship, investment strategy, venture building and the commercialization of emerging technologies.',
     fullBio: [
@@ -28,13 +29,13 @@ const leadersData: Leader[] = [
       'Kay is actively engaged in applying tokenization strategies that transform AI-driven assets, proprietary platforms, and digital innovations into structured, blockchain-backed instruments with tangible commercial value. Her work focuses on making emerging technologies investable by designing monetization pathways that align with user needs, investor expectations, and global market standards. By integrating ethical AI principles with practical revenue frameworks, she helps startups and technology ventures progress from proof-of-concept to commercially scalable, investor-ready products.',
       'Kay maintains strong relationships with a global network of decision-makers and investors, playing an active role in capital raising, investment structuring, and strategic business development. Her work spans infrastructure, technology, fintech, and energy sectors.',
     ],
-    avatar: '/images/about.jpeg',
     linkedin: 'https://www.linkedin.com/company/linkay-ventures',
   },
   {
     id: 'lincoln-satkunarajah',
     role: 'ADVISOR',
     name: 'Lincoln T. Satkunarajah',
+    gender: 'male',
     credentials: [
       'BSc. (Eng.) U.K., MSc. (Eng.), U.K.',
       'P.E, P.T.O.E (USA), PEng. IntPE. (Canada), MITE (USA), MIHT (UK)',
@@ -45,7 +46,6 @@ const leadersData: Leader[] = [
     fullBio: [
       "As a seasoned advisor at Linkay Ventures, Lincoln brings a wealth of industry knowledge and strategic insights to the team. With a proven track record in venture capital, corporate innovation, and scaling startups, Lincoln plays a pivotal role in shaping Linkay Ventures' strategic direction. His expertise in identifying high-potential opportunities and fostering meaningful partnerships ensures startups in the Linkay portfolio receive unparalleled guidance and support.",
     ],
-    avatar: '/images/about.jpeg',
     linkedin: 'https://www.linkedin.com/company/linkay-ventures',
   },
 ];
@@ -58,20 +58,20 @@ export default function AboutLeadershipSection() {
   };
 
   return (
-    <section className="w-full bg-[#030712] py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="team">
+    <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#C5CDD7]" id="team">
       <div className="max-w-[1340px] mx-auto">
 
         {/* Eyebrow */}
         <div className="mb-4 inline-flex items-center gap-2">
-          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
+          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
             <span>—</span> LEADERSHIP TEAM
           </span>
         </div>
 
         {/* Heading */}
-        <h2 className="font-poppins text-3xl sm:text-5xl lg:text-[52px] font-bold text-white tracking-tight leading-tight mb-12">
+        <h2 className="font-poppins text-3xl sm:text-5xl lg:text-[52px] font-bold text-[#004a80] tracking-tight leading-tight mb-12">
           Experience meets{' '}
-          <span className="text-[#8c1627] drop-shadow-[0_0_20px_rgba(140,22,39,0.3)]">
+          <span className="text-[#A12B3C]">
             ambition.
           </span>
         </h2>
@@ -84,25 +84,17 @@ export default function AboutLeadershipSection() {
             return (
               <div
                 key={leader.id}
-                className={`p-7 sm:p-9 rounded-2xl bg-[#080d1a] border transition-all duration-300 flex flex-col justify-between shadow-xl ${
-                  isExpanded ? 'border-[#8c1627]/50 bg-[#0a1122]' : 'border-[#1f293d] hover:border-[#1f293d]/80'
+                className={`p-7 sm:p-9 rounded-3xl bg-[#004a80] border-2 transition-all duration-300 flex flex-col justify-between shadow-xl text-white ${
+                  isExpanded ? 'border-white/40 shadow-2xl shadow-[#004a80]/40' : 'border-[#003860] hover:border-white/30'
                 }`}
               >
                 <div>
-                  {/* Header Row: Photo + Name + Role */}
+                  {/* Header Row: Avatar Icon + Name + Role */}
                   <div className="flex items-center gap-4 sm:gap-5 mb-6">
-                    <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-[#1f293d] bg-[#030712] shrink-0">
-                      <Image
-                        src={leader.avatar}
-                        alt={leader.name}
-                        fill
-                        className="object-cover"
-                        sizes="80px"
-                      />
-                    </div>
+                    <LeaderAvatar gender={leader.gender} name={leader.name} />
 
                     <div>
-                      <span className="text-xs font-mono font-semibold tracking-widest text-[#8c1627] uppercase block mb-1">
+                      <span className="text-xs font-mono font-bold tracking-widest text-[#ffccd3] uppercase block mb-1">
                         {leader.role}
                       </span>
                       <h3 className="font-poppins text-2xl sm:text-3xl font-bold text-white">
@@ -112,22 +104,22 @@ export default function AboutLeadershipSection() {
                   </div>
 
                   {/* Short Summary (Default view) */}
-                  <p className="font-red-hat text-[#9aacc6] text-sm sm:text-base leading-relaxed mb-6 font-normal">
+                  <p className="font-red-hat text-[#cad8e9] text-sm sm:text-base leading-relaxed mb-6 font-normal">
                     {leader.shortBio}
                   </p>
 
                   {/* Full Details & Credentials (ONLY when Read More is clicked) */}
                   {isExpanded && (
-                    <div className="space-y-4 font-red-hat text-[#cad5e8] text-sm sm:text-[15px] leading-relaxed mb-6 font-normal pt-4 border-t border-[#1f293d]/80 animate-in fade-in duration-300">
+                    <div className="space-y-4 font-red-hat text-[#cad8e9] text-sm sm:text-[15px] leading-relaxed mb-6 font-normal pt-4 border-t border-white/15 animate-in fade-in duration-300">
                       {/* Credentials & Distinctions (Lincoln) */}
                       {leader.credentials && leader.credentials.length > 0 && (
-                        <div className="p-4 rounded-xl bg-[#030712] border border-[#1f293d] space-y-2">
-                          <div className="flex items-center gap-1.5 text-xs font-mono font-semibold text-[#8c1627] mb-1">
+                        <div className="p-4 rounded-xl bg-[#003860] border border-[#005fa3] space-y-2">
+                          <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-[#ffccd3] mb-1">
                             <Award size={13} />
                             <span>Credentials &amp; Distinctions</span>
                           </div>
                           {leader.credentials.map((cred, cIdx) => (
-                            <p key={cIdx} className="text-xs font-mono text-[#cad5e8] leading-relaxed">
+                            <p key={cIdx} className="text-xs font-mono text-[#cad8e9] leading-relaxed">
                               • {cred}
                             </p>
                           ))}
@@ -145,22 +137,21 @@ export default function AboutLeadershipSection() {
                 </div>
 
                 {/* Bottom Action Bar */}
-                <div className="pt-4 border-t border-[#1f293d] flex items-center justify-between gap-4">
+                <div className="pt-4 border-t border-white/15 flex items-center justify-between gap-4">
                   {/* Read More / Show Less Button */}
                   <button
                     type="button"
                     onClick={() => toggleExpand(leader.id)}
-                    className="inline-flex items-center gap-2 bg-[#101a2a] hover:bg-[#18263e] text-white border border-[#233049] hover:border-[#8c1627]/50 font-poppins text-xs font-semibold px-4 py-2 rounded-full transition-all shadow-sm group"
+                    className="inline-flex items-center gap-2 bg-[#DDE2E8] hover:bg-[#C5CDD7] text-[#01497f] font-poppins text-xs font-bold px-5 py-2.5 rounded-full transition-all shadow-md group border border-[#C5CDD7]"
+                    style={{ color: '#01497f', backgroundColor: '#DDE2E8' }}
                   >
-                    <span>{isExpanded ? 'Show Less' : 'Read More'}</span>
+                    <span style={{ color: '#01497f' }}>{isExpanded ? 'Show Less' : 'Read More'}</span>
                     {isExpanded ? (
-                      <ChevronUp size={14} className="text-[#8c1627] transition-transform group-hover:-translate-y-0.5" />
+                      <ChevronUp size={14} className="text-[#A12B3C] transition-transform group-hover:-translate-y-0.5" />
                     ) : (
-                      <ChevronDown size={14} className="text-[#8c1627] transition-transform group-hover:translate-y-0.5" />
+                      <ChevronDown size={14} className="text-[#A12B3C] transition-transform group-hover:translate-y-0.5" />
                     )}
                   </button>
-
-                 
                 </div>
               </div>
             );

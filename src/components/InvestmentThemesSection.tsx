@@ -56,38 +56,38 @@ export default function InvestmentThemesSection() {
   ];
 
   return (
-    <section className="w-full bg-[#030712] py-14 sm:py-20 px-5 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]" id="focus-areas">
+    <section className="w-full bg-transparent py-14 sm:py-20 px-5 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]" id="focus-areas">
       <div className="max-w-[1340px] mx-auto relative z-10">
 
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
           <div className="max-w-2xl">
             <div className="mb-4 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
                 <span>—</span>INVESTMENT THEMES
               </span>
             </div>
 
-            <h2 className="font-poppins text-white text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] mb-4 tracking-tight">
+            <h2 className="font-poppins text-[#004a80] text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] mb-4 tracking-tight">
               Focus Areas Driving the Future <br className="hidden sm:inline" />
               of Capital.
             </h2>
 
-            <p className="font-red-hat text-[#9aacc6] text-sm sm:text-base leading-relaxed font-normal">
+            <p className="font-red-hat text-[#004a80] text-sm sm:text-base leading-relaxed font-normal">
               We invest in and support innovative solutions across key sectors, building a more
               resilient, inclusive, and digitally connected global economy.
             </p>
           </div>
 
           {/* Right Tabs / Indicator Pills */}
-          <div className="flex flex-wrap items-center gap-3 sm:gap-5 text-xs font-mono tracking-wider text-[#9aacc6]">
-            <span className="text-[#8c1627] font-semibold flex items-center gap-1.5">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-5 text-xs font-mono tracking-wider text-[#004a80]">
+            <span className="text-[#A12B3C] font-semibold flex items-center gap-1.5">
               <span>—</span> Technology
             </span>
-            <span className="hover:text-white transition-colors cursor-default flex items-center gap-1.5">
+            <span className="hover:text-[#004a80] transition-colors cursor-default flex items-center gap-1.5">
               <span>•</span> Real Assets
             </span>
-            <span className="hover:text-white transition-colors cursor-default flex items-center gap-1.5">
+            <span className="hover:text-[#004a80] transition-colors cursor-default flex items-center gap-1.5">
               <span>•</span> Global Reach
             </span>
           </div>
@@ -100,29 +100,29 @@ export default function InvestmentThemesSection() {
             return (
               <div
                 key={idx}
-                className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#8c1627]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-[#8c1627]/5 group"
+                className="p-6 rounded-2xl bg-[#004a80] border border-[#003860] hover:border-white/30 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-[#004a80]/30 group"
               >
                 <div>
-                  {/* Cyan Icon Box */}
-                  <div className="w-11 h-11 rounded-xl bg-[#8c1627]/10 border border-[#8c1627]/25 flex items-center justify-center text-[#8c1627] mb-5 group-hover:scale-110 transition-transform">
+                  {/* Icon Box */}
+                  <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform">
                     <Icon size={20} />
                   </div>
 
-                  <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#8c1627] transition-colors leading-snug">
+                  <h3 className="font-poppins text-lg font-bold text-white mb-3 group-hover:text-[#ffccd3] transition-colors leading-snug">
                     {item.title}
                   </h3>
 
-                  <p className="font-red-hat text-[#9aacc6] text-[13.5px] leading-relaxed mb-6 font-normal">
+                  <p className="font-red-hat text-[#cad8e9] text-[13.5px] leading-relaxed mb-6 font-normal">
                     {item.description}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-[#1f293d] flex items-center justify-between">
+                <div className="pt-4 border-t border-white/15 flex items-center justify-between">
                   <Link
                     href={item.href}
-                    className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-[#cad8e9] hover:text-[#8c1627] transition-colors group/link"
+                    className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-white hover:text-[#ffccd3] transition-colors group/link"
                   >
-                    <span className="w-3.5 h-3.5 rounded-full bg-[#9F1D2C]/20 text-[#9F1D2C] flex items-center justify-center shrink-0">
+                    <span className="w-3.5 h-3.5 rounded-full bg-white/20 text-white flex items-center justify-center shrink-0">
                       <Check size={10} className="stroke-[3]" />
                     </span>
                     <span>{item.actionText}</span>

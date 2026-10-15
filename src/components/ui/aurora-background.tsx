@@ -28,13 +28,13 @@ export const AuroraBackground = ({
             {
               // Futuristic Theme Aurora with Cyan, Blue, Violet and Logo Maroon
               '--aurora':
-                'repeating-linear-gradient(100deg,#4ee7ee_10%,#4c8dff_15%,#9F1D2C_20%,#9c78ff_25%,#4ee7ee_30%)',
+                'repeating-linear-gradient(100deg,#4ee7ee_10%,#4c8dff_15%,#A12B3C_20%,#9c78ff_25%,#4ee7ee_30%)',
               '--white-gradient':
                 'repeating-linear-gradient(100deg,#fff_0%,#fff_7%,transparent_10%,transparent_12%,#fff_16%)',
               '--brand-300': '#9c78ff',
               '--brand-400': '#4c8dff',
               '--brand-500': '#4ee7ee',
-              '--brand-200': '#9F1D2C',
+              '--brand-200': '#A12B3C',
               '--black': '#000',
               '--white': '#fff',
               '--transparent': 'transparent',
