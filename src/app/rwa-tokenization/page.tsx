@@ -332,9 +332,7 @@ export default function RwaTokenizationPage() {
             {/* Heading */}
             <h1 className="mb-6 font-poppins text-[32px] sm:text-[46px] md:text-[56px] lg:text-[72px] font-bold leading-[1.1] tracking-tight text-white">
               Multi-RWA Tokenization &amp;{' '}
-              <span className="text-[#894541] ">
-                Monetization Platform
-              </span>
+              <span className="text-[#894541] ">Monetization Platform</span>
             </h1>
 
             {/* Paragraph */}
@@ -346,7 +344,7 @@ export default function RwaTokenizationPage() {
             <div className="flex w-full flex-col gap-3.5 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#894541]/30 transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
               >
                 <span>Discuss an Asset</span>
                 <ArrowRight size={17} />
@@ -835,19 +833,27 @@ export default function RwaTokenizationPage() {
               Discuss with our experts to structure, digitize, and issue your assets on a compliant
               institutional platform.
             </p>
+
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-4 w-full sm:w-auto">
+              {/* Discuss an Asset */}
+             
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-md shadow-[#894541]/25 hover:-translate-y-0.5 w-full sm:w-auto"
+                className="group inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] !text-[#004a80] hover:!text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all duration-200 hover:-translate-y-0.5"
               >
-                Discuss an Asset
+                <span className="!text-[#004a80] group-hover:!text-white">Discuss an Asset </span>
+                <ArrowRight size={16} className="!text-[#004a80] group-hover:!text-white" />
               </Link>
+
+              {/* Explore How It Works */}
               <Link
                 href="#how-it-works"
-                className="inline-flex items-center justify-center bg-[#DDE2E8] hover:bg-[#cad2dc] text-[#01497f] border-2 border-[#DDE2E8] font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-md hover:-translate-y-0.5 w-full sm:w-auto"
-                style={{ color: '#01497f' }}
+                className="group inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] !text-[#004a80] hover:!text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all duration-200 hover:-translate-y-0.5"
               >
-                Explore How It Works
+                <span className="!text-[#004a80] group-hover:!text-white">
+                  Explore How It Works
+                </span>
+                <ArrowRight size={16} className="!text-[#004a80] group-hover:!text-white" />
               </Link>
             </div>
           </div>

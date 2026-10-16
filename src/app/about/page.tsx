@@ -125,10 +125,7 @@ export default function AboutPage() {
 
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[70px] font-bold text-white tracking-tight leading-[1.1] mb-6">
-              Built by founders,{' '}
-              <span className="text-[#894541] ">
-                for founders.
-              </span>
+              Built by founders, <span className="text-[#894541] ">for founders.</span>
             </h1>
 
             {/* Body */}
@@ -300,8 +297,7 @@ export default function AboutPage() {
 
             <Link
               href="/services"
-              style={{ color: '#ffffff' }}
-              className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 font-poppins text-xs sm:text-sm font-semibold px-7 py-3 rounded-full transition-all shadow-md shadow-[#894541]/30 shrink-0 hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
             >
               <span>See All Services</span>
               <ArrowRight size={15} style={{ color: '#ffffff' }} />
@@ -374,7 +370,7 @@ export default function AboutPage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
             >
               <span>Book a Consultation</span>
               <ArrowRight size={16} />

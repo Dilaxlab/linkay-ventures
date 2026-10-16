@@ -104,10 +104,7 @@ export default function ContactPage() {
 
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.08] mb-6">
-              Start the{' '}
-              <span className="text-[#894541] ">
-                conversation.
-              </span>
+              Start the <span className="text-[#894541] ">conversation.</span>
             </h1>
 
             {/* Body */}
@@ -134,8 +131,6 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </section>
@@ -345,10 +340,17 @@ export default function ContactPage() {
 
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-bold uppercase tracking-wider py-4 px-8 rounded-full transition-all shadow-lg shadow-[#894541]/40 hover:-translate-y-0.5"
+                    className="group flex w-full items-center justify-center gap-2 rounded-full border-2 border-[#DDE2E8] bg-[#DDE2E8] px-8 py-4 font-poppins text-sm font-bold uppercase tracking-wider !text-[#004a80] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:border-[#004a80] hover:bg-[#004a80] hover:!text-white hover:shadow-[#004a80]/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#894541] focus-visible:ring-offset-2 focus-visible:ring-offset-[#004a80] active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-50"
                   >
-                    <span>Submit Inquiry</span>
-                    <Send size={16} />
+                    <span className="!text-[#004a80] transition-colors duration-300 group-hover:!text-white">
+                      Submit Inquiry
+                    </span>
+
+                    <Send
+                      size={16}
+                      className="shrink-0 text-[#004a80] transition-colors duration-300 group-hover:text-white"
+                      aria-hidden="true"
+                    />
                   </button>
                 </form>
               )}

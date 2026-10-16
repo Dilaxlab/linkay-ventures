@@ -56,11 +56,10 @@ export default function HowWeWorkSection() {
           <div className="shrink-0 w-full sm:w-auto">
             <Link
               href="/services"
-              style={{ color: '#ffffff' }}
-              className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 font-poppins text-xs sm:text-sm font-semibold px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 w-full sm:w-auto shadow-md"
+              className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
             >
               <span>View Our Process</span>
-              <ArrowRight size={14} style={{ color: '#ffffff' }} />
+              <ArrowRight size={16} />
             </Link>
           </div>
         </div>
@@ -122,11 +121,13 @@ export default function HowWeWorkSection() {
           <div className="shrink-0 w-full sm:w-auto">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-xs sm:text-sm font-bold px-7 py-3 rounded-full transition-all shadow-md shadow-[#894541]/40 hover:-translate-y-0.5 w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
             >
               <span>Get Started</span>
-              <ArrowRight size={15} />
+              <ArrowRight size={16} />
             </Link>
+
+          
           </div>
         </div>
       </div>

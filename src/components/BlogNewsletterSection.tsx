@@ -29,12 +29,15 @@ export default function BlogNewsletterSection() {
         {/* Heading */}
         <h2 className="font-poppins text-2xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight mb-4">
           Get our latest insights <br />
-          <span className="text-[#894541] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.25)]">in your inbox.</span>
+          <span className="text-[#894541] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.25)]">
+            in your inbox.
+          </span>
         </h2>
 
         {/* Body */}
         <p className="font-red-hat text-[#004a80] text-base sm:text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-          Occasional perspectives on venture, digital assets and emerging financial infrastructure. No spam.
+          Occasional perspectives on venture, digital assets and emerging financial infrastructure.
+          No spam.
         </p>
 
         {/* Interactive Subscription Form */}
@@ -44,7 +47,10 @@ export default function BlogNewsletterSection() {
             <span>Thank you for subscribing to Linkay Perspectives.</span>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="max-w-lg mx-auto flex flex-col sm:flex-row gap-3 mb-6">
+          <form
+            onSubmit={handleSubmit}
+            className="max-w-lg mx-auto flex flex-col sm:flex-row gap-3 mb-6"
+          >
             <div className="relative flex-1">
               <Mail size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#71829e]" />
               <input
@@ -58,7 +64,7 @@ export default function BlogNewsletterSection() {
             </div>
             <button
               type="submit"
-              className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-xs sm:text-sm font-semibold px-7 py-3.5 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5 shrink-0"
+              className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
             >
               <span>Subscribe</span>
               <ArrowRight size={14} />

@@ -52,10 +52,7 @@ export default function HeroSlider() {
 
         {/* Heading */}
         <h1 className="mb-6 font-poppins text-[32px] sm:text-[46px] md:text-[56px] lg:text-[72px] font-bold leading-[1.1] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,74,128,0.15)]">
-          Capital for{' '}
-          <span className="text-[#894541]">
-            What&apos;s Next
-          </span>
+          Capital for <span className="text-[#1d7fd1]">What's Next</span>
         </h1>
 
         {/* Subtitle */}
@@ -69,11 +66,10 @@ export default function HeroSlider() {
         <div className="flex w-full flex-col gap-3.5 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-4">
           <Link
             href="/services"
-            style={{ color: 'white' }}
-            className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 font-poppins text-sm font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#894541]/30 transition-all hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
           >
             <span>Explore Our Platform</span>
-            <ArrowRight size={17} />
+            <ArrowRight size={16} />
           </Link>
 
           <Link

@@ -169,10 +169,7 @@ export default function LinkayCommoditiesPage() {
 
             {/* Heading */}
             <h1 className="mb-5 font-poppins text-[32px] sm:text-[46px] md:text-[54px] lg:text-[68px] font-bold leading-[1.12] tracking-tight text-white">
-              Linkay{' '}
-              <span className="text-[#894541] ">
-                Commodities
-              </span>
+              Linkay <span className="text-[#894541] ">Commodities</span>
             </h1>
 
             {/* Subtitle */}
@@ -187,10 +184,10 @@ export default function LinkayCommoditiesPage() {
                 href="https://linkaycommodities.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#894541] hover:bg-[#9F1D2C] px-8 py-4 font-poppins text-sm font-bold text-white shadow-md shadow-[#894541]/25 transition-all hover:-translate-y-0.5 sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
               >
                 <span>Explore Commodities Platform</span>
-                <ArrowUpRight size={17} />
+                <ArrowRight size={17} />
               </Link>
               <Link
                 href="#trade"
@@ -481,7 +478,7 @@ export default function LinkayCommoditiesPage() {
                 href="https://linkaycommodities.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
               >
                 <span>Launch Linkay Commodities Desk</span>
                 <ArrowRight size={16} />
@@ -489,8 +486,7 @@ export default function LinkayCommoditiesPage() {
 
               <Link
                 href="/contact"
-                className="bg-[#DDE2E8] hover:bg-[#cad2dc] text-[#01497f] border-2 border-[#DDE2E8] font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-md hover:-translate-y-0.5"
-                style={{ color: '#01497f' }}
+                className="group inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] !text-[#004a80] hover:!text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all duration-200 hover:-translate-y-0.5"
               >
                 Inquire with Capital Desk
               </Link>

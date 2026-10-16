@@ -174,10 +174,7 @@ export default function LinkayThinkTankPage() {
 
             {/* Heading */}
             <h1 className="mb-5 font-poppins text-[32px] sm:text-[46px] md:text-[54px] lg:text-[68px] font-bold leading-[1.12] tracking-tight text-white">
-              Linkay{' '}
-              <span className="text-[#894541]">
-                Think-Tank
-              </span>
+              Linkay <span className="text-[#894541]">Think-Tank</span>
             </h1>
 
             {/* Subtitle */}
@@ -193,10 +190,10 @@ export default function LinkayThinkTankPage() {
                 href="https://linkaythinktank.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#894541] hover:bg-[#9F1D2C] px-8 py-4 font-poppins text-sm font-bold text-white shadow-md shadow-[#894541]/25 transition-all hover:-translate-y-0.5 sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
               >
                 <span>Explore Think-Tank Portal</span>
-                <ArrowUpRight size={17} />
+                <ArrowRight size={17} />
               </Link>
               <Link
                 href="#domains"
@@ -303,7 +300,7 @@ export default function LinkayThinkTankPage() {
       >
         <div className="max-w-[1240px] mx-auto">
           <div className="text-center max-w-[850px] mx-auto mb-16">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center justify-center gap-2 mb-3">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#f7f6f6] uppercase flex items-center justify-center gap-2 mb-3">
               <span>—</span> CORE RESEARCH PILLARS
             </span>
 
@@ -331,7 +328,7 @@ export default function LinkayThinkTankPage() {
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 flex items-center justify-center text-[#894541] group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 flex items-center justify-center text-[#ffffff] group-hover:scale-110 transition-transform">
                         <IconComp size={20} />
                       </div>
                       <span className="text-[11px] font-mono text-[#894541] bg-[#030712] px-2.5 py-0.5 rounded-full border border-[#1f293d]">
@@ -351,7 +348,7 @@ export default function LinkayThinkTankPage() {
                     <span className="text-[11px] font-mono uppercase tracking-wider text-[#9aacc6]">
                       Domain 0{idx + 1}
                     </span>
-                    <span className="text-xs text-[#894541] font-mono opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="text-xs text-[#ffffff] font-mono opacity-0 group-hover:opacity-100 transition-opacity">
                       Read Strategy →
                     </span>
                   </div>
@@ -391,7 +388,7 @@ export default function LinkayThinkTankPage() {
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 flex items-center justify-center text-[#894541] group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 flex items-center justify-center text-[#f8f6f6] group-hover:scale-110 transition-transform">
                         <IconComp size={19} />
                       </div>
                       <span className="text-[11px] font-mono text-[#9aacc6] bg-[#030712] px-2.5 py-0.5 rounded-full border border-[#1f293d]">
@@ -436,10 +433,10 @@ export default function LinkayThinkTankPage() {
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 flex items-center justify-center text-[#894541] group-hover:scale-110 transition-transform">
+                    <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 flex items-center justify-center text-[#fcfaf9] group-hover:scale-110 transition-transform">
                       <IconComp size={19} />
                     </div>
-                    <span className="font-poppins text-[24px] font-extrabold leading-none text-[#894541]">
+                    <span className="font-poppins text-[24px] font-extrabold leading-none text-[#fdfdfd]">
                       {step.num}
                     </span>
                   </div>
@@ -487,7 +484,7 @@ export default function LinkayThinkTankPage() {
                 href="https://linkaythinktank.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5 w-full sm:w-auto"
+                className="group inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] !text-[#004a80] hover:!text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all duration-200 hover:-translate-y-0.5"
               >
                 <span>Launch Think-Tank Research Portal</span>
                 <ArrowRight size={16} />
@@ -495,7 +492,7 @@ export default function LinkayThinkTankPage() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-7 py-3.5 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                className="group inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] !text-[#004a80] hover:!text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all duration-200 hover:-translate-y-0.5"
               >
                 Schedule Strategic Consultation
               </Link>

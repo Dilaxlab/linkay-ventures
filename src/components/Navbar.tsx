@@ -77,7 +77,7 @@ export default function Navbar() {
 
       <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8 h-[76px] sm:h-[84px] lg:h-[88px] flex items-center justify-between">
         {/* Brand Logo */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 shrink-0">
           <Link href="/" className="flex items-center group py-1">
             <div className="relative w-[180px] sm:w-[220px] lg:w-[250px] xl:w-[260px] h-[58px] sm:h-[70px] lg:h-[78px] xl:h-[82px] transition-transform duration-200 group-hover:scale-105">
               <Image
@@ -107,7 +107,7 @@ export default function Navbar() {
                   onMouseLeave={() => setMoreDropdownOpen(false)}
                 >
                   <button
-                    className={`flex items-center gap-1.5 font-poppins text-[13.5px] font-semibold tracking-[0.2px] px-3.5 py-2 rounded-xl transition-all duration-200 ${
+                    className={`flex items-center gap-1.5 font-poppins text-[13.5px] font-semibold tracking-[0.2px] px-3.5 py-2 rounded-xl transition-all duration-200 whitespace-nowrap ${
                       isChildActive || moreDropdownOpen
                         ? 'text-[#004a80] bg-[#004a80]/5 font-bold'
                         : 'text-[#004a80] hover:text-[#004a80] hover:bg-[#004a80]/5'
@@ -184,7 +184,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`relative flex items-center gap-1.5 font-poppins text-[13.5px] font-semibold tracking-[0.2px] px-3.5 py-2 rounded-xl transition-all duration-200 ${
+                className={`relative flex items-center gap-1.5 font-poppins text-[13.5px] font-semibold tracking-[0.2px] px-3.5 py-2 rounded-xl transition-all duration-200 whitespace-nowrap ${
                   active
                     ? 'text-[#004a80] font-bold'
                     : 'text-[#004a80] hover:text-[#004a80] hover:bg-[#004a80]/5'
@@ -205,27 +205,29 @@ export default function Navbar() {
         </nav>
 
         {/* Right CTA Actions: Venture HUB (#004a80) + Get In Touch (#894541) */}
-        <div className="hidden xl:flex items-center gap-3">
+        <div className="hidden xl:flex items-center gap-3 shrink-0">
           <Link
             href="https://hub.linkayventures.com/index.php"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-1.5 bg-transparent hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-[13px] font-bold px-5 py-2 rounded-full transition-all duration-200 hover:-translate-y-0.5 shadow-sm hover:shadow-md hover:shadow-[#004a80]/20"
+            className="group inline-flex items-center justify-center gap-1.5 bg-transparent hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-[13px] font-bold px-5 py-2 rounded-full transition-all duration-200 hover:-translate-y-0.5 shadow-sm hover:shadow-md hover:shadow-[#004a80]/20 whitespace-nowrap shrink-0"
           >
             <span>Venture HUB</span>
-            <ArrowUpRight
+            <ArrowRight
               size={14}
-              className="text-[#894541] group-hover:text-white transition-colors"
+              className="text-[#894541] group-hover:text-white transition-colors shrink-0"
             />
           </Link>
 
           <Link
             href="/contact"
-            style={{ color: '#ffffff' }}
-            className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 !text-white font-poppins text-[13.5px] font-bold px-6 py-2.5 rounded-full transition-all duration-200 shadow-md shadow-[#894541]/30 hover:shadow-lg hover:shadow-[#894541]/40 hover:-translate-y-0.5"
+            className="group inline-flex items-center justify-center gap-1.5 border-2 border-[#004a80] bg-transparent text-[#004a80] hover:bg-[#004a80] hover:text-white font-poppins text-[13px] font-bold px-5 py-2 rounded-full shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:shadow-[#004a80]/20 whitespace-nowrap shrink-0"
           >
-            <span className="!text-white" style={{ color: '#ffffff' }}>Get In Touch</span>
-            <ArrowRight size={15} className="!text-white" style={{ color: '#ffffff' }} />
+            <span>Get In Touch</span>
+            <ArrowRight
+              size={14}
+              className="text-[#894541] group-hover:text-white transition-colors shrink-0"
+            />
           </Link>
         </div>
 
@@ -300,18 +302,19 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full flex items-center justify-center gap-2 border-2 border-[#004a80] bg-transparent text-[#004a80] hover:bg-[#004a80] hover:text-white font-poppins text-sm font-bold py-3 px-4 rounded-full shadow-sm transition-all"
+                className="w-full flex items-center justify-center gap-2 border-2 border-[#004a80] bg-transparent text-[#004a80] hover:bg-[#004a80] hover:text-white font-poppins text-sm font-bold py-3 px-4 rounded-full shadow-sm transition-all whitespace-nowrap"
               >
                 <span>Venture HUB</span>
-                <ArrowUpRight size={16} className="text-[#894541]" />
+                <ArrowRight size={16} className="text-[#894541] shrink-0" />
               </Link>
+
               <Link
-                href="/contact"xxxxxx
-                style={{ color: '#ffffff' }}
-                className="w-full inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 !text-white font-poppins text-[13.5px] font-bold px-6 py-3 rounded-full transition-all duration-200 shadow-md shadow-[#894541]/30 hover:shadow-lg hover:shadow-[#894541]/40 hover:-translate-y-0.5"
+                href="/contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full flex items-center justify-center gap-2 border-2 border-[#004a80] bg-transparent text-[#004a80] hover:bg-[#004a80] hover:text-white font-poppins text-sm font-bold py-3 px-4 rounded-full shadow-sm transition-all whitespace-nowrap"
               >
-                <span className="!text-white" style={{ color: '#ffffff' }}>Get In Touch</span>
-                <ArrowRight size={15} className="!text-white" style={{ color: '#ffffff' }} />
+                <span>Get In Touch</span>
+                <ArrowRight size={16} className="text-[#894541] shrink-0" />
               </Link>
             </div>
           </div>

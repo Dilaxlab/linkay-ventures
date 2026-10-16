@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ArrowUpRight, Calendar, Clock, User, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Calendar, Clock, User } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -102,109 +102,133 @@ const categories = [
 ];
 
 export default function BlogPostsSection() {
-  const [activeCategory, setActiveCategory] = useState<string>('All');
+  const [activeCategory, setActiveCategory] = useState('All');
 
   const filteredPosts =
     activeCategory === 'All'
       ? allPosts
-      : allPosts.filter((post) => post.category.toLowerCase() === activeCategory.toLowerCase());
+      : allPosts.filter((post) => post.category === activeCategory);
 
   return (
-    <section id="posts" className="w-full py-14 sm:py-20 px-4 sm:px-12 lg:px-16 max-w-[1340px] mx-auto border-b border-[#C5CDD7]">
-      {/* Category Filter Pills (swipeable on mobile, wrapping on sm+) */}
-      <div className="flex items-center gap-2 sm:gap-2.5 mb-10 sm:mb-14 overflow-x-auto no-scrollbar pb-2 sm:pb-0 sm:flex-wrap -mx-4 px-4 sm:mx-0 sm:px-0">
+    <section
+      id="posts"
+      className="mx-auto w-full max-w-[1340px] border-b border-[#C5CDD7] px-4 py-14 sm:px-12 sm:py-20 lg:px-16"
+    >
+      {/* Category Filters */}
+      <div className="no-scrollbar -mx-4 mb-10 flex items-center gap-2 overflow-x-auto px-4 pb-2 sm:mx-0 sm:mb-14 sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0">
         {categories.map((cat) => {
           const isActive = activeCategory === cat;
+
           return (
             <button
               key={cat}
               type="button"
               onClick={() => setActiveCategory(cat)}
-              className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs font-mono font-semibold uppercase tracking-wider transition-all duration-200 shrink-0 ${
+              aria-pressed={isActive}
+              className={`group/filter inline-flex shrink-0 items-center justify-center gap-2 rounded-full border-2 px-4 py-2.5 font-poppins text-xs font-semibold uppercase tracking-wider shadow-md transition-all duration-200 hover:-translate-y-0.5 sm:px-5 ${
                 isActive
-                  ? 'bg-[#894541] text-white shadow-lg shadow-[#894541]/30 scale-[1.02]'
-                  : 'bg-[#DDE2E8] border border-[#C5CDD7] text-[#894541] hover:bg-[#894541] hover:text-white hover:border-[#894541]'
+                  ? 'border-[#004a80] bg-[#004a80] !text-white shadow-[#894541]/20'
+                  : 'border-[#004a80] bg-[#DDE2E8] !text-[#004a80] hover:border-[#004a80] hover:bg-[#004a80] hover:!text-white'
               }`}
-              style={!isActive ? { color: '#894541' } : undefined}
             >
-              {isActive && <span className="w-1.5 h-1.5 rounded-full bg-white" />}
-              <span>{cat}</span>
+              {isActive && <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-white" />}
+
+              <span
+                className={
+                  isActive ? '!text-white' : '!text-[#004a80] group-hover/filter:!text-white'
+                }
+              >
+                {cat}
+              </span>
             </button>
           );
         })}
       </div>
 
-      {/* Posts Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      {/* Blog Posts Grid */}
+      <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
         {filteredPosts.map((post) => (
           <article
             key={post.id}
-            className="group bg-[#004a80] rounded-3xl overflow-hidden border-2 border-[#003860] hover:border-white/30 transition-all duration-300 flex flex-col justify-between shadow-xl hover:-translate-y-1 text-white"
+            className="group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-[#003860] bg-[#004a80] shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#004a80]/20"
           >
-            <div>
-              {/* Cover Image */}
-              <div className="relative w-full h-[220px] overflow-hidden">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
+            {/* Cover Image */}
+            <div className="relative h-[220px] w-full shrink-0 overflow-hidden">
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
 
-                <div
-                  className="absolute top-3.5 left-3.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#894541] border border-[#894541] shadow-md text-white text-[11px] font-mono font-bold uppercase tracking-wider"
-                  style={{ backgroundColor: '#894541', color: '#ffffff' }}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-white" />
-                  <span style={{ color: '#ffffff' }}>{post.category}</span>
-                </div>
-              </div>
-
-              {/* Content Body */}
-              <div className="p-6 sm:p-7">
-                <div className="flex items-center gap-3 mb-3 text-xs font-mono text-[#cad8e9] uppercase tracking-wider">
-                  <span className="inline-flex items-center gap-1.5">
-                    <Calendar size={12} className="text-[#ffccd3]" />
-                    {post.date}
-                  </span>
-                  <span className="w-1 h-1 rounded-full bg-white/20" />
-                  <span className="inline-flex items-center gap-1.5">
-                    <Clock size={12} className="text-[#ffccd3]" />
-                    {post.readTime}
-                  </span>
-                </div>
-
-                <h3 className="font-poppins text-white text-lg sm:text-xl font-bold leading-snug mb-3 group-hover:text-[#ffccd3] transition-colors">
-                  {post.title}
-                </h3>
-
-                <p className="font-red-hat text-[#cad8e9] text-xs sm:text-sm leading-relaxed line-clamp-3">
-                  {post.excerpt}
-                </p>
+              {/* Category Badge */}
+              <div className="absolute left-3.5 top-3.5 inline-flex max-w-[calc(100%-28px)] items-center gap-1.5 rounded-full border border-[#004a80] bg-[#004a80] px-3 py-1 text-[11px] font-mono font-bold uppercase tracking-wider !text-white shadow-md">
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-white" />
+                <span className="!text-white">{post.category}</span>
               </div>
             </div>
 
-            {/* Action Bar */}
-            <div className="px-6 sm:px-7 pb-6 pt-4 border-t border-white/15 flex items-center justify-between">
-              <Link
-                href={post.href}
-                className="inline-flex items-center gap-1.5 font-poppins text-xs sm:text-sm font-semibold text-white group-hover:text-[#ffccd3] transition-colors"
-              >
-                <span>Discuss with Team</span>
-                <ArrowUpRight size={14} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </Link>
+            {/* Post Content */}
+            <div className="flex flex-1 flex-col p-6 sm:p-7">
+              {/* Date and Read Time */}
+              <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-xs uppercase tracking-wider !text-[#cad8e9]">
+                <span className="inline-flex items-center gap-1.5">
+                  <Calendar size={12} className="shrink-0 text-[#ffccd3]" />
+                  <span className="!text-[#cad8e9]">{post.date}</span>
+                </span>
 
-              <div className="inline-flex items-center gap-1 text-[11px] font-mono text-[#cad8e9]">
-                <User size={11} className="text-[#cad8e9]" />
-                <span>{post.author}</span>
+                <span className="h-1 w-1 rounded-full bg-white/30" />
+
+                <span className="inline-flex items-center gap-1.5">
+                  <Clock size={12} className="shrink-0 text-[#ffccd3]" />
+                  <span className="!text-[#cad8e9]">{post.readTime}</span>
+                </span>
+              </div>
+
+              {/* Title */}
+              <h3 className="mb-3 font-poppins text-lg font-bold leading-snug !text-white transition-colors duration-200 group-hover:!text-[#ffccd3] sm:text-xl">
+                {post.title}
+              </h3>
+
+              {/* Excerpt */}
+              <p className="mb-6 line-clamp-3 font-red-hat text-xs leading-relaxed !text-[#cad8e9] sm:text-sm">
+                {post.excerpt}
+              </p>
+
+              {/* Action Bar */}
+              <div className="mt-auto flex flex-col items-start gap-4 border-t border-white/15 pt-5">
+                <Link
+                  href={post.href}
+                  className="group/button inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-[#004a80] bg-[#DDE2E8] px-5 py-3 font-poppins text-sm font-bold !text-[#004a80] shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#004a80] hover:!text-white sm:w-auto"
+                >
+                  <span className="!text-[#004a80] group-hover/button:!text-white">
+                    Discuss with Team
+                  </span>
+
+                  <ArrowRight
+                    size={16}
+                    className="shrink-0 !text-[#004a80] transition-transform duration-200 group-hover/button:translate-x-0.5 group-hover/button:!text-white"
+                  />
+                </Link>
+
+                {/* Author */}
+                <div className="inline-flex items-center gap-1.5 font-mono text-[11px] !text-[#cad8e9]">
+                  <User size={12} className="shrink-0 !text-[#cad8e9]" />
+                  <span className="!text-[#cad8e9]">{post.author}</span>
+                </div>
               </div>
             </div>
           </article>
         ))}
       </div>
 
-
+      {/* Empty State */}
+      {filteredPosts.length === 0 && (
+        <div className="py-16 text-center">
+          <p className="font-poppins text-base !text-[#004a80]">No posts found in this category.</p>
+        </div>
+      )}
     </section>
   );
 }

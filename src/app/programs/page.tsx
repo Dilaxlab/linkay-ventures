@@ -146,9 +146,7 @@ export default function ProgramsPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[68px] font-bold text-[#004a80] tracking-tight leading-[1.1] mb-6">
               Programs for founders{' '}
-              <span className="text-[#894541] ">
-                building what&apos;s next.
-              </span>
+              <span className="text-[#894541] ">building what&apos;s next.</span>
             </h1>
 
             {/* Body */}
@@ -161,14 +159,14 @@ export default function ProgramsPage() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-4 mb-10 max-w-md sm:max-w-none mx-auto">
               <Link
                 href="/contact?subject=Program%20Application"
-                className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
               >
                 <span>Apply to a Program</span>
                 <ArrowRight size={16} />
               </Link>
               <Link
                 href="#programs"
-                className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all shadow-md hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
               >
                 <span>Explore Programs</span>
               </Link>
@@ -274,7 +272,7 @@ export default function ProgramsPage() {
 
             <Link
               href="/contact?subject=Accelerator%20Cohort%20Application"
-              className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-xs sm:text-sm font-semibold px-7 py-3 rounded-full transition-all shadow-md shadow-[#894541]/30 shrink-0 hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
             >
               <span>Apply to Our Next Cohort</span>
               <ArrowRight size={15} />
@@ -390,12 +388,11 @@ export default function ProgramsPage() {
               href="https://hub.linkayventures.com/index.php"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5 w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
             >
               <span>Access Venture HUB</span>
               <ArrowRight size={16} />
             </Link>
-
           </div>
         </div>
       </section>
@@ -490,7 +487,7 @@ export default function ProgramsPage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact?subject=Join%20Linkay%20Ventures"
-              className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-md shadow-[#894541]/25 hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
             >
               <span>Join With Us</span>
               <ArrowRight size={16} />
