@@ -306,11 +306,12 @@ export default function Navbar() {
                 <ArrowUpRight size={16} className="text-[#894541]" />
               </Link>
               <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-[13.5px] font-bold px-6 py-2.5 rounded-full transition-all duration-200 shadow-md shadow-[#894541]/30 hover:shadow-lg hover:shadow-[#894541]/40 hover:-translate-y-0.5"
+                href="/contact"xxxxxx
+                style={{ color: '#ffffff' }}
+                className="w-full inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 !text-white font-poppins text-[13.5px] font-bold px-6 py-3 rounded-full transition-all duration-200 shadow-md shadow-[#894541]/30 hover:shadow-lg hover:shadow-[#894541]/40 hover:-translate-y-0.5"
               >
-                <span>Get In Touch</span>
-                <ArrowRight size={15} />
+                <span className="!text-white" style={{ color: '#ffffff' }}>Get In Touch</span>
+                <ArrowRight size={15} className="!text-white" style={{ color: '#ffffff' }} />
               </Link>
             </div>
           </div>

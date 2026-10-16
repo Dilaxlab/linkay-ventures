@@ -280,8 +280,8 @@ textarea.bg-\[\#080d1a\]::placeholder {
 /* ============================================================== */
 /* ALL WHITE TEXT ON PAGE BACKGROUND CHANGED TO #004a80            */
 /* ============================================================== */
-.text-white:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-\[\#851823\]"]):not([class*="bg-\[\#25D366\]"]):not([class*="bg-\[\#20ba5a\]"]):not([class*="bg-\[\#004a80\]"]):not([class*="bg-\[\#080d1a\]"]):not([class*="bg-\[\#050814\]"]):not([class*="bg-\[\#101a2a\]"]):not([class*="bg-\[\#0b1220\]"]):not([class*="bg-\[\#030712\]"]):not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#0a1122\] *):not(.bg-\[\#004a80\] *):not(#venture-hub *):not([style*="background"] *):not([style*="background"]):not(button.bg-\[\#A12B3C\]):not(button.bg-\[\#9F1D2C\]),
-.text-\[\#f4f7ff\]:not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-\[\#851823\]"]):not([class*="bg-\[\#004a80\]"]):not([class*="bg-\[\#080d1a\]"]):not([class*="bg-\[\#050814\]"]):not([class*="bg-\[\#101a2a\]"]):not([class*="bg-\[\#0b1220\]"]):not([class*="bg-\[\#030712\]"]):not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#0a1122\] *):not(.bg-\[\#004a80\] *):not(#venture-hub *):not([style*="background"] *):not([style*="background"]) {
+.text-white:not([class*="bg-\[\#894541\]"]):not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-\[\#851823\]"]):not([class*="bg-\[\#25D366\]"]):not([class*="bg-\[\#20ba5a\]"]):not([class*="bg-\[\#004a80\]"]):not([class*="bg-\[\#080d1a\]"]):not([class*="bg-\[\#050814\]"]):not([class*="bg-\[\#101a2a\]"]):not([class*="bg-\[\#0b1220\]"]):not([class*="bg-\[\#030712\]"]):not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#0a1122\] *):not(.bg-\[\#004a80\] *):not(.bg-\[\#894541\] *):not(#venture-hub *):not([style*="background"] *):not([style*="background"]):not(button.bg-\[\#894541\]):not(button.bg-\[\#A12B3C\]):not(button.bg-\[\#9F1D2C\]),
+.text-\[\#f4f7ff\]:not([class*="bg-\[\#894541\]"]):not([class*="bg-\[\#9F1D2C\]"]):not([class*="bg-\[\#A12B3C\]"]):not([class*="bg-\[\#851823\]"]):not([class*="bg-\[\#004a80\]"]):not([class*="bg-\[\#080d1a\]"]):not([class*="bg-\[\#050814\]"]):not([class*="bg-\[\#101a2a\]"]):not([class*="bg-\[\#0b1220\]"]):not([class*="bg-\[\#030712\]"]):not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.bg-\[\#030712\] *):not(.bg-\[\#101a2a\] *):not(.bg-\[\#0b1220\] *):not(.bg-\[\#0a1122\] *):not(.bg-\[\#004a80\] *):not(.bg-\[\#894541\] *):not(#venture-hub *):not([style*="background"] *):not([style*="background"]) {
   color: #004a80 !important;
 }
 
@@ -349,15 +349,23 @@ p:not(.bg-\[\#004a80\] *):not(.bg-\[\#080d1a\] *):not(.bg-\[\#050814\] *):not(.b
 }
 
 /* Ensure solid red/burgundy buttons and badges retain crisp white text */
+.bg-\[\#894541\],
+.bg-\[\#894541\] *,
+.bg-\[\#A12B3C\],
+.bg-\[\#A12B3C\] *,
+button.bg-\[\#894541\],
 button.bg-\[\#9F1D2C\],
 button.bg-\[\#A12B3C\],
 button.bg-\[\#851823\],
+a.bg-\[\#894541\],
 a.bg-\[\#9F1D2C\],
 a.bg-\[\#A12B3C\],
 a.bg-\[\#851823\],
+button.bg-\[\#894541\] > *,
 button.bg-\[\#9F1D2C\] > *,
 button.bg-\[\#A12B3C\] > *,
 button.bg-\[\#851823\] > *,
+a.bg-\[\#894541\] > *,
 a.bg-\[\#9F1D2C\] > *,
 a.bg-\[\#A12B3C\] > *,
 a.bg-\[\#851823\] > * {
