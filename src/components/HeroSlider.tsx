@@ -35,10 +35,6 @@ export default function HeroSlider() {
         {/* Bottom fade - soft */}
         <div className="absolute inset-x-0 bottom-0 h-32 sm:h-44 bg-gradient-to-t from-[#DDE2E8]/80 via-[#DDE2E8]/30 to-transparent pointer-events-none" />
 
-        {/* ❌ REMOVED: Left-side hard gradient (this was causing the visible border) */}
-
-        {/* ❌ REMOVED: Radial gradient box (this was causing the box outline) */}
-
         {/* Mobile subtle shade */}
         <div className="sm:hidden absolute inset-0 bg-gradient-to-b from-[#DDE2E8]/40 via-transparent to-[#DDE2E8]/50 pointer-events-none" />
       </div>
@@ -47,11 +43,9 @@ export default function HeroSlider() {
           MAIN HERO CONTENT - CLEAN, NO BORDER BOX
       ============================================================ */}
       <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-1 flex-col items-center justify-center px-4 sm:px-6 text-center">
-        {/* ❌ REMOVED the radial gradient "mist" box that created the visible border */}
-
         {/* Eyebrow */}
         <div className="mb-6 inline-flex items-center gap-2">
-          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
             <span>—</span> NEW YORK · UNITED STATES · GLOBAL OPPORTUNITIES
           </span>
         </div>
@@ -59,7 +53,7 @@ export default function HeroSlider() {
         {/* Heading */}
         <h1 className="mb-6 font-poppins text-[32px] sm:text-[46px] md:text-[56px] lg:text-[72px] font-bold leading-[1.1] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,74,128,0.15)]">
           Capital for{' '}
-          <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161,43,60,0.35)]">
+          <span className="text-[#894541]">
             What&apos;s Next
           </span>
         </h1>
@@ -75,7 +69,8 @@ export default function HeroSlider() {
         <div className="flex w-full flex-col gap-3.5 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-4">
           <Link
             href="/services"
-            className="inline-flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#A12B3C]/30 transition-all hover:-translate-y-0.5"
+            style={{ color: 'white' }}
+            className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 font-poppins text-sm font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#894541]/30 transition-all hover:-translate-y-0.5"
           >
             <span>Explore Our Platform</span>
             <ArrowRight size={17} />
@@ -94,15 +89,15 @@ export default function HeroSlider() {
         <div className="mt-12 w-full max-w-[860px] border-t border-[#1f293d]/20 pt-8">
           <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
               <span>Smart Capital</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
               <span>Strategic Advisory</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
               <span>Digital Assets</span>
             </div>
           </div>
@@ -120,10 +115,10 @@ export default function HeroSlider() {
           <div className="flex items-center gap-6 sm:gap-10 shrink-0 pr-6 sm:pr-10">
             {tickerItems.concat(tickerItems).map((item, idx) => (
               <div key={`track1-${idx}`} className="flex items-center gap-6 sm:gap-10 shrink-0">
-                <span className="text-[11px] sm:text-[12.5px] font-mono font-bold tracking-[0.16em] sm:tracking-[0.2em] text-[#004a80] hover:text-[#A12B3C] transition-colors cursor-default uppercase">
+                <span className="text-[11px] sm:text-[12.5px] font-mono font-bold tracking-[0.16em] sm:tracking-[0.2em] text-[#004a80] hover:text-[#894541] transition-colors cursor-default uppercase">
                   {item}
                 </span>
-                <span className="text-[#A12B3C]/70 text-xs sm:text-sm font-bold">|</span>
+                <span className="text-[#894541]/70 text-xs sm:text-sm font-bold">|</span>
               </div>
             ))}
           </div>
@@ -134,10 +129,10 @@ export default function HeroSlider() {
           >
             {tickerItems.concat(tickerItems).map((item, idx) => (
               <div key={`track2-${idx}`} className="flex items-center gap-6 sm:gap-10 shrink-0">
-                <span className="text-[11px] sm:text-[12.5px] font-mono font-bold tracking-[0.16em] sm:tracking-[0.2em] text-[#004a80] hover:text-[#A12B3C] transition-colors cursor-default uppercase">
+                <span className="text-[11px] sm:text-[12.5px] font-mono font-bold tracking-[0.16em] sm:tracking-[0.2em] text-[#004a80] hover:text-[#894541] transition-colors cursor-default uppercase">
                   {item}
                 </span>
-                <span className="text-[#A12B3C]/70 text-xs sm:text-sm font-bold">|</span>
+                <span className="text-[#894541]/70 text-xs sm:text-sm font-bold">|</span>
               </div>
             ))}
           </div>

@@ -122,10 +122,10 @@ export default function BlogPostsSection() {
               onClick={() => setActiveCategory(cat)}
               className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs font-mono font-semibold uppercase tracking-wider transition-all duration-200 shrink-0 ${
                 isActive
-                  ? 'bg-[#A12B3C] text-white shadow-lg shadow-[#A12B3C]/30 scale-[1.02]'
-                  : 'bg-[#DDE2E8] border border-[#C5CDD7] text-[#A12B3C] hover:bg-[#A12B3C] hover:text-white hover:border-[#A12B3C]'
+                  ? 'bg-[#894541] text-white shadow-lg shadow-[#894541]/30 scale-[1.02]'
+                  : 'bg-[#DDE2E8] border border-[#C5CDD7] text-[#894541] hover:bg-[#894541] hover:text-white hover:border-[#894541]'
               }`}
-              style={!isActive ? { color: '#A12B3C' } : undefined}
+              style={!isActive ? { color: '#894541' } : undefined}
             >
               {isActive && <span className="w-1.5 h-1.5 rounded-full bg-white" />}
               <span>{cat}</span>
@@ -153,8 +153,8 @@ export default function BlogPostsSection() {
                 />
 
                 <div
-                  className="absolute top-3.5 left-3.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#A12B3C] border border-[#A12B3C] shadow-md text-white text-[11px] font-mono font-bold uppercase tracking-wider"
-                  style={{ backgroundColor: '#A12B3C', color: '#ffffff' }}
+                  className="absolute top-3.5 left-3.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#894541] border border-[#894541] shadow-md text-white text-[11px] font-mono font-bold uppercase tracking-wider"
+                  style={{ backgroundColor: '#894541', color: '#ffffff' }}
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-white" />
                   <span style={{ color: '#ffffff' }}>{post.category}</span>
@@ -204,7 +204,7 @@ export default function BlogPostsSection() {
         ))}
       </div>
 
-      
+
     </section>
   );
 }

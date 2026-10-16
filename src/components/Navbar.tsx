@@ -68,8 +68,8 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#DDE2E8]/95 backdrop-blur-md border-b border-[#C5CDD7] shadow-sm shadow-[#004a80]/5'
-          : 'bg-[#DDE2E8]/75 backdrop-blur-md border-b border-[#C5CDD7]/40'
+          ? 'bg-page-gradient/95 backdrop-blur-md border-b border-[#C5CDD7] shadow-sm shadow-[#004a80]/5'
+          : 'bg-page-gradient/80 backdrop-blur-md border-b border-[#C5CDD7]/40'
       }`}
     >
       {/* Top brand strip: #004a80 */}
@@ -141,14 +141,16 @@ export default function Navbar() {
                             rel={subItem.external ? 'noopener noreferrer' : undefined}
                             className={`group flex items-start justify-between px-3.5 py-2.5 rounded-xl transition-all duration-150 ${
                               isCurrent
-                                ? 'bg-white/80 border-l-2 border-[#A12B3C] shadow-sm'
+                                ? 'bg-white/80 border-l-2 border-[#894541] shadow-sm'
                                 : 'hover:bg-white/70 hover:shadow-sm'
                             }`}
                           >
                             <div className="flex flex-col flex-1 pr-2">
                               <span
                                 className={`font-poppins text-[13.5px] font-bold transition-colors ${
-                                  isCurrent ? 'text-[#A12B3C]' : 'text-[#004a80] group-hover:text-[#A12B3C]'
+                                  isCurrent
+                                    ? 'text-[#894541]'
+                                    : 'text-[#004a80] group-hover:text-[#894541]'
                                 }`}
                               >
                                 {subItem.name}
@@ -163,8 +165,8 @@ export default function Navbar() {
                               size={15}
                               className={`shrink-0 mt-1 transition-all duration-200 ${
                                 isCurrent
-                                  ? 'text-[#A12B3C] translate-x-0 opacity-100'
-                                  : 'text-[#004a80]/30 group-hover:text-[#A12B3C] group-hover:translate-x-0.5'
+                                  ? 'text-[#894541] translate-x-0 opacity-100'
+                                  : 'text-[#004a80]/30 group-hover:text-[#894541] group-hover:translate-x-0.5'
                               }`}
                             />
                           </Link>
@@ -190,7 +192,7 @@ export default function Navbar() {
               >
                 <span>{item.name}</span>
                 {item.badge && (
-                  <span className="text-[9.5px] font-bold uppercase tracking-wider bg-[#A12B3C] text-white px-1.5 py-0.2 rounded-full">
+                  <span className="text-[9.5px] font-bold uppercase tracking-wider bg-[#894541] text-white px-1.5 py-0.2 rounded-full">
                     {item.badge}
                   </span>
                 )}
@@ -202,7 +204,7 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Right CTA Actions: Venture HUB (#004a80) + Get In Touch (#A12B3C) */}
+        {/* Right CTA Actions: Venture HUB (#004a80) + Get In Touch (#894541) */}
         <div className="hidden xl:flex items-center gap-3">
           <Link
             href="https://hub.linkayventures.com/index.php"
@@ -211,15 +213,19 @@ export default function Navbar() {
             className="group inline-flex items-center gap-1.5 bg-transparent hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-[13px] font-bold px-5 py-2 rounded-full transition-all duration-200 hover:-translate-y-0.5 shadow-sm hover:shadow-md hover:shadow-[#004a80]/20"
           >
             <span>Venture HUB</span>
-            <ArrowUpRight size={14} className="text-[#A12B3C] group-hover:text-white transition-colors" />
+            <ArrowUpRight
+              size={14}
+              className="text-[#894541] group-hover:text-white transition-colors"
+            />
           </Link>
 
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-[13.5px] font-bold px-6 py-2.5 rounded-full transition-all duration-200 shadow-md shadow-[#A12B3C]/30 hover:shadow-lg hover:shadow-[#A12B3C]/40 hover:-translate-y-0.5"
+            style={{ color: '#ffffff' }}
+            className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 !text-white font-poppins text-[13.5px] font-bold px-6 py-2.5 rounded-full transition-all duration-200 shadow-md shadow-[#894541]/30 hover:shadow-lg hover:shadow-[#894541]/40 hover:-translate-y-0.5"
           >
-            <span>Get In Touch</span>
-            <ArrowRight size={15} />
+            <span className="!text-white" style={{ color: '#ffffff' }}>Get In Touch</span>
+            <ArrowRight size={15} className="!text-white" style={{ color: '#ffffff' }} />
           </Link>
         </div>
 
@@ -227,7 +233,7 @@ export default function Navbar() {
         <div className="flex xl:hidden items-center">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-[#004a80] p-2.5 rounded-xl hover:bg-[#A12B3C]/10 hover:text-[#A12B3C] transition-colors focus:outline-none"
+            className="text-[#004a80] p-2.5 rounded-xl hover:bg-[#894541]/10 hover:text-[#894541] transition-colors focus:outline-none"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -245,7 +251,7 @@ export default function Navbar() {
                   <div key={item.name} className="py-2.5 border-b border-[#C5CDD7]/70">
                     <div className="font-poppins text-[12px] font-bold uppercase tracking-wider text-[#004a80] px-3 py-1 flex items-center justify-between">
                       <span>{item.name}</span>
-                      <ChevronDown size={14} className="text-[#A12B3C]" />
+                      <ChevronDown size={14} className="text-[#894541]" />
                     </div>
                     <div className="pl-3 mt-1 space-y-1">
                       {item.submenu.map((subItem) => (
@@ -255,7 +261,7 @@ export default function Navbar() {
                           target={subItem.external ? '_blank' : undefined}
                           rel={subItem.external ? 'noopener noreferrer' : undefined}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block px-3 py-2 text-[14px] font-poppins font-semibold text-[#004a80] hover:text-[#A12B3C] hover:bg-[#cad2dc] rounded-xl transition-colors"
+                          className="block px-3 py-2 text-[14px] font-poppins font-semibold text-[#004a80] hover:text-[#894541] hover:bg-[#cad2dc] rounded-xl transition-colors"
                         >
                           {subItem.name}
                         </Link>
@@ -274,13 +280,13 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`flex items-center justify-between px-3.5 py-2.5 rounded-xl font-poppins text-[14px] font-semibold transition-colors ${
                     active
-                      ? 'text-[#A12B3C] bg-[#cad2dc] border-l-4 border-[#A12B3C]'
-                      : 'text-[#004a80] hover:text-[#A12B3C] hover:bg-[#cad2dc]'
+                      ? 'text-[#894541] bg-[#cad2dc] border-l-4 border-[#894541]'
+                      : 'text-[#004a80] hover:text-[#894541] hover:bg-[#cad2dc]'
                   }`}
                 >
                   <span>{item.name}</span>
                   {item.badge && (
-                    <span className="text-[10px] font-bold uppercase tracking-wider bg-[#A12B3C] text-white px-2 py-0.5 rounded-full">
+                    <span className="text-[10px] font-bold uppercase tracking-wider bg-[#894541] text-white px-2 py-0.5 rounded-full">
                       {item.badge}
                     </span>
                   )}
@@ -297,15 +303,14 @@ export default function Navbar() {
                 className="w-full flex items-center justify-center gap-2 border-2 border-[#004a80] bg-transparent text-[#004a80] hover:bg-[#004a80] hover:text-white font-poppins text-sm font-bold py-3 px-4 rounded-full shadow-sm transition-all"
               >
                 <span>Venture HUB</span>
-                <ArrowUpRight size={16} className="text-[#A12B3C]" />
+                <ArrowUpRight size={16} className="text-[#894541]" />
               </Link>
               <Link
                 href="/contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-bold py-3 px-4 rounded-full shadow-md shadow-[#A12B3C]/30 transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-[13.5px] font-bold px-6 py-2.5 rounded-full transition-all duration-200 shadow-md shadow-[#894541]/30 hover:shadow-lg hover:shadow-[#894541]/40 hover:-translate-y-0.5"
               >
                 <span>Get In Touch</span>
-                <ArrowRight size={16} />
+                <ArrowRight size={15} />
               </Link>
             </div>
           </div>

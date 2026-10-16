@@ -29,7 +29,7 @@ export default function NewsletterSection() {
           className="flex flex-col lg:flex-row items-center justify-between gap-8 p-8 sm:p-10 rounded-3xl bg-[#004a80] border-2 border-[#003860] shadow-2xl shadow-[#004a80]/30 text-white"
           style={{ backgroundColor: '#004a80' }}
         >
-          
+
           {/* Left: Copy without chips */}
           <div className="flex items-center gap-5 max-w-xl text-center lg:text-left">
             <div className="hidden sm:flex w-12 h-12 rounded-2xl bg-white/15 border border-white/25 items-center justify-center text-white shrink-0">
@@ -67,7 +67,7 @@ export default function NewsletterSection() {
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-xs font-bold uppercase tracking-wider px-7 py-3.5 rounded-full transition-all shadow-md shadow-[#A12B3C]/40 hover:-translate-y-0.5 shrink-0"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-xs font-bold uppercase tracking-wider px-7 py-3.5 rounded-full transition-all shadow-md shadow-[#894541]/40 hover:-translate-y-0.5 shrink-0"
                 >
                   {status === 'loading' ? (
                     <Loader2 size={15} className="animate-spin" />

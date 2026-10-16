@@ -101,7 +101,7 @@ export default function ProgramsPage() {
   ];
 
   return (
-    <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#A12B3C] selection:text-white">
+    <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#894541] selection:text-white">
       {/* ============================================================== */}
       {/* 1. HERO                                                        */}
       {/* ============================================================== */}
@@ -138,7 +138,7 @@ export default function ProgramsPage() {
           <div className="max-w-3xl mx-auto">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                 <span>—</span> OUR PROGRAMS
               </span>
             </div>
@@ -146,7 +146,7 @@ export default function ProgramsPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[68px] font-bold text-[#004a80] tracking-tight leading-[1.1] mb-6">
               Programs for founders{' '}
-              <span className="text-[#A12B3C] drop-shadow-[0_0_25px_rgba(161,43,60,0.35)]">
+              <span className="text-[#894541] ">
                 building what&apos;s next.
               </span>
             </h1>
@@ -161,7 +161,7 @@ export default function ProgramsPage() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-4 mb-10 max-w-md sm:max-w-none mx-auto">
               <Link
                 href="/contact?subject=Program%20Application"
-                className="inline-flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#A12B3C]/30 hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Apply to a Program</span>
                 <ArrowRight size={16} />
@@ -179,21 +179,19 @@ export default function ProgramsPage() {
               {/* Trust Chips Line */}
               <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Venture Accelerator</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Corporate Partnerships</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Adaptive Growth</span>
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </section>
@@ -206,14 +204,14 @@ export default function ProgramsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div className="lg:col-span-7">
               <div className="mb-4 inline-flex items-center gap-2">
-                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                   <span>—</span>OUR PROGRAMS
                 </span>
               </div>
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-5">
                 We don&apos;t just back startups.{' '}
-                <span className="text-[#A12B3C] block sm:inline font-bold">
+                <span className="text-[#894541] block sm:inline font-bold">
                   We build alongside them.
                 </span>
               </h2>
@@ -224,8 +222,8 @@ export default function ProgramsPage() {
                 programs designed for impact.
               </p>
 
-              <div className="flex items-center gap-3 text-xs font-mono text-[#cad5e8] pt-2">
-                <span className="w-2 h-2 rounded-full bg-[#A12B3C] animate-pulse" />
+              <div className="flex items-center gap-3 text-xs font-mono text-[#894541] pt-2">
+                <span className="w-2 h-2 rounded-full bg-[#894541] animate-pulse" />
                 <span>Operator-Led Cohorts · High-Touch Mentorship</span>
               </div>
             </div>
@@ -258,14 +256,14 @@ export default function ProgramsPage() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
             <div className="max-w-3xl">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                   <span>—</span>VENTURE ACCELERATOR
                 </span>
               </div>
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-4">
                 For early-stage startups{' '}
-                <span className="text-[#A12B3C] block sm:inline font-bold">ready to scale.</span>
+                <span className="text-[#894541] block sm:inline font-bold">ready to scale.</span>
               </h2>
 
               <p className="font-red-hat text-[#004a80] text-base sm:text-lg font-normal">
@@ -276,7 +274,7 @@ export default function ProgramsPage() {
 
             <Link
               href="/contact?subject=Accelerator%20Cohort%20Application"
-              className="inline-flex items-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-xs sm:text-sm font-semibold px-7 py-3 rounded-full transition-all shadow-md shadow-[#A12B3C]/30 shrink-0 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-xs sm:text-sm font-semibold px-7 py-3 rounded-full transition-all shadow-md shadow-[#894541]/30 shrink-0 hover:-translate-y-0.5"
             >
               <span>Apply to Our Next Cohort</span>
               <ArrowRight size={15} />
@@ -332,14 +330,14 @@ export default function ProgramsPage() {
         <div className="max-w-[1340px] mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="mb-4 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                 <span>—</span>CORPORATE INNOVATION PARTNERSHIPS
               </span>
             </div>
 
             <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-4">
               Where startups and enterprises{' '}
-              <span className="text-[#A12B3C] block sm:inline font-bold">co-create.</span>
+              <span className="text-[#894541] block sm:inline font-bold">co-create.</span>
             </h2>
 
             <p className="font-red-hat text-[#004a80] text-base sm:text-lg font-normal">
@@ -392,11 +390,12 @@ export default function ProgramsPage() {
               href="https://hub.linkayventures.com/index.php"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-xs sm:text-sm font-bold px-7 py-3 rounded-full transition-all shadow-md group"
+              className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5 w-full sm:w-auto"
             >
               <span>Access Venture HUB</span>
-              <ArrowUpRight size={15} className="text-[#A12B3C] group-hover:text-white" />
+              <ArrowRight size={16} />
             </Link>
+
           </div>
         </div>
       </section>
@@ -424,14 +423,14 @@ export default function ProgramsPage() {
             {/* Content (7 cols) */}
             <div className="lg:col-span-7 order-1 lg:order-2 flex flex-col justify-center">
               <div className="mb-4 inline-flex items-center gap-2">
-                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                   <span>—</span>ADAPTIVE GROWTH PROGRAMS
                 </span>
               </div>
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-4">
                 Support that adapts{' '}
-                <span className="text-[#A12B3C] block sm:inline font-bold">to every stage.</span>
+                <span className="text-[#894541] block sm:inline font-bold">to every stage.</span>
               </h2>
 
               <p className="font-red-hat text-[#004a80] text-base sm:text-lg leading-relaxed mb-8 font-normal">
@@ -474,7 +473,7 @@ export default function ProgramsPage() {
       <section className="w-full bg-transparent py-24 px-6 sm:px-12 lg:px-16 relative overflow-hidden">
         <div className="max-w-[960px] mx-auto text-center relative z-10">
           <div className="mb-5 inline-flex items-center gap-2">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
               <span>—</span> JOIN THE MOVEMENT
             </span>
           </div>
@@ -491,7 +490,7 @@ export default function ProgramsPage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact?subject=Join%20Linkay%20Ventures"
-              className="inline-flex items-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-md shadow-[#A12B3C]/25 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-md shadow-[#894541]/25 hover:-translate-y-0.5"
             >
               <span>Join With Us</span>
               <ArrowRight size={16} />

@@ -14,7 +14,7 @@ export default function ClosingCtaSection() {
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             {/* Eyebrow */}
             <div className="mb-4 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                 <span>—</span> LET&apos;S BUILD WHAT&apos;S NEXT
               </span>
             </div>
@@ -22,7 +22,7 @@ export default function ClosingCtaSection() {
             {/* Heading */}
             <h2 className="font-poppins text-[#004a80] text-3xl sm:text-5xl lg:text-[54px] font-bold leading-[1.12] mb-6 tracking-tight">
               Let&apos;s build{' '}
-              <span className="text-[#A12B3C]">
+              <span className="text-[#894541]">
                 what&apos;s next.
               </span>
             </h2>
@@ -37,7 +37,7 @@ export default function ClosingCtaSection() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 w-full sm:w-auto">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm sm:text-[15px] font-bold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full shadow-lg shadow-[#A12B3C]/40 transition-all hover:-translate-y-0.5 active:translate-y-0 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm sm:text-[15px] font-bold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full shadow-lg shadow-[#894541]/40 transition-all hover:-translate-y-0.5 active:translate-y-0 w-full sm:w-auto"
               >
                 <span>Start a Conversation</span>
                 <ArrowRight size={16} />
@@ -56,7 +56,7 @@ export default function ClosingCtaSection() {
           <div className="lg:col-span-5 relative flex items-center justify-center">
             <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[460px] lg:h-[460px] rounded-full flex items-center justify-center">
               {/* Radial Cyan & Red Glows */}
-              <div className="absolute inset-0 bg-radial from-[#A12B3C]/20 via-[#A12B3C]/10 to-transparent rounded-full blur-2xl pointer-events-none" />
+              <div className="absolute inset-0 bg-radial from-[#894541]/20 via-[#894541]/10 to-transparent rounded-full blur-2xl pointer-events-none" />
 
               {/* Glowing Wireframe Globe / Digital Sphere */}
               <div className="relative w-full h-full rounded-full overflow-hidden flex items-center justify-center opacity-90">

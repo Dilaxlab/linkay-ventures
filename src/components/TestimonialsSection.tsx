@@ -57,15 +57,15 @@ export default function TestimonialsSection() {
         {/* Section header */}
         <div className="text-center max-w-[850px] mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C]" />
-            <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#A12B3C]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#894541]" />
+            <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#894541]">
               Testimonials
             </span>
           </div>
           <h2 className="font-poppins text-[#004a80] text-[30px] sm:text-[42px] font-bold leading-tight mb-4">
             Hear From Our Clients
           </h2>
-          <div className="w-16 h-1 bg-[#A12B3C] mx-auto rounded-full" />
+          <div className="w-16 h-1 bg-[#894541] mx-auto rounded-full" />
         </div>
 
         {/* Testimonial card */}
@@ -76,16 +76,16 @@ export default function TestimonialsSection() {
             style={{ backgroundColor: '#004a80' }}
           >
             {/* Burgundy accent corner glow */}
-            <div className="absolute top-0 right-0 w-52 h-52 rounded-full bg-[#A12B3C]/30 blur-3xl pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-44 h-44 rounded-full bg-[#A12B3C]/20 blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-52 h-52 rounded-full bg-[#894541]/30 blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-44 h-44 rounded-full bg-[#894541]/20 blur-3xl pointer-events-none" />
 
             {/* Top-row: quote icon + trust badge */}
             <div className="flex items-center justify-between mb-8 relative z-10">
               <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 flex items-center justify-center text-white">
                 <Quote size={20} />
               </div>
-              <span className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-[#A12B3C] bg-white px-3.5 py-1.5 rounded-full shadow-md uppercase tracking-wider">
-                <CheckCircle2 size={13} className="text-[#A12B3C]" />
+              <span className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-[#894541] bg-white px-3.5 py-1.5 rounded-full shadow-md uppercase tracking-wider">
+                <CheckCircle2 size={13} className="text-[#894541]" />
                 Verified Client
               </span>
             </div>
@@ -143,7 +143,7 @@ export default function TestimonialsSection() {
                     aria-label={`Go to testimonial ${idx + 1}`}
                     className={`h-2 rounded-full transition-all duration-300 ${
                       idx === currentIndex
-                        ? 'w-7 bg-[#A12B3C]'
+                        ? 'w-7 bg-[#894541]'
                         : 'w-2 bg-white/40 hover:bg-white/70'
                     }`}
                   />

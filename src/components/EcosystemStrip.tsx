@@ -15,8 +15,8 @@ export default function EcosystemStrip() {
       <div className="max-w-[1340px] mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5 shrink-0">
-            <span className="w-2 h-2 rounded-full bg-[#A12B3C] animate-pulse" />
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#A12B3C]">
+            <span className="w-2 h-2 rounded-full bg-[#894541] animate-pulse" />
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#894541]">
               Global Reach
             </span>
           </div>
@@ -34,7 +34,7 @@ export default function EcosystemStrip() {
             ))}
           </div>
 
-          <div className="hidden xl:flex items-center gap-2 text-xs font-mono text-[#A12B3C] px-4 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm font-bold">
+          <div className="hidden xl:flex items-center gap-2 text-xs font-mono text-[#894541] px-4 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm font-bold">
             <Globe2 size={13} />
             <span>Cross-Border Connectivity</span>
           </div>

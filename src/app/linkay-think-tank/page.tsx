@@ -175,7 +175,7 @@ export default function LinkayThinkTankPage() {
             {/* Heading */}
             <h1 className="mb-5 font-poppins text-[32px] sm:text-[46px] md:text-[54px] lg:text-[68px] font-bold leading-[1.12] tracking-tight text-white">
               Linkay{' '}
-              <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161,43,60,0.35)]">
+              <span className="text-[#894541]">
                 Think-Tank
               </span>
             </h1>
@@ -193,7 +193,7 @@ export default function LinkayThinkTankPage() {
                 href="https://linkaythinktank.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#A12B3C] hover:bg-[#9F1D2C] px-8 py-4 font-poppins text-sm font-bold text-white shadow-md shadow-[#A12B3C]/25 transition-all hover:-translate-y-0.5 sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#894541] hover:bg-[#9F1D2C] px-8 py-4 font-poppins text-sm font-bold text-white shadow-md shadow-[#894541]/25 transition-all hover:-translate-y-0.5 sm:w-auto"
               >
                 <span>Explore Think-Tank Portal</span>
                 <ArrowUpRight size={17} />
@@ -212,15 +212,15 @@ export default function LinkayThinkTankPage() {
               {/* Trust Chips Line */}
               <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Global Expert Network</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Cross-Disciplinary Rigor</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Execution-Ready Impact</span>
                 </div>
               </div>
@@ -264,9 +264,9 @@ export default function LinkayThinkTankPage() {
               ].map((chip, i) => (
                 <span
                   key={i}
-                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d] text-[12.5px] font-mono text-[#A12B3C]"
+                  className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm text-xs font-mono font-bold text-[#004a80]"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#9F1D2C]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   {chip}
                 </span>
               ))}
@@ -286,7 +286,7 @@ export default function LinkayThinkTankPage() {
             </div>
 
             <div className="mt-4 text-center">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#A12B3C] font-bold">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#894541] font-bold">
                 Global Research &amp; Advisory Group
               </span>
             </div>
@@ -325,21 +325,21 @@ export default function LinkayThinkTankPage() {
               return (
                 <div
                   key={idx}
-                  className={`group bg-[#080d1a] p-6 rounded-2xl border border-[#1f293d] hover:border-[#A12B3C]/50 transition-all duration-300 flex flex-col justify-between shadow-lg hover:shadow-[#A12B3C]/5 hover:-translate-y-1 ${
+                  className={`group bg-[#080d1a] p-6 rounded-2xl border border-[#1f293d] hover:border-[#894541]/50 transition-all duration-300 flex flex-col justify-between shadow-lg hover:shadow-[#894541]/5 hover:-translate-y-1 ${
                     isLastTwo ? 'lg:col-span-3' : 'lg:col-span-2'
                   }`}
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-11 h-11 rounded-xl bg-[#A12B3C]/10 border border-[#A12B3C]/25 flex items-center justify-center text-[#A12B3C] group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 flex items-center justify-center text-[#894541] group-hover:scale-110 transition-transform">
                         <IconComp size={20} />
                       </div>
-                      <span className="text-[11px] font-mono text-[#A12B3C] bg-[#030712] px-2.5 py-0.5 rounded-full border border-[#1f293d]">
+                      <span className="text-[11px] font-mono text-[#894541] bg-[#030712] px-2.5 py-0.5 rounded-full border border-[#1f293d]">
                         {item.tag}
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#A12B3C] transition-colors leading-tight">
+                    <h3 className="font-poppins text-white text-[19px] font-bold mb-2 group-hover:text-[#894541] transition-colors leading-tight">
                       {item.title}
                     </h3>
                     <p className="font-red-hat text-[#9aacc6] text-[14px] leading-relaxed">
@@ -351,7 +351,7 @@ export default function LinkayThinkTankPage() {
                     <span className="text-[11px] font-mono uppercase tracking-wider text-[#9aacc6]">
                       Domain 0{idx + 1}
                     </span>
-                    <span className="text-xs text-[#A12B3C] font-mono opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="text-xs text-[#894541] font-mono opacity-0 group-hover:opacity-100 transition-opacity">
                       Read Strategy →
                     </span>
                   </div>
@@ -387,11 +387,11 @@ export default function LinkayThinkTankPage() {
               return (
                 <div
                   key={idx}
-                  className="group bg-[#080d1a] hover:bg-[#0d1627] p-6 rounded-2xl border border-[#1f293d] hover:border-[#A12B3C]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg hover:shadow-[#A12B3C]/5"
+                  className="group bg-[#080d1a] hover:bg-[#0d1627] p-6 rounded-2xl border border-[#1f293d] hover:border-[#894541]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg hover:shadow-[#894541]/5"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-11 h-11 rounded-xl bg-[#A12B3C]/10 border border-[#A12B3C]/25 flex items-center justify-center text-[#A12B3C] group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 flex items-center justify-center text-[#894541] group-hover:scale-110 transition-transform">
                         <IconComp size={19} />
                       </div>
                       <span className="text-[11px] font-mono text-[#9aacc6] bg-[#030712] px-2.5 py-0.5 rounded-full border border-[#1f293d]">
@@ -399,7 +399,7 @@ export default function LinkayThinkTankPage() {
                       </span>
                     </div>
 
-                    <h3 className="font-poppins text-white text-[18px] font-bold mb-2 group-hover:text-[#A12B3C] transition-colors">
+                    <h3 className="font-poppins text-white text-[18px] font-bold mb-2 group-hover:text-[#894541] transition-colors">
                       {item.title}
                     </h3>
                     <p className="font-red-hat text-[#9aacc6] text-[14px] leading-relaxed">
@@ -432,19 +432,19 @@ export default function LinkayThinkTankPage() {
             return (
               <div
                 key={idx}
-                className="group bg-[#080d1a] p-6 rounded-2xl border border-[#1f293d] hover:border-[#A12B3C]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg hover:shadow-[#A12B3C]/5"
+                className="group bg-[#080d1a] p-6 rounded-2xl border border-[#1f293d] hover:border-[#894541]/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg hover:shadow-[#894541]/5"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-11 h-11 rounded-xl bg-[#A12B3C]/10 border border-[#A12B3C]/25 flex items-center justify-center text-[#A12B3C] group-hover:scale-110 transition-transform">
+                    <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 flex items-center justify-center text-[#894541] group-hover:scale-110 transition-transform">
                       <IconComp size={19} />
                     </div>
-                    <span className="font-poppins text-[24px] font-extrabold leading-none text-[#A12B3C]">
+                    <span className="font-poppins text-[24px] font-extrabold leading-none text-[#894541]">
                       {step.num}
                     </span>
                   </div>
 
-                  <h3 className="font-poppins text-white text-[18px] font-bold mb-2 group-hover:text-[#A12B3C] transition-colors leading-tight">
+                  <h3 className="font-poppins text-white text-[18px] font-bold mb-2 group-hover:text-[#894541] transition-colors leading-tight">
                     {step.title}
                   </h3>
                   <p className="font-red-hat text-[#9aacc6] text-[14px] leading-relaxed">
@@ -453,7 +453,7 @@ export default function LinkayThinkTankPage() {
                 </div>
 
                 <div className="mt-5 pt-3 border-t border-[#1f293d]">
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#A12B3C]">
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#894541]">
                     {step.tag}
                   </span>
                 </div>
@@ -468,7 +468,7 @@ export default function LinkayThinkTankPage() {
       ============================================================ */}
       <section className="w-full px-6 sm:px-12 lg:px-16 pb-24 max-w-[1240px] mx-auto">
         <div className="p-8 sm:p-12 rounded-3xl bg-[#080d1a] text-white border border-[#1f293d] text-center relative max-w-[960px] mx-auto overflow-hidden shadow-2xl">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[420px] h-[420px] rounded-full bg-[#A12B3C]/10 blur-3xl pointer-events-none" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[420px] h-[420px] rounded-full bg-[#894541]/10 blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full bg-[#9F1D2C]/15 blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
@@ -487,14 +487,15 @@ export default function LinkayThinkTankPage() {
                 href="https://linkaythinktank.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#9F1D2C] hover:bg-[#851823] text-white font-poppins text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-lg shadow-[#9F1D2C]/30 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Launch Think-Tank Research Portal</span>
-                <ArrowUpRight size={16} />
+                <ArrowRight size={16} />
               </Link>
+
               <Link
                 href="/contact"
-                className="bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-7 py-3.5 rounded-full transition-all shadow-md hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-7 py-3.5 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
                 Schedule Strategic Consultation
               </Link>

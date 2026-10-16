@@ -33,7 +33,7 @@ export default function LeadershipSection() {
 
         {/* Eyebrow */}
         <div className="mb-4 inline-flex items-center gap-2">
-          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
             <span>—</span> 05 / LEADERSHIP
           </span>
         </div>
@@ -41,7 +41,7 @@ export default function LeadershipSection() {
         {/* Heading */}
         <h2 className="font-poppins text-3xl sm:text-5xl lg:text-[52px] font-bold text-[#004a80] tracking-tight leading-tight mb-12">
           Experience meets{' '}
-          <span className="text-[#A12B3C]">
+          <span className="text-[#894541]">
             ambition.
           </span>
         </h2>

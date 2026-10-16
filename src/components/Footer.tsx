@@ -27,7 +27,7 @@ export default function Footer() {
               </Link>
 
               {/* Required Approved Tagline */}
-              <p className="font-mono text-xs font-bold text-[#A12B3C] tracking-wider uppercase mb-2">
+              <p className="font-mono text-xs font-bold text-[#894541] tracking-wider uppercase mb-2">
                 INVEST · INNOVATE · TRANSFORM
               </p>
 
@@ -44,29 +44,29 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 font-red-hat text-[13.5px]">
               <li>
-                <Link href="/about" className="text-[#004a80] hover:text-[#A12B3C] transition-colors">
+                <Link href="/about" className="text-[#004a80] hover:text-[#894541] transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/programs" className="text-[#004a80] hover:text-[#A12B3C] transition-colors">
+                <Link href="/programs" className="text-[#004a80] hover:text-[#894541] transition-colors">
                   Programs
                 </Link>
               </li>
               <li>
                 <Link
-                  href="https://hub.linkayventures.com/index.php" className="text-[#004a80] hover:text-[#A12B3C] transition-colors"
+                  href="https://hub.linkayventures.com/index.php" className="text-[#004a80] hover:text-[#894541] transition-colors"
                 >
                   Venture HUB
                 </Link>
               </li>
               <li>
-                <Link href="/about#team" className="text-[#004a80] hover:text-[#A12B3C] transition-colors">
+                <Link href="/about#team" className="text-[#004a80] hover:text-[#894541] transition-colors">
                   Our Team
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-[#004a80] hover:text-[#A12B3C] transition-colors">
+                <Link href="/contact" className="text-[#004a80] hover:text-[#894541] transition-colors">
                   Contact
                 </Link>
               </li>
@@ -80,22 +80,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 font-red-hat text-[13.5px]">
               <li>
-                <Link href="/services" className="text-[#004a80] hover:text-[#A12B3C] transition-colors">
+                <Link href="/services" className="text-[#004a80] hover:text-[#894541] transition-colors">
                   Services &amp; Investment
                 </Link>
               </li>
               <li>
-                <Link href="/rwa-tokenization" className="text-[#004a80] hover:text-[#A12B3C] transition-colors">
+                <Link href="/rwa-tokenization" className="text-[#004a80] hover:text-[#894541] transition-colors">
                   RWA Tokenization
                 </Link>
               </li>
               <li>
-                <Link href="/linkay-commodities" className="text-[#004a80] hover:text-[#A12B3C] transition-colors">
+                <Link href="/linkay-commodities" className="text-[#004a80] hover:text-[#894541] transition-colors">
                   Linkay Commodities
                 </Link>
               </li>
               <li>
-                <Link href="/linkay-think-tank" className="text-[#004a80] hover:text-[#A12B3C] transition-colors">
+                <Link href="/linkay-think-tank" className="text-[#004a80] hover:text-[#894541] transition-colors">
                   Linkay Think-Tank
                 </Link>
               </li>
@@ -125,7 +125,7 @@ export default function Footer() {
               <div>
                 <Link
                   href="/contact"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-xs font-bold py-3 px-4 rounded-full transition-all shadow-md shadow-[#A12B3C]/40 hover:-translate-y-0.5"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-xs font-bold py-3 px-4 rounded-full transition-all shadow-md shadow-[#894541]/40 hover:-translate-y-0.5"
                 >
                   <span>Contact Us</span>
                   <ArrowRight size={13} />
@@ -151,7 +151,7 @@ export default function Footer() {
         {/* Bottom Sub-Footer Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#004a80] text-center sm:text-left">
           <div>
-            <span>© 2026 Linkay Ventures Inc. All rights reserved.</span>
+            <span>© 2025 Linkay Ventures Inc. All rights reserved.</span>
           </div>
 
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6">

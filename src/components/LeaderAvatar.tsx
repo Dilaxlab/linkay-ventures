@@ -68,7 +68,7 @@ export default function LeaderAvatar({ gender, name, className = '' }: LeaderAva
         </svg>
 
         {/* Subtle bottom indicator badge */}
-        <div className="absolute bottom-1 right-1 w-2.5 h-2.5 rounded-full bg-[#A12B3C] border border-white/60 shadow-sm" />
+        <div className="absolute bottom-1 right-1 w-2.5 h-2.5 rounded-full bg-[#894541] border border-white/60 shadow-sm" />
       </div>
     );
   }
@@ -124,7 +124,7 @@ export default function LeaderAvatar({ gender, name, className = '' }: LeaderAva
         />
         <path
           d="M31 43.5L33 43.5L32.6 51L31.4 51Z"
-          fill="#A12B3C"
+          fill="#894541"
         />
       </svg>
 

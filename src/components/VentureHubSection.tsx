@@ -12,13 +12,13 @@ export default function VentureHubSection() {
           style={{ backgroundColor: '#004a80' }}
         >
           {/* Subtle burgundy ambient glow for depth */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] rounded-full bg-[#A12B3C]/30 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 right-0 w-[350px] h-[350px] rounded-full bg-[#A12B3C]/25 blur-3xl pointer-events-none" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] rounded-full bg-[#894541]/30 blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 right-0 w-[350px] h-[350px] rounded-full bg-[#894541]/25 blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
-            {/* Eyebrow badge: #A12B3C and bold with #DDE2E8 background */}
+            {/* Eyebrow badge: #894541 and bold with #DDE2E8 background */}
             <div className="mb-5 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-md">
-              <span className="text-xs sm:text-[13px] font-mono font-black tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-black tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                 <span>—</span> SECURE CLIENT PORTAL
               </span>
             </div>
@@ -39,7 +39,7 @@ export default function VentureHubSection() {
                 href="https://hub.linkayventures.com/index.php"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-lg shadow-[#A12B3C]/40 hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-lg shadow-[#894541]/40 hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <Lock size={15} />
                 <span>Login to Venture HUB</span>

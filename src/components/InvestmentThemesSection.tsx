@@ -56,14 +56,16 @@ export default function InvestmentThemesSection() {
   ];
 
   return (
-    <section className="w-full bg-transparent py-14 sm:py-20 px-5 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]" id="focus-areas">
+    <section
+      className="w-full bg-transparent py-14 sm:py-20 px-5 sm:px-12 lg:px-16 text-[#f4f7ff] relative border-b border-[#1f293d]"
+      id="focus-areas"
+    >
       <div className="max-w-[1340px] mx-auto relative z-10">
-
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
           <div className="max-w-2xl">
             <div className="mb-4 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                 <span>—</span>INVESTMENT THEMES
               </span>
             </div>
@@ -81,13 +83,13 @@ export default function InvestmentThemesSection() {
 
           {/* Right Tabs / Indicator Pills */}
           <div className="flex flex-wrap items-center gap-3 sm:gap-5 text-xs font-mono tracking-wider text-[#004a80]">
-            <span className="text-[#A12B3C] font-semibold flex items-center gap-1.5">
-              <span>—</span> Technology
+            <span className="text-[#894541] font-semibold flex items-center gap-1.5">
+              <span>•</span> Technology
             </span>
-            <span className="hover:text-[#004a80] transition-colors cursor-default flex items-center gap-1.5">
+            <span className="text-[#894541] font-semibold flex items-center gap-1.5">
               <span>•</span> Real Assets
             </span>
-            <span className="hover:text-[#004a80] transition-colors cursor-default flex items-center gap-1.5">
+            <span className="text-[#894541] font-semibold flex items-center gap-1.5">
               <span>•</span> Global Reach
             </span>
           </div>
@@ -126,14 +128,16 @@ export default function InvestmentThemesSection() {
                       <Check size={10} className="stroke-[3]" />
                     </span>
                     <span>{item.actionText}</span>
-                    <ArrowRight size={12} className="group-hover/link:translate-x-1 transition-transform ml-1" />
+                    <ArrowRight
+                      size={12}
+                      className="group-hover/link:translate-x-1 transition-transform ml-1"
+                    />
                   </Link>
                 </div>
               </div>
             );
           })}
         </div>
-
       </div>
     </section>
   );

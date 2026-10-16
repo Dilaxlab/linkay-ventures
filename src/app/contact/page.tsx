@@ -60,7 +60,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#A12B3C] selection:text-white">
+    <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#894541] selection:text-white">
       {/* ============================================================== */}
       {/* 1. HERO BANNER                                                 */}
       {/* ============================================================== */}
@@ -97,7 +97,7 @@ export default function ContactPage() {
           <div className="max-w-3xl mx-auto">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                 <span>—</span> CONNECT WITH LINKAY VENTURES
               </span>
             </div>
@@ -105,7 +105,7 @@ export default function ContactPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.08] mb-6">
               Start the{' '}
-              <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161,43,60,0.35)]">
+              <span className="text-[#894541] ">
                 conversation.
               </span>
             </h1>
@@ -121,15 +121,15 @@ export default function ContactPage() {
               {/* Trust Chips Line */}
               <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Response Within 24h</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Confidential Under NDA</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Global Advisory Reach</span>
                 </div>
               </div>
@@ -149,13 +149,13 @@ export default function ContactPage() {
       >
         <div className="relative max-w-[1180px] mx-auto">
           {/* Subtle outer glow */}
-          <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-r from-[#A12B3C]/15 via-[#A12B3C]/10 to-[#A12B3C]/15 blur-2xl" />
+          <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-r from-[#894541]/15 via-[#894541]/10 to-[#894541]/15 blur-2xl" />
 
           <div className="relative grid grid-cols-1 lg:grid-cols-12 overflow-hidden rounded-[28px] border-2 border-[#003860] bg-[#004a80] shadow-2xl">
             {/* LEFT PANEL — Dark Direct Line (5 cols) */}
             <div className="lg:col-span-5 bg-[#003860] p-6 sm:p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-white/15 flex flex-col justify-between relative overflow-hidden text-white">
-              <div className="pointer-events-none absolute -top-20 -left-20 h-64 w-64 rounded-full bg-[#A12B3C]/15 blur-3xl" />
-              <div className="pointer-events-none absolute bottom-0 right-0 h-64 w-64 rounded-full bg-[#A12B3C]/10 blur-3xl" />
+              <div className="pointer-events-none absolute -top-20 -left-20 h-64 w-64 rounded-full bg-[#894541]/15 blur-3xl" />
+              <div className="pointer-events-none absolute bottom-0 right-0 h-64 w-64 rounded-full bg-[#894541]/10 blur-3xl" />
 
               <div className="relative z-10">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#ffccd3] uppercase flex items-center gap-2 mb-6">
@@ -345,7 +345,7 @@ export default function ContactPage() {
 
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-bold uppercase tracking-wider py-4 px-8 rounded-full transition-all shadow-lg shadow-[#A12B3C]/40 hover:-translate-y-0.5"
+                    className="w-full flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-bold uppercase tracking-wider py-4 px-8 rounded-full transition-all shadow-lg shadow-[#894541]/40 hover:-translate-y-0.5"
                   >
                     <span>Submit Inquiry</span>
                     <Send size={16} />

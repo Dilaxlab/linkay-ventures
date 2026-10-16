@@ -18,8 +18,8 @@ export default function FeaturesSection() {
           <div className="lg:col-span-7 flex flex-col justify-center">
             {/* Pill badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm mb-4 w-fit">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C]" />
-              <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#A12B3C]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#894541]" />
+              <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#894541]">
                 Features
               </span>
             </div>
@@ -30,7 +30,7 @@ export default function FeaturesSection() {
             </h2>
 
             {/* Brand maroon underline */}
-            <div className="w-12 h-1 bg-[#A12B3C] mb-6 rounded-full" />
+            <div className="w-12 h-1 bg-[#894541] mb-6 rounded-full" />
 
             {/* Paragraphs */}
             <div className="space-y-5 text-[#004a80] font-red-hat text-[16px] sm:text-[17px] leading-relaxed mb-8 font-normal">

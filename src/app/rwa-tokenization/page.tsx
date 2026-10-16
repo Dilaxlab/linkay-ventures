@@ -287,7 +287,7 @@ export default function RwaTokenizationPage() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#A12B3C] selection:text-white">
+    <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#894541] selection:text-white">
       {/* ============================================================
           1. HERO BANNER
       ============================================================ */}
@@ -324,7 +324,7 @@ export default function RwaTokenizationPage() {
           <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center px-4 sm:px-6 text-center">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                 <span>—</span> LINKAY VENTURES · RWA PROTOCOL
               </span>
             </div>
@@ -332,7 +332,7 @@ export default function RwaTokenizationPage() {
             {/* Heading */}
             <h1 className="mb-6 font-poppins text-[32px] sm:text-[46px] md:text-[56px] lg:text-[72px] font-bold leading-[1.1] tracking-tight text-white">
               Multi-RWA Tokenization &amp;{' '}
-              <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161,43,60,0.35)]">
+              <span className="text-[#894541] ">
                 Monetization Platform
               </span>
             </h1>
@@ -346,7 +346,7 @@ export default function RwaTokenizationPage() {
             <div className="flex w-full flex-col gap-3.5 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#A12B3C]/30 transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#894541]/30 transition-all hover:-translate-y-0.5"
               >
                 <span>Discuss an Asset</span>
                 <ArrowRight size={17} />
@@ -366,15 +366,15 @@ export default function RwaTokenizationPage() {
               {/* Trust Chips Line */}
               <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Institutional Grade Protocol</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Regulatory-Compliant Framework</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Real-Time On-Chain Settlement</span>
                 </div>
               </div>
@@ -387,7 +387,7 @@ export default function RwaTokenizationPage() {
       <section className="w-full py-24 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2 mb-3">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2 mb-3">
               <span>—</span> FEATURES
             </span>
             <h2 className="font-poppins text-white text-[32px] sm:text-[42px] font-bold leading-tight mb-5">
@@ -439,11 +439,11 @@ export default function RwaTokenizationPage() {
       <section className="w-full py-24 px-6 sm:px-12 lg:px-16 bg-transparent border-t border-b border-[#C5CDD7]">
         <div className="max-w-[1240px] mx-auto">
           <div className="text-center max-w-[850px] mx-auto mb-16">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center justify-center gap-2 mb-3">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center justify-center gap-2 mb-3">
               <span>—</span> MULTIPLE ASSET CLASSES
             </span>
             <h2 className="font-poppins text-[#004a80] text-[32px] sm:text-[44px] font-bold leading-tight mb-4">
-              One Platform. <span className="text-[#A12B3C]">Diverse Real-World Assets.</span>
+              One Platform. <span className="text-[#894541]">Diverse Real-World Assets.</span>
             </h2>
           </div>
 
@@ -488,12 +488,12 @@ export default function RwaTokenizationPage() {
         <div className="max-w-[1240px] mx-auto relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2 mb-3">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2 mb-3">
                 <span>—</span> THE RWA TECHNOLOGY STACK
               </span>
               <h2 className="font-poppins text-[#004a80] text-[32px] sm:text-[44px] font-bold leading-tight max-w-[700px]">
                 From Asset Intelligence to{' '}
-                <span className="text-[#A12B3C]">Market Infrastructure</span>
+                <span className="text-[#894541]">Market Infrastructure</span>
               </h2>
             </div>
           </div>
@@ -538,14 +538,14 @@ export default function RwaTokenizationPage() {
         {/* Section Header (Centered on Top for Perfect Balance) */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="mb-4 inline-flex items-center gap-2">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center justify-center gap-2">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center justify-center gap-2">
               <span>—</span> WHY RWA TOKENIZATION?
             </span>
           </div>
 
           <h2 className="font-poppins text-[#004a80] text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight mb-4 tracking-tight">
             Greater Possibilities for{' '}
-            <span className="text-[#A12B3C] font-bold">Digital Opportunity</span>
+            <span className="text-[#894541] font-bold">Digital Opportunity</span>
           </h2>
 
           <p className="font-red-hat text-[#004a80] text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
@@ -592,11 +592,11 @@ export default function RwaTokenizationPage() {
           {/* Right: Ecosystem Architecture Showcase Card */}
           <div className="lg:col-span-6 relative flex flex-col justify-center">
             {/* Ambient Lighting Orbs */}
-            <div className="absolute -top-10 -right-10 w-72 h-72 rounded-full bg-[#A12B3C]/25 blur-3xl pointer-events-none" />
+            <div className="absolute -top-10 -right-10 w-72 h-72 rounded-full bg-[#894541]/25 blur-3xl pointer-events-none" />
             <div className="absolute -bottom-10 -left-10 w-72 h-72 rounded-full bg-[#004a80]/20 blur-3xl pointer-events-none" />
 
             {/* Showcase Card Mockup */}
-            <div className="relative w-full h-full rounded-[28px] sm:rounded-[32px] border-2 border-[#C5CDD7] bg-white p-3.5 sm:p-5 shadow-2xl shadow-[#004a80]/15 transition-all duration-500 hover:border-[#A12B3C]/40 hover:shadow-2xl group flex flex-col justify-between">
+            <div className="relative w-full h-full rounded-[28px] sm:rounded-[32px] border-2 border-[#C5CDD7] bg-white p-3.5 sm:p-5 shadow-2xl shadow-[#004a80]/15 transition-all duration-500 hover:border-[#894541]/40 hover:shadow-2xl group flex flex-col justify-between">
               {/* Window Header */}
 
               {/* Framed Graphic */}
@@ -623,11 +623,11 @@ export default function RwaTokenizationPage() {
       >
         <div className="max-w-[1240px] mx-auto">
           <div className="text-center max-w-[850px] mx-auto mb-16">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center justify-center gap-2 mb-3">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center justify-center gap-2 mb-3">
               <span>—</span> HOW IT WORKS
             </span>
             <h2 className="font-poppins text-[#004a80] text-[32px] sm:text-[44px] font-bold leading-tight mb-4">
-              From Physical Asset to <span className="text-[#A12B3C]">Digital Opportunity</span>
+              From Physical Asset to <span className="text-[#894541]">Digital Opportunity</span>
             </h2>
           </div>
 
@@ -641,7 +641,7 @@ export default function RwaTokenizationPage() {
                   onClick={() => setActiveStep(activeStep === st.num ? null : st.num)}
                   className={`cursor-pointer p-6 rounded-2xl border-2 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-xl text-white ${
                     isSelected
-                      ? 'border-[#ffccd3] bg-[#004a80] shadow-2xl ring-2 ring-[#A12B3C]'
+                      ? 'border-[#ffccd3] bg-[#004a80] shadow-2xl ring-2 ring-[#894541]'
                       : 'bg-[#004a80] border-[#003860] hover:border-white/40'
                   }`}
                   style={{ backgroundColor: '#004a80', color: '#ffffff' }}
@@ -658,8 +658,8 @@ export default function RwaTokenizationPage() {
                       <div
                         className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all ${
                           isSelected
-                            ? 'bg-[#A12B3C] text-white shadow-md shadow-[#A12B3C]/40'
-                            : 'bg-white/15 border border-white/25 text-white group-hover:bg-[#A12B3C]'
+                            ? 'bg-[#894541] text-white shadow-md shadow-[#894541]/40'
+                            : 'bg-white/15 border border-white/25 text-white group-hover:bg-[#894541]'
                         }`}
                       >
                         <IconComp size={18} />
@@ -705,7 +705,7 @@ export default function RwaTokenizationPage() {
 
           <div className="lg:col-span-7 space-y-9">
             <div>
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2 mb-3">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2 mb-3">
                 <span>—</span> BEYOND TOKENIZATION
               </span>
               <h2 className="font-poppins text-[#004a80] text-[30px] sm:text-[40px] font-bold leading-tight mb-4">
@@ -721,7 +721,7 @@ export default function RwaTokenizationPage() {
                   >
                     <span>{item}</span>
                     {idx < formulaItems.length - 1 && (
-                      <span className="text-[#A12B3C] font-extrabold text-sm"></span>
+                      <span className="text-[#894541] font-extrabold text-sm"></span>
                     )}
                   </span>
                 ))}
@@ -733,12 +733,12 @@ export default function RwaTokenizationPage() {
             </div>
 
             <div className="pt-8 border-t border-[#004a80]/20">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2 mb-3">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2 mb-3">
                 <span>—</span> THE LINKAY RWA VISION
               </span>
               <h2 className="font-poppins text-[#004a80] text-[28px] sm:text-[36px] font-bold leading-tight mb-4">
                 From Real-World Value to{' '}
-                <span className="text-[#A12B3C] font-bold">Digital Market Opportunity</span>
+                <span className="text-[#894541] font-bold">Digital Market Opportunity</span>
               </h2>
               <p className="font-red-hat text-[#004a80] text-[15.5px] leading-relaxed">
                 Linkay Ventures is exploring the convergence of finance, technology, AI, blockchain
@@ -753,12 +753,12 @@ export default function RwaTokenizationPage() {
       {/* 8. AN ECOSYSTEM OF CONNECTED PARTICIPANTS */}
       <section className="w-full py-24 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto">
         <div className="text-center max-w-[850px] mx-auto mb-16">
-          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center justify-center gap-2 mb-3">
+          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center justify-center gap-2 mb-3">
             <span>—</span> VALUE CHAIN
           </span>
           <h2 className="font-poppins text-white text-[32px] sm:text-[44px] font-bold leading-tight mb-3">
             Connecting the{' '}
-            <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.35)]">
+            <span className="text-[#894541] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.35)]">
               RWA Value Chain
             </span>
           </h2>
@@ -770,7 +770,7 @@ export default function RwaTokenizationPage() {
         <div className="relative mx-auto max-w-[760px]">
           <span
             aria-hidden="true"
-            className="absolute bottom-10 left-[19px] top-10 w-px bg-gradient-to-b from-[#A12B3C]/80 via-[#A12B3C] to-transparent sm:left-[21px]"
+            className="absolute bottom-10 left-[19px] top-10 w-px bg-gradient-to-b from-[#894541]/80 via-[#894541] to-transparent sm:left-[21px]"
           />
 
           <div className="flex flex-col gap-9 pl-14 sm:pl-16">
@@ -798,7 +798,7 @@ export default function RwaTokenizationPage() {
                 <div className="group relative overflow-hidden rounded-2xl border-2 border-[#003860] bg-[#004a80] p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 sm:p-6 text-white">
                   <span
                     aria-hidden="true"
-                    className="absolute inset-y-0 left-0 w-[3px] origin-top scale-y-0 bg-[#A12B3C] transition-transform duration-300 group-hover:scale-y-100"
+                    className="absolute inset-y-0 left-0 w-[3px] origin-top scale-y-0 bg-[#894541] transition-transform duration-300 group-hover:scale-y-100"
                   />
 
                   <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
@@ -818,13 +818,13 @@ export default function RwaTokenizationPage() {
 
         {/* Bottom CTA Banner (Venture HUB styled Card) */}
         <div className="mt-20 p-8 sm:p-12 rounded-3xl bg-[#004a80] text-white border-2 border-[#003860] text-center relative max-w-[960px] mx-auto shadow-2xl overflow-hidden">
-          <div className="absolute top-0 right-0 w-60 h-60 rounded-full bg-[#A12B3C]/30 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-0 w-52 h-52 rounded-full bg-[#A12B3C]/20 blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 w-60 h-60 rounded-full bg-[#894541]/30 blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-52 h-52 rounded-full bg-[#894541]/20 blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C]" />
-              <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#A12B3C]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#894541]" />
+              <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#894541]">
                 Start Your Tokenization Journey
               </span>
             </div>
@@ -838,7 +838,7 @@ export default function RwaTokenizationPage() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-4 w-full sm:w-auto">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-md shadow-[#A12B3C]/25 hover:-translate-y-0.5 w-full sm:w-auto"
+                className="inline-flex items-center justify-center bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-md shadow-[#894541]/25 hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 Discuss an Asset
               </Link>

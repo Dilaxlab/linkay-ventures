@@ -170,7 +170,7 @@ export default function LinkayCommoditiesPage() {
             {/* Heading */}
             <h1 className="mb-5 font-poppins text-[32px] sm:text-[46px] md:text-[54px] lg:text-[68px] font-bold leading-[1.12] tracking-tight text-white">
               Linkay{' '}
-              <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161,43,60,0.35)]">
+              <span className="text-[#894541] ">
                 Commodities
               </span>
             </h1>
@@ -187,7 +187,7 @@ export default function LinkayCommoditiesPage() {
                 href="https://linkaycommodities.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#A12B3C] hover:bg-[#9F1D2C] px-8 py-4 font-poppins text-sm font-bold text-white shadow-md shadow-[#A12B3C]/25 transition-all hover:-translate-y-0.5 sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#894541] hover:bg-[#9F1D2C] px-8 py-4 font-poppins text-sm font-bold text-white shadow-md shadow-[#894541]/25 transition-all hover:-translate-y-0.5 sm:w-auto"
               >
                 <span>Explore Commodities Platform</span>
                 <ArrowUpRight size={17} />
@@ -201,21 +201,19 @@ export default function LinkayCommoditiesPage() {
               </Link>
             </div>
 
-
-
             {/* Feature strip */}
             <div className="mt-12 w-full max-w-[860px] border-t border-[#1f293d] pt-8">
               <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Verified Counterparties</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Compliant &amp; Documented</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Global Trade Corridors</span>
                 </div>
               </div>
@@ -262,7 +260,7 @@ export default function LinkayCommoditiesPage() {
                   className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[12.5px] font-mono text-[#01497f] font-bold shadow-sm"
                   style={{ color: '#01497f' }}
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541]" />
                   {chip}
                 </span>
               ))}
@@ -282,7 +280,7 @@ export default function LinkayCommoditiesPage() {
             </div>
 
             <div className="mt-4 text-center">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#A12B3C] font-bold">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#894541] font-bold">
                 Verified Physical Trading Desk
               </span>
             </div>
@@ -299,7 +297,7 @@ export default function LinkayCommoditiesPage() {
       >
         <div className="max-w-[1240px] mx-auto">
           <div className="text-center max-w-[850px] mx-auto mb-16">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center justify-center gap-2 mb-3">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center justify-center gap-2 mb-3">
               <span>—</span> COMMODITY SECTORS
             </span>
             <h2 className="font-poppins text-[#004a80] text-[32px] sm:text-[44px] font-bold leading-tight mb-4">
@@ -358,7 +356,7 @@ export default function LinkayCommoditiesPage() {
         <div className="max-w-[1240px] mx-auto relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2 mb-3">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2 mb-3">
                 <span>—</span> INSTITUTIONAL STANDARDS
               </span>
               <h2 className="font-poppins text-[#004a80] text-[32px] sm:text-[44px] font-bold leading-tight max-w-[700px]">
@@ -411,7 +409,7 @@ export default function LinkayCommoditiesPage() {
       ============================================================ */}
       <section className="w-full py-24 px-6 sm:px-12 lg:px-16 max-w-[1240px] mx-auto border-t border-[#C5CDD7]">
         <div className="text-center max-w-[850px] mx-auto mb-16">
-          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center justify-center gap-2 mb-3">
+          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center justify-center gap-2 mb-3">
             <span>—</span> TRADE EXECUTION FLOW
           </span>
           <h2 className="font-poppins text-[#004a80] text-[32px] sm:text-[44px] font-bold leading-tight mb-4">
@@ -461,13 +459,13 @@ export default function LinkayCommoditiesPage() {
       ============================================================ */}
       <section className="w-full px-6 sm:px-12 lg:px-16 pb-24 max-w-[1240px] mx-auto">
         <div className="p-8 sm:p-12 rounded-3xl bg-[#004a80] text-white border-2 border-[#003860] text-center relative max-w-[960px] mx-auto overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-60 h-60 rounded-full bg-[#A12B3C]/30 blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 w-60 h-60 rounded-full bg-[#894541]/30 blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-52 h-52 rounded-full bg-[#9F1D2C]/20 blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C]" />
-              <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#A12B3C]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#894541]" />
+              <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#894541]">
                 Linkay Commodities Trading Desk
               </span>
             </div>
@@ -483,11 +481,12 @@ export default function LinkayCommoditiesPage() {
                 href="https://linkaycommodities.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#A12B3C] hover:bg-[#9F1D2C] text-white font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-lg shadow-[#A12B3C]/40 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-semibold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <span>Launch Linkay Commodities Desk</span>
-                <ArrowUpRight size={16} />
+                <ArrowRight size={16} />
               </Link>
+
               <Link
                 href="/contact"
                 className="bg-[#DDE2E8] hover:bg-[#cad2dc] text-[#01497f] border-2 border-[#DDE2E8] font-poppins text-sm font-bold px-8 py-3.5 rounded-full transition-all shadow-md hover:-translate-y-0.5"

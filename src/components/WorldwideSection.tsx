@@ -63,8 +63,8 @@ export default function WorldwideSection() {
         {/* Section header */}
         <div className="text-center max-w-[850px] mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C]" />
-            <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#A12B3C]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#894541]" />
+            <span className="text-xs sm:text-[13px] font-mono font-bold uppercase tracking-wider text-[#894541]">
               Worldwide Experience
             </span>
           </div>
@@ -76,7 +76,7 @@ export default function WorldwideSection() {
             We prioritize understanding and exceeding client expectations through tailored solutions
             and unwavering support.
           </p>
-          <div className="w-16 h-1 bg-[#A12B3C] mx-auto mt-6 rounded-full" />
+          <div className="w-16 h-1 bg-[#894541] mx-auto mt-6 rounded-full" />
         </div>
 
         {/* Counter Card */}
@@ -86,8 +86,8 @@ export default function WorldwideSection() {
             style={{ backgroundColor: '#004a80' }}
           >
             {/* Ambient glows */}
-            <div className="absolute -top-12 -right-12 w-64 h-64 rounded-full bg-[#A12B3C]/30 blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-12 -left-12 w-64 h-64 rounded-full bg-[#A12B3C]/25 blur-3xl pointer-events-none" />
+            <div className="absolute -top-12 -right-12 w-64 h-64 rounded-full bg-[#894541]/30 blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-12 -left-12 w-64 h-64 rounded-full bg-[#894541]/25 blur-3xl pointer-events-none" />
 
             <div className="relative z-10 text-center">
               <p className="font-poppins text-[14px] sm:text-[15px] uppercase tracking-wider text-[#cad8e9] font-bold mb-4">

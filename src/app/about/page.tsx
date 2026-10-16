@@ -81,7 +81,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#A12B3C] selection:text-white">
+    <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#894541] selection:text-white">
       {/* ============================================================== */}
       {/* 1. PAGE HERO                                                   */}
       {/* ============================================================== */}
@@ -118,7 +118,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                 <span>—</span> ABOUT LINKAY VENTURES
               </span>
             </div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[70px] font-bold text-white tracking-tight leading-[1.1] mb-6">
               Built by founders,{' '}
-              <span className="text-[#A12B3C] drop-shadow-[0_0_25px_rgba(161,43,60,0.35)]">
+              <span className="text-[#894541] ">
                 for founders.
               </span>
             </h1>
@@ -142,21 +142,19 @@ export default function AboutPage() {
               {/* Trust Chips Line */}
               <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>New York Headquarters</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Operator-Led Firm</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#894541] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Multi-Asset Platform</span>
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </section>
@@ -169,14 +167,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             <div className="lg:col-span-5">
               <div className="mb-4 inline-flex items-center gap-2">
-                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                   <span>—</span>OUR STORY
                 </span>
               </div>
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Founded to back <br />
-                <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.25)]">
+                <span className="text-[#894541] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.25)]">
                   bold ideas.
                 </span>
               </h2>
@@ -204,7 +202,7 @@ export default function AboutPage() {
                   <span className="text-xs text-[#8a9bb5] font-red-hat">Support</span>
                 </div>
                 <div className="p-3.5 rounded-xl bg-[#080d1a] border border-[#1f293d] flex flex-col">
-                  <span className="text-sm font-poppins font-bold text-[#A12B3C]">
+                  <span className="text-sm font-poppins font-bold text-[#894541]">
                     Strategic Insight
                   </span>
                   <span className="text-xs text-[#8a9bb5] font-red-hat">With capital</span>
@@ -222,7 +220,7 @@ export default function AboutPage() {
         <div className="max-w-[1340px] mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <div className="mb-4 inline-flex items-center gap-2">
-              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+              <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                 <span>—</span> GUIDING PRINCIPLES
               </span>
             </div>
@@ -287,7 +285,7 @@ export default function AboutPage() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
             <div>
               <div className="mb-4 inline-flex items-center gap-2">
-                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
                   <span>—</span> PRACTICE AREAS
                 </span>
               </div>
@@ -302,10 +300,11 @@ export default function AboutPage() {
 
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-xs sm:text-sm font-semibold px-7 py-3 rounded-full transition-all shadow-md shadow-[#A12B3C]/30 shrink-0 hover:-translate-y-0.5"
+              style={{ color: '#ffffff' }}
+              className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 font-poppins text-xs sm:text-sm font-semibold px-7 py-3 rounded-full transition-all shadow-md shadow-[#894541]/30 shrink-0 hover:-translate-y-0.5"
             >
               <span>See All Services</span>
-              <ArrowRight size={15} />
+              <ArrowRight size={15} style={{ color: '#ffffff' }} />
             </Link>
           </div>
 
@@ -316,16 +315,16 @@ export default function AboutPage() {
                 <Link
                   key={idx}
                   href={item.href}
-                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#A12B3C]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-md"
+                  className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#894541]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-md"
                 >
                   <div>
-                    <div className="w-11 h-11 rounded-xl bg-[#A12B3C]/10 border border-[#A12B3C]/25 text-[#A12B3C] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                    <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 text-[#894541] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                       <Icon size={19} />
                     </div>
                     <span className="text-[10px] font-mono uppercase tracking-wider text-[#71829e] block mb-1">
                       {item.category}
                     </span>
-                    <h3 className="font-poppins text-xl font-bold text-white mb-2 group-hover:text-[#A12B3C] transition-colors">
+                    <h3 className="font-poppins text-xl font-bold text-white mb-2 group-hover:text-[#894541] transition-colors">
                       {item.title}
                     </h3>
                     <p className="font-red-hat text-[#9aacc6] text-xs sm:text-[13px] leading-relaxed mb-6 font-normal">
@@ -333,7 +332,7 @@ export default function AboutPage() {
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-1.5 text-xs font-semibold text-[#A12B3C] group-hover:underline">
+                  <div className="flex items-center gap-1.5 text-xs font-semibold text-[#894541] group-hover:underline">
                     <span>Learn More</span>
                     <ArrowRight
                       size={13}
@@ -358,7 +357,7 @@ export default function AboutPage() {
       <section className="w-full bg-transparent py-24 px-6 sm:px-12 lg:px-16 relative overflow-hidden">
         <div className="max-w-[960px] mx-auto text-center relative z-10">
           <div className="mb-4 inline-flex items-center gap-2">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
               <span>—</span> LET&apos;S BUILD TOGETHER
             </span>
           </div>
@@ -375,7 +374,7 @@ export default function AboutPage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#A12B3C]/30 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5"
             >
               <span>Book a Consultation</span>
               <ArrowRight size={16} />

@@ -63,7 +63,7 @@ export default function AboutLeadershipSection() {
 
         {/* Eyebrow */}
         <div className="mb-4 inline-flex items-center gap-2">
-          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#894541] uppercase flex items-center gap-2">
             <span>—</span> LEADERSHIP TEAM
           </span>
         </div>
@@ -71,7 +71,7 @@ export default function AboutLeadershipSection() {
         {/* Heading */}
         <h2 className="font-poppins text-3xl sm:text-5xl lg:text-[52px] font-bold text-[#004a80] tracking-tight leading-tight mb-12">
           Experience meets{' '}
-          <span className="text-[#A12B3C]">
+          <span className="text-[#894541]">
             ambition.
           </span>
         </h2>
@@ -147,9 +147,9 @@ export default function AboutLeadershipSection() {
                   >
                     <span style={{ color: '#01497f' }}>{isExpanded ? 'Show Less' : 'Read More'}</span>
                     {isExpanded ? (
-                      <ChevronUp size={14} className="text-[#A12B3C] transition-transform group-hover:-translate-y-0.5" />
+                      <ChevronUp size={14} className="text-[#894541] transition-transform group-hover:-translate-y-0.5" />
                     ) : (
-                      <ChevronDown size={14} className="text-[#A12B3C] transition-transform group-hover:translate-y-0.5" />
+                      <ChevronDown size={14} className="text-[#894541] transition-transform group-hover:translate-y-0.5" />
                     )}
                   </button>
                 </div>
