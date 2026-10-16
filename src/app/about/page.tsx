@@ -12,6 +12,7 @@ import {
   TrendingUp,
 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import AboutLeadershipSection from '@/components/AboutLeadershipSection';
 
 export const metadata: Metadata = {
@@ -81,12 +82,39 @@ export default function AboutPage() {
 
   return (
     <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#A12B3C] selection:text-white">
-
       {/* ============================================================== */}
       {/* 1. PAGE HERO                                                   */}
       {/* ============================================================== */}
-      <section className="relative w-full pt-28 pb-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
-        <div className="max-w-[1240px] mx-auto relative z-10 text-center">
+      <section className="relative w-full min-h-[calc(100vh-88px)] flex items-center justify-center bg-transparent text-[#004a80] border-b border-[#C5CDD7]/80 overflow-hidden">
+        {/* ============================================================
+      FULL-BLEED BACKGROUND IMAGE WITH ELEGANT LIGHT SHADES
+  ============================================================ */}
+        <div className="absolute inset-0 z-0 overflow-hidden bg-transparent pointer-events-none">
+          <Image
+            src="/images/LV2.png"
+            alt="Real Assets Token Orbit"
+            fill
+            priority
+            quality={95}
+            className="object-cover object-[70%_center] sm:object-[center_55%] lg:object-center"
+            sizes="100vw"
+          />
+
+          {/* 1. Light top blend shade directly under navbar */}
+          <div className="absolute inset-x-0 top-0 h-28 sm:h-36 bg-gradient-to-b from-[#DDE2E8]/85 via-[#DDE2E8]/30 to-transparent pointer-events-none" />
+
+          {/* 2. Light bottom blend shade into ticker strip */}
+          <div className="absolute inset-x-0 bottom-0 h-32 sm:h-44 bg-gradient-to-t from-[#DDE2E8] via-[#DDE2E8]/40 to-transparent pointer-events-none" />
+
+          {/* 3. Light left-side shade for desktop text clarity */}
+          <div className="hidden sm:block absolute inset-y-0 left-0 w-[60%] lg:w-[50%] bg-gradient-to-r from-[#DDE2E8]/60 via-[#DDE2E8]/20 to-transparent pointer-events-none" />
+
+          {/* 4. Light mobile framing shade so image and text coexist beautifully */}
+          <div className="sm:hidden absolute inset-0 bg-gradient-to-b from-[#DDE2E8]/50 via-transparent to-[#DDE2E8]/60 pointer-events-none" />
+        </div>
+
+        {/* Content - Centered */}
+        <div className="relative z-10 w-full max-w-[1240px] mx-auto px-4 sm:px-6 text-center">
           <div className="max-w-3xl mx-auto">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2">
@@ -98,28 +126,37 @@ export default function AboutPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[70px] font-bold text-white tracking-tight leading-[1.1] mb-6">
               Built by founders,{' '}
-              <span className="text-[#A12B3C] drop-shadow-[0_0_25px_rgba(161, 43, 60,0.35)]">
+              <span className="text-[#A12B3C] drop-shadow-[0_0_25px_rgba(161,43,60,0.35)]">
                 for founders.
               </span>
             </h1>
 
             {/* Body */}
             <p className="font-red-hat text-[#004a80] text-base sm:text-lg lg:text-[22px] leading-relaxed mb-8 sm:mb-10 font-normal max-w-2xl mx-auto">
-              Linkay Ventures is a New York-based firm combining venture funding, financial advisory, and real-world asset tokenization to help ambitious companies grow.
+              Linkay Ventures is a New York-based firm combining venture funding, financial
+              advisory, and real-world asset tokenization to help ambitious companies grow.
             </p>
 
-            {/* Micro badges */}
-            <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#A12B3C]">
-              <span className="px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                New York Headquarters
-              </span>
-              <span className="px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                Operator-Led Firm
-              </span>
-              <span className="px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-                Multi-Asset Platform
-              </span>
+            {/* Features strip */}
+            <div className="mt-12 w-full max-w-[860px] border-t border-[#1f293d] pt-8">
+              {/* Trust Chips Line */}
+              <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>New York Headquarters</span>
+                </div>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>Operator-Led Firm</span>
+                </div>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>Multi-Asset Platform</span>
+                </div>
+              </div>
             </div>
+
+
           </div>
         </div>
       </section>
@@ -130,7 +167,6 @@ export default function AboutPage() {
       <section className="w-full bg-transparent py-14 sm:py-20 px-5 sm:px-12 lg:px-16 border-b border-[#1f293d] relative">
         <div className="max-w-[1340px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-
             <div className="lg:col-span-5">
               <div className="mb-4 inline-flex items-center gap-2">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
@@ -140,16 +176,21 @@ export default function AboutPage() {
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Founded to back <br />
-                <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.25)]">bold ideas.</span>
+                <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.25)]">
+                  bold ideas.
+                </span>
               </h2>
             </div>
 
             <div className="lg:col-span-7 space-y-6 font-red-hat text-[#004a80] text-base sm:text-lg leading-relaxed font-normal">
               <p>
-                Linkay Ventures was founded with a singular purpose: to support groundbreaking ideas and the visionary founders who want to make a difference.
+                Linkay Ventures was founded with a singular purpose: to support groundbreaking ideas
+                and the visionary founders who want to make a difference.
               </p>
               <p>
-                Our journey began with a commitment to impact-driven investment. Today, it has grown into a platform that brings financial resources and strategic insight together, helping founders turn ambition into lasting companies.
+                Our journey began with a commitment to impact-driven investment. Today, it has grown
+                into a platform that brings financial resources and strategic insight together,
+                helping founders turn ambition into lasting companies.
               </p>
 
               {/* Quick-scan chips */}
@@ -163,12 +204,13 @@ export default function AboutPage() {
                   <span className="text-xs text-[#8a9bb5] font-red-hat">Support</span>
                 </div>
                 <div className="p-3.5 rounded-xl bg-[#080d1a] border border-[#1f293d] flex flex-col">
-                  <span className="text-sm font-poppins font-bold text-[#A12B3C]">Strategic Insight</span>
+                  <span className="text-sm font-poppins font-bold text-[#A12B3C]">
+                    Strategic Insight
+                  </span>
                   <span className="text-xs text-[#8a9bb5] font-red-hat">With capital</span>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -178,7 +220,6 @@ export default function AboutPage() {
       {/* ============================================================== */}
       <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]">
         <div className="max-w-[1340px] mx-auto">
-
           <div className="text-center max-w-2xl mx-auto mb-16">
             <div className="mb-4 inline-flex items-center gap-2">
               <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
@@ -203,7 +244,10 @@ export default function AboutPage() {
                 >
                   <div>
                     <div className="flex items-center justify-between mb-6">
-                      <span className="px-3 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold text-[11px] font-mono uppercase tracking-widest shadow-sm" style={{ color: '#01497f' }}>
+                      <span
+                        className="px-3 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold text-[11px] font-mono uppercase tracking-widest shadow-sm"
+                        style={{ color: '#01497f' }}
+                      >
                         {val.tag}
                       </span>
                       <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -232,7 +276,6 @@ export default function AboutPage() {
               );
             })}
           </div>
-
         </div>
       </section>
 
@@ -241,7 +284,6 @@ export default function AboutPage() {
       {/* ============================================================== */}
       <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]">
         <div className="max-w-[1340px] mx-auto">
-
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
             <div>
               <div className="mb-4 inline-flex items-center gap-2">
@@ -253,7 +295,8 @@ export default function AboutPage() {
                 What We Do
               </h2>
               <p className="font-red-hat text-[#004a80] text-base sm:text-lg max-w-2xl">
-                Four connected capabilities designed to fund, guide, and scale modern commercial enterprises.
+                Four connected capabilities designed to fund, guide, and scale modern commercial
+                enterprises.
               </p>
             </div>
 
@@ -292,13 +335,15 @@ export default function AboutPage() {
 
                   <div className="flex items-center gap-1.5 text-xs font-semibold text-[#A12B3C] group-hover:underline">
                     <span>Learn More</span>
-                    <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight
+                      size={13}
+                      className="group-hover:translate-x-1 transition-transform"
+                    />
                   </div>
                 </Link>
               );
             })}
           </div>
-
         </div>
       </section>
 
@@ -323,7 +368,8 @@ export default function AboutPage() {
           </h2>
 
           <p className="font-red-hat text-[#004a80] text-base sm:text-xl leading-relaxed max-w-2xl mx-auto mb-10 font-normal">
-            Whether you are raising growth capital, scaling an enterprise, or tokenizing an institutional asset, we would love to hear from you.
+            Whether you are raising growth capital, scaling an enterprise, or tokenizing an
+            institutional asset, we would love to hear from you.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
@@ -343,7 +389,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
     </main>
   );
 }

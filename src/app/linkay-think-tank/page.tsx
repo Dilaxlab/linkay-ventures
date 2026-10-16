@@ -123,8 +123,36 @@ export default function LinkayThinkTankPage() {
           1. HERO BANNER
       ============================================================ */}
       <div className="relative w-full overflow-hidden border-b border-[#1f293d] bg-page-gradient text-[#f4f7ff]">
-        <section className="relative z-10 flex h-full w-full items-center justify-center px-5 py-16 sm:px-8 sm:py-20 md:px-12 md:py-28">
-          <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
+        <section className="relative w-full min-h-[calc(100vh-88px)] flex items-center justify-center bg-transparent text-[#004a80] border-b border-[#C5CDD7]/80 overflow-hidden">
+          {/* ============================================================
+      FULL-BLEED BACKGROUND IMAGE WITH ELEGANT LIGHT SHADES
+  ============================================================ */}
+          <div className="absolute inset-0 z-0 overflow-hidden bg-transparent pointer-events-none">
+            <Image
+              src="/images/LV2.png"
+              alt="Real Assets Token Orbit"
+              fill
+              priority
+              quality={95}
+              className="object-cover object-[70%_center] sm:object-[center_55%] lg:object-center"
+              sizes="100vw"
+            />
+
+            {/* 1. Light top blend shade directly under navbar */}
+            <div className="absolute inset-x-0 top-0 h-28 sm:h-36 bg-gradient-to-b from-[#DDE2E8]/85 via-[#DDE2E8]/30 to-transparent pointer-events-none" />
+
+            {/* 2. Light bottom blend shade into ticker strip */}
+            <div className="absolute inset-x-0 bottom-0 h-32 sm:h-44 bg-gradient-to-t from-[#DDE2E8] via-[#DDE2E8]/40 to-transparent pointer-events-none" />
+
+            {/* 3. Light left-side shade for desktop text clarity */}
+            <div className="hidden sm:block absolute inset-y-0 left-0 w-[60%] lg:w-[50%] bg-gradient-to-r from-[#DDE2E8]/60 via-[#DDE2E8]/20 to-transparent pointer-events-none" />
+
+            {/* 4. Light mobile framing shade so image and text coexist beautifully */}
+            <div className="sm:hidden absolute inset-0 bg-gradient-to-b from-[#DDE2E8]/50 via-transparent to-[#DDE2E8]/60 pointer-events-none" />
+          </div>
+
+          {/* Content - Centered */}
+          <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center px-4 sm:px-6 text-center">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2">
               <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase flex items-center gap-2">
@@ -147,7 +175,7 @@ export default function LinkayThinkTankPage() {
             {/* Heading */}
             <h1 className="mb-5 font-poppins text-[32px] sm:text-[46px] md:text-[54px] lg:text-[68px] font-bold leading-[1.12] tracking-tight text-white">
               Linkay{' '}
-              <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.35)]">
+              <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161,43,60,0.35)]">
                 Think-Tank
               </span>
             </h1>
@@ -155,7 +183,8 @@ export default function LinkayThinkTankPage() {
             {/* Subtitle */}
             <p className="mx-auto mb-10 max-w-[640px] font-red-hat text-[15px] sm:text-[18px] md:text-[20px] lg:max-w-[820px] lg:text-[22px] font-normal leading-relaxed text-[#004a80]">
               A global collective of strategists, technologists, and domain authorities — bridging
-              bold ideas into action for a resilient, sustainable, and technologically sovereign future.
+              bold ideas into action for a resilient, sustainable, and technologically sovereign
+              future.
             </p>
 
             {/* Buttons (Capsule Pills) */}
@@ -180,23 +209,18 @@ export default function LinkayThinkTankPage() {
 
             {/* Feature strip */}
             <div className="mt-12 w-full max-w-[860px] border-t border-[#1f293d] pt-8">
-              <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs sm:text-[13px] font-mono font-semibold uppercase tracking-wider text-[#004a80]">
-                <div className="flex items-center gap-2.5">
-                  <span className="w-3.5 h-3.5 rounded-full bg-[#9F1D2C]/20 text-[#9F1D2C] flex items-center justify-center shrink-0">
-                    <Check size={10} className="stroke-[3]" />
-                  </span>
+              {/* Trust Chips Line */}
+              <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Global Expert Network</span>
                 </div>
-                <div className="flex items-center gap-2.5">
-                  <span className="w-3.5 h-3.5 rounded-full bg-[#9F1D2C]/20 text-[#9F1D2C] flex items-center justify-center shrink-0">
-                    <Check size={10} className="stroke-[3]" />
-                  </span>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Cross-Disciplinary Rigor</span>
                 </div>
-                <div className="flex items-center gap-2.5">
-                  <span className="w-3.5 h-3.5 rounded-full bg-[#9F1D2C]/20 text-[#9F1D2C] flex items-center justify-center shrink-0">
-                    <Check size={10} className="stroke-[3]" />
-                  </span>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
                   <span>Execution-Ready Impact</span>
                 </div>
               </div>
@@ -220,8 +244,8 @@ export default function LinkayThinkTankPage() {
             </h2>
 
             <p className="font-red-hat text-[#004a80] text-[16px] sm:text-[18px] leading-relaxed mb-5">
-              Linkay Think-Tank convenes researchers, technologists, capital allocators, and industry
-              operators into a unified advisory collective.
+              Linkay Think-Tank convenes researchers, technologists, capital allocators, and
+              industry operators into a unified advisory collective.
             </p>
             <p className="font-red-hat text-[#004a80] text-[16px] sm:text-[18px] leading-relaxed">
               We partner with visionary enterprises, institutions, and family offices to structure
@@ -231,17 +255,21 @@ export default function LinkayThinkTankPage() {
 
             {/* Quick highlight chips */}
             <div className="flex flex-wrap gap-2.5 mt-8">
-              {['Energy Systems', 'Digital Sovereignty', 'Resource Economics', 'Institutional Governance', 'Capital Design'].map(
-                (chip, i) => (
-                  <span
-                    key={i}
-                    className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d] text-[12.5px] font-mono text-[#A12B3C]"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#9F1D2C]" />
-                    {chip}
-                  </span>
-                )
-              )}
+              {[
+                'Energy Systems',
+                'Digital Sovereignty',
+                'Resource Economics',
+                'Institutional Governance',
+                'Capital Design',
+              ].map((chip, i) => (
+                <span
+                  key={i}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#080d1a] border border-[#1f293d] text-[12.5px] font-mono text-[#A12B3C]"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#9F1D2C]" />
+                  {chip}
+                </span>
+              ))}
             </div>
           </div>
 

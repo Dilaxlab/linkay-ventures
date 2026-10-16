@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -63,8 +64,36 @@ export default function ContactPage() {
       {/* ============================================================== */}
       {/* 1. HERO BANNER                                                 */}
       {/* ============================================================== */}
-      <section className="relative w-full pt-20 sm:pt-28 pb-14 sm:pb-20 px-5 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
-        <div className="max-w-[1240px] mx-auto relative z-10 text-center">
+      <section className="relative w-full min-h-[calc(100vh-88px)] flex items-center justify-center bg-transparent text-[#004a80] border-b border-[#C5CDD7]/80 overflow-hidden">
+        {/* ============================================================
+      FULL-BLEED BACKGROUND IMAGE WITH ELEGANT LIGHT SHADES
+  ============================================================ */}
+        <div className="absolute inset-0 z-0 overflow-hidden bg-transparent pointer-events-none">
+          <Image
+            src="/images/LV4.png"
+            alt="Real Assets Token Orbit"
+            fill
+            priority
+            quality={95}
+            className="object-cover object-[70%_center] sm:object-[center_55%] lg:object-center"
+            sizes="100vw"
+          />
+
+          {/* 1. Light top blend shade directly under navbar */}
+          <div className="absolute inset-x-0 top-0 h-28 sm:h-36 bg-gradient-to-b from-[#DDE2E8]/85 via-[#DDE2E8]/30 to-transparent pointer-events-none" />
+
+          {/* 2. Light bottom blend shade into ticker strip */}
+          <div className="absolute inset-x-0 bottom-0 h-32 sm:h-44 bg-gradient-to-t from-[#DDE2E8] via-[#DDE2E8]/40 to-transparent pointer-events-none" />
+
+          {/* 3. Light left-side shade for desktop text clarity */}
+          <div className="hidden sm:block absolute inset-y-0 left-0 w-[60%] lg:w-[50%] bg-gradient-to-r from-[#DDE2E8]/60 via-[#DDE2E8]/20 to-transparent pointer-events-none" />
+
+          {/* 4. Light mobile framing shade so image and text coexist beautifully */}
+          <div className="sm:hidden absolute inset-0 bg-gradient-to-b from-[#DDE2E8]/50 via-transparent to-[#DDE2E8]/60 pointer-events-none" />
+        </div>
+
+        {/* Content - Centered */}
+        <div className="relative z-10 w-full max-w-[1240px] mx-auto px-4 sm:px-6 text-center">
           <div className="max-w-3xl mx-auto">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2">
@@ -76,37 +105,37 @@ export default function ContactPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.08] mb-6">
               Start the{' '}
-              <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161, 43, 60,0.35)]">
+              <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161,43,60,0.35)]">
                 conversation.
               </span>
             </h1>
 
             {/* Body */}
             <p className="font-red-hat text-[#004a80] text-lg sm:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
-              Have an asset to tokenize, a venture ready to scale, or an institutional partnership in mind? Our senior leadership is ready to connect.
+              Have an asset to tokenize, a venture ready to scale, or an institutional partnership
+              in mind? Our senior leadership is ready to connect.
             </p>
 
-            {/* Micro chips */}
-            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs sm:text-[13px] font-mono font-semibold uppercase tracking-wider text-[#004a80]">
-              <div className="flex items-center gap-2.5">
-                <span className="w-3.5 h-3.5 rounded-full bg-[#A12B3C]/20 text-[#A12B3C] flex items-center justify-center shrink-0">
-                  <Check size={10} className="stroke-[3]" />
-                </span>
-                <span>Response Within 24h</span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <span className="w-3.5 h-3.5 rounded-full bg-[#A12B3C]/20 text-[#A12B3C] flex items-center justify-center shrink-0">
-                  <Check size={10} className="stroke-[3]" />
-                </span>
-                <span>Confidential Under NDA</span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <span className="w-3.5 h-3.5 rounded-full bg-[#A12B3C]/20 text-[#A12B3C] flex items-center justify-center shrink-0">
-                  <Check size={10} className="stroke-[3]" />
-                </span>
-                <span>Global Advisory Reach</span>
+            {/* Features strip */}
+            <div className="mt-12 w-full max-w-[860px] border-t border-[#1f293d] pt-8">
+              {/* Trust Chips Line */}
+              <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>Response Within 24h</span>
+                </div>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>Confidential Under NDA</span>
+                </div>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>Global Advisory Reach</span>
+                </div>
               </div>
             </div>
+
+
           </div>
         </div>
       </section>
@@ -114,7 +143,10 @@ export default function ContactPage() {
       {/* ============================================================== */}
       {/* 2. CONTACT FORM & DIRECT LINE SPLIT                            */}
       {/* ============================================================== */}
-      <section id="contact-form" className="relative w-full py-14 sm:py-24 px-4 sm:px-12 lg:px-16 max-w-[1240px] mx-auto border-b border-[#C5CDD7]">
+      <section
+        id="contact-form"
+        className="relative w-full py-14 sm:py-24 px-4 sm:px-12 lg:px-16 max-w-[1240px] mx-auto border-b border-[#C5CDD7]"
+      >
         <div className="relative max-w-[1180px] mx-auto">
           {/* Subtle outer glow */}
           <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-r from-[#A12B3C]/15 via-[#A12B3C]/10 to-[#A12B3C]/15 blur-2xl" />
@@ -131,12 +163,13 @@ export default function ContactPage() {
                 </span>
 
                 <h3 className="font-poppins text-2xl sm:text-3xl font-bold text-white mb-4 leading-tight">
-                  Talk to a partner,{' '}
-                  <span className="text-[#ffccd3]">not a bot.</span>
+                  Talk to a partner, <span className="text-[#ffccd3]">not a bot.</span>
                 </h3>
 
                 <p className="font-red-hat text-[#cad8e9] text-sm sm:text-base leading-relaxed mb-8">
-                  Every inquiry reaches a senior team member directly. We assess structural feasibility, venture alignment, and capital requirements under strict confidentiality.
+                  Every inquiry reaches a senior team member directly. We assess structural
+                  feasibility, venture alignment, and capital requirements under strict
+                  confidentiality.
                 </p>
 
                 <div className="space-y-6">
@@ -145,9 +178,12 @@ export default function ContactPage() {
                       <MapPin size={19} />
                     </div>
                     <div>
-                      <span className="font-mono text-xs text-[#ffccd3] uppercase tracking-wider block">Office</span>
+                      <span className="font-mono text-xs text-[#ffccd3] uppercase tracking-wider block">
+                        Office
+                      </span>
                       <p className="text-white text-sm font-poppins font-medium mt-0.5 leading-snug">
-                        295 Madison Avenue, 12th Flr<br />
+                        295 Madison Avenue, 12th Flr
+                        <br />
                         New York, NY 10017
                       </p>
                     </div>
@@ -158,7 +194,9 @@ export default function ContactPage() {
                       <Mail size={19} />
                     </div>
                     <div>
-                      <span className="font-mono text-xs text-[#ffccd3] uppercase tracking-wider block">Email</span>
+                      <span className="font-mono text-xs text-[#ffccd3] uppercase tracking-wider block">
+                        Email
+                      </span>
                       <a
                         href="mailto:info@linkayventures.com"
                         className="text-white hover:text-[#ffccd3] text-sm font-poppins font-medium mt-0.5 block transition-colors"
@@ -173,7 +211,9 @@ export default function ContactPage() {
                       <Phone size={19} />
                     </div>
                     <div>
-                      <span className="font-mono text-xs text-[#ffccd3] uppercase tracking-wider block">Phone &amp; WhatsApp</span>
+                      <span className="font-mono text-xs text-[#ffccd3] uppercase tracking-wider block">
+                        Phone &amp; WhatsApp
+                      </span>
                       <a
                         href="tel:+19178168128"
                         className="text-white hover:text-[#ffccd3] text-sm font-poppins font-medium mt-0.5 block transition-colors"
@@ -205,7 +245,8 @@ export default function ContactPage() {
                     Message Received
                   </h3>
                   <p className="font-red-hat text-[#cad8e9] text-base leading-relaxed max-w-md mb-8">
-                    Thank you for reaching out. A partner from our New York desk will review your inquiry and follow up within 24 hours.
+                    Thank you for reaching out. A partner from our New York desk will review your
+                    inquiry and follow up within 24 hours.
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
@@ -279,7 +320,9 @@ export default function ContactPage() {
                         <option value="Venture & Growth Capital">Venture & Growth Capital</option>
                         <option value="Strategic Advisory & M&A">Strategic Advisory & M&A</option>
                         <option value="RWA Tokenization">RWA Tokenization</option>
-                        <option value="Venture Accelerator Programs">Venture Accelerator Programs</option>
+                        <option value="Venture Accelerator Programs">
+                          Venture Accelerator Programs
+                        </option>
                         <option value="Corporate Partnerships">Corporate Partnerships</option>
                         <option value="General Inquiry">General Inquiry</option>
                       </select>
@@ -317,7 +360,10 @@ export default function ContactPage() {
       {/* ============================================================== */}
       {/* 3. 3 CONTACT CARDS                                             */}
       {/* ============================================================== */}
-      <section className="w-full py-14 sm:py-24 px-5 sm:px-12 lg:px-16 max-w-[1240px] mx-auto" id="office-info">
+      <section
+        className="w-full py-14 sm:py-24 px-5 sm:px-12 lg:px-16 max-w-[1240px] mx-auto"
+        id="office-info"
+      >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {contactCards.map((card, idx) => {
             const Icon = card.icon;
@@ -328,7 +374,10 @@ export default function ContactPage() {
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <span className="px-3 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold text-[11px] font-mono uppercase tracking-widest shadow-sm" style={{ color: '#01497f' }}>
+                    <span
+                      className="px-3 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold text-[11px] font-mono uppercase tracking-widest shadow-sm"
+                      style={{ color: '#01497f' }}
+                    >
                       {card.tag}
                     </span>
                     <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 text-white flex items-center justify-center group-hover:scale-110 transition-transform">

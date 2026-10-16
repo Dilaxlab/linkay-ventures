@@ -137,12 +137,29 @@ export default function ServicesPage() {
 
   return (
     <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#A12B3C] selection:text-white">
-
       {/* ============================================================== */}
       {/* 1. HERO                                                        */}
       {/* ============================================================== */}
-      <section className="relative w-full pt-28 pb-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
-        <div className="max-w-[1240px] mx-auto relative z-10 text-center">
+      <section className="relative w-full min-h-[calc(100vh-88px)] flex items-center justify-center bg-transparent text-[#004a80] border-b border-[#C5CDD7]/80 overflow-hidden">
+        {/* Background Image & Shades - ഇത് അതേപടി നിലനിർത്തുക */}
+        <div className="absolute inset-0 z-0 overflow-hidden bg-transparent pointer-events-none">
+          <Image
+            src="/images/LV4.png"
+            alt="Real Assets Token Orbit"
+            fill
+            priority
+            quality={95}
+            className="object-cover object-[70%_center] sm:object-[center_55%] lg:object-center"
+            sizes="100vw"
+          />
+          <div className="absolute inset-x-0 top-0 h-28 sm:h-36 bg-gradient-to-b from-[#DDE2E8]/85 via-[#DDE2E8]/30 to-transparent pointer-events-none" />
+          <div className="absolute inset-x-0 bottom-0 h-32 sm:h-44 bg-gradient-to-t from-[#DDE2E8] via-[#DDE2E8]/40 to-transparent pointer-events-none" />
+          <div className="hidden sm:block absolute inset-y-0 left-0 w-[60%] lg:w-[50%] bg-gradient-to-r from-[#DDE2E8]/60 via-[#DDE2E8]/20 to-transparent pointer-events-none" />
+          <div className="sm:hidden absolute inset-0 bg-gradient-to-b from-[#DDE2E8]/50 via-transparent to-[#DDE2E8]/60 pointer-events-none" />
+        </div>
+
+        {/* Content - Centered */}
+        <div className="relative z-10 w-full max-w-[1240px] mx-auto px-4 sm:px-6 text-center">
           <div className="max-w-3xl mx-auto">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2">
@@ -154,14 +171,15 @@ export default function ServicesPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[68px] font-bold text-white tracking-tight leading-[1.1] mb-6">
               Capital, guidance and connections{' '}
-              <span className="text-[#A12B3C] drop-shadow-[0_0_25px_rgba(161, 43, 60,0.35)]">
+              <span className="text-[#A12B3C] drop-shadow-[0_0_25px_rgba(161,43,60,0.35)]">
                 built for what&apos;s next.
               </span>
             </h1>
 
             {/* Body */}
             <p className="font-red-hat text-[#004a80] text-base sm:text-lg sm:text-xl leading-relaxed mb-8 sm:mb-10 font-normal max-w-2xl mx-auto">
-              From investment structures to strategic advisory and a connected innovation ecosystem, Linkay Ventures supports ambitious ventures at every stage of growth.
+              From investment structures to strategic advisory and a connected innovation ecosystem,
+              Linkay Ventures supports ambitious ventures at every stage of growth.
             </p>
 
             {/* CTAs */}
@@ -184,32 +202,38 @@ export default function ServicesPage() {
               </Link>
             </div>
 
-            {/* Chips */}
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-mono font-bold tracking-wider text-[#004a80]">
-              <div className="flex items-center gap-2">
-                <span className="text-[#A12B3C]">•</span>
-                <span>Venture &amp; Growth Capital</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[#A12B3C]">•</span>
-                <span>Strategic Advisory</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[#A12B3C]">•</span>
-                <span>Innovation Ecosystem</span>
+            {/* Features strip */}
+            <div className="mt-12 w-full max-w-[860px] border-t border-[#1f293d] pt-8">
+              {/* Trust Chips Line */}
+              <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>Venture &amp; Growth Capital</span>
+                </div>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>Strategic Advisory</span>
+                </div>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>Innovation Ecosystem</span>
+                </div>
               </div>
             </div>
+
+
 
           </div>
         </div>
       </section>
-
       {/* ============================================================== */}
       {/* 2. 01 / CAPITAL                                                */}
       {/* ============================================================== */}
-      <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="capital">
+      <section
+        className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]"
+        id="capital"
+      >
         <div className="max-w-[1340px] mx-auto">
-
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-16">
             <div className="lg:col-span-7">
               <div className="mb-4 inline-flex items-center gap-2">
@@ -220,11 +244,14 @@ export default function ServicesPage() {
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-5">
                 Investment solutions.{' '}
-                <span className="text-[#A12B3C] block sm:inline font-bold">Structured with intent.</span>
+                <span className="text-[#A12B3C] block sm:inline font-bold">
+                  Structured with intent.
+                </span>
               </h2>
 
               <p className="font-red-hat text-[#004a80] text-base sm:text-lg leading-relaxed mb-6 font-normal">
-                A range of funding and capital strategies for qualified startups, growth-stage companies and strategic partners.
+                A range of funding and capital strategies for qualified startups, growth-stage
+                companies and strategic partners.
               </p>
 
               <div>
@@ -266,7 +293,10 @@ export default function ServicesPage() {
                       <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
-                      <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold" style={{ color: '#01497f' }}>
+                      <span
+                        className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold"
+                        style={{ color: '#01497f' }}
+                      >
                         {item.tag}
                       </span>
                     </div>
@@ -288,16 +318,17 @@ export default function ServicesPage() {
               );
             })}
           </div>
-
         </div>
       </section>
 
       {/* ============================================================== */}
       {/* 3. 02 / STRATEGY                                               */}
       {/* ============================================================== */}
-      <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="strategy">
+      <section
+        className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]"
+        id="strategy"
+      >
         <div className="max-w-[1340px] mx-auto">
-
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
             <div className="max-w-3xl">
               <div className="mb-4 inline-flex items-center gap-2">
@@ -308,7 +339,9 @@ export default function ServicesPage() {
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-4">
                 Advisory and mentorship{' '}
-                <span className="text-[#A12B3C] block sm:inline font-bold">from people who&apos;ve built.</span>
+                <span className="text-[#A12B3C] block sm:inline font-bold">
+                  from people who&apos;ve built.
+                </span>
               </h2>
 
               <p className="font-red-hat text-[#004a80] text-base sm:text-lg font-normal">
@@ -338,7 +371,10 @@ export default function ServicesPage() {
                       <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
-                      <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold" style={{ color: '#01497f' }}>
+                      <span
+                        className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold"
+                        style={{ color: '#01497f' }}
+                      >
                         {item.tag}
                       </span>
                     </div>
@@ -360,16 +396,17 @@ export default function ServicesPage() {
               );
             })}
           </div>
-
         </div>
       </section>
 
       {/* ============================================================== */}
       {/* 4. 03 / ECOSYSTEM                                              */}
       {/* ============================================================== */}
-      <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="ecosystem">
+      <section
+        className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]"
+        id="ecosystem"
+      >
         <div className="max-w-[1340px] mx-auto">
-
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-16">
             <div className="lg:col-span-7">
               <div className="mb-4 inline-flex items-center gap-2">
@@ -380,11 +417,14 @@ export default function ServicesPage() {
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-5">
                 Beyond funding.{' '}
-                <span className="text-[#A12B3C] block sm:inline font-bold">A connected ecosystem.</span>
+                <span className="text-[#A12B3C] block sm:inline font-bold">
+                  A connected ecosystem.
+                </span>
               </h2>
 
               <p className="font-red-hat text-[#004a80] text-base sm:text-lg leading-relaxed mb-6 font-normal">
-                We connect startups, corporations, researchers and capital partners to accelerate collaboration and growth.
+                We connect startups, corporations, researchers and capital partners to accelerate
+                collaboration and growth.
               </p>
 
               <div>
@@ -430,7 +470,10 @@ export default function ServicesPage() {
                       <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
-                      <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold" style={{ color: '#01497f' }}>
+                      <span
+                        className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold"
+                        style={{ color: '#01497f' }}
+                      >
                         {item.tag}
                       </span>
                     </div>
@@ -452,7 +495,6 @@ export default function ServicesPage() {
               );
             })}
           </div>
-
         </div>
       </section>
 
@@ -461,7 +503,6 @@ export default function ServicesPage() {
       {/* ============================================================== */}
       <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#C5CDD7]">
         <div className="max-w-[1340px] mx-auto">
-
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="mb-3 inline-flex items-center gap-2">
               <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
@@ -483,9 +524,7 @@ export default function ServicesPage() {
                   <span className="text-xs font-mono font-bold text-[#ffccd3] block mb-2">
                     PHASE {step.num}
                   </span>
-                  <h3 className="font-poppins text-lg font-bold text-white mb-2">
-                    {step.title}
-                  </h3>
+                  <h3 className="font-poppins text-lg font-bold text-white mb-2">{step.title}</h3>
                   <p className="font-red-hat text-xs sm:text-sm text-[#cad8e9] leading-relaxed font-normal">
                     {step.desc}
                   </p>
@@ -493,14 +532,16 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       {/* ============================================================== */}
       {/* 6. VENTURE HUB                                                 */}
       {/* ============================================================== */}
-      <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#C5CDD7]" id="venture-hub">
+      <section
+        className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#C5CDD7]"
+        id="venture-hub"
+      >
         <div className="max-w-[1340px] mx-auto">
           <div className="p-8 sm:p-12 rounded-3xl bg-[#004a80] border-2 border-[#003860] text-center relative max-w-[960px] mx-auto overflow-hidden shadow-2xl text-white">
             {/* Ambient glow */}
@@ -521,7 +562,8 @@ export default function ServicesPage() {
               </h2>
 
               <p className="font-red-hat text-[#cad8e9] text-base sm:text-lg mb-8 leading-relaxed max-w-xl mx-auto font-normal">
-                Access financial and technical resources, expert connections and strategic tools in one secure portal.
+                Access financial and technical resources, expert connections and strategic tools in
+                one secure portal.
               </p>
 
               <div className="flex flex-wrap items-center justify-center gap-4">
@@ -580,7 +622,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
     </main>
   );
 }

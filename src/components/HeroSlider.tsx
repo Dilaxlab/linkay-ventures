@@ -16,122 +16,99 @@ export default function HeroSlider() {
   return (
     <section className="relative w-full min-h-[calc(100vh-88px)] flex flex-col justify-between bg-transparent text-[#004a80] border-b border-[#C5CDD7]/80 overflow-hidden">
       {/* ============================================================
-          FULL-BLEED BACKGROUND IMAGE WITH RADIAL GRADIENT SHADE
+          FULL-BLEED BACKGROUND IMAGE WITH ELEGANT LIGHT SHADES
       ============================================================ */}
-      <div
-        className="absolute inset-0 z-0 overflow-hidden bg-transparent pointer-events-none"
-        style={{
-          maskImage:
-            'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 6%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 85%, transparent 100%)',
-          WebkitMaskImage:
-            'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 6%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 85%, transparent 100%)',
-        }}
-      >
+      <div className="absolute inset-0 z-0 overflow-hidden bg-transparent pointer-events-none">
         <Image
-          src="/images/hero3.jpeg"
+          src="/images/LV4.png"
           alt="Real Assets Token Orbit"
           fill
           priority
           quality={95}
-          className="object-cover object-[center_62%] lg:object-[center_60%] opacity-70 md:opacity-80 scale-110 blur-[10px]"
-          style={{ filter: 'blur(10px)', WebkitFilter: 'blur(10px)' }}
+          className="object-cover object-[70%_center] sm:object-[center_55%] lg:object-center"
           sizes="100vw"
         />
 
-        {/* Soft edge blend overlay into solid #DDE2E8 (No white center) */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              'radial-gradient(ellipse at center, transparent 35%, rgba(221, 226, 232, 0.5) 70%, #DDE2E8 100%)',
-          }}
-        />
+        {/* 1. Light top blend shade directly under navbar */}
+        <div className="absolute inset-x-0 top-0 h-28 sm:h-36 bg-gradient-to-b from-[#DDE2E8]/85 via-[#DDE2E8]/30 to-transparent pointer-events-none" />
 
-        {/* Soft text backdrop wash on the left with #DDE2E8 */}
-        <div
-          className="absolute inset-y-0 left-0 w-full md:w-[75%] lg:w-[65%] pointer-events-none"
-          style={{
-            background:
-              'linear-gradient(to right, rgba(221, 226, 232, 0.8) 0%, rgba(221, 226, 232, 0.35) 70%, transparent 100%)',
-          }}
-        />
+        {/* 2. Light bottom blend shade into ticker strip */}
+        <div className="absolute inset-x-0 bottom-0 h-32 sm:h-44 bg-gradient-to-t from-[#DDE2E8] via-[#DDE2E8]/40 to-transparent pointer-events-none" />
+
+        {/* 3. Light left-side shade for desktop text clarity */}
+        <div className="hidden sm:block absolute inset-y-0 left-0 w-[60%] lg:w-[50%] bg-gradient-to-r from-[#DDE2E8]/60 via-[#DDE2E8]/20 to-transparent pointer-events-none" />
+
+        {/* 4. Light mobile framing shade so image and text coexist beautifully */}
+        <div className="sm:hidden absolute inset-0 bg-gradient-to-b from-[#DDE2E8]/50 via-transparent to-[#DDE2E8]/60 pointer-events-none" />
       </div>
 
       {/* ============================================================
-          MAIN HERO CONTENT OVERLAY
+          MAIN HERO CONTENT OVERLAY - CENTERED (Like 2nd Code)
       ============================================================ */}
-      <div className="relative z-10 max-w-[1340px] w-full mx-auto px-5 sm:px-12 lg:px-16 pt-14 sm:pt-20 pb-12 sm:pb-16 flex-1 flex items-center">
-        <div className="relative max-w-[760px] xl:max-w-[880px] flex flex-col items-start text-left">
-          {/* #DDE2E8 Smoky Mist / Cloud Backdrop to highlight the text */}
-          <div
-            className="absolute -inset-6 sm:-inset-10 lg:-inset-14 rounded-[50px] pointer-events-none -z-10 blur-2xl sm:blur-3xl opacity-90"
-            style={{
-              background:
-                'radial-gradient(ellipse at 40% 45%, rgba(221, 226, 232, 0.95) 0%, rgba(221, 226, 232, 0.85) 45%, rgba(221, 226, 232, 0.35) 70%, transparent 100%)',
-            }}
-          />
-          <div
-            className="absolute -inset-4 sm:-inset-8 rounded-3xl pointer-events-none -z-10 backdrop-blur-[6px] opacity-75"
-            style={{
-              maskImage:
-                'radial-gradient(ellipse at center, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
-              WebkitMaskImage:
-                'radial-gradient(ellipse at center, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
-            }}
-          />
+      <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-1 flex-col items-center justify-center px-4 sm:px-6 text-center">
+        {/* Light radial ambient mist behind hero copy */}
+        <div
+          className="absolute -inset-6 sm:-inset-10 rounded-3xl pointer-events-none -z-10 opacity-70"
+          style={{
+            background:
+              'radial-gradient(ellipse at 50% 50%, rgba(221, 226, 232, 0.7) 0%, rgba(221, 226, 232, 0.3) 55%, transparent 100%)',
+          }}
+        />
 
-          {/* Eyebrow */}
-          <div className="mb-4 sm:mb-5 flex items-start gap-2">
-            <span className="text-xs sm:text-[13px] font-mono font-bold text-[#A12B3C] leading-5 shrink-0">
-              —
-            </span>
-            <span className="text-[11px] sm:text-[13px] font-mono font-bold tracking-[0.14em] sm:tracking-[0.2em] text-[#A12B3C] uppercase leading-5">
-              NEW YORK · UNITED STATES · GLOBAL OPPORTUNITIES
-            </span>
-          </div>
+        {/* Eyebrow - Centered */}
+        <div className="mb-6 inline-flex items-center gap-2">
+          <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
+            <span>—</span> NEW YORK · UNITED STATES · GLOBAL OPPORTUNITIES
+          </span>
+        </div>
 
-          {/* Heading - Single line on desktop, high-impact bold */}
-          <h1 className="font-poppins text-3xl sm:text-4xl lg:text-[44px] xl:text-[50px] font-black leading-tight tracking-tight text-[#004a80] mb-5 lg:whitespace-nowrap">
-            Capital for <span className="text-[#A12B3C]">What&apos;s Next</span>
-          </h1>
+        {/* Heading - Centered, Large, Impactful */}
+        <h1 className="mb-6 font-poppins text-[32px] sm:text-[46px] md:text-[56px] lg:text-[72px] font-bold leading-[1.1] tracking-tight text-white">
+          Capital for{' '}
+          <span className="text-[#A12B3C] drop-shadow-[0_0_20px_rgba(161,43,60,0.35)]">
+            What&apos;s Next
+          </span>
+        </h1>
 
-          {/* Subtitle - Bold, high-contrast, crystal clear */}
-          <p className="font-red-hat text-[#004a80] text-[15px] sm:text-[17px] lg:text-[19px] leading-[1.65] max-w-[660px] mb-8 font-semibold">
-            At the intersection of investment, artificial intelligence and digital financial
-            infrastructure, Linkay Ventures supports ambitious companies and asset owners with
-            venture capital, strategic advisory and real-world asset tokenization.
-          </p>
+        {/* Subtitle - Centered, Bold, Crystal Clear */}
+        <p className="mx-auto mb-10 max-w-[620px] font-red-hat text-[16px] sm:text-[19px] md:text-[22px] lg:max-w-[780px] font-normal leading-relaxed text-[#004a80]">
+          At the intersection of investment, artificial intelligence and digital financial
+          infrastructure, Linkay Ventures supports ambitious companies and asset owners with venture
+          capital, strategic advisory and real-world asset tokenization.
+        </p>
 
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-8 sm:mb-10 w-full sm:w-auto">
-            <Link
-              href="/services"
-              className="inline-flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm sm:text-[15px] font-bold px-8 py-3.5 sm:py-4 rounded-full shadow-lg shadow-[#A12B3C]/30 transition-all hover:-translate-y-0.5 active:translate-y-0 w-full sm:w-auto"
-            >
-              <span>Explore Our Platform</span>
-              <ArrowRight size={17} />
-            </Link>
+        {/* Action Buttons - Centered */}
+        <div className="flex w-full flex-col gap-3.5 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-4">
+          <Link
+            href="/services"
+            className="inline-flex items-center justify-center gap-2 bg-[#A12B3C] hover:bg-[#A12B3C]/90 text-white font-poppins text-sm font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#A12B3C]/30 transition-all hover:-translate-y-0.5"
+          >
+            <span>Explore Our Platform</span>
+            <ArrowRight size={17} />
+          </Link>
 
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm sm:text-[15px] font-bold px-7 py-3.5 sm:py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5 w-full sm:w-auto"
-            >
-              <span>Start a Conversation</span>
-            </Link>
-          </div>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-8 py-4 rounded-full shadow-md transition-all hover:-translate-y-0.5"
+          >
+            <span>Start a Conversation</span>
+            <ArrowRight size={16} />
+          </Link>
+        </div>
 
-          {/* Trust Chips Line */}
-          <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
+        {/* Trust Chips Line - Centered */}
+        <div className="mt-12 w-full max-w-[860px] border-t border-[#1f293d] pt-8">
+          <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161, 43, 60,0.5)]" />
-              <span>Venture Capital</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+              <span>Smart Capital</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161, 43, 60,0.5)]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
               <span>Strategic Advisory</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161, 43, 60,0.5)]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
               <span>Digital Assets</span>
             </div>
           </div>

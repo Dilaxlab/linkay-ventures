@@ -66,10 +66,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-200 ${
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         isScrolled
-          ? 'bg-page-gradient/95 backdrop-blur-md border-b border-[#C5CDD7] shadow-md shadow-[#004a80]/5'
-          : 'bg-page-gradient border-b border-[#C5CDD7]/50'
+          ? 'bg-[#DDE2E8]/95 backdrop-blur-md border-b border-[#C5CDD7] shadow-sm shadow-[#004a80]/5'
+          : 'bg-[#DDE2E8]/75 backdrop-blur-md border-b border-[#C5CDD7]/40'
       }`}
     >
       {/* Top brand strip: #004a80 */}

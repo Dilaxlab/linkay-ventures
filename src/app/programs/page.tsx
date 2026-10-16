@@ -102,12 +102,39 @@ export default function ProgramsPage() {
 
   return (
     <main className="w-full bg-page-gradient text-[#004a80] font-sans antialiased overflow-x-hidden selection:bg-[#A12B3C] selection:text-white">
-
       {/* ============================================================== */}
       {/* 1. HERO                                                        */}
       {/* ============================================================== */}
-      <section className="relative w-full pt-28 pb-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d] overflow-hidden">
-        <div className="max-w-[1240px] mx-auto relative z-10 text-center">
+      <section className="relative w-full min-h-[calc(100vh-88px)] flex items-center justify-center bg-transparent text-[#004a80] border-b border-[#C5CDD7]/80 overflow-hidden">
+        {/* ============================================================
+      FULL-BLEED BACKGROUND IMAGE WITH ELEGANT LIGHT SHADES
+  ============================================================ */}
+        <div className="absolute inset-0 z-0 overflow-hidden bg-transparent pointer-events-none">
+          <Image
+            src="/images/LV1.png"
+            alt="Real Assets Token Orbit"
+            fill
+            priority
+            quality={95}
+            className="object-cover object-[70%_center] sm:object-[center_55%] lg:object-center"
+            sizes="100vw"
+          />
+
+          {/* 1. Light top blend shade directly under navbar */}
+          <div className="absolute inset-x-0 top-0 h-28 sm:h-36 bg-gradient-to-b from-[#DDE2E8]/85 via-[#DDE2E8]/30 to-transparent pointer-events-none" />
+
+          {/* 2. Light bottom blend shade into ticker strip */}
+          <div className="absolute inset-x-0 bottom-0 h-32 sm:h-44 bg-gradient-to-t from-[#DDE2E8] via-[#DDE2E8]/40 to-transparent pointer-events-none" />
+
+          {/* 3. Light left-side shade for desktop text clarity */}
+          <div className="hidden sm:block absolute inset-y-0 left-0 w-[60%] lg:w-[50%] bg-gradient-to-r from-[#DDE2E8]/60 via-[#DDE2E8]/20 to-transparent pointer-events-none" />
+
+          {/* 4. Light mobile framing shade so image and text coexist beautifully */}
+          <div className="sm:hidden absolute inset-0 bg-gradient-to-b from-[#DDE2E8]/50 via-transparent to-[#DDE2E8]/60 pointer-events-none" />
+        </div>
+
+        {/* Content - Centered */}
+        <div className="relative z-10 w-full max-w-[1240px] mx-auto px-4 sm:px-6 text-center">
           <div className="max-w-3xl mx-auto">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2">
@@ -119,14 +146,15 @@ export default function ProgramsPage() {
             {/* Heading */}
             <h1 className="font-poppins text-3xl sm:text-5xl lg:text-[68px] font-bold text-[#004a80] tracking-tight leading-[1.1] mb-6">
               Programs for founders{' '}
-              <span className="text-[#A12B3C] drop-shadow-[0_0_25px_rgba(161, 43, 60,0.35)]">
+              <span className="text-[#A12B3C] drop-shadow-[0_0_25px_rgba(161,43,60,0.35)]">
                 building what&apos;s next.
               </span>
             </h1>
 
             {/* Body */}
             <p className="font-red-hat text-[#004a80] text-base sm:text-lg sm:text-xl leading-relaxed mb-8 sm:mb-10 font-normal max-w-2xl mx-auto">
-              Linkay Ventures supports the next generation of innovators through a venture accelerator, corporate innovation partnerships and adaptive growth programs.
+              Linkay Ventures supports the next generation of innovators through a venture
+              accelerator, corporate innovation partnerships and adaptive growth programs.
             </p>
 
             {/* CTAs */}
@@ -146,21 +174,25 @@ export default function ProgramsPage() {
               </Link>
             </div>
 
-            {/* Chips */}
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-mono font-bold tracking-wider text-[#004a80]">
-              <div className="flex items-center gap-2">
-                <span className="text-[#A12B3C]">•</span>
-                <span>Venture Accelerator</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[#A12B3C]">•</span>
-                <span>Corporate Partnerships</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[#A12B3C]">•</span>
-                <span>Adaptive Growth</span>
+            {/* Features strip */}
+            <div className="mt-12 w-full max-w-[860px] border-t border-[#1f293d] pt-8">
+              {/* Trust Chips Line */}
+              <div className="flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs font-mono font-bold text-[#004a80]">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>Venture Accelerator</span>
+                </div>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>Corporate Partnerships</span>
+                </div>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A12B3C] shadow-[0_0_8px_rgba(161,43,60,0.5)]" />
+                  <span>Adaptive Growth</span>
+                </div>
               </div>
             </div>
+
 
           </div>
         </div>
@@ -172,7 +204,6 @@ export default function ProgramsPage() {
       <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]">
         <div className="max-w-[1340px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-
             <div className="lg:col-span-7">
               <div className="mb-4 inline-flex items-center gap-2">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
@@ -182,11 +213,15 @@ export default function ProgramsPage() {
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-5">
                 We don&apos;t just back startups.{' '}
-                <span className="text-[#A12B3C] block sm:inline font-bold">We build alongside them.</span>
+                <span className="text-[#A12B3C] block sm:inline font-bold">
+                  We build alongside them.
+                </span>
               </h2>
 
               <p className="font-red-hat text-[#004a80] text-base sm:text-lg leading-relaxed mb-6 font-normal">
-                Our programs give ambitious founders the network, resources and strategic support to turn bold ideas into lasting companies. Join a community of builders and grow with programs designed for impact.
+                Our programs give ambitious founders the network, resources and strategic support to
+                turn bold ideas into lasting companies. Join a community of builders and grow with
+                programs designed for impact.
               </p>
 
               <div className="flex items-center gap-3 text-xs font-mono text-[#cad5e8] pt-2">
@@ -208,7 +243,6 @@ export default function ProgramsPage() {
                 />
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -216,16 +250,17 @@ export default function ProgramsPage() {
       {/* ============================================================== */}
       {/* 3. PROGRAM 01 / VENTURE ACCELERATOR                            */}
       {/* ============================================================== */}
-      <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]" id="programs">
+      <section
+        className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]"
+        id="programs"
+      >
         <div className="max-w-[1340px] mx-auto">
-
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
             <div className="max-w-3xl">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
                   <span>—</span>VENTURE ACCELERATOR
                 </span>
-               
               </div>
 
               <h2 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004a80] leading-tight mb-4">
@@ -234,7 +269,8 @@ export default function ProgramsPage() {
               </h2>
 
               <p className="font-red-hat text-[#004a80] text-base sm:text-lg font-normal">
-                A hands-on program combining mentorship, capital connections, go-to-market guidance and enterprise pilot opportunities.
+                A hands-on program combining mentorship, capital connections, go-to-market guidance
+                and enterprise pilot opportunities.
               </p>
             </div>
 
@@ -261,7 +297,10 @@ export default function ProgramsPage() {
                       <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
-                      <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold" style={{ color: '#01497f' }}>
+                      <span
+                        className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold"
+                        style={{ color: '#01497f' }}
+                      >
                         {item.tag}
                       </span>
                     </div>
@@ -283,7 +322,6 @@ export default function ProgramsPage() {
               );
             })}
           </div>
-
         </div>
       </section>
 
@@ -292,7 +330,6 @@ export default function ProgramsPage() {
       {/* ============================================================== */}
       <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#1f293d]">
         <div className="max-w-[1340px] mx-auto">
-
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="mb-4 inline-flex items-center gap-2">
               <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#A12B3C] uppercase flex items-center gap-2">
@@ -306,7 +343,8 @@ export default function ProgramsPage() {
             </h2>
 
             <p className="font-red-hat text-[#004a80] text-base sm:text-lg font-normal">
-              We connect corporations with emerging startups to build high-impact collaborations that drive industry change.
+              We connect corporations with emerging startups to build high-impact collaborations
+              that drive industry change.
             </p>
           </div>
 
@@ -323,7 +361,10 @@ export default function ProgramsPage() {
                       <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
                         <Icon size={19} />
                       </div>
-                      <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold" style={{ color: '#01497f' }}>
+                      <span
+                        className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#DDE2E8] border border-[#C5CDD7] text-[#01497f] font-bold"
+                        style={{ color: '#01497f' }}
+                      >
                         {item.tag}
                       </span>
                     </div>
@@ -357,7 +398,6 @@ export default function ProgramsPage() {
               <ArrowUpRight size={15} className="text-[#A12B3C] group-hover:text-white" />
             </Link>
           </div>
-
         </div>
       </section>
 
@@ -367,7 +407,6 @@ export default function ProgramsPage() {
       <section className="w-full bg-transparent py-20 px-6 sm:px-12 lg:px-16 border-b border-[#C5CDD7]">
         <div className="max-w-[1340px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch mb-14">
-
             {/* Clean image covering the card fully */}
             <div className="lg:col-span-5 order-2 lg:order-1 flex">
               <div className="relative w-full h-[360px] sm:h-[440px] lg:h-full min-h-[360px] lg:min-h-[460px] overflow-hidden rounded-2xl shadow-xl group">
@@ -396,7 +435,8 @@ export default function ProgramsPage() {
               </h2>
 
               <p className="font-red-hat text-[#004a80] text-base sm:text-lg leading-relaxed mb-8 font-normal">
-                Beyond the standard accelerator, we shape bespoke programs to equip, pilot and connect founders wherever they are on their journey.
+                Beyond the standard accelerator, we shape bespoke programs to equip, pilot and
+                connect founders wherever they are on their journey.
               </p>
 
               {/* 3 mini cards */}
@@ -424,10 +464,7 @@ export default function ProgramsPage() {
                 })}
               </div>
             </div>
-
           </div>
-
-
         </div>
       </section>
 
@@ -447,7 +484,8 @@ export default function ProgramsPage() {
           </h2>
 
           <p className="font-red-hat text-[#004a80] text-base sm:text-xl leading-relaxed max-w-2xl mx-auto mb-10 font-normal">
-            A startup pushing boundaries, a corporation seeking to innovate, or a visionary ready to make an impact? Start here.
+            A startup pushing boundaries, a corporation seeking to innovate, or a visionary ready to
+            make an impact? Start here.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
@@ -467,7 +505,6 @@ export default function ProgramsPage() {
           </div>
         </div>
       </section>
-
     </main>
   );
 }
