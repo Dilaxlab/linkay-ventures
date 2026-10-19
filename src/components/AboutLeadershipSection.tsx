@@ -94,7 +94,7 @@ export default function AboutLeadershipSection() {
                     <LeaderAvatar gender={leader.gender} name={leader.name} />
 
                     <div>
-                      <span className="text-xs font-mono font-bold tracking-widest text-[#ffccd3] uppercase block mb-1">
+                      <span className="text-xs font-mono font-bold tracking-widest text-white uppercase block mb-1">
                         {leader.role}
                       </span>
                       <h3 className="font-poppins text-2xl sm:text-3xl font-bold text-white">
@@ -114,7 +114,7 @@ export default function AboutLeadershipSection() {
                       {/* Credentials & Distinctions (Lincoln) */}
                       {leader.credentials && leader.credentials.length > 0 && (
                         <div className="p-4 rounded-xl bg-[#003860] border border-[#005fa3] space-y-2">
-                          <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-[#ffccd3] mb-1">
+                          <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-white mb-1">
                             <Award size={13} />
                             <span>Credentials &amp; Distinctions</span>
                           </div>

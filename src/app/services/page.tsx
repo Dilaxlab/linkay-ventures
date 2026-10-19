@@ -516,7 +516,7 @@ export default function ServicesPage() {
                 className="p-6 rounded-2xl bg-[#004a80] border-2 border-[#003860] flex flex-col justify-between text-white shadow-xl"
               >
                 <div>
-                  <span className="text-xs font-mono font-bold text-[#ffccd3] block mb-2">
+                  <span className="text-xs font-mono font-bold text-white block mb-2">
                     PHASE {step.num}
                   </span>
                   <h3 className="font-poppins text-lg font-bold text-white mb-2">{step.title}</h3>

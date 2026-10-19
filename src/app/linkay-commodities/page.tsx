@@ -390,7 +390,7 @@ export default function LinkayCommoditiesPage() {
                     <h3 className="font-poppins text-white text-[18px] font-bold mb-2 group-hover:text-[#ffccd3] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="font-red-hat text-[#cad8e9] text-[14px] leading-relaxed">
+                    <p className="font-red-hat text-white text-[14px] leading-relaxed">
                       {item.desc}
                     </p>
                   </div>

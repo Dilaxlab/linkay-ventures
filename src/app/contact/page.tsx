@@ -153,7 +153,7 @@ export default function ContactPage() {
               <div className="pointer-events-none absolute bottom-0 right-0 h-64 w-64 rounded-full bg-[#894541]/10 blur-3xl" />
 
               <div className="relative z-10">
-                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#ffccd3] uppercase flex items-center gap-2 mb-6">
+                <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-white uppercase flex items-center gap-2 mb-6">
                   <span>—</span> DIRECT ADVISORY LINE
                 </span>
 
@@ -263,7 +263,7 @@ export default function ContactPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-xs font-mono font-bold uppercase tracking-wider text-[#ffccd3] mb-2">
+                      <label className="block text-xs font-mono font-bold uppercase tracking-wider text-white mb-2">
                         Full Name *
                       </label>
                       <input
@@ -276,7 +276,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-mono font-bold uppercase tracking-wider text-[#ffccd3] mb-2">
+                      <label className="block text-xs font-mono font-bold uppercase tracking-wider text-white mb-2">
                         Work Email *
                       </label>
                       <input
@@ -292,7 +292,7 @@ export default function ContactPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-xs font-mono font-bold uppercase tracking-wider text-[#ffccd3] mb-2">
+                      <label className="block text-xs font-mono font-bold uppercase tracking-wider text-white mb-2">
                         Phone Number
                       </label>
                       <input
@@ -304,7 +304,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-mono font-bold uppercase tracking-wider text-[#ffccd3] mb-2">
+                      <label className="block text-xs font-mono font-bold uppercase tracking-wider text-white mb-2">
                         Practice Area
                       </label>
                       <select
@@ -325,7 +325,7 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-mono font-bold uppercase tracking-wider text-[#ffccd3] mb-2">
+                    <label className="block text-xs font-mono font-bold uppercase tracking-wider text-white mb-2">
                       Message / Project Details *
                     </label>
                     <textarea

@@ -444,7 +444,7 @@ export default function LinkayThinkTankPage() {
                   <h3 className="font-poppins text-white text-[18px] font-bold mb-2 group-hover:text-[#894541] transition-colors leading-tight">
                     {step.title}
                   </h3>
-                  <p className="font-red-hat text-[#9aacc6] text-[14px] leading-relaxed">
+                  <p className="font-red-hat text-white text-[14px] leading-relaxed">
                     {step.desc}
                   </p>
                 </div>
@@ -469,7 +469,7 @@ export default function LinkayThinkTankPage() {
           <div className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full bg-[#9F1D2C]/15 blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
-            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-[#9F1D2C] uppercase block mb-3">
+            <span className="text-xs sm:text-[13px] font-mono font-bold tracking-[0.2em] text-white uppercase block mb-3">
               — LINKAY THINK-TANK ADVISORY
             </span>
             <h3 className="font-poppins text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-white">
