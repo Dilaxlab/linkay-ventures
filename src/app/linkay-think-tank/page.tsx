@@ -450,7 +450,7 @@ export default function LinkayThinkTankPage() {
                 </div>
 
                 <div className="mt-5 pt-3 border-t border-[#1f293d]">
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#894541]">
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-white">
                     {step.tag}
                   </span>
                 </div>

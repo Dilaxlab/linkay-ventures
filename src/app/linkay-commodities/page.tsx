@@ -427,7 +427,7 @@ export default function LinkayCommoditiesPage() {
                     <div className="w-11 h-11 rounded-xl bg-white/15 border border-white/25 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                       <IconComp size={19} />
                     </div>
-                    <span className="font-poppins text-[24px] font-extrabold leading-none text-[#ffccd3]">
+                    <span className="font-poppins text-[24px] font-extrabold leading-none text-white">
                       {step.num}
                     </span>
                   </div>
@@ -441,7 +441,7 @@ export default function LinkayCommoditiesPage() {
                 </div>
 
                 <div className="mt-5 pt-3 border-t border-white/15">
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#ffccd3]">
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-white">
                     {step.tag}
                   </span>
                 </div>

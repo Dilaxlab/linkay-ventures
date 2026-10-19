@@ -109,7 +109,7 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <div className="flex h-full flex-col justify-between rounded-3xl border-2 border-[#003860] bg-[#004a80] p-6 text-white shadow-xl">
               <div>
-                <span className="mb-2 block font-mono text-xs font-bold uppercase tracking-wider text-[#ffccd3]">
+                <span className="mb-2 block font-mono text-xs font-bold uppercase tracking-wider text-white">
                   Advisory Desk
                 </span>
 

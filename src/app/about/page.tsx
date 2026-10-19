@@ -264,7 +264,7 @@ export default function AboutPage() {
                   </div>
 
                   <div className="pt-6 mt-6 border-t border-white/15 flex items-center gap-2 text-xs font-mono text-[#cad8e9]">
-                    <CheckCircle2 size={13} className="text-[#ffccd3]" />
+                    <CheckCircle2 size={13} className="text-white" />
                     <span>Non-Negotiable Commitment</span>
                   </div>
                 </div>

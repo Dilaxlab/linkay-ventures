@@ -311,7 +311,7 @@ export default function ProgramsPage() {
                   </div>
 
                   <div className="pt-4 mt-6 border-t border-white/15 flex items-center gap-1.5 text-xs text-[#cad8e9]">
-                    <CheckCircle2 size={12} className="text-[#ffccd3]" />
+                    <CheckCircle2 size={12} className="text-white" />
                     <span>Cohort Benefit</span>
                   </div>
                 </div>
@@ -375,7 +375,7 @@ export default function ProgramsPage() {
                   </div>
 
                   <div className="pt-4 mt-6 border-t border-white/15 flex items-center gap-1.5 text-xs text-[#cad8e9]">
-                    <CheckCircle2 size={12} className="text-[#ffccd3]" />
+                    <CheckCircle2 size={12} className="text-white" />
                     <span>Commercial Alignment</span>
                   </div>
                 </div>

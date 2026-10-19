@@ -306,7 +306,7 @@ export default function ServicesPage() {
                   </div>
 
                   <div className="pt-4 mt-6 border-t border-white/15 flex items-center gap-1.5 text-xs text-[#cad8e9]">
-                    <CheckCircle2 size={12} className="text-[#ffccd3]" />
+                    <CheckCircle2 size={12} className="text-white" />
                     <span>Eligible Structures</span>
                   </div>
                 </div>
@@ -384,7 +384,7 @@ export default function ServicesPage() {
                   </div>
 
                   <div className="pt-4 mt-6 border-t border-white/15 flex items-center gap-1.5 text-xs text-[#cad8e9]">
-                    <CheckCircle2 size={12} className="text-[#ffccd3]" />
+                    <CheckCircle2 size={12} className="text-white" />
                     <span>Domain Guidance</span>
                   </div>
                 </div>
@@ -483,7 +483,7 @@ export default function ServicesPage() {
                   </div>
 
                   <div className="pt-4 mt-6 border-t border-white/15 flex items-center gap-1.5 text-xs text-[#cad8e9]">
-                    <CheckCircle2 size={12} className="text-[#ffccd3]" />
+                    <CheckCircle2 size={12} className="text-white" />
                     <span>Ecosystem Access</span>
                   </div>
                 </div>
