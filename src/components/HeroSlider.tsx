@@ -51,40 +51,40 @@ export default function HeroSlider() {
         </div>
 
         {/* Heading */}
-        {/* Heading */}
-        <h1 className="font-poppins text-4xl sm:text-5xl md:text-6xl lg:text-[76px] font-bold tracking-tight leading-[1.15]">
-          <span className="text-[#004a80]">Capital for </span>
-          <span className="relative inline-block pb-2 sm:pb-3">
-            {/* Changed to dark blue, Serif Italic to match screenshot */}
-            <span className="text-[#004a80] font-serif italic font-medium tracking-normal">
-              What&apos;s Next
-            </span>
+       {/* Heading */}
+<h1 className="font-poppins text-4xl sm:text-5xl md:text-6xl lg:text-[76px] font-bold tracking-tight leading-[1.15]">
+  <span className="text-[#004a80]">Capital for </span>
+  <span className="relative inline-block pb-2 sm:pb-3">
+    {/* Changed to dark blue, Serif Italic to match screenshot */}
+    <span className="text-[#004a80] font-serif italic font-medium tracking-normal">
+      What&apos;s Next
+    </span>
 
-            {/* Gold Underline - Adjusted position & width to match screenshot */}
-            <svg
-              className="pointer-events-none absolute left-0 right-0 -bottom-2 sm:-bottom-3 w-[95%] mx-auto h-[8px] sm:h-[10px]"
-              viewBox="0 0 300 10"
-              fill="none"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-            >
-              <defs>
-                <linearGradient id="goldGrad2" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#d4a373" />
-                  <stop offset="50%" stopColor="#e8b87a" />
-                  <stop offset="100%" stopColor="#c98a5a" />
-                </linearGradient>
-              </defs>
-              <path
-                d="M2 6 Q 75 1, 150 5 T 298 4"
-                stroke="url(#goldGrad2)"
-                strokeWidth="3"
-                strokeLinecap="round"
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </span>
-        </h1>
+    {/* Gold Underline - Adjusted position & width to match screenshot */}
+    <svg
+      className="pointer-events-none absolute left-0 right-0 -bottom-2 sm:-bottom-3 w-[95%] mx-auto h-[8px] sm:h-[10px]"
+      viewBox="0 0 300 10"
+      fill="none"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <defs>
+        <linearGradient id="goldGrad2" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stopColor="#d4a373" />
+          <stop offset="50%" stopColor="#e8b87a" />
+          <stop offset="100%" stopColor="#c98a5a" />
+        </linearGradient>
+      </defs>
+      <path
+        d="M2 6 Q 75 1, 150 5 T 298 4"
+        stroke="url(#goldGrad2)"
+        strokeWidth="3"
+        strokeLinecap="round"
+        vectorEffect="non-scaling-stroke"
+      />
+    </svg>
+  </span>
+</h1>
 
         {/* Subtitle */}
         <p className="mx-auto mt-6 mb-10 max-w-[620px] font-red-hat text-[16px] sm:text-[19px] md:text-[22px] lg:max-w-[780px] font-normal leading-relaxed text-[#004a80] drop-shadow-[0_1px_3px_rgba(255,255,255,0.6)]">

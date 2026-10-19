@@ -69,7 +69,6 @@ const config: Config = {
         raleway: ['var(--font-raleway)', 'sans-serif'],
         redhat: ['var(--font-redhat)', 'sans-serif'],
         roboto: ['var(--font-roboto)', 'sans-serif'],
-        poppins: ['var(--font-poppins)', 'sans-serif'],
         fraunces: ['var(--font-fraunces)', 'serif'],
       },
       animation: {
