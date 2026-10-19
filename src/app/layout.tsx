@@ -1,6 +1,25 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import AppShell from '@/components/AppShell';
+import { Poppins, Fraunces } from 'next/font/google';
+
+const poppins = Poppins({ subsets: ['latin'], weight: ['600', '700'], variable: '--font-poppins' });
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  style: ['italic'],
+  axes: ['SOFT', 'WONK', 'opsz'],
+  variable: '--font-fraunces',
+});
+
+// <body className={`${poppins.variable} ${fraunces.variable}`}>
+
+
+
+
+
+
+
+
 
 export const metadata: Metadata = {
   title: 'Linkay Ventures | Investment, Advisory and Digital Assets, New York',

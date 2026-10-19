@@ -60,7 +60,8 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        'page-gradient': 'radial-gradient(ellipse at center, #FFFFFF 0%, #F3F1E2 55%, #E6E4C4 100%)',
+        'page-gradient':
+          'radial-gradient(ellipse at center, #FFFFFF 0%, #F3F1E2 55%, #E6E4C4 100%)',
       },
       fontFamily: {
         kanit: ['var(--font-kanit)', 'sans-serif'],
@@ -68,6 +69,8 @@ const config: Config = {
         raleway: ['var(--font-raleway)', 'sans-serif'],
         redhat: ['var(--font-redhat)', 'sans-serif'],
         roboto: ['var(--font-roboto)', 'sans-serif'],
+        poppins: ['var(--font-poppins)', 'sans-serif'],
+        fraunces: ['var(--font-fraunces)', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

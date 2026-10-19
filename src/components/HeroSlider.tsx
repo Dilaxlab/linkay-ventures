@@ -51,15 +51,18 @@ export default function HeroSlider() {
         </div>
 
         {/* Heading */}
-        <h1 className="font-poppins text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.15]">
+        {/* Heading */}
+        <h1 className="font-poppins text-4xl sm:text-5xl md:text-6xl lg:text-[76px] font-bold tracking-tight leading-[1.15]">
           <span className="text-[#004a80]">Capital for </span>
-          <span className="relative inline-block pb-3 sm:pb-4">
-            <span className="bg-gradient-to-r from-[#1d7fd1] to-[#3b9eff] bg-clip-text text-transparent">
+          <span className="relative inline-block pb-2 sm:pb-3">
+            {/* Changed to dark blue, Serif Italic to match screenshot */}
+            <span className="text-[#004a80] font-serif italic font-medium tracking-normal">
               What&apos;s Next
             </span>
-            {/* Gold wavy underline */}
+
+            {/* Gold Underline - Adjusted position & width to match screenshot */}
             <svg
-              className="pointer-events-none absolute left-0 right-0 -bottom-1 sm:-bottom-2 w-full h-[8px] sm:h-[10px]"
+              className="pointer-events-none absolute left-0 right-0 -bottom-2 sm:-bottom-3 w-[95%] mx-auto h-[8px] sm:h-[10px]"
               viewBox="0 0 300 10"
               fill="none"
               preserveAspectRatio="none"
@@ -67,7 +70,7 @@ export default function HeroSlider() {
             >
               <defs>
                 <linearGradient id="goldGrad2" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#c98a5a" />
+                  <stop offset="0%" stopColor="#d4a373" />
                   <stop offset="50%" stopColor="#e8b87a" />
                   <stop offset="100%" stopColor="#c98a5a" />
                 </linearGradient>
@@ -75,7 +78,7 @@ export default function HeroSlider() {
               <path
                 d="M2 6 Q 75 1, 150 5 T 298 4"
                 stroke="url(#goldGrad2)"
-                strokeWidth="3.5"
+                strokeWidth="3"
                 strokeLinecap="round"
                 vectorEffect="non-scaling-stroke"
               />
