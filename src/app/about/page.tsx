@@ -199,7 +199,7 @@ export default function AboutPage() {
                   <span className="text-xs text-[#8a9bb5] font-red-hat">Support</span>
                 </div>
                 <div className="p-3.5 rounded-xl bg-[#080d1a] border border-[#1f293d] flex flex-col">
-                  <span className="text-sm font-poppins font-bold text-[#894541]">
+                  <span className="text-sm font-poppins font-bold text-white">
                     Strategic Insight
                   </span>
                   <span className="text-xs text-[#8a9bb5] font-red-hat">With capital</span>
@@ -314,7 +314,7 @@ export default function AboutPage() {
                   className="p-6 rounded-2xl bg-[#080d1a] border border-[#1f293d] hover:border-[#894541]/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-md"
                 >
                   <div>
-                    <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 text-[#894541] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                    <div className="w-11 h-11 rounded-xl bg-[#894541]/10 border border-[#894541]/25 text-white flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                       <Icon size={19} />
                     </div>
                     <span className="text-[10px] font-mono uppercase tracking-wider text-[#71829e] block mb-1">
@@ -328,7 +328,7 @@ export default function AboutPage() {
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-1.5 text-xs font-semibold text-[#894541] group-hover:underline">
+                  <div className="flex items-center gap-1.5 text-xs font-semibold text-white group-hover:underline">
                     <span>Learn More</span>
                     <ArrowRight
                       size={13}

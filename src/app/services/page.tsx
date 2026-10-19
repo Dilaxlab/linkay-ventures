@@ -603,7 +603,7 @@ export default function ServicesPage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#894541] hover:bg-[#894541]/90 text-white font-poppins text-sm font-bold px-8 py-3.5 sm:px-9 sm:py-4 rounded-full transition-all shadow-lg shadow-[#894541]/30 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#DDE2E8] hover:bg-[#004a80] text-[#004a80] hover:text-white border-2 border-[#004a80] font-poppins text-sm font-bold px-7 py-3.5 sm:px-8 sm:py-4 rounded-full transition-all shadow-md hover:-translate-y-0.5"
             >
               <span>Contact Our Team</span>
               <ArrowRight size={16} />
